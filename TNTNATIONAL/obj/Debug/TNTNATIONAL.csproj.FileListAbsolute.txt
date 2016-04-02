@@ -1,0 +1,20 @@
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\BusinessEntities.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\BusinessEntities.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\obj\Debug\ResolveAssemblyReference.cache
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\TNTNATIONAL.dll.config
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\TNTNATIONAL.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\TNTNATIONAL.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\obj\Debug\TNTNATIONAL.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\obj\Debug\TNTNATIONAL.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\KaizosEntities.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTNATIONAL\bin\Debug\KaizosEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\TNTNATIONAL.dll.config
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\TNTNATIONAL.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\TNTNATIONAL.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\BusinessEntities.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\KaizosEntities.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\BusinessEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\bin\Debug\KaizosEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\obj\Debug\ResolveAssemblyReference.cache
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\obj\Debug\TNTNATIONAL.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\TNTNational\obj\Debug\TNTNATIONAL.pdb

@@ -1,0 +1,42 @@
+<publishData>
+  <publishTarget publishUrl="E:\Actions\Kaizos Deployment\WCF\Service\">
+    <file relUrl="bin/KaizosServiceLibrary.dll" publishTime="10/21/2011 19:57:12" />
+    <file relUrl="bin/UserManager.pdb" publishTime="10/21/2011 19:57:11" />
+    <file relUrl="bin/nunit.framework.dll" publishTime="04/02/2011 20:01:20" />
+    <file relUrl="bin/KaizosService.pdb" publishTime="10/21/2011 19:57:13" />
+    <file relUrl="bin/AddressBookManager.dll" publishTime="10/21/2011 19:56:13" />
+    <file relUrl="bin/CarrierManager.pdb" publishTime="10/21/2011 19:56:12" />
+    <file relUrl="bin/KaizosEntities.dll" publishTime="10/21/2011 19:57:11" />
+    <file relUrl="bin/log4net.xml" publishTime="03/30/2006 13:24:28" />
+    <file relUrl="bin/GlobalLibrary.pdb" publishTime="10/21/2011 19:56:10" />
+    <file relUrl="bin/GlobalLibrary.dll" publishTime="10/21/2011 19:56:10" />
+    <file relUrl="bin/ProfileManager.pdb" publishTime="10/21/2011 19:56:12" />
+    <file relUrl="bin/CarrierManager.dll" publishTime="10/21/2011 19:56:13" />
+    <file relUrl="bin/log4net.dll" publishTime="03/30/2006 13:24:28" />
+    <file relUrl="bin/nunit.framework.xml" publishTime="04/02/2011 20:01:20" />
+    <file relUrl="bin/KaizosEntities.pdb" publishTime="10/21/2011 19:57:11" />
+    <file relUrl="bin/KaizosServiceLibrary.pdb" publishTime="10/21/2011 19:57:12" />
+    <file relUrl="Web.config" publishTime="10/04/2011 17:44:04" />
+    <file relUrl="bin/ToSManager.pdb" publishTime="10/21/2011 19:57:12" />
+    <file relUrl="bin/KaizosService.dll" publishTime="10/21/2011 19:57:13" />
+    <file relUrl="bin/ToSManager.dll" publishTime="10/21/2011 19:57:12" />
+    <file relUrl="bin/AddressBookManager.pdb" publishTime="10/21/2011 19:56:13" />
+    <file relUrl="bin/UserManager.dll" publishTime="10/21/2011 19:57:11" />
+    <file relUrl="bin/ClaimsManager.dll" publishTime="10/21/2011 19:56:13" />
+    <file relUrl="bin/ClaimsManager.pdb" publishTime="10/21/2011 19:56:13" />
+    <file relUrl="KaizosService.svc" publishTime="10/04/2011 17:44:04" />
+    <file relUrl="bin/ProfileManager.dll" publishTime="10/21/2011 19:56:12" />
+  </publishTarget>
+  <publishTarget publishUrl="E:\Actions\Kaizos Deployment\Service\">
+    <file relUrl="bin/KaizosService.dll" publishTime="09/14/2011 18:55:31" />
+    <file relUrl="KaizosService.svc" publishTime="09/08/2011 16:32:10" />
+    <file relUrl="bin/ToSManager.dll" publishTime="09/14/2011 18:55:30" />
+    <file relUrl="bin/KaizosServiceLibrary.pdb" publishTime="09/14/2011 18:55:30" />
+    <file relUrl="Web.config" publishTime="09/09/2011 19:07:26" />
+    <file relUrl="bin/KaizosService.pdb" publishTime="09/14/2011 18:55:31" />
+    <file relUrl="bin/KaizosEntities.pdb" publishTime="09/14/2011 18:55:29" />
+    <file relUrl="bin/KaizosServiceLibrary.dll" publishTime="09/14/2011 18:55:30" />
+    <file relUrl="bin/ToSManager.pdb" publishTime="09/14/2011 18:55:30" />
+    <file relUrl="bin/KaizosEntities.dll" publishTime="09/14/2011 18:55:30" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,1275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Kaizos.Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="KaizosEntitiesStoreContainer">
+    <EntitySet Name="COUNTRY" EntityType="Kaizos.Entities.Store.COUNTRY" store:Type="Tables" store:Schema="dbo" store:Name="COUNTRY">
+      <DefiningQuery>SELECT 
+      [COUNTRY].[COUNTRY_CODE] AS [COUNTRY_CODE], 
+      [COUNTRY].[THREE_DIGIT_CODE] AS [THREE_DIGIT_CODE], 
+      [COUNTRY].[COUNTRY_NAME] AS [COUNTRY_NAME], 
+      [COUNTRY].[COUNTRY_CODE_LONG] AS [COUNTRY_CODE_LONG], 
+      [COUNTRY].[LANGUAGES] AS [LANGUAGES], 
+      [COUNTRY].[POSTAL_CODE_FORMAT] AS [POSTAL_CODE_FORMAT], 
+      [COUNTRY].[SHIPMENT_TYPE] AS [SHIPMENT_TYPE], 
+      [COUNTRY].[DIAL_CODE] AS [DIAL_CODE]
+      FROM [dbo].[COUNTRY] AS [COUNTRY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TOS" EntityType="Kaizos.Entities.Store.TOS" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'KZ_VSS.dbo.COUNTRY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="COUNTRY">
+    <Key>
+      <PropertyRef Name="COUNTRY_CODE" />
+      <PropertyRef Name="THREE_DIGIT_CODE" />
+      <PropertyRef Name="COUNTRY_NAME" />
+      <PropertyRef Name="COUNTRY_CODE_LONG" />
+      <PropertyRef Name="LANGUAGES" />
+      <PropertyRef Name="POSTAL_CODE_FORMAT" />
+      <PropertyRef Name="SHIPMENT_TYPE" />
+      <PropertyRef Name="DIAL_CODE" />
+    </Key>
+    <Property Name="COUNTRY_CODE" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="THREE_DIGIT_CODE" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="COUNTRY_NAME" Type="char" Nullable="false" MaxLength="35" />
+    <Property Name="COUNTRY_CODE_LONG" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="LANGUAGES" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="POSTAL_CODE_FORMAT" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="SHIPMENT_TYPE" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="DIAL_CODE" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TOS">
+    <Key>
+      <PropertyRef Name="TOS_ID" />
+    </Key>
+    <Property Name="TOS_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TERMS_OF_SERVICE" Type="varchar(max)" Nullable="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="datetime" />
+    <Property Name="ACTIVE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ACCOUNT_NO" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <Function Name="uSP_ADDRESS_BOOK_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ADDRESS_BOOK_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_ADDRESS_BOOK_IMPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ADDRESS_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="CITY" Type="varchar" Mode="In" />
+    <Parameter Name="STATE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="char" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_MON_THU" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_FRI" Type="varchar" Mode="In" />
+    <Parameter Name="COMMENTS" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ADDR_USED_FOR" Type="char" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_ADDRESS_BOOK_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ADDRESS_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="CITY" Type="varchar" Mode="In" />
+    <Parameter Name="STATE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="char" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_MON_THU" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_FRI" Type="varchar" Mode="In" />
+    <Parameter Name="COMMENTS" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ADDR_USED_FOR" Type="char" Mode="In" />
+    <Parameter Name="CREATED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LAST_UPDATED" Type="datetime" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_ADDRESS_BOOK_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ADDRESS_BOOK_ID" Type="int" Mode="In" />
+    <Parameter Name="ADDRESS_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="CITY" Type="varchar" Mode="In" />
+    <Parameter Name="STATE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="char" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_MON_THU" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_PICKUP_FRI" Type="varchar" Mode="In" />
+    <Parameter Name="COMMENTS" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_UPDATED" Type="datetime" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_ADV_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="PRIORITY" Type="varchar" Mode="In" />
+    <Parameter Name="AVERAGE_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="AVERAGE_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="PACKAGE_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="SHIPMENT_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="DISCOUNT" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_AUTHORIZED_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_AUTHORIZED_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="REFERENT_USER_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_AUTHORIZED_SELF_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="TELEPHONE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_AUTHORIZED_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="REFERENT_ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_ACCOUNT_REF_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_ACC_REF" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_DOCUMENTS_STORE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="COMMUNICATIONNUMBER" Type="varchar" Mode="In" />
+    <Parameter Name="LABELBYTE" Type="varbinary(max)" Mode="In" />
+    <Parameter Name="LABEL" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MANIFEST" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="INVOICE" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="LABELCREATEDDATE" Type="datetime" Mode="In" />
+    <Parameter Name="MANIFESTCREATEDDATE" Type="datetime" Mode="In" />
+    <Parameter Name="INVOICECREATEDDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_MAST_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="REFERENCED_CARRIER" Type="char" Mode="In" />
+    <Parameter Name="ACTIVE" Type="char" Mode="In" />
+    <Parameter Name="CLAIM_DELAY" Type="int" Mode="In" />
+    <Parameter Name="CUSTOMER_ACCOUNT_NO_LEVEL" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_MAST_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="REFERENCED_CARRIER" Type="char" Mode="In" />
+    <Parameter Name="ACTIVE" Type="char" Mode="In" />
+    <Parameter Name="CLAIM_DELAY" Type="int" Mode="In" />
+    <Parameter Name="CUSTOMER_ACCOUNT_NO_LEVEL" Type="varchar" Mode="In" />
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_PARAMETER_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_INFO" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_VALUE" Type="varchar" Mode="In" />
+    <Parameter Name="DESCRIPTION" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CARRIER_SERVICE_CODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CHECK_SIMULATION_EXIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ORIGIN" Type="varchar" Mode="In" />
+    <Parameter Name="DESTINATION" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CLAIM_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ISSUE_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="ISSUE_DESCRIPTION" Type="varchar" Mode="In" />
+    <Parameter Name="GOODS_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="DAMAGE_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="COST_OF_REPAIR" Type="decimal" Mode="In" />
+    <Parameter Name="WEIGHT_OF_DAMAGE_GOODS" Type="int" Mode="In" />
+    <Parameter Name="RESERVES_TAKEN" Type="char" Mode="In" />
+    <Parameter Name="CONSIGNMENT_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="RESERVES_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="INVOICE_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="BILL_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="ESTIMATION_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="CLAIM_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="CLOSE_DATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_CLAIM_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ISSUE_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="ISSUE_DESCRIPTION" Type="varchar" Mode="In" />
+    <Parameter Name="GOODS_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="DAMAGE_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="COST_OF_REPAIR" Type="decimal" Mode="In" />
+    <Parameter Name="WEIGHT_OF_DAMAGE_GOODS" Type="int" Mode="In" />
+    <Parameter Name="RESERVES_TAKEN" Type="char" Mode="In" />
+    <Parameter Name="CONSIGNMENT_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="RESERVES_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="INVOICE_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="BILL_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="ESTIMATION_FILE" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="CLAIM_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="CLOSE_DATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_CREATE_TARIFF_TABLE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_TABLE_NAME" Type="varchar" Mode="InOut" />
+    <Parameter Name="TARIFF_TYPE_OUT" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_CUSTOMER_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CUST_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="HQ_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_ACCOUNT" Type="char" Mode="In" />
+    <Parameter Name="CUST_CATEGORY" Type="char" Mode="In" />
+    <Parameter Name="CHIEF_CONTACT" Type="varchar" Mode="In" />
+    <Parameter Name="INDUSTRY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="LEGAL_FORM" Type="varchar" Mode="In" />
+    <Parameter Name="ADMIN_USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="MAN_POWER" Type="int" Mode="In" />
+    <Parameter Name="FIRMDATE" Type="datetime" Mode="In" />
+    <Parameter Name="KEY_CARRIER" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_CUSTOMER_SERVICE_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="LANGUAGE" Type="varchar" Mode="In" />
+    <Parameter Name="LASTUPDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_CUSTOMER_SERVICE_UPDATE_ADMIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_DEFERRED_PAYMENT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CLOSED_REF" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="TOTAL_AMOUNT" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_DELETE_PROFILE_FUNCTIONALITY_MAPPING" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_DELETE_RECORDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DELIVERY_DELAY_TABLE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_DELETE_TARIFF_TABLE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_TABLE_NAME" Type="char" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_DELIVERY_DELAY_IMPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DELIVERY_DELAY_TABLE" Type="varchar" Mode="In" />
+    <Parameter Name="ORIGIN" Type="char" Mode="In" />
+    <Parameter Name="DESTINATION" Type="char" Mode="In" />
+    <Parameter Name="DELAY" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_END_CUSTOMER_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CUST_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="DESIGNATION" Type="varchar" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="HQ_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_ACCOUNT" Type="char" Mode="In" />
+    <Parameter Name="CUST_CATEGORY" Type="char" Mode="In" />
+    <Parameter Name="CHIEF_CONTACT" Type="varchar" Mode="In" />
+    <Parameter Name="INDUSTRY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="LEGAL_FORM" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="INV_PHONE_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="INV_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="INV_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="USE_FOR_SHIPPING" Type="char" Mode="In" />
+    <Parameter Name="USE_FOR_RETURN" Type="char" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="PAYMENT_METHOD" Type="char" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_REQ" Type="char" Mode="In" />
+    <Parameter Name="TRANS_BUDGET_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_AGREED" Type="char" Mode="In" />
+    <Parameter Name="WISHED_BUDGET_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="ADMIN_USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE_CHANGED" Type="char" Mode="In" />
+    <Parameter Name="INSURED_CREDIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY_DAYS" Type="int" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY_MONTH" Type="int" Mode="In" />
+    <Parameter Name="COMPENSATION_RATE" Type="decimal" Mode="In" />
+    <Parameter Name="COMPENSATION_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="DEPOSIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="AUTHORIZED_CREDIT_LIMIT" Type="decimal" Mode="In" />
+    <Parameter Name="AUTHORIZED_CREDIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="CARRIER_ACCOUNT_REF" Type="varchar" Mode="In" />
+    <Parameter Name="AVAILABLE_CREDIT" Type="decimal" Mode="In" />
+    <Parameter Name="CREATED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="VAT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIRET_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_END_CUSTOMER_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="HQ_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TURN_OVER" Type="decimal" Mode="In" />
+    <Parameter Name="GROSS_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="ADV" Type="decimal" Mode="In" />
+    <Parameter Name="CUST_CATEGORY" Type="char" Mode="In" />
+    <Parameter Name="CUST_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="INDUSTRY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="LEGAL_FORM" Type="varchar" Mode="In" />
+    <Parameter Name="MAN_POWER" Type="int" Mode="In" />
+    <Parameter Name="CHIEF_CONTACT" Type="varchar" Mode="In" />
+    <Parameter Name="INV_PHONE_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="VAT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIRET_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="INV_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="INV_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="USE_FOR_SHIPPING" Type="char" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="INSURED_METHOD" Type="varchar" Mode="In" />
+    <Parameter Name="PAYMENT_METHOD" Type="char" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_REQ" Type="char" Mode="In" />
+    <Parameter Name="DEFERED_PAYMENT_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="TRANS_BUDGET_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="DEPOSIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY_DAYS" Type="int" Mode="In" />
+    <Parameter Name="KEY_ACCOUNT" Type="char" Mode="In" />
+    <Parameter Name="KEY_CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="SUBSCRIPTION_AMOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="EXTRA_INFO" Type="varchar(max)" Mode="In" />
+    <Parameter Name="FICTIVE_ACCOUNT" Type="char" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE_CHANGED" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_END_CUSTOMER_UPDATE_BY_ADMIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="INV_PHONE_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="INV_ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="INV_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="INV_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="USE_FOR_SHIPPING" Type="char" Mode="In" />
+    <Parameter Name="USE_FOR_RETURN" Type="char" Mode="In" />
+    <Parameter Name="SHIP_PREFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="PAYMENT_METHOD" Type="char" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_REQ" Type="char" Mode="In" />
+    <Parameter Name="TRANS_BUDGET_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_AGREED" Type="char" Mode="In" />
+    <Parameter Name="ADMIN_USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE_CHANGED" Type="char" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="VAT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIRET_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_FRANCHIS_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="LEGAL_FORM" Type="varchar" Mode="In" />
+    <Parameter Name="COMMERCIAL_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="MAN_POWER" Type="int" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="REGISTRATION_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="CITY" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_ZONE" Type="text" Mode="In" />
+    <Parameter Name="CREATED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE_CHANGED" Type="char" Mode="In" />
+    <Parameter Name="SCANNED_DOCUMENT" Type="xml" Mode="In" />
+    <Parameter Name="SIRET_NO" Type="varchar" Mode="In" />
+    <Parameter Name="VAT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY" Type="int" Mode="In" />
+    <Parameter Name="FIRM_CREATION_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="CARRIER_ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_FRANCHIS_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CONTACT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="LEGAL_FORM" Type="varchar" Mode="In" />
+    <Parameter Name="COMMERCIAL_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="MAN_POWER" Type="int" Mode="In" />
+    <Parameter Name="TEL_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FAX_NO" Type="varchar" Mode="In" />
+    <Parameter Name="REGISTRATION_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="CITY" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_ZONE" Type="text" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE_CHANGED" Type="char" Mode="In" />
+    <Parameter Name="SCANNED_DOCUMENT" Type="xml" Mode="In" />
+    <Parameter Name="LANGUAGE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_FRANCHIS_UPDATE_ADMIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="COMPANY_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_ZONE" Type="text" Mode="In" />
+    <Parameter Name="SCANNED_DOCUMENT" Type="xml" Mode="In" />
+    <Parameter Name="LANGUAGE" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ADDRESS_BOOK_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_ADDRESS_BOOK_SEARCH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SEARCH_STRING" Type="varchar" Mode="In" />
+    <Parameter Name="ADDR_USED_FOR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ALL_CARRIER_LABEL_MANIFEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAILID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ALL_CARRIER_NAMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_ASSGINED_USERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ASSIGNED_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_TARIFF" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_AUTHORIZED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_AUTHORIZED_USER_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_AUTO_FILL_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SEARCH_STRING" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNT" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_BYTELABEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_COMMUNIVATIONNUMBER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_DETAIL_FOR_TARIFF_REF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REF" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_ID" Type="int" Mode="InOut" />
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="InOut" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_INVOICE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_LABEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_LABEL_MANIFEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_MANIFEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIPPINGREFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_MAST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_PARAMETER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_INFO" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_PARAMETERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_INFO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_SERVICE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_CARRIER_SERVICE_CODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_SERVICE_DELIVERY_DELAY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_SERVICE_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PRIORITY" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIER_TARIFF_NAMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CARRIERSPECIFIC_SERVICE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_COMBO_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TABLE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="COLUMN_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CONFIRMED_SHIPING_ORDERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_GROUP_ID" Type="int" Mode="In" />
+    <Parameter Name="SESSION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="STATUS" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_COUNTRY_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_CREDIT_REQUEST_ACCEPT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="char" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CREDIT_REQUEST_ACCEPT_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="WISHED_BUDGET_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="INSURED_CREDIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY_DAYS" Type="int" Mode="In" />
+    <Parameter Name="GROSS_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="PAYMENT_DELAY_MONTH" Type="int" Mode="In" />
+    <Parameter Name="COMPENSATION_RATE" Type="decimal" Mode="In" />
+    <Parameter Name="AUTHORIZED_CREDIT_AMT" Type="decimal" Mode="In" />
+    <Parameter Name="DEFERRED_PAY_AGREED" Type="char" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CUSTOMER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LOGIN_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_CUSTOMER_SERVICE_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_DELIVERY_DELAY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ORGIN" Type="char" Mode="In" />
+    <Parameter Name="DESTINATION" Type="char" Mode="In" />
+    <Parameter Name="DELIVERY_DELAY" Type="varchar" Mode="In" />
+    <Parameter Name="RESULT" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_DELIVERY_DELAY_TABLE_NAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_DIALCODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CCODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_END_CUSTOMER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ENDCUSTOMER_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_FRANCHISE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LOGIN_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_FRANCHISE_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_FUEL_SURCHARGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_ACCOUNT_REF" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_AMOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="RESULT" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_FUNCTION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_FUNCTIONALITIES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_INDUSTRY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_INSURANCE_BROKER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_INSURANCE_RATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ISOCOUNTRYCODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CCODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_LANGUAGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="COUNTRY_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_LANGUAGE_CODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="COUNTRY_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="LANGUAGE" Type="varchar" Mode="In" />
+    <Parameter Name="RESOURCE_FILE_NAME" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_LANGUAGE_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LOGIN_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_MAIL_DETAIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_MONTHLY_FEES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USER_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_NEXT_COUNTER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="COUNTER_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="REQUIRED_COUNT" Type="int" Mode="In" />
+    <Parameter Name="NEW_COUNTER" Type="int" Mode="InOut" />
+    <Parameter Name="ERROR" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_OPEN_IMPORT_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_OPTIONCHARGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="OPTION" Type="varchar" Mode="In" />
+    <Parameter Name="OPTION_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTION_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTION_TOTAL" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_OPTIONS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="DELIVERY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="OPTION_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTION_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTIONS_TOTAL" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_PAYMENT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="ADMIN_MAIL" Type="varchar" Mode="InOut" />
+    <Parameter Name="ADMIN_PHONE" Type="varchar" Mode="InOut" />
+    <Parameter Name="AVAILABLE_CREDIT" Type="decimal" Mode="InOut" />
+    <Parameter Name="PAYMENT_METHOD" Type="varchar" Mode="InOut" />
+    <Parameter Name="USER_MAIL" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_POSTAL_CODE_FORMAT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="COUNTRY_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_PRIORITY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_PROFILE_FUNCTIONALITY_MAPPING" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_PUBLIC_MARGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ORIGIN" Type="char" Mode="In" />
+    <Parameter Name="DESTINATION" Type="char" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_TARIFF" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="RESULT" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_PUBLIC_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_PUBLIC_TARIFF_NAMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_REF_CARRIER_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="uSP_GET_SHIPMENT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_GROSS_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_HEADER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_SUB_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_SURCHARGE_DISCOUNT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SIMULATION_TARIFF_BASED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SPECIFIC_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="SHIP_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="DELIVERY_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="MAST_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="MARGIN" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_SURCHARGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ORIGIN" Type="varchar" Mode="In" />
+    <Parameter Name="DESTINATION" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="DELIVERY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="SURCHARGE_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_TOTAL" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_SURCHARGE_DET" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="SURCHARGE_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_SURCHARGE_MAST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_AMOUNT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="ZONE" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_TABLE" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="RESULT" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_AND_DELIVERY_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_TARIFF" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ORIGIN" Type="varchar" Mode="In" />
+    <Parameter Name="DESTINATION" Type="varchar" Mode="In" />
+    <Parameter Name="ZIP_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_DATE" Type="date" Mode="In" />
+    <Parameter Name="TARIFF_TABLE" Type="varchar" Mode="In" />
+    <Parameter Name="DELIVERY_DELAY_TABLE" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="CUSTOMER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="UOD_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="DELIVERY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="CALCULATED_TARIFF" Type="decimal" Mode="InOut" />
+    <Parameter Name="DELIVERY_DELAY" Type="int" Mode="InOut" />
+    <Parameter Name="MARGIN" Type="decimal" Mode="InOut" />
+    <Parameter Name="FUEL_SURCHARGE" Type="decimal" Mode="InOut" />
+    <Parameter Name="OPTION_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTION_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="DELIVERY_DATE" Type="datetime" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="CONTAINER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="InOut" />
+    <Parameter Name="TARIFF_TABLE" Type="varchar" Mode="InOut" />
+    <Parameter Name="TARIFF_TYPE" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_DETAILS_FOR_TOOL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_TARIFF" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ORIGIN" Type="varchar" Mode="In" />
+    <Parameter Name="DESTINATION" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="UOD_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="CALCULATED_TARIFF" Type="decimal" Mode="InOut" />
+    <Parameter Name="MARGIN" Type="decimal" Mode="InOut" />
+    <Parameter Name="FUEL_SURCHARGE" Type="decimal" Mode="InOut" />
+    <Parameter Name="OPTION_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_VALUES" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="OPTION_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+    <Parameter Name="SURCHARGE_DESCRIPTION" Type="varchar(max)" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_REFERENCE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_TARIFF_ZONE_NAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_TAXABLE_WEIGHT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="ORIGIN" Type="varchar" Mode="In" />
+    <Parameter Name="DESTINATION" Type="varchar" Mode="In" />
+    <Parameter Name="ZIPCODE" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="TAXABLE_WEIGHT" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_USERID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_VALUE_FROM_PARAMETER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="KEY_CODE" Type="varchar(max)" Mode="In" />
+    <Parameter Name="KEY_VALUE" Type="varchar(max)" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_GET_ZONE_COVERAGELIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ZONE_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZONE_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_GET_ZONE_SEARCH_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_INSERT_PROFILE_FUNCTIONALITY_MAPPING" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PROFILE_CODE" Type="char" Mode="In" />
+    <Parameter Name="FUNCTIONAL_CODE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_INSURANCE_BROKER_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BROKER_EMAIL_ADDRESS" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_LOGIN_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_LOGIN_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_LOGIN_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="STATUS" Type="char" Mode="In" />
+    <Parameter Name="SALE_TARIF_ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED" Type="char" Mode="In" />
+    <Parameter Name="TOS_ACCEPTED_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="LANGUAGE_CODE" Type="char" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+    <Parameter Name="CHANGE_PASSWORD_REQ" Type="char" Mode="In" />
+    <Parameter Name="CREATED_BY" Type="varchar" Mode="In" />
+    <Parameter Name="CREATED_USER_TYPE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_LOGIN_VALIDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USERID" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_MONTHLY_FEES_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="FEE_RATE" Type="decimal" Mode="In" />
+    <Parameter Name="SHIPMENT_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="ADMIN_ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_UPDATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_PROFILE_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PROFILE_CODE" Type="int" Mode="In" />
+    <Parameter Name="PROFILE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="PROFILE_DESC" Type="varchar" Mode="In" />
+    <Parameter Name="USER_TYPE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_PUBLIC_TARIFF_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CAPTION" Type="varchar" Mode="In" />
+    <Parameter Name="NAME" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="MINWT" Type="int" Mode="In" />
+    <Parameter Name="MAXWT" Type="int" Mode="In" />
+    <Parameter Name="DOM" Type="float" Mode="In" />
+    <Parameter Name="EUR" Type="float" Mode="In" />
+    <Parameter Name="INT" Type="float" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_DETAIL_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="TRACKING_NO" Type="varchar" Mode="In" />
+    <Parameter Name="PARAM_VALUES" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_CANCEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_DETAIL_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="PARCEL_NO" Type="int" Mode="In" />
+    <Parameter Name="CONTENT_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="CONTAINER" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="WEIGHT_UNIT" Type="varchar" Mode="In" />
+    <Parameter Name="LENGTH" Type="decimal" Mode="In" />
+    <Parameter Name="WIDTH" Type="decimal" Mode="In" />
+    <Parameter Name="HEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="DIMENSION_UNIT" Type="char" Mode="In" />
+    <Parameter Name="TAXABLE_WEIGHT" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_ZIP" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_ZIP" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="OPTIONS" Type="varchar" Mode="In" />
+    <Parameter Name="OPTIONS_CHARGES" Type="varchar" Mode="In" />
+    <Parameter Name="WISHED_SHIP_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="UOD_COUNT" Type="int" Mode="In" />
+    <Parameter Name="TOTAL_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="ORDER_CREATION_TIME" Type="datetime" Mode="In" />
+    <Parameter Name="CALCULATED_SHIP_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="CALCULATED_DELIVERY_TIME" Type="varchar" Mode="In" />
+    <Parameter Name="TAXABLE_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="FREIGHT_AMOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="FUEL_CHARGE" Type="decimal" Mode="In" />
+    <Parameter Name="CHOSEN_PREFERENCE" Type="char" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="TOTAL_AMOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="ORDER_TYPE" Type="char" Mode="In" />
+    <Parameter Name="GROUP_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_TEMP_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SESSION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="GROUP_ID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_SHIPMENT_ORDER_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SHIP_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="INSURED" Type="char" Mode="In" />
+    <Parameter Name="DECLARED_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="CURRENCY_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="PACKAGE_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="PACKAGE_MATERIAL" Type="varchar" Mode="In" />
+    <Parameter Name="CLOSING_MATERIAL" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_COMPANY" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_PHONE" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_STATE" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_COLLECT_DEADLINE" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_COMMENTS" Type="varchar" Mode="In" />
+    <Parameter Name="SAME_RETURN_ADDRESS" Type="char" Mode="In" />
+    <Parameter Name="RETURN_COMPANY" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_PHONE" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_ZIP" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_STATE" Type="varchar" Mode="In" />
+    <Parameter Name="RETURN_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_COMPANY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_PHONE" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_EMAIL" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_ADDRESS1" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_ADDRESS2" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_ADDRESS3" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_STATE" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_DEL_DEADLINE" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_COMMENTS" Type="varchar" Mode="In" />
+    <Parameter Name="CUST_INTERNAL_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="CUSTOMS_VALUE" Type="decimal" Mode="In" />
+    <Parameter Name="SENDER_NOTIFICATION" Type="char" Mode="In" />
+    <Parameter Name="RECIPIENT_NOTIFICATION" Type="char" Mode="In" />
+    <Parameter Name="SHIPPING_TIME" Type="datetime" Mode="In" />
+    <Parameter Name="STATUS" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="SENDER_ZIP" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="RECIPIENT_ZIP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_ASSIGN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT_FROM" Type="decimal" Mode="In" />
+    <Parameter Name="WEIGHT_TO" Type="decimal" Mode="In" />
+    <Parameter Name="AVG_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="SHIP_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="DELIVERY_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="MAST_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="DISCOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="CONTAINER_TYPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_HEADER_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED_TARIFF" Type="varchar" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="VALID" Type="datetime" Mode="In" />
+    <Parameter Name="WEIGHT_INCREMENT" Type="decimal" Mode="In" />
+    <Parameter Name="WEIGHT_LIMIT" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_SUB_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="TOTAL_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_ADV" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_FREIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_PURCHASE" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_CURRENT_DISCOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_PUBLIC" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_CURRENT_SALE" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_TURNOVER" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_GROSS_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_SALES_FRET_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_PROPOSED_SALES_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_SALES_TURNOVER" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_SALES_GROSS_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_COMPARE_SALES" Type="decimal" Mode="In" />
+    <Parameter Name="TOTAL_COMPARE_MARGIN" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_SURCHARGE_DISCOUNT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="SAFETY_DISCOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="FUEL_DISCOUNT" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_TARIFF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT_RANGE" Type="varchar" Mode="In" />
+    <Parameter Name="SHIP_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="DELIVERY_COUNTRY" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="AVERAGE_WEIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="ADV" Type="decimal" Mode="In" />
+    <Parameter Name="PURCHASE_FREIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="PURCHASE_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="PURCHASE_CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="PUBLIC_DISCOUNT" Type="decimal" Mode="In" />
+    <Parameter Name="PUBLIC_CARRIER" Type="varchar" Mode="In" />
+    <Parameter Name="PUBLIC_FREIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="PUBLIC_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="PUBLIC_TURNOVER" Type="decimal" Mode="In" />
+    <Parameter Name="SALE_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="SALE__FREIGHT" Type="decimal" Mode="In" />
+    <Parameter Name="SALE_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="SALE_TURNOVER" Type="decimal" Mode="In" />
+    <Parameter Name="SALE_GROSS_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="COMPARISON_SALE_TARIFF" Type="decimal" Mode="In" />
+    <Parameter Name="COMPARISON_MARGIN" Type="decimal" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="PUBLIC_SURCHARGE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_SIMULATION_TARIFF_BASED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="SIMULATION_ID" Type="varchar" Mode="In" />
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ASSIGNED" Type="char" Mode="In" />
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_CREATE_MASTER_SERVICE_TYPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_PRIORITY" Type="varchar" Mode="In" />
+    <Parameter Name="BULK_SHIPPING" Type="char" Mode="In" />
+    <Parameter Name="MASTER_TYPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_CREATION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CARRIER_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="CONTAINER_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="KEY_USER_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="START_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="END_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="INTERNAL_TARIFF_REF" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uSP_TARIFF_GET_FUEL_SURCHARGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_TYPE" Type="varchar" Mode="In" />
+    <Parameter Name="REFERRENCE_ACCOUNT" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_GET_FUEL_SURCHARGE_PARAM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_IMPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_TABLE" Type="varchar" Mode="In" />
+    <Parameter Name="WEIGHT_FROM" Type="float" Mode="In" />
+    <Parameter Name="WEIGHT_TO" Type="float" Mode="In" />
+    <Parameter Name="ZONE" Type="varchar" Mode="In" />
+    <Parameter Name="PURCHASE" Type="float" Mode="In" />
+    <Parameter Name="CALCULATED" Type="float" Mode="In" />
+    <Parameter Name="SERVICE_CODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_UPDATE_FUEL_SURCHARGE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="START_DATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_TARIFF_UPDATE_FUEL_SURCHARGE_PARAM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="PARAM_ID" Type="varchar" Mode="In" />
+    <Parameter Name="PARAM_VALUE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_TOS_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TERMS_OF_SERVICE" Type="varchar(max)" Mode="In" />
+    <Parameter Name="LAST_UPDATE_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="ACTIVE" Type="char" Mode="In" />
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_CARRIER_DELIVERY_DELAY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="ORIGIN" Type="char" Mode="In" />
+    <Parameter Name="DESTINATION" Type="char" Mode="In" />
+    <Parameter Name="DELAY" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_CARRIER_SERVICE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="SERVICE_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="DELIVERY_DEADLINE" Type="varchar" Mode="In" />
+    <Parameter Name="ACTIVE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_LAST_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USERID" Type="varchar" Mode="In" />
+    <Parameter Name="LAST_LOGIN" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_PASSWORD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCOUNT_NO" Type="varchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_SURCHARGE_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SERVICE_ID" Type="int" Mode="In" />
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="SURCHARGE_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="PARAM_ID" Type="varchar" Mode="In" />
+    <Parameter Name="PARAM_VALUE" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_SURCHARGE_MASTER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SURCHARGE_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ACTIVE" Type="char" Mode="In" />
+  </Function>
+  <Function Name="uSP_UPDATE_TARIFF_REFERENCE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="START_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="END_DATE" Type="datetime" Mode="In" />
+    <Parameter Name="ARCHIVED" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="uSP_VALIDATE_HQZIPCODE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HQZIPCODE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uSP_ZONE_CREATION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TARIFF_REFERENCE" Type="varchar" Mode="In" />
+    <Parameter Name="ZONE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="DIRECTION" Type="varchar" Mode="In" />
+    <Parameter Name="MASTER_SERVICE_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="GEOGRAPHICAL_COVERAGE" Type="varchar" Mode="In" />
+    <Parameter Name="COUNTRY_CODE" Type="char" Mode="In" />
+    <Parameter Name="COVERAGE_LIST" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ZONE_ID" Type="int" Mode="In" />
+    <Parameter Name="FLAG" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

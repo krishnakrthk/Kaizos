@@ -1,0 +1,5 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\AddressBookManager\bin\Release\AddressBookManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\AddressBookManager\bin\Release\AddressBookManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\AddressBookManager\obj\Release\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\AddressBookManager\obj\Release\AddressBookManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\AddressBookManager\obj\Release\AddressBookManager.pdb

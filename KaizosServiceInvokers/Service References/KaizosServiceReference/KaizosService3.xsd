@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" />
+  <xs:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Globalization" />
+  <xs:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary" />
+  <xs:element name="UpdateBrokerEmailId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBrokerEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateBrokerEmailIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShipmentDetailUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipmentReference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TrackingNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ParameterValues" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShipmentDetailUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipmentDetailUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationAssign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationTariff" nillable="true" type="q1:ArrayOfSSimulationTariff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationAssignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationAssignResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckForDuplicateCarrierName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCarrierName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckForDuplicateCarrierNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckForDuplicateCarrierNameResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCarrier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCarrier" nillable="true" type="q2:SCarrier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCarrierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateCarrierResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCarrier" nillable="true" type="q3:SCarrier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCarrierResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarriers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarriersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarriersResult" nillable="true" type="q4:ArrayOfSCarrier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCarrierName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierResult" nillable="true" type="q5:SCarrier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarrierProcessing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentOrder" nillable="true" type="q6:SShipmentOrder" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sEnumCarrierProcess" type="q7:SEnumCarrierProcess" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarrierProcessingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="CarrierProcessingResult" nillable="true" type="q8:SShipmentOrder" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCarrierProcessResult" nillable="true" type="q9:SCarrierProcessResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeasability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentOrder" nillable="true" type="q10:SShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeasabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFeasabilityResult" nillable="true" type="q11:SShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierOutput">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipDetail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierOutputResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierOutputResult" nillable="true" type="q12:ArrayOfSCarrierOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCarrierOutput">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipDetail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCarrierOutputResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAllCarrierOutputResult" nillable="true" type="q13:ArrayOfSCarrierOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetQuote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentOrder" nillable="true" type="q14:SShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetQuoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetQuoteResult" nillable="true" type="q15:ArrayOfSShipmentQuotation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmShipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentOrder" nillable="true" type="q16:SShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmShipmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmShipmentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShipmentDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iGroupID" type="xs:int" />
+        <xs:element minOccurs="0" name="strSessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShipmentDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetShipmentDetailsResult" nillable="true" type="q17:ArrayOfSShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipmentReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetOrderInformationResult" nillable="true" type="q18:SShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeferredPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ClosedReference" nillable="true" type="q19:ArrayOfstring" />
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fTotalAmount" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeferredPaymentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeferredPaymentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteShipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipmentReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteShipmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteShipmentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelShipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShipmentReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelShipmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelShipmentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarrierProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bShipmentOrder" nillable="true" type="q20:ArrayOfSShipmentOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarrierProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CarrierProcessResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextCounter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KeyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CounterType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequiredCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextCounterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetNextCounterResult" nillable="true" type="q21:SNextcounter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentMethodAndInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strAccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUserType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentMethodAndInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetPaymentMethodAndInfoResult" nillable="true" type="q22:SPaymentInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCarrierNames">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCarrierNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAllCarrierNamesResult" nillable="true" type="q23:ArrayOfSTariffMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationHeaderInsert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationHeader" nillable="true" type="q24:SSimulationHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationHeaderInsertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationHeaderInsertResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationSurchargeDiscount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationSurchargeDiscount" nillable="true" type="q25:ArrayOfSSimulationSurchargeDiscount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationSurchargeDiscountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationSurchargeDiscountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationTariff" nillable="true" type="q26:ArrayOfSSimulationTariff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationTariffResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationTariffBased">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationTariffBased" nillable="true" type="q27:ArrayOfSSimulationTariffBased" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationTariffBasedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationTariffBasedResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationSubTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sSimulationSubTotal" nillable="true" type="q28:SSimulationSubTotal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimulationSubTotalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationSubTotalResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignedUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignedUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAssignedUsersResult" nillable="true" type="q29:ArrayOfSUserID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationIDResult" nillable="true" type="q30:ArrayOfSSimulationList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationTariffResult" nillable="true" type="q31:ArrayOfSSimulationTariff" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationHeader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationHeaderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationHeaderResult" nillable="true" type="q32:SSimulationHeader" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSurchargeDiscount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSurchargeDiscountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationSurchargeDiscountResult" nillable="true" type="q33:ArrayOfSSimulationSurchargeDiscount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationTariffBased">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationTariffBasedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationTariffBasedResult" nillable="true" type="q34:ArrayOfSSimulationTariffBased" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSubTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSubTotalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationSubTotalResult" nillable="true" type="q35:SSimulationSubTotal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSurcharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariifReference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Weight" type="xs:float" />
+        <xs:element minOccurs="0" name="MasterServiceName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationSurchargeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationSurchargeResult" nillable="true" type="q36:SSurchargeDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelSurcharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariifReference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Weight" type="xs:float" />
+        <xs:element minOccurs="0" name="MasterServiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TariffAmount" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelSurchargeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFuelSurchargeResult" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSimulationID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSimulationIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSimulationIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationGrossTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimulationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSimulationGrossTotalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSimulationGrossTotalResult" nillable="true" type="q37:ArrayOfSSimulationSubTotal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getBrokerEmailId">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getBrokerEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getBrokerEmailIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMasterTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bTariffMaster" nillable="true" type="q38:STariffMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMasterTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="CreateMasterTariffResult" nillable="true" type="q39:STariffCreationAcknowledgement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpenImportTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CarrierName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpenImportTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetOpenImportTariffResult" nillable="true" type="q40:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CarrierName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sTariffCalculationRule" nillable="true" type="q41:ArrayOfSTariffCalculationRule" />
+        <xs:element minOccurs="0" name="tariffFile" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="ImportTariffResult" nillable="true" type="q42:ArrayOfSFileImportStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffReference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CarrierName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TariffType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffReferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetTariffReferenceResult" nillable="true" type="q43:ArrayOfSTariffReferenceList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTariffReference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Archived" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTariffReferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateTariffReferenceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateZone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="zone" nillable="true" type="q44:SZone" />
+        <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZoneID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateZoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateZoneResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneSearchDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneSearchDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetZoneSearchDetailsResult" nillable="true" type="q45:ArrayOfSZoneSearchDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ZoneID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetZoneDetailsResult" nillable="true" type="q46:SZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffZoneName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffZoneNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetTariffZoneNameResult" nillable="true" type="q47:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneCoverageList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZoneCoverageListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetZoneCoverageListResult" nillable="true" type="q48:ArrayOfSZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurchargeMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurchargeMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSurchargeMasterResult" nillable="true" type="q49:ArrayOfSSurchargeMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurchargeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffReference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SurchargeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurchargeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetSurchargeDetailsResult" nillable="true" type="q50:ArrayOfSSurchargeDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSurchargeMater">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SurchargeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MasterServiceName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="Active" type="q51:SEnumFlag" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSurchargeMaterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSurchargeMaterResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSurchargeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bSurchargeDetails" nillable="true" type="q52:ArrayOfSSurchargeDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSurchargeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSurchargeDetailsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetPublicTariffResult" nillable="true" type="q53:ArrayOfSPublicTariffSearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sPublicTariffUpdated" nillable="true" type="q54:ArrayOfSPublicTariffSearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePublicTariffResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isAlreadyExist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MasterType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isAlreadyExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isAlreadyExistResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMasterTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sTariffMaster" nillable="true" type="q55:STariffMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMasterTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateMasterTariffResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCarrierService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCarrierService" nillable="true" type="q56:ArrayOfSCarrierService" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCarrierServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCarrierServiceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierServiceForMaster">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierServiceForMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierServiceForMasterResult" nillable="true" type="q57:ArrayOfSCarrierService" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailForAssignTariff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailForAssignTariffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetUserDetailForAssignTariffResult" nillable="true" type="q58:SUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getvalidatezone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="zonecountry" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tariffreference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Geographical_coverage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zone_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetvalidatezoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetvalidatezoneResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSingleShipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentOrder" nillable="true" type="q59:SShipmentOrder" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sShipmentQuotation" nillable="true" type="q60:SShipmentQuotation" />
+        <xs:element minOccurs="0" name="strSessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSingleShipmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateSingleShipmentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTariffNames">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTariffNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPublicTariffNamesResult" nillable="true" type="q61:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierTariffNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Carrier" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierTariffNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierTariffNamesResult" nillable="true" type="q62:ArrayOfSTariffMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffAssignedCarrierNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TariffType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTariffAssignedCarrierNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetTariffAssignedCarrierNamesResult" nillable="true" type="q63:ArrayOfSTariffMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetQuoteForTool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sTariffMaster" nillable="true" type="q64:ArrayOfSTariffMaster" />
+        <xs:element minOccurs="0" name="AssignedTariff" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UODType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MasterServiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Weight" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetQuoteForToolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetQuoteForToolResult" nillable="true" type="q65:ArrayOfSShipmentQuotation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sTariffMaster" nillable="true" type="q66:ArrayOfSTariffMaster" />
+        <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Weight" nillable="true" type="q67:ArrayOffloat" />
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MasterServiceName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDiscountResult" nillable="true" type="q68:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLanguageResult" nillable="true" type="q69:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguageList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguageListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLanguageListResult" nillable="true" type="q70:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillCountryCombo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillCountryComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="FillCountryComboResult" nillable="true" type="q71:ArrayOfSCountryTable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidatePasswordResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="length" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePasswordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentUserID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendMessageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CityZipcodeAutoFill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Count" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CityZipcodeAutoFillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CityZipcodeAutoFillResult" nillable="true" type="q72:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateTimeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportAddressBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addressBookFile" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportAddressBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="ImportAddressBookResult" nillable="true" type="q73:ArrayOfSFileImportStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunction">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetFunctionResult" nillable="true" type="q74:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isNumericValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="val" nillable="true" type="xs:string" />
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/System.Globalization" minOccurs="0" name="NumberStyle" type="q75:NumberStyles" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isNumericValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isNumericValidationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isAlphaNumericValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="val" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isAlphaNumericValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isAlphaNumericValidationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueFromParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="KeyCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValueFromParameterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetValueFromParameterResult" nillable="true" type="q76:SKeyValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendConfirmPassord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentUserID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendConfirmPassordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendConfirmPassordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsValidZidcode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Zipcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsValidZidcodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsValidZidcodeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefCarrierList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefCarrierListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAllRefCarrierListResult" nillable="true" type="q77:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePostalcode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strActualFormat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strZipcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePostalcodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidatePostalcodeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strBody" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendMailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMasterService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sMasterServiceType" nillable="true" type="q78:SMasterServiceType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMasterServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateMasterServiceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelCharge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tariffType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="keyAccountRef" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelChargeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFuelChargeResult" nillable="true" type="q79:ArrayOfSFuelSurcharge" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelChargeParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serviceID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFuelChargeParameterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFuelChargeParameterResult" nillable="true" type="q80:ArrayOfSFuelSurchargeParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFuelChargeParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sFuelSurchargeParameter" nillable="true" type="q81:ArrayOfSFuelSurchargeParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFuelChargeParameterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFuelChargeParameterResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFuelChargeStartDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ServiceId" type="xs:int" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFuelChargeStartDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFuelChargeStartDateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierService">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierServiceResult" nillable="true" type="q82:ArrayOfSCarrierService" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrierService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCarrierService" nillable="true" type="q83:ArrayOfSCarrierService" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrierServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCarrierServiceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierServiceDeliveryDelay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serviceID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarrierServiceDeliveryDelayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCarrierServiceDeliveryDelayResult" nillable="true" type="q84:ArrayOfSDeliveryDelay" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrierServiceDelay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ServiceID" type="xs:int" />
+        <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Delay" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCarrierServiceDelayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCarrierServiceDelayResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportDeliveryDelay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ServiceID" type="xs:int" />
+        <xs:element minOccurs="0" name="stream" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportDeliveryDelayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="ImportDeliveryDelayResult" nillable="true" type="q85:ArrayOfSFileImportStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerServiceList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerServiceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCustomerServiceListResult" nillable="true" type="q86:ArrayOfSFranchiseContact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerServiceUpdateAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerServiceUpdateAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerServiceUpdateAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndustry">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndustryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetIndustryResult" nillable="true" type="q87:ArrayOfSIndustry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCustomer" nillable="true" type="q88:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCustomerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertEndCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCustomer" nillable="true" type="q89:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertEndCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertEndCustomerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateHQZipcode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HQZipcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateHQZipcodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateHQZipcodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEndCustomerByAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCustomer" nillable="true" type="q90:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEndCustomerByAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEndCustomerByAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerCredit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerCreditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCustomerCreditResult" nillable="true" type="q91:ArrayOfSCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerCredit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WishedAmt" type="xs:decimal" />
+        <xs:element minOccurs="0" name="InsuredAmt" type="xs:decimal" />
+        <xs:element minOccurs="0" name="PaymentDelayDay" type="xs:int" />
+        <xs:element minOccurs="0" name="GrossMargin" type="xs:decimal" />
+        <xs:element minOccurs="0" name="PaymentDelayMonth" type="xs:int" />
+        <xs:element minOccurs="0" name="CompensationRate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="AuthorizedCreditAmt" type="xs:decimal" />
+        <xs:element minOccurs="0" name="DeferredPaymentAgreed" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerCreditResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerCreditResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthorizedList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthorizedListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAuthorizedListResult" nillable="true" type="q92:ArrayOfSAuthorized" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAuthorize">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RefAccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAuthorizeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAuthorizeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAuthorized">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sAuthorize" nillable="true" type="q93:SAuthorized" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAuthorizedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAuthorizedResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAuthorizedSelf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAuthorizedSelfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAuthorizedSelfResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthorized">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthorizedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAuthorizedResult" nillable="true" type="q94:SAuthorized" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEndCustomerList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEndCustomerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetEndCustomerListResult" nillable="true" type="q95:ArrayOfSFranchiseContact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accountNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEndCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sCustomer" nillable="true" type="q96:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEndCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEndCustomerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAdv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sAdv" nillable="true" type="q97:ArrayOfSAdv" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAdvResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAdvResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEndCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEndCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetEndCustomerResult" nillable="true" type="q98:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFranchiseAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bFranchise" nillable="true" type="q99:SFranchise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFranchiseAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFranchiseAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAuthorized">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAuthorizedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAuthorizedResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCarrierAccountRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CarrierAccList" nillable="true" type="q100:ArrayOfstring" />
+        <xs:element xmlns:q101="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CarrierAcc" nillable="true" type="q101:ArrayOfstring" />
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCarrierAccountRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCarrierAccountRefResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPostalCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCountryCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPostalCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPostalCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillCombo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sComboTableField" nillable="true" type="q102:SComboTableField" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FillComboResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="FillComboResult" nillable="true" type="q103:ArrayOfSComboText" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EncryptString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Passphrase" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EncryptStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EncryptStringResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DecryptString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Passphrase" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DecryptStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DecryptStringResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bComboTableField" nillable="true" type="q104:SComboTableField" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetFieldValueResult" nillable="true" type="q105:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateZipCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateZipCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateZipCodeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyFaualContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary" minOccurs="0" name="sGeneralFault" nillable="true" type="q106:SGeneralFault" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyFaualContractResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertToS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="tos" nillable="true" type="q107:SToS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertToSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertToSResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SpInsertTos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="tos" nillable="true" type="q108:SToS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SpInsertTosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SpInsertTosResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveToS">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveToSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetActiveToSResult" nillable="true" type="q109:SToS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAddressBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sAddressBook" nillable="true" type="q110:SAddressBook" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAddressBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAddressBookResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddress">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAddressResult" nillable="true" type="q111:ArrayOfSAddressBook" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressBookSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedFor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressBookSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAddressBookSearchResult" nillable="true" type="q112:ArrayOfSAddressBook" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bAddressBook" nillable="true" type="q113:SAddressBook" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAddressResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddressID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAddressResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressnew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedFor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="scountry" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressnewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetAddressnewResult" nillable="true" type="q114:ArrayOfSAddressBook" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateUserResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetLoginResult" nillable="true" type="q115:SUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFranchise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Accountno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFranchiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFranchiseResult" nillable="true" type="q116:SFranchise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetCustomerResult" nillable="true" type="q117:SCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLastLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentDateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLastLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateLastLoginResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionality">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionalityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFunctionalityResult" nillable="true" type="q118:ArrayOfSFunctionality" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionalProfile">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFunctionalProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFunctionalProfileResult" nillable="true" type="q119:ArrayOfSFunctionalProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFunctionalProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="lsFunctionalProfile" nillable="true" type="q120:ArrayOfSFunctionalProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFunctionalProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertFunctionalProfileResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFunctionalProfile">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFunctionalProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFunctionalProfileResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmailID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateEmailResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFranchise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bFranchise" nillable="true" type="q121:SFranchise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertFranchiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertFranchiseResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFranchise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="bFranchise" nillable="true" type="q122:SFranchise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFranchiseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFranchiseResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMonthlyFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="sMonthlyFee" nillable="true" type="q123:SMonthlyFee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMonthlyFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertMonthlyFeeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFranchiseList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFranchiseListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetFranchiseListResult" nillable="true" type="q124:ArrayOfSFranchiseContact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthlyFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthlyFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" minOccurs="0" name="GetMonthlyFeesResult" nillable="true" type="q125:ArrayOfSMonthlyFee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmPasswordResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguageResource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLanguageCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLanguageResourceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLanguageResourceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerServiceUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerServiceUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerServiceUpdateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.pdb
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.dll
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.pdb
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.dll
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.pdb
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.dll
+F:\WDIR\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\KaizosFunctionalServiceLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\TariffManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Debug\KaizosFunctionalServiceLibrary.pdb

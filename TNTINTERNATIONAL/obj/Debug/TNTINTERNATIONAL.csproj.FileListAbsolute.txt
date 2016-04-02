@@ -1,0 +1,9 @@
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\BusinessEntities.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\BusinessEntities.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\obj\Debug\ResolveAssemblyReference.cache
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\TNTINTERNATIONAL.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\TNTINTERNATIONAL.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\obj\Debug\TNTINTERNATIONAL.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\obj\Debug\TNTINTERNATIONAL.pdb
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\KaizosEntities.dll
+D:\KaizooWorkingVersionLocal\Kaizos\TNTINTERNATIONAL\bin\Debug\KaizosEntities.pdb

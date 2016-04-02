@@ -1,0 +1,5 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Release\CarrierManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Release\CarrierManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Release\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Release\CarrierManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Release\CarrierManager.pdb

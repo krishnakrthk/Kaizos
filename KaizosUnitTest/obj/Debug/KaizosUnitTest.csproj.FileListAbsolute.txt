@@ -1,0 +1,7 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosServiceInvokers.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosServiceInvokers.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\obj\Debug\KaizosUnitTest.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\obj\Debug\KaizosUnitTest.pdb

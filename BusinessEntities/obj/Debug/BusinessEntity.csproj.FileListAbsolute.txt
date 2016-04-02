@@ -1,0 +1,10 @@
+F:\WDIR\Kaizos\BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\BusinessEntities\bin\Debug\BusinessEntities.dll
+F:\WDIR\Kaizos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+F:\WDIR\Kaizos\BusinessEntities\obj\Debug\BusinessEntities.dll
+F:\WDIR\Kaizos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\BusinessEntities\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\BusinessEntities\obj\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\BusinessEntities\obj\Debug\BusinessEntities.pdb

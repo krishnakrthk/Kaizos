@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F77EF24-C7CE-4FFA-9673-A9C776B55D28}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kaizos</RootNamespace>
+    <AssemblyName>Kaizos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\Program Files\AjaxToolKit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Log4Net\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="OnBarcode.Barcode.ASPNET, Version=6.0.0.0, Culture=neutral, PublicKeyToken=a775cebcbc8b82dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\OnBarcode.Barcode.ASPNET.dll</HintPath>
+    </Reference>
+    <Reference Include="OptionCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\OptionCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Carriers\GLS\frmGLSDisplay.aspx" />
+    <Content Include="Carriers\GLS\frmManifest.aspx" />
+    <Content Include="Carriers\GLS\GLSCarrier.aspx" />
+    <Content Include="Carriers\GLS\glslogo.JPG" />
+    <Content Include="Carriers\GLS\Kaizos_Logo.JPG" />
+    <Content Include="Carriers\TNTInternational\frmDisplayTNTinternational.aspx" />
+    <Content Include="Carriers\TNTInternational\Label.aspx" />
+    <Content Include="Carriers\TNTInternational\TNTNINTERNATIONALMANIFEST.aspx" />
+    <Content Include="Carriers\TNTNational\LabelTNTnat.aspx" />
+    <Content Include="Carriers\TNTNational\ManifestTNTNat.aspx" />
+    <Content Include="contact.htm" />
+    <Content Include="CSS\fonts\generator_config.txt" />
+    <Content Include="CSS\fonts\MarvelBold-demo.html" />
+    <Content Include="CSS\fonts\MarvelBoldItalic-demo.html" />
+    <Content Include="CSS\fonts\MarvelItalic-demo.html" />
+    <Content Include="CSS\fonts\MarvelRegular-demo.html" />
+    <Content Include="CSS\fonts\specimen_files\easytabs.js" />
+    <Content Include="CSS\fonts\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="CSS\fonts\specimen_files\specimen_stylesheet.css" />
+    <Content Include="CSS\fonts\stylesheet.css" />
+    <Content Include="CSS\ie.css" />
+    <Content Include="CSS\ie7-.css" />
+    <Content Include="CSS\ie8-.css" />
+    <Content Include="CSS\Kaizos.css" />
+    <Content Include="CSS\std.css" />
+    <Content Include="frmActivate.aspx" />
+    <Content Include="frmAddressBook.aspx" />
+    <Content Include="frmAddressBookImport.aspx" />
+    <Content Include="frmAddressBookList.aspx" />
+    <Content Include="frmAddressBookUpdate.aspx" />
+    <Content Include="frmAuthorized.aspx" />
+    <Content Include="frmAuthorizedUpdate.aspx" />
+    <Content Include="frmAuthorizedUpdateSelf.aspx" />
+    <Content Include="frmAuthorizedUserList.aspx" />
+    <Content Include="frmCancelShipment.aspx" />
+    <Content Include="frmCarrier.aspx" />
+    <Content Include="frmcarrierLabelDisplay.aspx" />
+    <Content Include="frmCarrierList.aspx" />
+    <Content Include="frmConfirmPassword.aspx" />
+    <Content Include="frmCreditRequestAccept.aspx" />
+    <Content Include="frmCustomer.aspx" />
+    <Content Include="frmCustomerService.aspx" />
+    <Content Include="frmCustomerServiceList.aspx" />
+    <Content Include="frmCustomerServiceUpdate.aspx" />
+    <Content Include="frmCustomerServiceUpdateAdmin.aspx" />
+    <Content Include="frmDeliveryDelayImport.aspx" />
+    <Content Include="frmDeliveryDelayUpdate.aspx" />
+    <Content Include="frmDisplayShipmentResult.aspx" />
+    <Content Include="frmEndCustomer.aspx" />
+    <Content Include="frmEndCustomerLevel1.aspx" />
+    <Content Include="frmEndCustomerList.aspx" />
+    <Content Include="frmEndCustomerUpdate.aspx" />
+    <Content Include="frmFranchiseList.aspx" />
+    <Content Include="frmFranchiseUpdate.aspx" />
+    <Content Include="frmFranchiseUpdateByAdmin.aspx" />
+    <Content Include="frmFranshise.aspx" />
+    <Content Include="frmFuelSurchargeManagement.aspx" />
+    <Content Include="frmGrossMarginCalculation.aspx" />
+    <Content Include="frmInsuranceBroker.aspx" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="frmLogout.aspx" />
+    <Content Include="frmMain.aspx" />
+    <Content Include="frmManualShipping.aspx" />
+    <Content Include="frmMasterServiceTypeCreation.aspx" />
+    <Content Include="frmMasterServiceTypeUpdate.aspx" />
+    <Content Include="frmPasswordRecovery.aspx" />
+    <Content Include="frmProfile.aspx" />
+    <Content Include="frmProfileFunctionalityMapping.aspx" />
+    <Content Include="frmPublicTariff.aspx" />
+    <Content Include="frmResult.aspx" />
+    <Content Include="frmResultLogin.aspx" />
+    <Content Include="frmShipmentConfirmation.aspx" />
+    <Content Include="frmTariffCreation.aspx" />
+    <Content Include="frmTariffDelayInterrogation.aspx" />
+    <Content Include="frmTariffImportation.aspx" />
+    <Content Include="frmTariffOptionsAndSurcharge.aspx" />
+    <Content Include="frmTariffValidity.aspx" />
+    <Content Include="frmTos.aspx" />
+    <Content Include="frmTosAccept.aspx" />
+    <Content Include="frmTOSShow.aspx" />
+    <Content Include="frmZoneCreationUpdate.aspx" />
+    <Content Include="frmZoneSearch.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="help.htm" />
+    <Content Include="Image\Actions-address-book-new-icon.png" />
+    <Content Include="Image\AddAddress.png" />
+    <Content Include="Image\AddAddress_.png" />
+    <Content Include="Image\Assigned.png" />
+    <Content Include="Image\Back.png" />
+    <Content Include="Image\body.png" />
+    <Content Include="Image\delete.png" />
+    <Content Include="Image\delete_1.png" />
+    <Content Include="Image\delete_2.png" />
+    <Content Include="Image\delete_3.png" />
+    <Content Include="Image\delete_4.png" />
+    <Content Include="Image\Delete_Summary.png" />
+    <Content Include="Image\Edit.png" />
+    <Content Include="Image\Edit_1.png" />
+    <Content Include="Image\Export.png" />
+    <Content Include="Image\glslogo.JPG" />
+    <Content Include="Image\header.PNG" />
+    <Content Include="Image\Import.png" />
+    <Content Include="Image\Kaizos_Logo.JPG" />
+    <Content Include="Image\left_arrow.png" />
+    <Content Include="Image\Logout.png" />
+    <Content Include="Image\Log_out_msg.png" />
+    <Content Include="Image\Menu.PNG" />
+    <Content Include="Image\Menu_Sub.PNG" />
+    <Content Include="Image\Menu_Sub_hover.PNG" />
+    <Content Include="Image\more.png" />
+    <Content Include="Image\more_1.png" />
+    <Content Include="Image\more_2.png" />
+    <Content Include="Image\more_o.png" />
+    <Content Include="Image\PickAddress.png" />
+    <Content Include="Image\Reset.png" />
+    <Content Include="Image\Shipment.png" />
+    <Content Include="Image\submit.png" />
+    <Content Include="Image\submit_1.png" />
+    <Content Include="Image\TNTLOGO.bmp" />
+    <Content Include="Image\Truck.png" />
+    <Content Include="Image\user.jpg" />
+    <Content Include="img\blocs\d1.jpg" />
+    <Content Include="img\blocs\d2.jpg" />
+    <Content Include="img\blocs\description_header.png" />
+    <Content Include="img\blocs\description_separator.gif" />
+    <Content Include="img\blocs\feature_item_bg.png" />
+    <Content Include="img\blocs\more_item.png" />
+    <Content Include="img\blocs\shipping_solution.png" />
+    <Content Include="img\blocs\spotlight_button.png" />
+    <Content Include="img\blocs\spotlight_separator.png" />
+    <Content Include="img\blocs\tracking.png" />
+    <Content Include="img\ico\warning.png" />
+    <Content Include="img\logo\cb.png" />
+    <Content Include="img\logo\verisign.png" />
+    <Content Include="img\main\bg_actions.png" />
+    <Content Include="img\main\bg_foot.png" />
+    <Content Include="img\main\bg_head.png" />
+    <Content Include="img\main\bg_head_home.png" />
+    <Content Include="img\main\bg_submenu.png" />
+    <Content Include="img\main\bg_td.gif" />
+    <Content Include="img\main\button_actions.png" />
+    <Content Include="img\main\highlight_actions.png" />
+    <Content Include="img\main\login_button.png" />
+    <Content Include="img\main\logo_kaizos.png" />
+    <Content Include="img\main\menu_button.png" />
+    <Content Include="img\main\menu_more.png" />
+    <Content Include="img\main\separator_foot.png" />
+    <Content Include="img\main\separator_menu2.png" />
+    <Content Include="index.htm" />
+    <Content Include="mentions_legales.htm" />
+    <Content Include="rejoignez-nous.htm" />
+    <Content Include="rptTariffDelayInterrogation.aspx" />
+    <Content Include="services.htm" />
+    <Content Include="Web.config" />
+    <Content Include="frmWelcomePage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\ErrorLog.cs" />
+    <Compile Include="App_Data\KaizosSession.cs" />
+    <Compile Include="App_GlobalResources\LocalString.fr-FR.designer.cs">
+      <DependentUpon>LocalString.fr-FR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\LocalString.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalString.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\GLS\DataSet2.Designer.cs" />
+    <Compile Include="Carriers\GLS\DataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\GLS\frmGLSDisplay.aspx.cs">
+      <DependentUpon>frmGLSDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\GLS\frmGLSDisplay.aspx.designer.cs">
+      <DependentUpon>frmGLSDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\GLS\frmManifest.aspx.cs">
+      <DependentUpon>frmManifest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\GLS\frmManifest.aspx.designer.cs">
+      <DependentUpon>frmManifest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\GLS\GLSCarrier.aspx.cs">
+      <DependentUpon>GLSCarrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\GLS\GLSCarrier.aspx.designer.cs">
+      <DependentUpon>GLSCarrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\GLS\GLSdataset.Designer.cs" />
+    <Compile Include="Carriers\GLS\GLSdataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GLSdataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\frmDisplayTNTinternational.aspx.cs">
+      <DependentUpon>frmDisplayTNTinternational.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\frmDisplayTNTinternational.aspx.designer.cs">
+      <DependentUpon>frmDisplayTNTinternational.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\Label.aspx.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\Label.aspx.designer.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\TNTNINTERNATIONALMANIFEST.aspx.cs">
+      <DependentUpon>TNTNINTERNATIONALMANIFEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\TNTInternational\TNTNINTERNATIONALMANIFEST.aspx.designer.cs">
+      <DependentUpon>TNTNINTERNATIONALMANIFEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTNational\LabelTNTnat.aspx.cs">
+      <DependentUpon>LabelTNTnat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\TNTNational\LabelTNTnat.aspx.designer.cs">
+      <DependentUpon>LabelTNTnat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTNational\ManifestTNTNat.aspx.cs">
+      <DependentUpon>ManifestTNTNat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carriers\TNTNational\ManifestTNTNat.aspx.designer.cs">
+      <DependentUpon>ManifestTNTNat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carriers\TNTNational\TNTNatonalManifest.cs" />
+    <Compile Include="frmActivate.aspx.cs">
+      <DependentUpon>frmActivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmActivate.aspx.designer.cs">
+      <DependentUpon>frmActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressBook.aspx.cs">
+      <DependentUpon>frmAddressBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAddressBook.aspx.designer.cs">
+      <DependentUpon>frmAddressBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressBookImport.aspx.cs">
+      <DependentUpon>frmAddressBookImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAddressBookImport.aspx.designer.cs">
+      <DependentUpon>frmAddressBookImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressBookList.aspx.cs">
+      <DependentUpon>frmAddressBookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAddressBookList.aspx.designer.cs">
+      <DependentUpon>frmAddressBookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressBookUpdate.aspx.cs">
+      <DependentUpon>frmAddressBookUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAddressBookUpdate.aspx.designer.cs">
+      <DependentUpon>frmAddressBookUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorized.aspx.cs">
+      <DependentUpon>frmAuthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAuthorized.aspx.designer.cs">
+      <DependentUpon>frmAuthorized.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorizedUpdate.aspx.cs">
+      <DependentUpon>frmAuthorizedUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAuthorizedUpdate.aspx.designer.cs">
+      <DependentUpon>frmAuthorizedUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorizedUpdateSelf.aspx.cs">
+      <DependentUpon>frmAuthorizedUpdateSelf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAuthorizedUpdateSelf.aspx.designer.cs">
+      <DependentUpon>frmAuthorizedUpdateSelf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorizedUserList.aspx.cs">
+      <DependentUpon>frmAuthorizedUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAuthorizedUserList.aspx.designer.cs">
+      <DependentUpon>frmAuthorizedUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelShipment.aspx.cs">
+      <DependentUpon>frmCancelShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCancelShipment.aspx.designer.cs">
+      <DependentUpon>frmCancelShipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarrier.aspx.cs">
+      <DependentUpon>frmCarrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCarrier.aspx.designer.cs">
+      <DependentUpon>frmCarrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmcarrierLabelDisplay.aspx.cs">
+      <DependentUpon>frmcarrierLabelDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmcarrierLabelDisplay.aspx.designer.cs">
+      <DependentUpon>frmcarrierLabelDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarrierList.aspx.cs">
+      <DependentUpon>frmCarrierList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCarrierList.aspx.designer.cs">
+      <DependentUpon>frmCarrierList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmPassword.aspx.cs">
+      <DependentUpon>frmConfirmPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmConfirmPassword.aspx.designer.cs">
+      <DependentUpon>frmConfirmPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditRequestAccept.aspx.cs">
+      <DependentUpon>frmCreditRequestAccept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditRequestAccept.aspx.designer.cs">
+      <DependentUpon>frmCreditRequestAccept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.aspx.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.aspx.designer.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerService.aspx.cs">
+      <DependentUpon>frmCustomerService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerService.aspx.designer.cs">
+      <DependentUpon>frmCustomerService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerServiceList.aspx.cs">
+      <DependentUpon>frmCustomerServiceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerServiceList.aspx.designer.cs">
+      <DependentUpon>frmCustomerServiceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerServiceUpdate.aspx.cs">
+      <DependentUpon>frmCustomerServiceUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerServiceUpdate.aspx.designer.cs">
+      <DependentUpon>frmCustomerServiceUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerServiceUpdateAdmin.aspx.cs">
+      <DependentUpon>frmCustomerServiceUpdateAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerServiceUpdateAdmin.aspx.designer.cs">
+      <DependentUpon>frmCustomerServiceUpdateAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeliveryDelayImport.aspx.cs">
+      <DependentUpon>frmDeliveryDelayImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDeliveryDelayImport.aspx.designer.cs">
+      <DependentUpon>frmDeliveryDelayImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeliveryDelayUpdate.aspx.cs">
+      <DependentUpon>frmDeliveryDelayUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDeliveryDelayUpdate.aspx.designer.cs">
+      <DependentUpon>frmDeliveryDelayUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayShipmentResult.aspx.cs">
+      <DependentUpon>frmDisplayShipmentResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDisplayShipmentResult.aspx.designer.cs">
+      <DependentUpon>frmDisplayShipmentResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndCustomer.aspx.cs">
+      <DependentUpon>frmEndCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEndCustomer.aspx.designer.cs">
+      <DependentUpon>frmEndCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndCustomerLevel1.aspx.cs">
+      <DependentUpon>frmEndCustomerLevel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEndCustomerLevel1.aspx.designer.cs">
+      <DependentUpon>frmEndCustomerLevel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndCustomerList.aspx.cs">
+      <DependentUpon>frmEndCustomerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEndCustomerList.aspx.designer.cs">
+      <DependentUpon>frmEndCustomerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndCustomerUpdate.aspx.cs">
+      <DependentUpon>frmEndCustomerUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEndCustomerUpdate.aspx.designer.cs">
+      <DependentUpon>frmEndCustomerUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFranchiseList.aspx.cs">
+      <DependentUpon>frmFranchiseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFranchiseList.aspx.designer.cs">
+      <DependentUpon>frmFranchiseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFranchiseUpdate.aspx.cs">
+      <DependentUpon>frmFranchiseUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFranchiseUpdate.aspx.designer.cs">
+      <DependentUpon>frmFranchiseUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFranchiseUpdateByAdmin.aspx.cs">
+      <DependentUpon>frmFranchiseUpdateByAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFranchiseUpdateByAdmin.aspx.designer.cs">
+      <DependentUpon>frmFranchiseUpdateByAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFranshise.aspx.cs">
+      <DependentUpon>frmFranshise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFranshise.aspx.designer.cs">
+      <DependentUpon>frmFranshise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuelSurchargeManagement.aspx.cs">
+      <DependentUpon>frmFuelSurchargeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFuelSurchargeManagement.aspx.designer.cs">
+      <DependentUpon>frmFuelSurchargeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrossMarginCalculation.aspx.cs">
+      <DependentUpon>frmGrossMarginCalculation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGrossMarginCalculation.aspx.designer.cs">
+      <DependentUpon>frmGrossMarginCalculation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsuranceBroker.aspx.cs">
+      <DependentUpon>frmInsuranceBroker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInsuranceBroker.aspx.designer.cs">
+      <DependentUpon>frmInsuranceBroker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogout.aspx.cs">
+      <DependentUpon>frmLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogout.aspx.designer.cs">
+      <DependentUpon>frmLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.aspx.cs">
+      <DependentUpon>frmMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMain.aspx.designer.cs">
+      <DependentUpon>frmMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualShipping.aspx.cs">
+      <DependentUpon>frmManualShipping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmManualShipping.aspx.designer.cs">
+      <DependentUpon>frmManualShipping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterServiceTypeCreation.aspx.cs">
+      <DependentUpon>frmMasterServiceTypeCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMasterServiceTypeCreation.aspx.designer.cs">
+      <DependentUpon>frmMasterServiceTypeCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterServiceTypeUpdate.aspx.cs">
+      <DependentUpon>frmMasterServiceTypeUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMasterServiceTypeUpdate.aspx.designer.cs">
+      <DependentUpon>frmMasterServiceTypeUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasswordRecovery.aspx.cs">
+      <DependentUpon>frmPasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPasswordRecovery.aspx.designer.cs">
+      <DependentUpon>frmPasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfile.aspx.cs">
+      <DependentUpon>frmProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProfile.aspx.designer.cs">
+      <DependentUpon>frmProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfileFunctionalityMapping.aspx.cs">
+      <DependentUpon>frmProfileFunctionalityMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProfileFunctionalityMapping.aspx.designer.cs">
+      <DependentUpon>frmProfileFunctionalityMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublicTariff.aspx.cs">
+      <DependentUpon>frmPublicTariff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPublicTariff.aspx.designer.cs">
+      <DependentUpon>frmPublicTariff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmResult.aspx.cs">
+      <DependentUpon>frmResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmResult.aspx.designer.cs">
+      <DependentUpon>frmResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultLogin.aspx.cs">
+      <DependentUpon>frmResultLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultLogin.aspx.designer.cs">
+      <DependentUpon>frmResultLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmShipmentConfirmation.aspx.cs">
+      <DependentUpon>frmShipmentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmShipmentConfirmation.aspx.designer.cs">
+      <DependentUpon>frmShipmentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTariffCreation.aspx.cs">
+      <DependentUpon>frmTariffCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTariffCreation.aspx.designer.cs">
+      <DependentUpon>frmTariffCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTariffDelayInterrogation.aspx.cs">
+      <DependentUpon>frmTariffDelayInterrogation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTariffDelayInterrogation.aspx.designer.cs">
+      <DependentUpon>frmTariffDelayInterrogation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTariffImportation.aspx.cs">
+      <DependentUpon>frmTariffImportation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTariffImportation.aspx.designer.cs">
+      <DependentUpon>frmTariffImportation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTariffOptionsAndSurcharge.aspx.cs">
+      <DependentUpon>frmTariffOptionsAndSurcharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTariffOptionsAndSurcharge.aspx.designer.cs">
+      <DependentUpon>frmTariffOptionsAndSurcharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTariffValidity.aspx.cs">
+      <DependentUpon>frmTariffValidity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTariffValidity.aspx.designer.cs">
+      <DependentUpon>frmTariffValidity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTos.aspx.cs">
+      <DependentUpon>frmTos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTos.aspx.designer.cs">
+      <DependentUpon>frmTos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTosAccept.aspx.cs">
+      <DependentUpon>frmTosAccept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTosAccept.aspx.designer.cs">
+      <DependentUpon>frmTosAccept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTOSShow.aspx.cs">
+      <DependentUpon>frmTOSShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTOSShow.aspx.designer.cs">
+      <DependentUpon>frmTOSShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmZoneCreationUpdate.aspx.cs">
+      <DependentUpon>frmZoneCreationUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmZoneCreationUpdate.aspx.designer.cs">
+      <DependentUpon>frmZoneCreationUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmZoneSearch.aspx.cs">
+      <DependentUpon>frmZoneSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmZoneSearch.aspx.designer.cs">
+      <DependentUpon>frmZoneSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="NewSite.master.cs">
+      <DependentUpon>NewSite.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptTariffDelayInterrogation.aspx.cs">
+      <DependentUpon>rptTariffDelayInterrogation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptTariffDelayInterrogation.aspx.designer.cs">
+      <DependentUpon>rptTariffDelayInterrogation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmWelcomePage.aspx.cs">
+      <DependentUpon>frmWelcomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmWelcomePage.aspx.designer.cs">
+      <DependentUpon>frmWelcomePage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntity.csproj">
+      <Project>{8627CDA8-BEA9-4DBF-A4B3-02B3743416D7}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KaizosServiceInvokers\KaizosServiceInvokers.csproj">
+      <Project>{652567A7-9397-4CD7-AD72-B4BFF7602E03}</Project>
+      <Name>KaizosServiceInvokers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\LocalString.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LocalString.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\LocalString.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LocalString.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Carriers\GLS\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <Content Include="Carriers\GLS\DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Carriers\GLS\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Carriers\GLS\GLSdataset.xsc">
+      <DependentUpon>GLSdataset.xsd</DependentUpon>
+    </None>
+    <Content Include="Carriers\GLS\GLSdataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GLSdataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Carriers\GLS\GLSdataset.xss">
+      <DependentUpon>GLSdataset.xsd</DependentUpon>
+    </None>
+    <None Include="Carriers\TNTInternational\vssver.scc" />
+    <None Include="Carriers\TNTNational\vssver.scc" />
+    <None Include="CSS\fonts\marvel-bold-webfont.eot" />
+    <None Include="CSS\fonts\marvel-bold-webfont.svg" />
+    <None Include="CSS\fonts\marvel-bold-webfont.ttf" />
+    <None Include="CSS\fonts\marvel-bold-webfont.woff" />
+    <None Include="CSS\fonts\marvel-bolditalic-webfont.eot" />
+    <None Include="CSS\fonts\marvel-bolditalic-webfont.svg" />
+    <None Include="CSS\fonts\marvel-bolditalic-webfont.ttf" />
+    <None Include="CSS\fonts\marvel-bolditalic-webfont.woff" />
+    <None Include="CSS\fonts\marvel-italic-webfont.eot" />
+    <None Include="CSS\fonts\marvel-italic-webfont.svg" />
+    <None Include="CSS\fonts\marvel-italic-webfont.ttf" />
+    <None Include="CSS\fonts\marvel-italic-webfont.woff" />
+    <None Include="CSS\fonts\marvel-regular-webfont.eot" />
+    <None Include="CSS\fonts\marvel-regular-webfont.svg" />
+    <None Include="CSS\fonts\marvel-regular-webfont.ttf" />
+    <None Include="CSS\fonts\marvel-regular-webfont.woff" />
+    <Content Include="NewSite.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Carriers\GLS\EmergencyReport.rdlc" />
+    <Content Include="Carriers\GLS\ManifestReport.rdlc" />
+    <Content Include="Carriers\GLS\NormalReport.rdlc" />
+    <Content Include="Carriers\GLS\Report1.rdlc" />
+    <Content Include="Carriers\GLS\Report2.rdlc" />
+    <Content Include="Carriers\TNTNational\Report2.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4676</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

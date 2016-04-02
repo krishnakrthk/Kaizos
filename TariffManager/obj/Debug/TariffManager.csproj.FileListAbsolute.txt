@@ -1,0 +1,17 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\TariffManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\TariffManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\TariffManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\TariffManager.pdb
+F:\WDIR\Kaizos\TariffManager\bin\Debug\TariffManager.dll
+F:\WDIR\Kaizos\TariffManager\bin\Debug\TariffManager.pdb
+F:\WDIR\Kaizos\TariffManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\TariffManager\obj\Debug\TariffManager.dll
+F:\WDIR\Kaizos\TariffManager\obj\Debug\TariffManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\TariffManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\TariffManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\TariffManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\TariffManager\obj\Debug\TariffManager.pdb

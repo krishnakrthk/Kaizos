@@ -1,0 +1,2 @@
+2011-10-05 20:12:01,537 [TestRunnerThread] DEBUG Kaizos.Components.UserManager.UserHandler  [(null)] - From Business Component :An error occurred while updating the entries. See the InnerException for details.Violation of PRIMARY KEY constraint 'PK_PROFILE'. Cannot insert duplicate key in object 'dbo.PROFILE'.
+The statement has been terminated.

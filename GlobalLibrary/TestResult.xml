@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\GlobalLibrary.csproj" total="1" errors="0" failures="0" not-run="0" ignored="0" skipped="0" invalid="0" date="2011-09-30" time="19:11:22">
+  <environment nunit-version="2.5.0.9122" clr-version="2.0.50727.3082" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary" machine-name="CHN37" user="admin" user-domain="CHN37" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\GlobalLibrary.csproj" executed="True" success="True" time="0.063" asserts="0">
+    <results>
+      <test-suite name="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll" executed="True" success="True" time="0.063" asserts="0">
+        <results>
+          <test-suite name="Kaizos" executed="True" success="True" time="0.063" asserts="0">
+            <results>
+              <test-suite name="Components" executed="True" success="True" time="0.063" asserts="0">
+                <results>
+                  <test-suite name="UnitTest" executed="True" success="True" time="0.063" asserts="0">
+                    <results>
+                      <test-suite name="LibraryUnitTest" executed="True" success="True" time="0.047" asserts="0">
+                        <results>
+                          <test-case name="Kaizos.Components.UnitTest.LibraryUnitTest.TestExtractError" executed="True" success="True" time="0.031" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

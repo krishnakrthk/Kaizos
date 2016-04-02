@@ -1,0 +1,4415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptInsurance" xml:space="preserve">
+    <value>J'accepte les conditions d'assurance.</value>
+  </data>
+  <data name="AcceptShipingCondition" xml:space="preserve">
+    <value>Je confirme ne pas expédier d'articles prohibés et j'accepte les conditions d'utilisation du service</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="AddBlock" xml:space="preserve">
+    <value>Ajouter un bloc</value>
+  </data>
+  <data name="AdditionalDetail" xml:space="preserve">
+    <value>Ajouter une ligne de détail</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="AddressType" xml:space="preserve">
+    <value>Type d'adresse</value>
+  </data>
+  <data name="AddShipment" xml:space="preserve">
+    <value>Ajouter une expédition</value>
+  </data>
+  <data name="AddToAddressBook" xml:space="preserve">
+    <value>Ajouter au carnet d'adresses</value>
+  </data>
+  <data name="AffectMargin" xml:space="preserve">
+    <value>Affecter les taux de marge brute</value>
+  </data>
+  <data name="Archived" xml:space="preserve">
+    <value>Archivé</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="CancelReference" xml:space="preserve">
+    <value>Référence de l'expédition Kaizos</value>
+  </data>
+  <data name="CancelShipping" xml:space="preserve">
+    <value>Supprimer cette expédition</value>
+  </data>
+  <data name="Carrier" xml:space="preserve">
+    <value>Transporteur</value>
+  </data>
+  <data name="CarrierType" xml:space="preserve">
+    <value>Type de transporteur</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ville*</value>
+    <comment>KM</comment>
+  </data>
+  <data name="CollectionDeadline" xml:space="preserve">
+    <value>Heure limite de collecte</value>
+  </data>
+  <data name="Commercial" xml:space="preserve">
+    <value>Commerciale</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Société*</value>
+  </data>
+  <data name="Conditions" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="Container" xml:space="preserve">
+    <value>Contenant</value>
+  </data>
+  <data name="ContainerGrossWeight" xml:space="preserve">
+    <value>Poids brut du contenant</value>
+  </data>
+  <data name="ContentType" xml:space="preserve">
+    <value>Type de contenu</value>
+  </data>
+  <data name="Pays" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="CustomerInternalRef" xml:space="preserve">
+    <value>Référence interne du client</value>
+  </data>
+  <data name="CustomsValue" xml:space="preserve">
+    <value>Valeur douanière</value>
+  </data>
+  <data name="DefaultPublic" xml:space="preserve">
+    <value>Tarif public par défaut</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Suppression</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Voulez-vous supprimer cette expédition ?</value>
+  </data>
+  <data name="DeleteResponse" xml:space="preserve">
+    <value>L'expédition a été supprimée</value>
+  </data>
+  <data name="DeleteShipment" xml:space="preserve">
+    <value>Expédition supprimée</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Livraison</value>
+  </data>
+  <data name="DeliveryAddress" xml:space="preserve">
+    <value>Adresse de livraison</value>
+  </data>
+  <data name="DeliveryDeadLine" xml:space="preserve">
+    <value>Heure limite de livraison*</value>
+    <comment>KM</comment>
+  </data>
+  <data name="DeliveryDelay" xml:space="preserve">
+    <value>Délai de livraison</value>
+  </data>
+  <data name="Destination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="Dimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="Domestic" xml:space="preserve">
+    <value>Domestique</value>
+  </data>
+  <data name="Economy" xml:space="preserve">
+    <value>Economie</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edition</value>
+  </data>
+  <data name="EditParameter" xml:space="preserve">
+    <value>Edition des paramètres</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Email*</value>
+    <comment>KM</comment>
+  </data>
+  <data name="EnableShipPreference" xml:space="preserve">
+    <value>disponible</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Date de fin</value>
+  </data>
+  <data name="Europe" xml:space="preserve">
+    <value>Europe</value>
+  </data>
+  <data name="ExportCSV" xml:space="preserve">
+    <value>Exporter au format CSV</value>
+  </data>
+  <data name="Express" xml:space="preserve">
+    <value>Express</value>
+  </data>
+  <data name="Fastest" xml:space="preserve">
+    <value>Le plus rapide</value>
+  </data>
+  <data name="GetQuote" xml:space="preserve">
+    <value>Obtenir un coût et un délai</value>
+  </data>
+  <data name="GrossMargin" xml:space="preserve">
+    <value>Remise (%)</value>
+    <comment>1142</comment>
+  </data>
+  <data name="GrossWeight" xml:space="preserve">
+    <value>Poids brut</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="Incoterm" xml:space="preserve">
+    <value>Incoterms</value>
+  </data>
+  <data name="IncotermDetails" xml:space="preserve">
+    <value>Détail des incoterms</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Insurance" xml:space="preserve">
+    <value>Assurance</value>
+  </data>
+  <data name="InsureThisShipment" xml:space="preserve">
+    <value>Assurer cette expédition</value>
+  </data>
+  <data name="International" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="IsBulkShipping" xml:space="preserve">
+    <value>Disponible pour l'import en masse</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Dernière mise à jour</value>
+  </data>
+  <data name="lblTosAccept1" xml:space="preserve">
+    <value>Les conditions d'utilisation du service ont été mise à jour, merci de les</value>
+  </data>
+  <data name="lblTosAccept2" xml:space="preserve">
+    <value>valider+</value>
+  </data>
+  <data name="lblTosAccept3" xml:space="preserve">
+    <value>Partie spécifique pour les utilisateurs grand compte (si nécessaire)</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Longueur</value>
+  </data>
+  <data name="ManualSubmit" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="MasterServiceName" xml:space="preserve">
+    <value>Libellé du type de service</value>
+  </data>
+  <data name="MasterServiceType" xml:space="preserve">
+    <value>Type de service</value>
+  </data>
+  <data name="MasterSurchargeCode" xml:space="preserve">
+    <value>Code master surcharge</value>
+  </data>
+  <data name="MasterSurchargeLabel" xml:space="preserve">
+    <value>Libellé master surcharge</value>
+  </data>
+  <data name="MasterSurchargeType" xml:space="preserve">
+    <value>Type master surcharge</value>
+  </data>
+  <data name="MostCompetitive" xml:space="preserve">
+    <value>Le moins cher</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom*</value>
+  </data>
+  <data name="NamedCarrier" xml:space="preserve">
+    <value>Transporteur nommé</value>
+    <comment>HV</comment>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Origine</value>
+  </data>
+  <data name="ParamID" xml:space="preserve">
+    <value>Nom du paramètre</value>
+  </data>
+  <data name="ParamValue" xml:space="preserve">
+    <value>Paramètre</value>
+  </data>
+  <data name="ParcelCount" xml:space="preserve">
+    <value>Nombre de contenants</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="ParcelNumber" xml:space="preserve">
+    <value>Nombre de contenants</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Téléphone*</value>
+    <comment>KM</comment>
+  </data>
+  <data name="PickAnAddress" xml:space="preserve">
+    <value>Sélectionner une adresse</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="ProhibitedProducts" xml:space="preserve">
+    <value>Articles prohibés</value>
+  </data>
+  <data name="ProposedCarrier" xml:space="preserve">
+    <value>Transporteur proposé par Kaizos</value>
+  </data>
+  <data name="PublicTariff" xml:space="preserve">
+    <value>Tarif Public</value>
+  </data>
+  <data name="PublicTariffValidation" xml:space="preserve">
+    <value>Les champs saisis ne sont pas numériques</value>
+  </data>
+  <data name="PurchaseTariff" xml:space="preserve">
+    <value>Tarif d'achat</value>
+  </data>
+  <data name="Recipient" xml:space="preserve">
+    <value>Destinataire</value>
+  </data>
+  <data name="RecipientNotification" xml:space="preserve">
+    <value>Envoyer une notification au destinataire</value>
+  </data>
+  <data name="ReferenceCaption" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="Residential" xml:space="preserve">
+    <value>Résidentielle</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Sauvegarde</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>envoyer</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Expéditeur</value>
+  </data>
+  <data name="SenderNotification" xml:space="preserve">
+    <value>Envoyer une notification à l'expéditeur</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ServiceName" xml:space="preserve">
+    <value>Libellé du service</value>
+  </data>
+  <data name="ServiceTypeCode" xml:space="preserve">
+    <value>Type de service</value>
+  </data>
+  <data name="ServiceTypeName" xml:space="preserve">
+    <value>Libellé du service type</value>
+  </data>
+  <data name="ShipingRef" xml:space="preserve">
+    <value>Référence de l'expédition</value>
+  </data>
+  <data name="ShipIt" xml:space="preserve">
+    <value>Expédier</value>
+  </data>
+  <data name="Shipping" xml:space="preserve">
+    <value>Expédition</value>
+  </data>
+  <data name="ShippingAddress" xml:space="preserve">
+    <value>Adresse d'expédition</value>
+  </data>
+  <data name="ShippingDate" xml:space="preserve">
+    <value>Date d'expédition</value>
+  </data>
+  <data name="ShippingDetails" xml:space="preserve">
+    <value>Détail de l'expédition</value>
+  </data>
+  <data name="ShipType" xml:space="preserve">
+    <value>Direction</value>
+    <comment>To fix 1264</comment>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Origine</value>
+    <comment>1259</comment>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Date de début *</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Etat</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="TariffDutyFree" xml:space="preserve">
+    <value>Tarif hors taxe (€)</value>
+  </data>
+  <data name="TariffReference" xml:space="preserve">
+    <value>Référence du tarif</value>
+  </data>
+  <data name="TariffType" xml:space="preserve">
+    <value>Niveau de tarif</value>
+  </data>
+  <data name="TariffValid" xml:space="preserve">
+    <value>Affecter les taux de marge brute</value>
+  </data>
+  <data name="TaxableWeight" xml:space="preserve">
+    <value>Poids taxable</value>
+  </data>
+  <data name="TermsOfUse" xml:space="preserve">
+    <value>Description du service</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Mise à jour</value>
+  </data>
+  <data name="UseSenderAddress" xml:space="preserve">
+    <value>Utiliser l'adresse d'expédition pour le retour</value>
+  </data>
+  <data name="ValidationAccept" xml:space="preserve">
+    <value>doit être coché</value>
+  </data>
+  <data name="ValidationAlready" xml:space="preserve">
+    <value>existe déjà</value>
+  </data>
+  <data name="ValidationAlreadyExist" xml:space="preserve">
+    <value>existe déjà</value>
+  </data>
+  <data name="ValidationEmpty" xml:space="preserve">
+    <value>le champ doit être renseigné</value>
+  </data>
+  <data name="ValidationInvalid" xml:space="preserve">
+    <value>saisie invalide</value>
+  </data>
+  <data name="ValidationLength" xml:space="preserve">
+    <value>La taille du mot de passe doit comporter entre 8 et 15 caractères</value>
+  </data>
+  <data name="ValidationMaxAllowed" xml:space="preserve">
+    <value>Nombre maximum de caractères autorisés : 5000</value>
+  </data>
+  <data name="ValidationMultiple" xml:space="preserve">
+    <value>le nombre d'expéditions ne doit pas dépasser 50000</value>
+  </data>
+  <data name="ValidationNotExist" xml:space="preserve">
+    <value>n'existe pas</value>
+  </data>
+  <data name="ValidationNotFound" xml:space="preserve">
+    <value>occurrence non trouvée</value>
+  </data>
+  <data name="ValidationNumber" xml:space="preserve">
+    <value>le champ doit contenir une valeur numérique</value>
+  </data>
+  <data name="ValidationNumber1" xml:space="preserve">
+    <value>doit être numérique</value>
+  </data>
+  <data name="ValidationShouldSame" xml:space="preserve">
+    <value>Le mot de passe et la confirmation doivent être identiques</value>
+  </data>
+  <data name="ValidationSingle" xml:space="preserve">
+    <value>le nombre d'expéditions ne doit pas dépasser 25000</value>
+  </data>
+  <data name="valLess100" xml:space="preserve">
+    <value>Le taux de redevance doit être inférieur ou égal à 100.</value>
+  </data>
+  <data name="valMaxAllowed100000" xml:space="preserve">
+    <value>Nombre de caractères maximum autorisés : 100000</value>
+  </data>
+  <data name="valNotAvailable" xml:space="preserve">
+    <value>L'identifiant de l'utilisateur est absent des utilisateurs enregistrés</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Poids</value>
+  </data>
+  <data name="WeightIncrement" xml:space="preserve">
+    <value>Incrément de poids (Kg)</value>
+  </data>
+  <data name="WeightLimit" xml:space="preserve">
+    <value>Limite de poids (Kg)</value>
+  </data>
+  <data name="WeightRange" xml:space="preserve">
+    <value>Tranche de poids (Kg)</value>
+    <comment>1181</comment>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="WishedShippingDate" xml:space="preserve">
+    <value>Date souhaitée d'expédition</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="YourCarrier" xml:space="preserve">
+    <value>Votre transporteur</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Code postal*</value>
+    <comment>KM</comment>
+  </data>
+  <data name="ZipCodeCity" xml:space="preserve">
+    <value>Ville/zipcode</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="ZoneList" xml:space="preserve">
+    <value>Liste des zones</value>
+  </data>
+  <data name="MasterTypeAlreadyExists" xml:space="preserve">
+    <value>existe déjà</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Création impossible. Merci de fournir les éléments saisis à votre administrateur.</value>
+  </data>
+  <data name="MasterTypeCreationSucess" xml:space="preserve">
+    <value>Création du master type {0} réussie !</value>
+  </data>
+  <data name="ResultErrorMessage" xml:space="preserve">
+    <value>Aucun message n'est défini pour la page {0}. Merci de contacter votre administrateur.</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="CarrierServiceDelayImport" xml:space="preserve">
+    <value>Délai d'import du service du transporteur</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ServiceCode" xml:space="preserve">
+    <value>Code service</value>
+  </data>
+  <data name="FuelSurchargeSearchError" xml:space="preserve">
+    <value>Recherche de la surcharge carburant infructueuse. Merci de contacter votre administrateur</value>
+  </data>
+  <data name="TariffImportFailure" xml:space="preserve">
+    <value>L'import du tarif a échoué</value>
+  </data>
+  <data name="TariffImportSuccess" xml:space="preserve">
+    <value>L'import du tarif a réussi</value>
+  </data>
+  <data name="AddressBookAddress1" xml:space="preserve">
+    <value>Adresse 1*</value>
+    <comment>1157</comment>
+  </data>
+  <data name="AddressBookAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>1157</comment>
+  </data>
+  <data name="AddressBookAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>1157</comment>
+  </data>
+  <data name="AddressBookAddressType" xml:space="preserve">
+    <value>Type d'adresse *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookAddressUsedFor" xml:space="preserve">
+    <value>Adresse utilisée pour *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookBoth" xml:space="preserve">
+    <value>Les deux</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookCity" xml:space="preserve">
+    <value>Ville *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookComments" xml:space="preserve">
+    <value>Conditions</value>
+    <comment>sm2 change</comment>
+  </data>
+  <data name="AddressBookCommercial" xml:space="preserve">
+    <value>Commercial</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise *</value>
+    <comment>SM</comment>
+  </data>
+  <data name="AddressBookPays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookDeliveryAddress" xml:space="preserve">
+    <value>Adresse de livraison</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM</comment>
+  </data>
+  <data name="AddressBookEnableShippingPreference" xml:space="preserve">
+    <value>Activation de la préférence d'expédition *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookFailure" xml:space="preserve">
+    <value>La création de l'adresse {0} a échoué.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookFastest" xml:space="preserve">
+    <value>Le plus rapide</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookFaxNumber" xml:space="preserve">
+    <value>Fax</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookLastPickupF" xml:space="preserve">
+    <value>Heure limite de collecte le vendredi *</value>
+    <comment>SM2 CHANGE</comment>
+  </data>
+  <data name="AddressBookLastPickupMtoF" xml:space="preserve">
+    <value>Heure limite de collecte du lundi au jeudi *</value>
+    <comment>SM2 Change</comment>
+  </data>
+  <data name="AddressBooklblNamedCarrier" xml:space="preserve">
+    <value>Transporteur nommé</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookMostCompetitive" xml:space="preserve">
+    <value>Le moins cher</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookNamedCarrier" xml:space="preserve">
+    <value>Nom du transporteur</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookPhoneNumber" xml:space="preserve">
+    <value>Téléphone *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookResidential" xml:space="preserve">
+    <value>Résidentiel</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookShippingAddress" xml:space="preserve">
+    <value>Adresse d'expédition</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookShippingPreference" xml:space="preserve">
+    <value>Préférence d'expédition</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookState" xml:space="preserve">
+    <value>Etat</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookSuccess" xml:space="preserve">
+    <value>Création de l'adresse {0} réussie.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AddressBookZipcode" xml:space="preserve">
+    <value>Code postal *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllAccept" xml:space="preserve">
+    <value>Accepter</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllBack" xml:space="preserve">
+    <value>Retour</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllCancel" xml:space="preserve">
+    <value>Annuler</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllEdit" xml:space="preserve">
+    <value>Editer</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllGet" xml:space="preserve">
+    <value>Obtenir</value>
+    <comment>sm</comment>
+  </data>
+  <data name="AllSubmit" xml:space="preserve">
+    <value>Valider</value>
+    <comment>sm</comment>
+  </data>
+  <data name="Allupdate" xml:space="preserve">
+    <value>Mettre à jour</value>
+    <comment>SM</comment>
+  </data>
+  <data name="CarrierPublic" xml:space="preserve">
+    <value>Publics transporteur</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ConfirmPWDConfirmPassword" xml:space="preserve">
+    <value>Confirmation du mot de passe</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ConfirmPWDFailure" xml:space="preserve">
+    <value>La confirmation du mot de passe a échoué.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ConfirmPWDNotExists" xml:space="preserve">
+    <value>Le n° de compte {0} n'existe pas.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ConfirmPWDPassword" xml:space="preserve">
+    <value>Mot de passe *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ConfirmPWDPasswordConfirmation" xml:space="preserve">
+    <value>Confirmation du mot de passe *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ConfirmPWDSuccess" xml:space="preserve">
+    <value>La confirmation du mot passe est validée.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ContainerType" xml:space="preserve">
+    <value>Type de contenant</value>
+    <comment>RM</comment>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Créer</value>
+    <comment>RM</comment>
+  </data>
+  <data name="Fastest1" xml:space="preserve">
+    <value>Le plus rapide</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseAddress1" xml:space="preserve">
+    <value>Adresse 1 *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseChalandiseZone" xml:space="preserve">
+    <value>Zone de chalandise *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseCity" xml:space="preserve">
+    <value>Ville</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseCommercialName" xml:space="preserve">
+    <value>Nom du commercial *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="Franchisecompany" xml:space="preserve">
+    <value>Société</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseCompanyName" xml:space="preserve">
+    <value>Nom de la société *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchisePays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseEmail" xml:space="preserve">
+    <value>Email (login) *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseFaxNumber" xml:space="preserve">
+    <value>Fax</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseLanguage" xml:space="preserve">
+    <value>Langue *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseLegalForm" xml:space="preserve">
+    <value>Forme juridique *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseListCompanyName" xml:space="preserve">
+    <value>Société</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseListContactName" xml:space="preserve">
+    <value>Nom du contact</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseListLanguage" xml:space="preserve">
+    <value>Langue</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseListLoginID" xml:space="preserve">
+    <value>Login</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseManPower" xml:space="preserve">
+    <value>Effectif *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchisePhoneNumber" xml:space="preserve">
+    <value>Téléphone *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseProfessionalAccount" xml:space="preserve">
+    <value>Compte professionnel *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAddress1" xml:space="preserve">
+    <value>Adresse 1 *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminAccountStatus" xml:space="preserve">
+    <value>Statut du compte *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminArchieve" xml:space="preserve">
+    <value>Archivé</value>
+    <comment>1143</comment>
+  </data>
+  <data name="FranchiseUpdateAdminChalandiseZone" xml:space="preserve">
+    <value>Zone de chalandise</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminCompany" xml:space="preserve">
+    <value>Entreprise</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminCreditRequest" xml:space="preserve">
+    <value>Demande de crédit *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminDisabled" xml:space="preserve">
+    <value>Désactivé</value>
+    <comment>SM</comment>
+  </data>
+  <data name="FranchiseUpdateAdminEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminEnabled" xml:space="preserve">
+    <value>Activé</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminEurope" xml:space="preserve">
+    <value>Europe *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminFrance" xml:space="preserve">
+    <value>France *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminInternational" xml:space="preserve">
+    <value>International *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminLanguage" xml:space="preserve">
+    <value>Langue</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminMonthlyFees" xml:space="preserve">
+    <value>Taux de redevance mensuelle (%)</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateAdminUser" xml:space="preserve">
+    <value>Utilisateur</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateChalandiseZone" xml:space="preserve">
+    <value>Zone de chalandise *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateCity" xml:space="preserve">
+    <value>Ville *</value>
+    <comment>SM</comment>
+  </data>
+  <data name="FranchiseUpdateCommercialName" xml:space="preserve">
+    <value>Nom commercial *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateCompany" xml:space="preserve">
+    <value>Entreprise</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateConfirmPassword" xml:space="preserve">
+    <value>Confirmation du mot de passe *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdatePays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateEmail" xml:space="preserve">
+    <value>Email*</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateFaxNumber" xml:space="preserve">
+    <value>N° de fax</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateLanguage" xml:space="preserve">
+    <value>Langue</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdatelblEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM</comment>
+  </data>
+  <data name="FranchiseUpdateLegalForm" xml:space="preserve">
+    <value>Forme juridique *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateLoad" xml:space="preserve">
+    <value>Chargement</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateManPower" xml:space="preserve">
+    <value>Effectif *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateNewPassword" xml:space="preserve">
+    <value>Nouveau mot de passe *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdatePhoneNumber" xml:space="preserve">
+    <value>N° de téléphone *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateProfessionalAccount" xml:space="preserve">
+    <value>Compte professionnel *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseUpdateZipcode" xml:space="preserve">
+    <value>Zipcode *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="FranchiseZipcode" xml:space="preserve">
+    <value>Zipcode *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="KeyCustomerNegotiated" xml:space="preserve">
+    <value>Client grand compte</value>
+    <comment>RM</comment>
+  </data>
+  <data name="KeyUserReference" xml:space="preserve">
+    <value>Référence grand compte</value>
+    <comment>RM</comment>
+  </data>
+  <data name="LogoutMess1" xml:space="preserve">
+    <value>Vous avez été déconnecté.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="LogoutMess2" xml:space="preserve">
+    <value>Conseil de sécurité :</value>
+    <comment>sm</comment>
+  </data>
+  <data name="LogoutMess3" xml:space="preserve">
+    <value>Merci de fermer cette fenêtre afin de supprimer toutes les données temporaires stockées sur le navigateur web.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MailSendFailure" xml:space="preserve">
+    <value>Echec lors de l'envoi de l'email.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MainLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageMonthlyFeeFailure" xml:space="preserve">
+    <value>Echec lors de l'ajout du taux de redevance mensuelle</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageNotAuthorize" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à accéder à cette fonctionnalité.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageProfileDeleteFailure" xml:space="preserve">
+    <value>Echec lors de la suppression d'un profil existant</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageProfileFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour du profil.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageProfileSuccess" xml:space="preserve">
+    <value>Le profil a été mis à jour avec succès.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageUserAlreadyExist" xml:space="preserve">
+    <value>L'utilisateur {0} existe déjà.</value>
+    <comment>SM2 Change from SM</comment>
+  </data>
+  <data name="MessageUserCreationFailure" xml:space="preserve">
+    <value>Echec lors de la création de l'utilisateur {0}.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageUserCreationSuccess" xml:space="preserve">
+    <value>L'utilisateur {0} a été créé avec succès.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageUserUpdateFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour de l'utilisateur {0}.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="MessageUserUpdateSuccess" xml:space="preserve">
+    <value>L'utilisateur {0} a été modifié avec succès.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ProfileFunctionality" xml:space="preserve">
+    <value>Fonctionnalités par profil</value>
+    <comment>sm</comment>
+  </data>
+  <data name="Purchase" xml:space="preserve">
+    <value>Achat</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffContainerErr" xml:space="preserve">
+    <value>Merci de sélectionner au moins un type de contenant.</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffCreation" xml:space="preserve">
+    <value>Création de tarif</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TOS" xml:space="preserve">
+    <value>Conditions d'utilisation</value>
+    <comment>sm</comment>
+  </data>
+  <data name="TosApprovedFailure" xml:space="preserve">
+    <value>Echec lors de l'approbation des conditions d'utilisation.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="TosApprovedSuccess" xml:space="preserve">
+    <value>Les dernières conditions d'utilisation ont été acceptées.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="TosInsertFailure" xml:space="preserve">
+    <value>Echec lors de l'ajout des conditions d'utilisation.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="TosInsertSuccess" xml:space="preserve">
+    <value>Les conditions d'utilisation ont été mise à jour avec succès.</value>
+    <comment>sm</comment>
+  </data>
+  <data name="TOSTos" xml:space="preserve">
+    <value>Conditions d'utilisation *</value>
+    <comment>sm</comment>
+  </data>
+  <data name="ValLessThan" xml:space="preserve">
+    <value>doit être inférieur à</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffCreationExistsAlready" xml:space="preserve">
+    <value>La référence de tarif {0} existe déjà. Merci de renseigner une référence différente.</value>
+  </data>
+  <data name="TariffCreationFailure" xml:space="preserve">
+    <value>Echec lors de la création du tarif pour</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffCreationOverlap" xml:space="preserve">
+    <value>Les valeurs fournies pour le tarif {0} ont mis à jour les donnée existantes (ancienne référence : {1}) pour la période suivante : {2:MM/dd/yyyy} - {3:MM/dd/yyyy}.</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffCreationSuccess" xml:space="preserve">
+    <value>Le tarif [{0}] a été créé avec succès. Merci de créer et d'assigner les zones avant d'importer les grilles de fret.</value>
+    <comment>RM</comment>
+  </data>
+  <data name="AddLine" xml:space="preserve">
+    <value>Ajouter une ligne</value>
+    <comment>RM</comment>
+  </data>
+  <data name="CalculationRules" xml:space="preserve">
+    <value>Règles de calcul</value>
+    <comment>RM</comment>
+  </data>
+  <data name="CancelShipmentError" xml:space="preserve">
+    <value>Echec lors de l'annulation de l'expédition [{0}]</value>
+    <comment>HN</comment>
+  </data>
+  <data name="PaysZipCode" xml:space="preserve">
+    <value>Pays/zipcode *</value>
+    <comment>RM</comment>
+  </data>
+  <data name="GeographicalCoverage" xml:space="preserve">
+    <value>Couverture géographique *</value>
+    <comment>RM</comment>
+  </data>
+  <data name="LoginbtnLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="LoginLogin" xml:space="preserve">
+    <value>Connexion</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="LoginPassword" xml:space="preserve">
+    <value>Mot de passe *</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>* Champs obligatoires</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ManualShippingError" xml:space="preserve">
+    <value>Echec lors de la confirmation de l'expédition manuelle</value>
+    <comment>HN</comment>
+  </data>
+  <data name="MenuAccounts" xml:space="preserve">
+    <value>Comptes</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAccountsCustomers" xml:space="preserve">
+    <value>Clients</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAccountsCustomersCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAccountsCustomersGeneral" xml:space="preserve">
+    <value>Général</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAccountsCustomersSalesGrossMarginTable" xml:space="preserve">
+    <value>Outil de simulation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAccountsCustomersUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAlert" xml:space="preserve">
+    <value>Alertes</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAlertCustomerCreditRequests" xml:space="preserve">
+    <value>Demandes de crédit</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuAlertDisplayAlerts" xml:space="preserve">
+    <value>Afficher les alertes</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCarrierInvoices" xml:space="preserve">
+    <value>Factures transporteurs</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCarrierInvoicesUnknown" xml:space="preserve">
+    <value>Références inconnues</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCarrierInvoicesUnmatchedShipping" xml:space="preserve">
+    <value>Expéditions sans correspondance</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCarriers" xml:space="preserve">
+    <value>Transporteurs</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCarriersCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuClaim" xml:space="preserve">
+    <value>Réclamations</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCustomerService" xml:space="preserve">
+    <value>Service client</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCustomerServiceCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuCustomerServiceUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuDashboard" xml:space="preserve">
+    <value>Rapports</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuDashboardActivityProfitability" xml:space="preserve">
+    <value>Activité et rentabilité</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuDashboardInvoicingVisalization" xml:space="preserve">
+    <value>Visualisation des factures</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuDashboardPerformance" xml:space="preserve">
+    <value>Performance</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuFranchisePartners" xml:space="preserve">
+    <value>Partenaires franchisés</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuFranchisePartnersCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuFranchisePartnersList" xml:space="preserve">
+    <value>Liste</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuFranchisePartnersUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuFuelSurcharge" xml:space="preserve">
+    <value>Surcharge carburant</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuImportation" xml:space="preserve">
+    <value>Importation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuInvoices" xml:space="preserve">
+    <value>Factures</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuInvoicesCustomerinvoices" xml:space="preserve">
+    <value>Factures clients</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuInvoicesCustomerinvoicesManualCreation" xml:space="preserve">
+    <value>Création manuelle</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuLogout" xml:space="preserve">
+    <value>Déconnexion</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMainShipping" xml:space="preserve">
+    <value>Expédier</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMainShippingBulkShipping" xml:space="preserve">
+    <value>Expédition en masse</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMainShippingGetQuote" xml:space="preserve">
+    <value>Obtenir un coût et un délais</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMainShippingPendingShipping" xml:space="preserve">
+    <value>Expéditions en attente</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccount" xml:space="preserve">
+    <value>Mon compte</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountAddressBook" xml:space="preserve">
+    <value>Carnet d'adresse</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountAddressBookAddAnAddress" xml:space="preserve">
+    <value>Ajouter une adresse</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountAddressBookImportAddress" xml:space="preserve">
+    <value>Importer des adresses</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountAuthorizedUser" xml:space="preserve">
+    <value>Utilisateurs autorisés</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountAuthorizedUserCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountInvoices" xml:space="preserve">
+    <value>Factures</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuMyAccountSendAClaim" xml:space="preserve">
+    <value>Envoyer une réclamation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuOptionSurcharges" xml:space="preserve">
+    <value>Options &amp; surcharges</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuProfile" xml:space="preserve">
+    <value>Profils</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuPublicLevels" xml:space="preserve">
+    <value>Tarifs de vente</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuPublicLevelsGrossMarginSimulation" xml:space="preserve">
+    <value>Outil de simulation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuPublicLevelsPublicTariffManagement" xml:space="preserve">
+    <value>Tarifs publics</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuServiceTypes" xml:space="preserve">
+    <value>Service Types</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuServiceTypesCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuServiceTypesUpdate" xml:space="preserve">
+    <value>Service types</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuServiceTypesValidity" xml:space="preserve">
+    <value>Validité</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuSetup" xml:space="preserve">
+    <value>Paramétrage</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuSetupAlertsFAQ" xml:space="preserve">
+    <value>FAQ</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuSetupAlertsInvoicing" xml:space="preserve">
+    <value>Facturation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuSetupAlertsSettings" xml:space="preserve">
+    <value>Réglages des alertes</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuSetupInsuranceBroker" xml:space="preserve">
+    <value>Courtier d'assurance</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuShipping" xml:space="preserve">
+    <value>Expéditions</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuShippingCancellation" xml:space="preserve">
+    <value>Annulation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuTariff" xml:space="preserve">
+    <value>Tarif</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuTos" xml:space="preserve">
+    <value>Conditions d'utilisation</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuTracking" xml:space="preserve">
+    <value>Suivi</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuZoning" xml:space="preserve">
+    <value>Zones</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuZoningCreation" xml:space="preserve">
+    <value>Création</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MenuZoningSearch" xml:space="preserve">
+    <value>Recherche</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MessageLoginEndCustomer" xml:space="preserve">
+    <value>Mme, M. {0}, votre attaché commercial vous contactera sous 24 heures pour compléter la création de votre compte. Pour obtenir une assistance immédiate, vous pouvez nous contacter soit par téléphone au {2}, soit par email sur {3}</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="MessageLoginEndCustomerIsTariffAssign" xml:space="preserve">
+    <value>Mme, M. {0}, votre attaché commercial vous contactera sous 24 heures au {1} pour compléter la création de votre compte. Pour obtenir une assistance immédiate, vous pouvez nous contacter soit par téléphone au {2}, soit par email sur {3}</value>
+    <comment>SM1</comment>
+  </data>
+  <data name="OptionsSurchargeFilter" xml:space="preserve">
+    <value>Filtrer les options et surcharges</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ResultTariffDelayInterrogationError" xml:space="preserve">
+    <value>Echec lors du chargement des tarifs et des délais</value>
+    <comment>HN</comment>
+  </data>
+  <data name="ResultTariffDelayInterrogationError1" xml:space="preserve">
+    <value>Echec lors de la confirmation du transporteur</value>
+    <comment>HN</comment>
+  </data>
+  <data name="ResultTariffDelayInterrogationError2" xml:space="preserve">
+    <value>Echec lors de la sélection du transporteur</value>
+    <comment>HN</comment>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Recherche</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ShipmentConfirmationError" xml:space="preserve">
+    <value>Echec lors de la confirmation d'expédition</value>
+    <comment>HN</comment>
+  </data>
+  <data name="ShipmentConfirmationError1" xml:space="preserve">
+    <value>Echec lors de la finalisation de confirmation d'expédition.</value>
+    <comment>HN</comment>
+  </data>
+  <data name="TariffDelayInterrogationError" xml:space="preserve">
+    <value>Echec lors du chargement de la page d'obtention de tarif et de délais</value>
+    <comment>HN</comment>
+  </data>
+  <data name="TariffFile" xml:space="preserve">
+    <value>Fichier de tarif</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ZoneCreationFailure" xml:space="preserve">
+    <value>Echec lors de la création de la zone [{0}]. Merci de contacter l'administrateur.</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ZoneCreationSuccess" xml:space="preserve">
+    <value>La zone [{0}] a été créée avec succès.</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ZoneName" xml:space="preserve">
+    <value>Nom de la zone</value>
+    <comment>RM</comment>
+  </data>
+  <data name="ZoneSearchFailure" xml:space="preserve">
+    <value>Echec lors de la recherche de zone pour le tarif [{0}]</value>
+    <comment>RM</comment>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtre</value>
+    <comment>RM</comment>
+  </data>
+  <data name="PublicTariffFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour du tarif public [{0}]</value>
+    <comment>RM</comment>
+  </data>
+  <data name="PublicTariffSuccess" xml:space="preserve">
+    <value>Le tarif public [{0}] a été mis à jour avec succès</value>
+    <comment>RM</comment>
+  </data>
+  <data name="TariffFilter" xml:space="preserve">
+    <value>Filtrer les tarifs</value>
+    <comment>RM</comment>
+  </data>
+  <data name="LoginFailure" xml:space="preserve">
+    <value>Echec lors de la connexion de l'utilisateur [{0}]. Merci de contacter votre administrateur.</value>
+    <comment>RM2</comment>
+  </data>
+  <data name="AddressBookAlreadyExists" xml:space="preserve">
+    <value>Cette adresse existe déjà dans votre carnet d'adresse.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookImport" xml:space="preserve">
+    <value>Import d'adresses</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookImportFile" xml:space="preserve">
+    <value>Fichier d'import</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookImportImport" xml:space="preserve">
+    <value>Import</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookImportMaxsize" xml:space="preserve">
+    <value>Max : 10Mo</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListAddress1" xml:space="preserve">
+    <value>Adresse 1 *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListAddressType" xml:space="preserve">
+    <value>Type d'adresse</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListAddressUsedFor" xml:space="preserve">
+    <value>Adresse utilisée pour</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListCity" xml:space="preserve">
+    <value>Ville</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListComments" xml:space="preserve">
+    <value>Commentaires</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListCompanyName" xml:space="preserve">
+    <value>Société</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListContactName" xml:space="preserve">
+    <value>Nom du contact</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListPays" xml:space="preserve">
+    <value>Pays</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListFaxNo" xml:space="preserve">
+    <value>N° de fax</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListLastPickUpFriday" xml:space="preserve">
+    <value>Dernière relève le vendredi</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListLastPickUpMonThur" xml:space="preserve">
+    <value>Dernière relève du lundi au jeudi</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListShipPreference" xml:space="preserve">
+    <value>Préférences d'expéditions</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListState" xml:space="preserve">
+    <value>Etat</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListTelNo" xml:space="preserve">
+    <value>N° de téléphone</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListZipcode" xml:space="preserve">
+    <value>Zipcode</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AllOK" xml:space="preserve">
+    <value>OK</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AuthorizedEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AuthorizedName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AuthorizedPhoneNo" xml:space="preserve">
+    <value>N° de téléphone *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AuthorizedUser" xml:space="preserve">
+    <value>Utilisateur</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZConfirmPassword" xml:space="preserve">
+    <value>Confirmation du mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZEmail" xml:space="preserve">
+    <value>Email (login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZLLoginID" xml:space="preserve">
+    <value>Email (login)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZLName" xml:space="preserve">
+    <value>Nom</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZLPhoneNo" xml:space="preserve">
+    <value>N° de téléphone</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZPassword" xml:space="preserve">
+    <value>Mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUDeleteUser" xml:space="preserve">
+    <value>Supprimer cet utilisateur</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUEmail" xml:space="preserve">
+    <value>Email (Login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUPhoneNo" xml:space="preserve">
+    <value>N° de téléphone</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUUser" xml:space="preserve">
+    <value>Utilisateur</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAAuthorizedCreditAmount" xml:space="preserve">
+    <value>Montant du crédit autorisé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAAuthorizedCreditLimit" xml:space="preserve">
+    <value>Limite de crédit autorisé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRABudgetAmount" xml:space="preserve">
+    <value>Valeur actuelle</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRACancel" xml:space="preserve">
+    <value>Annuler</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAChkAccept" xml:space="preserve">
+    <value>Accepter</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRACompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRACompensationRate" xml:space="preserve">
+    <value>Taux d'indemnisation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRADepositAmount" xml:space="preserve">
+    <value>Dépôt de garantie</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAEdit" xml:space="preserve">
+    <value>Editer</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAGrossMargin" xml:space="preserve">
+    <value>Taux de marge brute</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAInsuredCreditAmount" xml:space="preserve">
+    <value>Montant du crédit assuré</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAPaymentDelayDays" xml:space="preserve">
+    <value>Délais de paiement (jours)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAPaymentDelayMonth" xml:space="preserve">
+    <value>Facteur du délais de paiement (par mois)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CRAWishedBudgetAmount" xml:space="preserve">
+    <value>Montant souhaité</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CSUpdateConfirmPassword" xml:space="preserve">
+    <value>Confirmation du mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CSUpdateEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CSUpdateLanguage" xml:space="preserve">
+    <value>Langue</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CSUpdateNewPassword" xml:space="preserve">
+    <value>Nouveau mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CSUpdateUser" xml:space="preserve">
+    <value>Utilisateur</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerAccount" xml:space="preserve">
+    <value>Compte</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerPays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerEmail" xml:space="preserve">
+    <value>Email (Login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerHQZipcode" xml:space="preserve">
+    <value>Zipcode du siège social *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerIndustry" xml:space="preserve">
+    <value>Secteur d'activité</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerKeyAccount" xml:space="preserve">
+    <value>Grand compte *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerKeyCustomerCategory" xml:space="preserve">
+    <value>Catégorie</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerKeyInvoicingAddress" xml:space="preserve">
+    <value>Adresse de facturation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerLegalForm" xml:space="preserve">
+    <value>Forme juridique</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerManPower" xml:space="preserve">
+    <value>Effectif</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerPhoneNumber" xml:space="preserve">
+    <value>N° de téléphone *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerServiceCustomerName" xml:space="preserve">
+    <value>Nom du client *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerServiceCustomerService" xml:space="preserve">
+    <value>Service client</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerServiceEmail" xml:space="preserve">
+    <value>Email (login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CustomerServiceLanguage" xml:space="preserve">
+    <value>Langue</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerAddress1" xml:space="preserve">
+    <value>Adresse 1 *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerCity" xml:space="preserve">
+    <value>Ville *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerCompany" xml:space="preserve">
+    <value>Entreprise</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerConfirmPassword" xml:space="preserve">
+    <value>Confirmation de mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerContactName" xml:space="preserve">
+    <value>Contact responsable du paiement des fournisseurs*</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerPays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerCreditCard" xml:space="preserve">
+    <value>Carte de crédit</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerCurrentPaymentMethod" xml:space="preserve">
+    <value>Méthode de paiement actuelle *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerDeferredPayment" xml:space="preserve">
+    <value>Paiement différé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerEmailConfirmation" xml:space="preserve">
+    <value>Confirmation de l'email *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerEmailLogin" xml:space="preserve">
+    <value>Email (login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerFaxNo" xml:space="preserve">
+    <value>N° de fax</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerFunction" xml:space="preserve">
+    <value>Fonction</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerHQZipcode" xml:space="preserve">
+    <value>Zipcode du siège social *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerInvoiceEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerInvoideAddress" xml:space="preserve">
+    <value>Adresse de facturation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerName" xml:space="preserve">
+    <value>Nom *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerPassword" xml:space="preserve">
+    <value>Mot de passe *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerPaymentMethod" xml:space="preserve">
+    <value>Méthode de paiement</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerPhoneNumber" xml:space="preserve">
+    <value>N° de téléphone *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerRequestDeferredPayment" xml:space="preserve">
+    <value>Demande de paiement différé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerReturnAddress" xml:space="preserve">
+    <value>Adresse de retour</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerShipping" xml:space="preserve">
+    <value>Expédition</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerShippingAddress" xml:space="preserve">
+    <value>Adresse de chargement</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerShippingPreference" xml:space="preserve">
+    <value>Préférences d'expédition</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerSiretNo" xml:space="preserve">
+    <value>SIRET *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerTitle" xml:space="preserve">
+    <value>Création de l'utilisateur référent</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerTOS" xml:space="preserve">
+    <value>J'accepte les Conditions d'Utilisation disponibles ici *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerTransportBudget" xml:space="preserve">
+    <value>Budget transport (€)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerUseInvoiceAddress" xml:space="preserve">
+    <value>Utiliser l'adresse de facturation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerVatNo" xml:space="preserve">
+    <value>TVA intracommunautaire</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustomerZipcode" xml:space="preserve">
+    <value>Zipcode *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateADV" xml:space="preserve">
+    <value>ADV</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCarrier" xml:space="preserve">
+    <value>Transporteurs</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCarrierReference" xml:space="preserve">
+    <value>Sous-comptes transporteurs</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCurrentCC" xml:space="preserve">
+    <value>Carte de crédit</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCurrentDP" xml:space="preserve">
+    <value>Paiement différé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCurrentDPType" xml:space="preserve">
+    <value>Type de paiement différé *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCurrentPaymentMethod" xml:space="preserve">
+    <value>Méthode de paiement actuelle *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateCurrentRequestDP" xml:space="preserve">
+    <value>Demande de paiement différé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateDiscount" xml:space="preserve">
+    <value>Remise (%)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateEconomy" xml:space="preserve">
+    <value>Economie</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateEmail" xml:space="preserve">
+    <value>Email (login) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateEurope" xml:space="preserve">
+    <value>Europe</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateExpress" xml:space="preserve">
+    <value>Express</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateFrance" xml:space="preserve">
+    <value>France</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInternational" xml:space="preserve">
+    <value>International</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvAddress1" xml:space="preserve">
+    <value>Adresse 1 *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvAddress2" xml:space="preserve">
+    <value>Adresse 2</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvAddress3" xml:space="preserve">
+    <value>Adresse 3</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvADV" xml:space="preserve">
+    <value>ADV *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvCity" xml:space="preserve">
+    <value>Ville *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvCommercialAttach" xml:space="preserve">
+    <value>Attaché commercial</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvCompanyName" xml:space="preserve">
+    <value>Nom de l'entreprise</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvContact" xml:space="preserve">
+    <value>Contact responsable des paiements *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvPays" xml:space="preserve">
+    <value>Pays *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvCustomerCategory" xml:space="preserve">
+    <value>Catégorie</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvFaxNo" xml:space="preserve">
+    <value>N° de fax</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvGrossMargin" xml:space="preserve">
+    <value>Marge brute (€)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvHQZipcode" xml:space="preserve">
+    <value>Zipcode du siège social *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvIndustry" xml:space="preserve">
+    <value>Secteur d'activité</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvLegalForm" xml:space="preserve">
+    <value>Forme juridique</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvManPower" xml:space="preserve">
+    <value>Effectif</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvName" xml:space="preserve">
+    <value>Nom (Directeur/PDG/Gérant)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvoiceAddress" xml:space="preserve">
+    <value>Adresse de facturation</value>
+    <comment>SM2 - SM9</comment>
+  </data>
+  <data name="EndCustUpdateInvPhoneNumber" xml:space="preserve">
+    <value>N° de téléphone *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvSiretNo" xml:space="preserve">
+    <value>SIRET *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvTurnOver" xml:space="preserve">
+    <value>Chiffre d'affaire (€)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvVatNo" xml:space="preserve">
+    <value>TVA intracommunautaire</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateInvZipcode" xml:space="preserve">
+    <value>Zipcode *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateISKeyAccount" xml:space="preserve">
+    <value>est un grand compte</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateKeyAccount" xml:space="preserve">
+    <value>Grand compte</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdatePallets" xml:space="preserve">
+    <value>Palettes</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateParcels" xml:space="preserve">
+    <value>Colis</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdatePassword" xml:space="preserve">
+    <value>Mot de passe</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdatePasswordConfirm" xml:space="preserve">
+    <value>Confirmation de mot de passe</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdatePaymentMethod" xml:space="preserve">
+    <value>Méthode de paiement</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateShipping" xml:space="preserve">
+    <value>Expédition</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateShippingAddress" xml:space="preserve">
+    <value>Adresse de chargement</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateShippingInvoiceAddress" xml:space="preserve">
+    <value>Utiliser l'adresse de facturation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateShippingPreference" xml:space="preserve">
+    <value>Préférences d'expédition</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateStatus" xml:space="preserve">
+    <value>Statut du compte *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateStatusArchieve" xml:space="preserve">
+    <value>Archivé</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateStatusDisable" xml:space="preserve">
+    <value>Inactif</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateStatusEnable" xml:space="preserve">
+    <value>Actif</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateSubscription" xml:space="preserve">
+    <value>Souscription annuelle (€) *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateTOS" xml:space="preserve">
+    <value>J'accepte les Conditions d'Utilisation disponibles ici *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateTransportBudget" xml:space="preserve">
+    <value>Budget transport (€)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateUser" xml:space="preserve">
+    <value>Client</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="EndCustUpdateWpp" xml:space="preserve">
+    <value>WPP (Kg)</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="FranchiseSiretNo" xml:space="preserve">
+    <value>SIRET *</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="FranchiseVatNo" xml:space="preserve">
+    <value>TVA intracommunautaire</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="LoginInvalid" xml:space="preserve">
+    <value>Les identifiants saisis ne sont pas valides</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MenuMyAccountAuthorizedUserList" xml:space="preserve">
+    <value>Liste</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MenuMyAccountAuthorizedUserUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="ValidationInvalidTimeFormat" xml:space="preserve">
+    <value>Saisir les heures au format HH:MM.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="ValidationFileExt" xml:space="preserve">
+    <value>n'est pas une extension de fichier valide</value>
+    <comment>RM FIX</comment>
+  </data>
+  <data name="ValidationFileSize" xml:space="preserve">
+    <value>Le fichier dépasse la taille limite autorisée : </value>
+    <comment>RM FIX</comment>
+  </data>
+  <data name="IndicativeDeliveryDate" xml:space="preserve">
+    <value>Date de livraison indicative</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="InsuranceDeclaredValue" xml:space="preserve">
+    <value>Valeur déclarée</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="ShipmentFailure" xml:space="preserve">
+    <value>Echec lors de la confirmation de l'expédition</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="ShipmentSucess" xml:space="preserve">
+    <value>Expédition(s) effectuée(s) avec succès</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="TotalParcel" xml:space="preserve">
+    <value>Total contenants</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="TotalTax" xml:space="preserve">
+    <value>Total poids taxable</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="TotalWeight" xml:space="preserve">
+    <value>Total poids réel</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="AtleastOne" xml:space="preserve">
+    <value>Au moins un</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="CutomerID" xml:space="preserve">
+    <value>Identifiant utilisateur</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="Fuel" xml:space="preserve">
+    <value>Carburant (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Référence</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Rafraîchir</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="Safety" xml:space="preserve">
+    <value>Sécurité (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SimulationID" xml:space="preserve">
+    <value>Blocs enregistrés</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMADV" xml:space="preserve">
+    <value>ADV</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMAverageWeight" xml:space="preserve">
+    <value>Poids moyen (kg)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMCarriers" xml:space="preserve">
+    <value>Transporteurs</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMCompareMargin" xml:space="preserve">
+    <value>Marge sur CA annuel (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMCompareSales" xml:space="preserve">
+    <value>Tarif de vente/Tarif actuel (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMCurrentSaleTariff" xml:space="preserve">
+    <value>Tarifs de vente actuels (€)</value>
+    <comment>hn1</comment>
+  </data>
+  <data name="SMCurrentTurnOver" xml:space="preserve">
+    <value>CA HT actuel (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMDeliveryPays" xml:space="preserve">
+    <value>Pays de livraison country</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMDiscount" xml:space="preserve">
+    <value>Remise (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMFreightPurchase" xml:space="preserve">
+    <value>Fret d'achat (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMGrossMargin" xml:space="preserve">
+    <value>Marge brute (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMMargin" xml:space="preserve">
+    <value>Marge brute (%)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMMasterServiceName" xml:space="preserve">
+    <value>Master Type de service</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMPublicCarrier" xml:space="preserve">
+    <value>Transporteurs</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMPublicTariff" xml:space="preserve">
+    <value>Tarif public ou tarif net (%)</value>
+    <comment>HN26</comment>
+  </data>
+  <data name="SMPurchaseTariff" xml:space="preserve">
+    <value>Tarif d'achat (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMSalesFreight" xml:space="preserve">
+    <value>Fret du tarif de vente (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMSalesTariff" xml:space="preserve">
+    <value>Tarif de vente Kaizos (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMSalesTurnOver" xml:space="preserve">
+    <value>CA HT possible (€)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMShippingPays" xml:space="preserve">
+    <value>Pays de chargement</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SMWeight" xml:space="preserve">
+    <value>Poids (kg)</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SubTotalBlock" xml:space="preserve">
+    <value>Bloc de sous-total</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="SurchargeDiscount" xml:space="preserve">
+    <value>Remises sur les surcharges actuelles du client</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="TariffBased" xml:space="preserve">
+    <value>Basé sur les tarifs</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="ValidationSelection" xml:space="preserve">
+    <value>doit être sélectionné</value>
+    <comment>HN1</comment>
+  </data>
+  <data name="CancelShipment" xml:space="preserve">
+    <value>Echec lors de l'annulation de l'expédition [{0}]</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualCarrierSelection" xml:space="preserve">
+    <value>Echec lors de la sélection du transporteur optimal</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualShipConfirmation" xml:space="preserve">
+    <value>Echec lors de la confirmation de l'expédition</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualShipCreation" xml:space="preserve">
+    <value>Echec lors de la création de l'expédition</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualShipDelete" xml:space="preserve">
+    <value>Echec lors de la suppression de l'expédition</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualShipLoadAfterDelete" xml:space="preserve">
+    <value>Echec lors du rechargement du détail d'expédition après suppression</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="ManualShipPageLoad" xml:space="preserve">
+    <value>Echec lors du chargement des détails d'expédition</value>
+    <comment>HN2</comment>
+  </data>
+  <data name="SimulationTool" xml:space="preserve">
+    <value>Echec lors du chargement de l'outil de simulation</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolCalculationPublic" xml:space="preserve">
+    <value>Echec lors du calcul du tarif public</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolCalculationPurchase" xml:space="preserve">
+    <value>Echec lors du calcul du tarif d'achat</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolCalculationRefresh" xml:space="preserve">
+    <value>Echec lors du calcul de la marge brute</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolCarrierTariffLoad" xml:space="preserve">
+    <value>Echec lors du chargement du module de tarif transporteur</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolSave" xml:space="preserve">
+    <value>Echec lors de l'enregistrement des valeurs de marge brute</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="SMToolSimulationID" xml:space="preserve">
+    <value>Echec lors du chargement des données de l'utilisateur [{0}]</value>
+    <comment>HN3</comment>
+  </data>
+  <data name="CancelResponsible" xml:space="preserve">
+    <value>Responsable</value>
+    <comment>HN4</comment>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Client</value>
+    <comment>HN4</comment>
+  </data>
+  <data name="ReferenceNotAvailable" xml:space="preserve">
+    <value>La référence d'expédition {0} n'existe pas. Veuillez essayer de nouveau.</value>
+    <comment>HN4</comment>
+  </data>
+  <data name="MenuAccountsCustomersEndCustomerUpdate" xml:space="preserve">
+    <value>Mise à jour du client final</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MenuMainShippingCancel" xml:space="preserve">
+    <value>Annulation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddAddress" xml:space="preserve">
+    <value>Ajouter au carnet d'adresse</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MaxAllowedShipment" xml:space="preserve">
+    <value>Limite : 100 unités maximum par expédition</value>
+    <comment>HN5</comment>
+  </data>
+  <data name="ValGreaterThan" xml:space="preserve">
+    <value>doit être supérieur à</value>
+    <comment>HN5</comment>
+  </data>
+  <data name="ValPositive" xml:space="preserve">
+    <value>doit être une valeur positive</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="ZipCodeCityFormat" xml:space="preserve">
+    <value>Format attendu : "Zipcode - Ville"</value>
+    <comment>HN5</comment>
+  </data>
+  <data name="AddressBookValidationFailure" xml:space="preserve">
+    <value>Echec lors de la validation de l'adresse.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="PaysCodeLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement des codes payes. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TOSFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour des conditions d'utilisation. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="TOSValFailure" xml:space="preserve">
+    <value>Echec lors de la validation des conditions d'utilisation. TOS validation. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="valTosSame" xml:space="preserve">
+    <value>Il n'y a eu aucun changement avec la version actuelle des conditions d'utilisation.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="LoginMessageHeader" xml:space="preserve">
+    <value>Nouvelles Conditions d'Utilisation</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="LoginValFailure" xml:space="preserve">
+    <value>Echec lors de l'identification. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookImportFailure" xml:space="preserve">
+    <value>Echec lors de l'import dans le carnet d'adresse. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="FranchiseLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement des informations du partenaire franchisé. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MessageFranchiseListFailure" xml:space="preserve">
+    <value>Echec lors de la lecture des informations du partenaire franchisé. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement de la liste des adresses. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AZUserListLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement de la liste des utilisateurs autorisés. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CreditRequestLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement de la liste des demandes de crédit. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="CreditRequestUpdateFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour de la demande de crédit. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="ProfileLoadFailure" xml:space="preserve">
+    <value>Echec lors du chargement des informations de profil. Merci de contacter votre administrateur.</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="MenuMyAccountAddressBookUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+    <comment>SM2</comment>
+  </data>
+  <data name="AddressBookListFailure" xml:space="preserve">
+    <value>Echec lors du chargement du carnet d'adresse. Merci de contacter votre administrateur.</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="AddressBookSearchName" xml:space="preserve">
+    <value>Chercher</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="ExpectedTimeFormat" xml:space="preserve">
+    <value>Format attendu : "HH:MM"</value>
+    <comment>HN5</comment>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>Nom ou entreprise</value>
+    <comment>HN5</comment>
+  </data>
+  <data name="FileImportStatus" xml:space="preserve">
+    <value>Statut du fichier d'import</value>
+    <comment>RM FIX1</comment>
+  </data>
+  <data name="NumberLessThenN" xml:space="preserve">
+    <value>moins que</value>
+    <comment>RM FIX1</comment>
+  </data>
+  <data name="ValidationFileExt1" xml:space="preserve">
+    <value>n'est pas une extension valide</value>
+    <comment>RM FIX1</comment>
+  </data>
+  <data name="ValidationFileSize1" xml:space="preserve">
+    <value>Le fichier dépasse la taille autorisée : </value>
+    <comment>RM FIX1</comment>
+  </data>
+  <data name="LoginSignIn" xml:space="preserve">
+    <value>Login</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSAccountStatus" xml:space="preserve">
+    <value>Statut du compte *</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSAccountStatusA" xml:space="preserve">
+    <value>Archivé</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSAccountStatusB" xml:space="preserve">
+    <value>En cours de création</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSAccountStatusD" xml:space="preserve">
+    <value>Inactif</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSAccountStatusE" xml:space="preserve">
+    <value>Actif</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSEmail" xml:space="preserve">
+    <value>Email *</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="CSUser" xml:space="preserve">
+    <value>Utilisateur</value>
+    <comment>SM3</comment>
+  </data>
+  <data name="ZoneUpdateSuccess" xml:space="preserve">
+    <value>Zone [{0}] mise à jour avec succès !</value>
+    <comment>1123</comment>
+  </data>
+  <data name="CarrierName" xml:space="preserve">
+    <value>Nom du transporteur</value>
+    <comment>1119</comment>
+  </data>
+  <data name="DeliveryDelayBack" xml:space="preserve">
+    <value>Echec lors du retour vers la page de gestion des types de service.</value>
+    <comment>1126</comment>
+  </data>
+  <data name="ParamValidationEmpty" xml:space="preserve">
+    <value>La valeur des paramètres doit être remplie</value>
+    <comment>3-Feb-12</comment>
+  </data>
+  <data name="ParamValidationNumber" xml:space="preserve">
+    <value>La valeur du paramètre doit être numérique</value>
+    <comment>3-Feb-12</comment>
+  </data>
+  <data name="SearchResult" xml:space="preserve">
+    <value>{0} n'existe pas</value>
+    <comment>03FEB12RM</comment>
+  </data>
+  <data name="SearchWithNoData" xml:space="preserve">
+    <value>Merci de remplir {0} et de réessayer</value>
+    <comment>03FEB12</comment>
+  </data>
+  <data name="SMComparisonHeader" xml:space="preserve">
+    <value>Comparaison</value>
+    <comment>HN6</comment>
+  </data>
+  <data name="SMCurrentHeader" xml:space="preserve">
+    <value>Budget actuel</value>
+    <comment>HN6</comment>
+  </data>
+  <data name="SMPurchaseHeader" xml:space="preserve">
+    <value>Tarifs d'achat Kaizos</value>
+    <comment>HN6</comment>
+  </data>
+  <data name="SMSalesHeader" xml:space="preserve">
+    <value>Tarifs de vente</value>
+    <comment>HN6</comment>
+  </data>
+  <data name="SMShipProfile" xml:space="preserve">
+    <value>Profile d'expédition</value>
+    <comment>HN6</comment>
+  </data>
+  <data name="SMValAlreadyExists" xml:space="preserve">
+    <value>Cet enregistrement existe déjà</value>
+    <comment>HN7</comment>
+  </data>
+  <data name="ValBlock" xml:space="preserve">
+    <value>Il n'y a aucun bloc à rafraîchir.</value>
+    <comment>HN8</comment>
+  </data>
+  <data name="ValParameterEmpty" xml:space="preserve">
+    <value>La valeur des paramètres doit être remplie</value>
+    <comment>HN9</comment>
+  </data>
+  <data name="ValParameterInvalid" xml:space="preserve">
+    <value>Le format de la valeur du paramètre est invalide</value>
+    <comment>HN9</comment>
+  </data>
+  <data name="OptionParamServiceID" xml:space="preserve">
+    <value>Identifiant du service</value>
+  </data>
+  <data name="OptionParamServiceName" xml:space="preserve">
+    <value>Nom du transporteur</value>
+  </data>
+  <data name="OptionParamSurchargeCode" xml:space="preserve">
+    <value>Code surcharge</value>
+  </data>
+  <data name="OptionParamTariffRef" xml:space="preserve">
+    <value>Référence du tarif</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>Format de la date</value>
+  </data>
+  <data name="ParameterDescription" xml:space="preserve">
+    <value>Description des paramètres</value>
+  </data>
+  <data name="AllPasswordRule" xml:space="preserve">
+    <value>Le mot de passe doit respecter les règles suivantes :
+
+1. faire entre 8 et 15 caractères
+2. être composé d'au moins 3 types de caractères de la liste suivante :
+	a. minuscules (non accentuées)
+	b. majuscules (non accentuées)
+	c. chiffres
+	d. caractères spéciaux (dans cette liste) : _-+=!:.,?()$;
+	e. ne peut pas contenir plus de 3 occurrences consécutives du même caractère
+	f. ne peut pas contenir le nom de l'entreprise
+	g. les caractères accentués et diacritiques ne sont pas autorisés</value>
+    <comment>SM6</comment>
+  </data>
+  <data name="GrossMarginPercentage" xml:space="preserve">
+    <value>Marge brute (%)</value>
+    <comment>1181</comment>
+  </data>
+  <data name="LoginForgotPassword" xml:space="preserve">
+    <value>Mot de passe oublié</value>
+    <comment>SM6</comment>
+  </data>
+  <data name="FPWDGetMyPassword" xml:space="preserve">
+    <value>Récupérer</value>
+    <comment>SM6</comment>
+  </data>
+  <data name="ActivateNewPassword" xml:space="preserve">
+    <value>Nouveau mot de passe*</value>
+    <comment>SM7</comment>
+  </data>
+  <data name="ActivatePassword" xml:space="preserve">
+    <value>Activation du mot de passe</value>
+    <comment>SM7</comment>
+  </data>
+  <data name="AllActivate" xml:space="preserve">
+    <value>Activer</value>
+    <comment>SM7</comment>
+  </data>
+  <data name="MessageUserNotExist" xml:space="preserve">
+    <value>L'identifiant {0} n'existe pas. Merci de contacter votre administrateur.</value>
+    <comment>SM7</comment>
+  </data>
+  <data name="SMMaxAllowedRows" xml:space="preserve">
+    <value>Le nombre de ligne maximum par bloc est de {0}.</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="CarrierCreation" xml:space="preserve">
+    <value>Création de transporteur</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierNameWithSpace" xml:space="preserve">
+    <value>Nom du transporteur</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ReferencedCarrier" xml:space="preserve">
+    <value>Transporteur référencé</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ClaimResoulutionDelay" xml:space="preserve">
+    <value>Délais de résolution des réclamations (jours)</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierValidationFailure" xml:space="preserve">
+    <value>Echec lors de la validation des informations du transporteur</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierCreateFailure" xml:space="preserve">
+    <value>Echec lors de la création du transporteur {0}.</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierCreationSuccess" xml:space="preserve">
+    <value>Le transporteur {0} a été créé avec succès.</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierUpdateFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour du transporteur {0}.</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierUpdateSuccess" xml:space="preserve">
+    <value>Le transporteur {0} a été mis à jour avec succès.</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CarrierUpdation" xml:space="preserve">
+    <value>Mise à jour transporteurs</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EndCustUpdateActiveAccount" xml:space="preserve">
+    <value>Compte fictif</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdateDepostAmount" xml:space="preserve">
+    <value>Montant du dépôt de garantie (€)</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdateExtraInfo" xml:space="preserve">
+    <value>Informations complémentaires</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdateForCarrier" xml:space="preserve">
+    <value>Pour le transporteur</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdateInsuranceMethod" xml:space="preserve">
+    <value>Méthode d'assurance</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdateNamedCarrier" xml:space="preserve">
+    <value>Nom du transporteur</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="EndCustUpdatePaymentDelay" xml:space="preserve">
+    <value>Délais de paiement (jours)</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="MessageUserADVFailure" xml:space="preserve">
+    <value>Echec lors de la mise à jour de l'ADV.</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="MessageUserADVSuccess" xml:space="preserve">
+    <value>L'ADV a été mis à jour avec succès.</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="MessageUserFetchFailure" xml:space="preserve">
+    <value>Echec lors de la récupération des informations du client final.</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="MessageUserIDEmpty" xml:space="preserve">
+    <value>Merci de saisir les identifiants utilisateur et d'essayer de nouveau.</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="ValAddBlock" xml:space="preserve">
+    <value>Ajoutez un bloc avant de rafraîchir les valeurs.</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="MasterServiceUnderDev" xml:space="preserve">
+    <value>Echec lors de la validation exceptionnelle d'un scénario en cours de développement.</value>
+  </data>
+  <data name="Freight" xml:space="preserve">
+    <value>Fret</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="FuelCharge" xml:space="preserve">
+    <value>Surcharge carburant</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="TotalAmount" xml:space="preserve">
+    <value>Montant total</value>
+    <comment>HNR6</comment>
+  </data>
+  <data name="FranchiseCarrierReference" xml:space="preserve">
+    <value>Sous-compte transporteurs</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="FranchiseFirmCreateDate" xml:space="preserve">
+    <value>Date de création de l'entreprise</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="FranchisePaymentDelay" xml:space="preserve">
+    <value>Délai de paiement (jours)</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="FranchiseUpdateAdminFileComment" xml:space="preserve">
+    <value>Fichier .PDF &lt;= 1Mo</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="PresidentName" xml:space="preserve">
+    <value>Directeur/PDG/gérant</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CustomerPaymentDelay" xml:space="preserve">
+    <value>Délais de paiement (jours)</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CustomeInsuranceMethod" xml:space="preserve">
+    <value>Méthode d'assurance *</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CustomerFirmCreationDate" xml:space="preserve">
+    <value>Date de création de l'entreprise</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ReferentUserName" xml:space="preserve">
+    <value>Nom de l'utilisateur référent</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CustomerConfirmationEmail" xml:space="preserve">
+    <value>Confirmation de l'email (login) *</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EnableShippingPreference" xml:space="preserve">
+    <value>Activer les préférences d'expéditions</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LoginSignUp" xml:space="preserve">
+    <value>Créer un compte</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NoCarrierSelected" xml:space="preserve">
+    <value>Aucun transporteur ne peut prendre en charge cette expédition. Merci de contacter votre attaché commercial.</value>
+    <comment>HNR7</comment>
+  </data>
+  <data name="NoRecordsFound" xml:space="preserve">
+    <value>Aucun résultat ne correspond à votre recherche.</value>
+    <comment>HNR7</comment>
+  </data>
+  <data name="DeliveryDeadLineCaption" xml:space="preserve">
+    <value>Heure limite de livraison</value>
+    <comment>1125</comment>
+  </data>
+  <data name="DeliveryDelayCaption" xml:space="preserve">
+    <value>Délais de livraison</value>
+    <comment>1125</comment>
+  </data>
+  <data name="DisabledCaption" xml:space="preserve">
+    <value>Désactivé</value>
+    <comment>1125</comment>
+  </data>
+  <data name="MasterTypeNotEmpty" xml:space="preserve">
+    <value>ne doit pas être vide</value>
+    <comment>1125</comment>
+  </data>
+  <data name="MastTypeInvlidFormat" xml:space="preserve">
+    <value>doit être au format 'HH:MM'</value>
+    <comment>1125</comment>
+  </data>
+  <data name="ServiceCodeCaption" xml:space="preserve">
+    <value>Code du service</value>
+    <comment>1125</comment>
+  </data>
+  <data name="ServiceNameCaption" xml:space="preserve">
+    <value>Nom du service</value>
+    <comment>1125</comment>
+  </data>
+  <data name="MasterServiceRepeatedIn" xml:space="preserve">
+    <value>est répété dans</value>
+    <comment>1125</comment>
+  </data>
+  <data name="COUNRTYXCaption" xml:space="preserve">
+    <value>Pays X</value>
+    <comment>1181</comment>
+  </data>
+  <data name="DOMCaption" xml:space="preserve">
+    <value>France</value>
+    <comment>1181</comment>
+  </data>
+  <data name="EndCustomerDepositAmount" xml:space="preserve">
+    <value>Montant du dépôt de garantie (€)</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SelectShippingReference" xml:space="preserve">
+    <value>Préférences d'expéditions</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SelectShippingReferenceEnable" xml:space="preserve">
+    <value>Actif</value>
+    <comment>HV</comment>
+  </data>
+  <data name="Insurancebrokeremailaddress" xml:space="preserve">
+    <value>Email du courtier d'assurance</value>
+    <comment>KS</comment>
+  </data>
+  <data name="InsuranceBrokerDetails" xml:space="preserve">
+    <value>Informations du courtier d'assurance</value>
+    <comment>KS</comment>
+  </data>
+  <data name="BrokerEmailFailed" xml:space="preserve">
+    <value>Echec lors du chargement de l'adresse email du courtier d'assurance</value>
+    <comment>KS</comment>
+  </data>
+  <data name="UpdationEmailFailed" xml:space="preserve">
+    <value>Echec lors de la mise à jour de l'adresse email du courtier d'assurance.</value>
+    <comment>KS</comment>
+  </data>
+  <data name="UpdationEmailSucess" xml:space="preserve">
+    <value>L'adresse email du courtier d'assurance a été mise à jour avec succès.</value>
+    <comment>KS</comment>
+  </data>
+  <data name="BrokerEmailValidaterFailure" xml:space="preserve">
+    <value>Echec lors de la validation de l'adresse email du courtier d'assurance</value>
+    <comment>KS</comment>
+  </data>
+  <data name="MenuPersionalInformation" xml:space="preserve">
+    <value>Informations personnelles</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="MessageUserDeleteFailure" xml:space="preserve">
+    <value>Echec lors de la suppression de l'utilisateur {0}.</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="MessageUserDeleteSuccess" xml:space="preserve">
+    <value>L'utilisateur {0} a été supprimé avec succès.</value>
+    <comment>SM8</comment>
+  </data>
+  <data name="SMToolCalculationSales" xml:space="preserve">
+    <value>Echec lors du chargement du module de calcul des tarifs de vente</value>
+  </data>
+  <data name="MailSendSuccess" xml:space="preserve">
+    <value>L'utilisateur recevra un lien par email lui permettant de changer son mot de passe.</value>
+    <comment>SM9</comment>
+  </data>
+  <data name="ShippingCreditCardPayment" xml:space="preserve">
+    <value>Paiement par carte de crédit actif. Merci de contacter votre administrateur.</value>
+    <comment>HN9</comment>
+  </data>
+  <data name="ShippingInsufficientFund" xml:space="preserve">
+    <value>Vous n'avez pas l'encours nécessaire pour pouvoir expédier. Merci de contacter votre attaché commercial.</value>
+    <comment>HN9</comment>
+  </data>
+  <data name="ShipingInfo" xml:space="preserve">
+    <value>Limites de responsabilité &amp; garanties de service</value>
+    <comment>HN9</comment>
+  </data>
+  <data name="ShippingInvalidUser" xml:space="preserve">
+    <value>Vous n'avez pas les droits nécessaires pour pouvoir expédier. Merci de contacter votre administrateur.</value>
+  </data>
+  <data name="FuelSurcharge" xml:space="preserve">
+    <value>Surcharge carburant</value>
+    <comment>1261</comment>
+  </data>
+  <data name="MenuMyAccountShipmentResult" xml:space="preserve">
+    <value>Documents d'expédition</value>
+    <comment>SM10</comment>
+  </data>
+  <data name="frmActivate" xml:space="preserve">
+    <value>Kaizos - Activation d'utilisateur</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAddressBook" xml:space="preserve">
+    <value>Kaizos - Création d'adresse</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAddressBookImport" xml:space="preserve">
+    <value>Kaizos - Import d'adresse</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAddressBookList" xml:space="preserve">
+    <value>Kaizos - Carnet d'adresse</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAddressBookUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour du carnet d'adresse</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAuthorized" xml:space="preserve">
+    <value>Kaizos - Création d'un utilisateur autorisé</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAuthorizedUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour d'un utilisateur autorisé</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmAuthorizedUpdateSelf" xml:space="preserve">
+    <value>Kaizos - Informations personnelles</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCancelShipment" xml:space="preserve">
+    <value>Kaizos - Annuler une expédition</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCarrier" xml:space="preserve">
+    <value>Kaizos - Transporteurs</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmcarrierLabelDisplay" xml:space="preserve">
+    <value>Kaizos - Etiquette transporteur</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCarrierList" xml:space="preserve">
+    <value>Kaizos - Liste des transporteurs</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmConfirmPassword" xml:space="preserve">
+    <value>Kaizos - Confirmation du mot de passe</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCreditRequestAccept" xml:space="preserve">
+    <value>Kaizos - Acceptation des demandes de crédit</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCusotmer" xml:space="preserve">
+    <value>Kaizos - Création de comptes client</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCustomerService" xml:space="preserve">
+    <value>Kaizos - Création de comptes service client</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCustomerServiceList" xml:space="preserve">
+    <value>Kaizos - Liste des clients</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCustomerServiceUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour des clients</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmCustomerServiceUpdateAdmin" xml:space="preserve">
+    <value>Kaizos - Mise à jour du service client</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmDeliveryDelayImport" xml:space="preserve">
+    <value>Kaizos - Import des délais de livraison</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmDisplayShipentResult" xml:space="preserve">
+    <value>Kaizos - Détail de l'expédition</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmEndCustomerList" xml:space="preserve">
+    <value>Kaizos - Liste des clients</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmEndCustomerUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour des clients</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmFranchise" xml:space="preserve">
+    <value>Kaizos - Création d'un attaché commercial</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmFranchiseList" xml:space="preserve">
+    <value>Kaizos - Liste des attachés commerciaux</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmFranchiseUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour des attachés commerciaux</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmFuelSurchargeManagement" xml:space="preserve">
+    <value>Kaizos - Surcharge carburant</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmGrossMarginCalculation" xml:space="preserve">
+    <value>Kaizos - Outil de simulation</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmInsuranceBroker" xml:space="preserve">
+    <value>Kaizos - Courtier d'assurance</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmLogin" xml:space="preserve">
+    <value>Kaizos - Connexion</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmLogOut" xml:space="preserve">
+    <value>Kaizos - Déconnexion</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmMain" xml:space="preserve">
+    <value>Kaizos - Accueil</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmManualShipping" xml:space="preserve">
+    <value>Kaizos - Expédition manuelle</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmMasterServiceTypeCreation" xml:space="preserve">
+    <value>Kaizos - Création de master types de service</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmMasterServiceTypeUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour des master types de service</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmPasswordRecovery" xml:space="preserve">
+    <value>Kaizos - Mot de passe oublié</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmProfile" xml:space="preserve">
+    <value>Kaizos - Profil</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmPublicTariff" xml:space="preserve">
+    <value>Kaizos - Tarif public</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmResult" xml:space="preserve">
+    <value>Kaizos - Information</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmShipmentConfirmation" xml:space="preserve">
+    <value>Kaizos - Confirmation d'expédition</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTariffCreation" xml:space="preserve">
+    <value>Kaizos - Création de tarif</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTariffDelayInterrogation" xml:space="preserve">
+    <value>Kaizos - Obtenir un coût et un délais</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTariffImporation" xml:space="preserve">
+    <value>Kaizos - Import de tarif</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTariffOptionsAndSurcharge" xml:space="preserve">
+    <value>Kaizos - Options et surcharges</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTariffValidity" xml:space="preserve">
+    <value>Kaizos - Validité des tarifs</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTOS" xml:space="preserve">
+    <value>Kaizos - Conditions d'Utilisation</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmTOSAccept" xml:space="preserve">
+    <value>Kaizos - Conditions d'Utilisation : acceptation</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmZoneCreation" xml:space="preserve">
+    <value>Kaizos - Création de zones</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmZoneSearch" xml:space="preserve">
+    <value>Kaizos - Recherche de zones</value>
+    <comment>PT</comment>
+  </data>
+  <data name="frmZoneUpdate" xml:space="preserve">
+    <value>Kaizos - Mise à jour de zones</value>
+    <comment>PT</comment>
+  </data>
+  <data name="FranchiseAccountReference" xml:space="preserve">
+    <value>Sous-comptes transporteurs</value>
+    <comment>SM12</comment>
+  </data>
+  <data name="FranchiseCarrierName" xml:space="preserve">
+    <value>Nom transporteur</value>
+    <comment>SM12</comment>
+  </data>
+  <data name="FranchisePPAccountRef" xml:space="preserve">
+    <value>Référence de sous-compte</value>
+    <comment>SM12</comment>
+  </data>
+  <data name="FranchisePPCarrierName" xml:space="preserve">
+    <value>Nom transporteur</value>
+    <comment>SM12</comment>
+  </data>
+  <data name="ValBetween" xml:space="preserve">
+    <value>doit être compris entre</value>
+    <comment>HN12</comment>
+  </data>
+  <data name="OverLap" xml:space="preserve">
+    <value>Impossible de mettre à jour, la plage de validité chevauche celle du
+tarif</value>
+    <comment>KM</comment>
+  </data>
+  <data name="AllMandatoryfield" xml:space="preserve">
+    <value>* Champs obligatoires</value>
+    <comment>sm</comment>
+  </data>
+  <data name="EndCustomerCountry" xml:space="preserve">
+    <value>Pays *</value>
+  </data>
+  <data name="FranchiseCountry" xml:space="preserve">
+    <value>Pays *</value>
+  </data>
+  <data name="PasswordRecovery" xml:space="preserve">
+    <value>Récupération de mot de passe</value>
+  </data>
+  <data name="PMAZ" xml:space="preserve">
+    <value>Autorisé</value>
+  </data>
+  <data name="PMCS" xml:space="preserve">
+    <value>Service client</value>
+  </data>
+  <data name="PMN1" xml:space="preserve">
+    <value>N1</value>
+  </data>
+  <data name="PMN2" xml:space="preserve">
+    <value>N2</value>
+  </data>
+  <data name="PMRF" xml:space="preserve">
+    <value>Référent</value>
+  </data>
+  <data name="ValidationEmptyLogin" xml:space="preserve">
+    <value>La valeur des paramètres doit être remplie</value>
+  </data>
+  <data name="ValidationInvalidLogin" xml:space="preserve">
+    <value>saisie invalide</value>
+  </data>
+  <data name="ValidationLengthLogin" xml:space="preserve">
+    <value>La taille du mot de passe doit comporter entre 8 et 15 caractères</value>
+  </data>
+  <data name="valNotAvailableLogin" xml:space="preserve">
+    <value>L'identifiant de l'utilisateur est absent des utilisateurs enregistrés</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="MateriaLusedPackaging" xml:space="preserve">
+    <value>Matériaux utilisés dans l'emballage</value>
+  </data>
+  <data name="PackagingType" xml:space="preserve">
+    <value>Type d'emballage</value>
+  </data>
+  <data name="FSCarrierPublic" xml:space="preserve">
+    <value>Transporteur public</value>
+  </data>
+  <data name="FSKaizosPurchase" xml:space="preserve">
+    <value>Achat Kaizos</value>
+  </data>
+  <data name="FSKeyCustomerNegotiated" xml:space="preserve">
+    <value>Négociés grand compte</value>
+  </data>
+  <data name="FSParameter" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="FSSearch" xml:space="preserve">
+    <value>Chercher</value>
+  </data>
+  <data name="FSValue" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="PTWeightRanges" xml:space="preserve">
+    <value>Tranche de poids (Kg)</value>
+  </data>
+  <data name="TariffImport" xml:space="preserve">
+    <value>Import de tarif</value>
+  </data>
+  <data name="ZoneCreateCountry" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="ZoneCreateZipcode" xml:space="preserve">
+    <value>Zipcode</value>
+  </data>
+  <data name="ShippingReceiverMailLine2" xml:space="preserve">
+    <value>{0} vient d'effectuer desexpéditions dont vous êtes destinataire :</value>
+    <comment>HN24</comment>
+  </data>
+  <data name="ShippingReceiverMailSubject" xml:space="preserve">
+    <value>Notification d'expédition Kaizos</value>
+    <comment>HN24</comment>
+  </data>
+  <data name="ShippingSenderMailLine1" xml:space="preserve">
+    <value>Bonjour,</value>
+    <comment>HN24</comment>
+  </data>
+  <data name="ShippingSenderMailLine2" xml:space="preserve">
+    <value>Les expéditions suivantes ont bien été prises en charge par Kaizos :</value>
+    <comment>HN24</comment>
+  </data>
+  <data name="ShippingSenderMailSubject" xml:space="preserve">
+    <value>Notification d'expédition Kaizos</value>
+    <comment>HN24</comment>
+  </data>
+  <data name="FRListGrossMargin" xml:space="preserve">
+    <value>Affecter un tarif</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CalculatedInsurancevalue" xml:space="preserve">
+    <value>Valeur d'assurance calculée</value>
+    <comment>KS</comment>
+  </data>
+  <data name="AssignTariffMailBody" xml:space="preserve">
+    <value>M. ou Mme {0}, &lt;BR&gt;  &lt;BR&gt; votre compte Kaizos a été créé avec succès. Merci de cliquer sur le lien ci-dessous pour l'activer et expédier dès maintenant. Si vous souhaitez une assistance immédiate, merci de bien vouloir nous contacter : Par téléphone : {1}  Par email : {2}</value>
+    <comment>HN26</comment>
+  </data>
+  <data name="AssignTariffMailBody_Self" xml:space="preserve">
+    <value>M. ou Mme {0},&lt;BR&gt;  &lt;BR&gt;  votre attaché commercial vient d'affecter un tarif de vente à votre compte Kaizos. Vous pouvez dès maintenant vous y connecter et expédier.</value>
+    <comment>HN26</comment>
+  </data>
+  <data name="AssignTariffMailSubject" xml:space="preserve">
+    <value>Kaizos - Confirmation de création de compte</value>
+    <comment>HN26</comment>
+  </data>
+  <data name="AssignTariffMailSubject_Self" xml:space="preserve">
+    <value>Kaizos - Affectation de tarif</value>
+    <comment>HN26</comment>
+  </data>
+  <data name="EndCustSubmit" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="ContainerTypeLetter" xml:space="preserve">
+    <value>lettre</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ContainerTypePallet" xml:space="preserve">
+    <value>palette</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ContainerTypeParcel" xml:space="preserve">
+    <value>Colis</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ParcelShipping" xml:space="preserve">
+    <value>Colis</value>
+    <comment>HV</comment>
+  </data>
+  <data name="letterShipping" xml:space="preserve">
+    <value>lettre</value>
+    <comment>HV</comment>
+  </data>
+  <data name="palettShipping" xml:space="preserve">
+    <value>palette</value>
+    <comment>HV</comment>
+  </data>
+  <data name="staples" xml:space="preserve">
+    <value>agrafes</value>
+    <comment>HV</comment>
+  </data>
+  <data name="strapping" xml:space="preserve">
+    <value>cerclage</value>
+    <comment>HV</comment>
+  </data>
+  <data name="nails" xml:space="preserve">
+    <value>clous</value>
+    <comment>HV</comment>
+  </data>
+  <data name="collage" xml:space="preserve">
+    <value>collage</value>
+    <comment>HV</comment>
+  </data>
+  <data name="U Shape" xml:space="preserve">
+    <value>agrafes U</value>
+    <comment>HV</comment>
+  </data>
+  <data name="tape" xml:space="preserve">
+    <value>bandes</value>
+    <comment>HV</comment>
+  </data>
+  <data name="strap" xml:space="preserve">
+    <value>sangles</value>
+    <comment>HV</comment>
+  </data>
+  <data name="tray" xml:space="preserve">
+    <value>plateau</value>
+    <comment>HV</comment>
+  </data>
+  <data name="box" xml:space="preserve">
+    <value>carton</value>
+    <comment>HV</comment>
+  </data>
+  <data name="case" xml:space="preserve">
+    <value>boîte</value>
+    <comment>HV</comment>
+  </data>
+  <data name="insulated packaging" xml:space="preserve">
+    <value>emballage isolé</value>
+    <comment>HV</comment>
+  </data>
+  <data name="envelope" xml:space="preserve">
+    <value>enveloppe</value>
+    <comment>HV</comment>
+  </data>
+  <data name="film pack" xml:space="preserve">
+    <value>filmé</value>
+    <comment>HV</comment>
+  </data>
+  <data name="tube" xml:space="preserve">
+    <value>tube</value>
+    <comment>HV</comment>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Autres</value>
+    <comment>HV</comment>
+  </data>
+  <data name="corrugated" xml:space="preserve">
+    <value>carton ondulé</value>
+    <comment>HV</comment>
+  </data>
+  <data name="package with air bubbles" xml:space="preserve">
+    <value>papier bulles</value>
+    <comment>HV</comment>
+  </data>
+  <data name="foam sheet" xml:space="preserve">
+    <value>feuilles de mousse</value>
+    <comment>HV</comment>
+  </data>
+  <data name="kraft paper" xml:space="preserve">
+    <value>papier kraft</value>
+    <comment>HV</comment>
+  </data>
+  <data name="padding bulk" xml:space="preserve">
+    <value>rembourrage divers</value>
+    <comment>HV</comment>
+  </data>
+  <data name="padding paper" xml:space="preserve">
+    <value>rembourrage papier</value>
+    <comment>HV</comment>
+  </data>
+  <data name="without special protection" xml:space="preserve">
+    <value>sans protection particulière</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CIVILITYMr" xml:space="preserve">
+    <value>M</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CIVILITYMrs" xml:space="preserve">
+    <value>Mme</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CIVILITYMiss" xml:space="preserve">
+    <value>Mlle</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CANADA" xml:space="preserve">
+    <value>CANADA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="COCOS KEELING ISLANDS" xml:space="preserve">
+    <value>COCOS (KEELING), ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CONGO DEMOCRATIC REPUBLIC" xml:space="preserve">
+    <value>CONGO, LA RÉPUBLIQUE DÉMOCRATIQUE DU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CENTRAL AFRICAN REPUBLIC" xml:space="preserve">
+    <value>CENTRAFRICAINE, RÉPUBLIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CONGO" xml:space="preserve">
+    <value>CONGO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SWITZERLAND" xml:space="preserve">
+    <value>SUISSE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="IVORY COAST" xml:space="preserve">
+    <value>CÔTE D’IVOIRE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="COOK ISLANDS" xml:space="preserve">
+    <value>COOK, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CHILE" xml:space="preserve">
+    <value>CHILI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CAMEROON" xml:space="preserve">
+    <value>CAMEROUN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CHINA" xml:space="preserve">
+    <value>CHINE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="COLOMBIA" xml:space="preserve">
+    <value>COLOMBIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="COSTA RICA" xml:space="preserve">
+    <value>COSTA RICA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SERBIA AND MONTENEGRO" xml:space="preserve">
+    <value>SERBIE ET MONTENEGRO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CUBA" xml:space="preserve">
+    <value>CUBA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CAPE VERDE" xml:space="preserve">
+    <value>CAP-VERT</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CHRISTMAS ISLAND" xml:space="preserve">
+    <value>CHRISTMAS, ÎLE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CYPRUS" xml:space="preserve">
+    <value>CHYPRE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CZECH REPUBLIC" xml:space="preserve">
+    <value>TCHÈQUE, RÉPUBLIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GERMANY" xml:space="preserve">
+    <value>ALLEMAGNE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="DJIBOUTI" xml:space="preserve">
+    <value>DJIBOUTI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="DENMARK" xml:space="preserve">
+    <value>DANEMARK</value>
+    <comment>HV</comment>
+  </data>
+  <data name="DOMINICA" xml:space="preserve">
+    <value>DOMINIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="DOMINICAN REPUBLIC" xml:space="preserve">
+    <value>DOMINICAINE, RÉPUBLIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ALGERIA" xml:space="preserve">
+    <value>ALGÉRIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ECUADOR" xml:space="preserve">
+    <value>ÉQUATEUR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ESTONIA" xml:space="preserve">
+    <value>ESTONIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EGYPT" xml:space="preserve">
+    <value>ÉGYPTE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="WESTERN SAHARA" xml:space="preserve">
+    <value>SAHARA OCCIDENTAL</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ERITREA" xml:space="preserve">
+    <value>ÉRYTHRÉE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SPAIN" xml:space="preserve">
+    <value>ESPAGNE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ETHIOPIA" xml:space="preserve">
+    <value>ÉTHIOPIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FINLAND" xml:space="preserve">
+    <value>FINLANDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FIJI" xml:space="preserve">
+    <value>FIDJI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FALKLAND ISLANDS" xml:space="preserve">
+    <value>FALKLAND, ÎLES (MALVINAS)</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MICRONESIA FEDERATED STATES" xml:space="preserve">
+    <value>MICRONÉSIE, ÉTATS FÉDÉRÉS DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FAROE ISLANDS" xml:space="preserve">
+    <value>FÉROÉ, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FRANCE" xml:space="preserve">
+    <value>FRANCE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GABON" xml:space="preserve">
+    <value>GABON</value>
+    <comment>HV</comment>
+  </data>
+  <data name="UNITED KINGDOM" xml:space="preserve">
+    <value>ROYAUME-UNI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GRENADA" xml:space="preserve">
+    <value>GRENADE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GEORGIA" xml:space="preserve">
+    <value>GÉORGIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FRENCH GUIANA" xml:space="preserve">
+    <value>GUYANE FRANÇAISE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GHANA" xml:space="preserve">
+    <value>GHANA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GIBRALTAR" xml:space="preserve">
+    <value>GIBRALTAR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GREENLAND" xml:space="preserve">
+    <value>GROENLAND</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GAMBIA" xml:space="preserve">
+    <value>GAMBIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUINEA" xml:space="preserve">
+    <value>GUINÉE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUADELOUPE" xml:space="preserve">
+    <value>GUADELOUPE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EQUATORIAL GUINEA" xml:space="preserve">
+    <value>GUINÉE ÉQUATORIALE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GREECE" xml:space="preserve">
+    <value>GRÈCE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SOUTH GEORGIA AND SANDWICH ISLANDS" xml:space="preserve">
+    <value>GÉORGIE DU SUD ET LES ÎLES SANDWICH DU SUD</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUATEMALA" xml:space="preserve">
+    <value>GUATEMALA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUAM" xml:space="preserve">
+    <value>GUAM</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUINEA-BISSAU" xml:space="preserve">
+    <value>GUINÉE-BISSAU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="GUYANA" xml:space="preserve">
+    <value>GUYANA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="HONG KONG" xml:space="preserve">
+    <value>HONG KONG</value>
+    <comment>HV</comment>
+  </data>
+  <data name="HEARD AND MCDONALD ISLANDS" xml:space="preserve">
+    <value>HEARD, ÎLE ET MCDONALD, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="HONDURAS" xml:space="preserve">
+    <value>HONDURAS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CROATIA" xml:space="preserve">
+    <value>CROATIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="HAITI" xml:space="preserve">
+    <value>HAÏTI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="HUNGARY" xml:space="preserve">
+    <value>HONGRIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="INDONESIA" xml:space="preserve">
+    <value>INDONÉSIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="IRELAND" xml:space="preserve">
+    <value>IRLANDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ISRAEL" xml:space="preserve">
+    <value>ISRAËL</value>
+    <comment>HV</comment>
+  </data>
+  <data name="INDIA" xml:space="preserve">
+    <value>INDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="BRITISH INDIAN OCEAN TERRITORY" xml:space="preserve">
+    <value>OCÉAN INDIEN, TERRITOIRE BRITANNIQUE DE L'</value>
+    <comment>HV</comment>
+  </data>
+  <data name="IRAQ" xml:space="preserve">
+    <value>IRAQ</value>
+    <comment>HV</comment>
+  </data>
+  <data name="IRAN" xml:space="preserve">
+    <value>IRAN, RÉPUBLIQUE ISLAMIQUE D'</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ICELAND" xml:space="preserve">
+    <value>ISLANDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ITALY" xml:space="preserve">
+    <value>ITALIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="JAMAICA" xml:space="preserve">
+    <value>JAMAÏQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="JORDAN" xml:space="preserve">
+    <value>JORDANIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="JAPAN" xml:space="preserve">
+    <value>JAPON</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KENYA" xml:space="preserve">
+    <value>KENYA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KYRGYZSTAN" xml:space="preserve">
+    <value>KIRGHIZISTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CAMBODIA" xml:space="preserve">
+    <value>CAMBODGE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KIRIBATI" xml:space="preserve">
+    <value>KIRIBATI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="COMOROS" xml:space="preserve">
+    <value>COMORES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAINT KITTS AND NEVIS" xml:space="preserve">
+    <value>SAINT-KITTS-ET-NEVIS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NORTH KOREA" xml:space="preserve">
+    <value>CORÉE, RÉPUBLIQUE POPULAIRE DÉMOCRATIQUE DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SOUTH KOREA" xml:space="preserve">
+    <value>CORÉE, RÉPUBLIQUE DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KUWAIT" xml:space="preserve">
+    <value>KOWEÏT</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CAYMAN ISLANDS" xml:space="preserve">
+    <value>CAÏMANES, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KAZAKHSTAN" xml:space="preserve">
+    <value>KAZAKHSTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LAO" xml:space="preserve">
+    <value>LAO, RÉPUBLIQUE DÉMOCRATIQUE POPULAIRE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LEBANON" xml:space="preserve">
+    <value>LIBAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAINT LUCIA" xml:space="preserve">
+    <value>SAINTE-LUCIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LIECHTENSTEIN" xml:space="preserve">
+    <value>LIECHTENSTEIN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SRI LANKA" xml:space="preserve">
+    <value>SRI LANKA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LIBERIA" xml:space="preserve">
+    <value>LIBÉRIA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LESOTHO" xml:space="preserve">
+    <value>LESOTHO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LITHUANIA" xml:space="preserve">
+    <value>LITUANIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LUXEMBOURG" xml:space="preserve">
+    <value>LUXEMBOURG</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LATVIA" xml:space="preserve">
+    <value>LETTONIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="LIBYA" xml:space="preserve">
+    <value>LIBYENNE, JAMAHIRIYA ARABE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MOROCCO" xml:space="preserve">
+    <value>MAROC</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MONACO" xml:space="preserve">
+    <value>MONACO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MOLDOVA" xml:space="preserve">
+    <value>MOLDOVA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MONTENEGRO" xml:space="preserve">
+    <value>MONTÉNÉGRO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MADAGASCAR" xml:space="preserve">
+    <value>MADAGASCAR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MARSHALL ISLANDS" xml:space="preserve">
+    <value>MARSHALL, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MACEDONIA" xml:space="preserve">
+    <value>MACÉDOINE, L'EX-RÉPUBLIQUE YOUGOSLAVE DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MALI" xml:space="preserve">
+    <value>MALI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MYANMAR" xml:space="preserve">
+    <value>MYANMAR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MONGOLIA" xml:space="preserve">
+    <value>MONGOLIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MACAO" xml:space="preserve">
+    <value>MACAO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NORTHERN MARIANA ISLANDS" xml:space="preserve">
+    <value>MARIANNES DU NORD, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MARTINIQUE" xml:space="preserve">
+    <value>MARTINIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MAURITANIA" xml:space="preserve">
+    <value>MAURITANIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MONTSERRAT" xml:space="preserve">
+    <value>MONTSERRAT</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MALTA" xml:space="preserve">
+    <value>MALTE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MAURITIUS" xml:space="preserve">
+    <value>MAURICE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MALDIVES" xml:space="preserve">
+    <value>MALDIVES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MALAWI" xml:space="preserve">
+    <value>MALAWI</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MEXICO" xml:space="preserve">
+    <value>MEXIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MALAYSIA" xml:space="preserve">
+    <value>MALAISIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MOZAMBIQUE" xml:space="preserve">
+    <value>MOZAMBIQUE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NAMIBIA" xml:space="preserve">
+    <value>NAMIBIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NEW CALEDONIA" xml:space="preserve">
+    <value>NOUVELLE-CALÉDONIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NIGER" xml:space="preserve">
+    <value>NIGER</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NORFOLK ISLAND" xml:space="preserve">
+    <value>NORFOLK, ÎLE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NIGERIA" xml:space="preserve">
+    <value>NIGÉRIA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NICARAGUA" xml:space="preserve">
+    <value>NICARAGUA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NETHERLANDS" xml:space="preserve">
+    <value>PAYS-BAS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NORWAY" xml:space="preserve">
+    <value>NORVÈGE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NEPAL" xml:space="preserve">
+    <value>NÉPAL</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NAURU" xml:space="preserve">
+    <value>NAURU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NIUE" xml:space="preserve">
+    <value>NIUÉ</value>
+    <comment>HV</comment>
+  </data>
+  <data name="NEW ZEALAND" xml:space="preserve">
+    <value>NOUVELLE-ZÉLANDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="OMAN" xml:space="preserve">
+    <value>OMAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PANAMA" xml:space="preserve">
+    <value>PANAMA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PERU" xml:space="preserve">
+    <value>PÉROU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FRENCH POLYNESIA" xml:space="preserve">
+    <value>POLYNÉSIE FRANÇAISE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PAPUA NEW GUINEA" xml:space="preserve">
+    <value>PAPOUASIE-NOUVELLE-GUINÉE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PHILIPPINES" xml:space="preserve">
+    <value>PHILIPPINES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PAKISTAN" xml:space="preserve">
+    <value>PAKISTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="POLAND" xml:space="preserve">
+    <value>POLOGNE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAINT PIERRE AND MIQUELON" xml:space="preserve">
+    <value>SAINT-PIERRE-ET-MIQUELON</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PITCAIRN" xml:space="preserve">
+    <value>PITCAIRN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PUERTO RICO" xml:space="preserve">
+    <value>PORTO RICO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PALESTINIAN TERRITORY" xml:space="preserve">
+    <value>TERRITOIRE PALESTINIEN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PORTUGAL" xml:space="preserve">
+    <value>PORTUGAL</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PALAU" xml:space="preserve">
+    <value>PALAOS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="PARAGUAY" xml:space="preserve">
+    <value>PARAGUAY</value>
+    <comment>HV</comment>
+  </data>
+  <data name="QATAR" xml:space="preserve">
+    <value>QATAR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="REUNION" xml:space="preserve">
+    <value>RÉUNION</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ROMANIA" xml:space="preserve">
+    <value>ROUMANIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SERBIA" xml:space="preserve">
+    <value>SERBIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="RUSSIA" xml:space="preserve">
+    <value>RUSSIE, FÉDÉRATION DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="RWANDA" xml:space="preserve">
+    <value>RWANDA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAUDI ARABIA" xml:space="preserve">
+    <value>ARABIE SAOUDITE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SOLOMON ISLANDS" xml:space="preserve">
+    <value>SALOMON, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SEYCHELLES" xml:space="preserve">
+    <value>SEYCHELLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SUDAN" xml:space="preserve">
+    <value>SOUDAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SWEDEN" xml:space="preserve">
+    <value>SUÈDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SINGAPORE" xml:space="preserve">
+    <value>SINGAPOUR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAINT HELENA" xml:space="preserve">
+    <value>SAINTE-HÉLÈNE, ASCENSION ET TRISTAN DA CUNHA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SLOVENIA" xml:space="preserve">
+    <value>SLOVÉNIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SVALBARD AND JAN MAYEN ISLANDS" xml:space="preserve">
+    <value>SVALBARD ET ÎLE JAN MAYEN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SLOVAKIA" xml:space="preserve">
+    <value>SLOVAQUIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SIERRA LEONE" xml:space="preserve">
+    <value>SIERRA LEONE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAN MARINO" xml:space="preserve">
+    <value>SAINT-MARIN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SENEGAL" xml:space="preserve">
+    <value>SÉNÉGAL</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SOMALIA" xml:space="preserve">
+    <value>SOMALIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SURINAME" xml:space="preserve">
+    <value>SURINAME</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAO TOME AND PRINCIPE" xml:space="preserve">
+    <value>SAO TOMÉ-ET-PRINCIPE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="EL SALVADOR" xml:space="preserve">
+    <value>EL SALVADOR</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SYRIA" xml:space="preserve">
+    <value>SYRIENNE, RÉPUBLIQUE ARABE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SWAZILAND" xml:space="preserve">
+    <value>SWAZILAND</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TURKS AND CAICOS ISLANDS" xml:space="preserve">
+    <value>TURKS ET CAÏQUES, ÎLES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="CHAD" xml:space="preserve">
+    <value>TCHAD</value>
+    <comment>HV</comment>
+  </data>
+  <data name="FRENCH SOUTHERN TERRITORIES" xml:space="preserve">
+    <value>TERRES AUSTRALES FRANÇAISES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TOGO" xml:space="preserve">
+    <value>TOGO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="THAILAND" xml:space="preserve">
+    <value>THAÏLANDE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TAJIKISTAN" xml:space="preserve">
+    <value>TADJIKISTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TOKELAU" xml:space="preserve">
+    <value>TOKELAU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TIMOR-LESTE" xml:space="preserve">
+    <value>TIMOR-LESTE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TURKMENISTAN" xml:space="preserve">
+    <value>TURKMÉNISTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TUNISIA" xml:space="preserve">
+    <value>TUNISIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TONGA" xml:space="preserve">
+    <value>TONGA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TURKEY" xml:space="preserve">
+    <value>TURQUIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TRINIDAD AND TOBAGO" xml:space="preserve">
+    <value>TRINITÉ-ET-TOBAGO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TUVALU" xml:space="preserve">
+    <value>TUVALU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TAIWAN" xml:space="preserve">
+    <value>TAÏWAN, PROVINCE DE CHINE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="TANZANIA" xml:space="preserve">
+    <value>TANZANIE, RÉPUBLIQUE UNIE DE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="UKRAINE" xml:space="preserve">
+    <value>UKRAINE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="UGANDA" xml:space="preserve">
+    <value>OUGANDA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="US MINOR OUTLYING ISLANDS" xml:space="preserve">
+    <value>ÎLES MINEURES ÉLOIGNÉES DES ÉTATS-UNIS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="UNITED STATES" xml:space="preserve">
+    <value>ÉTATS-UNIS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="URUGUAY" xml:space="preserve">
+    <value>URUGUAY</value>
+    <comment>HV</comment>
+  </data>
+  <data name="UZBEKISTAN" xml:space="preserve">
+    <value>OUZBÉKISTAN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VATICAN" xml:space="preserve">
+    <value>SAINT-SIÈGE (ÉTAT DE LA CITÉ DU VATICAN)</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAINT VINCENT AND GRENADINES" xml:space="preserve">
+    <value>SAINT-VINCENT-ET-LES GRENADINES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VENEZUELA" xml:space="preserve">
+    <value>VENEZUELA, RÉPUBLIQUE BOLIVARIENNE DU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VIRGIN ISLANDS, BRITISH" xml:space="preserve">
+    <value>ÎLES VIERGES BRITANNIQUES</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VIRGIN ISLANDS, U.S." xml:space="preserve">
+    <value>ÎLES VIERGES DES ÉTATS-UNIS</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VIET NAM" xml:space="preserve">
+    <value>VIET NAM</value>
+    <comment>HV</comment>
+  </data>
+  <data name="VANUATU" xml:space="preserve">
+    <value>VANUATU</value>
+    <comment>HV</comment>
+  </data>
+  <data name="WALLIS AND FUTUNA" xml:space="preserve">
+    <value>WALLIS-ET-FUTUNA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SAMOA" xml:space="preserve">
+    <value>SAMOA</value>
+    <comment>HV</comment>
+  </data>
+  <data name="KOSOVO" xml:space="preserve">
+    <value>KOSOVO</value>
+    <comment>HV</comment>
+  </data>
+  <data name="YEMEN" xml:space="preserve">
+    <value>YÉMEN</value>
+    <comment>HV</comment>
+  </data>
+  <data name="MAYOTTE" xml:space="preserve">
+    <value>MAYOTTE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="SOUTH AFRICA" xml:space="preserve">
+    <value>AFRIQUE DU SUD</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ZAMBIA" xml:space="preserve">
+    <value>ZAMBIE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ZIMBABWE" xml:space="preserve">
+    <value>ZIMBABWE</value>
+    <comment>HV</comment>
+  </data>
+  <data name="ValWeekend" xml:space="preserve">
+    <value>doit être en semaine</value>
+    <comment>KM</comment>
+  </data>
+  <data name="EmergencyMessage" xml:space="preserve">
+    <value>Attention : suite à un incident technique le service est momentanément
+interrompu. Nous vous prions de nous excuser pour la gène occasionnée. Pour
+tout complément d'information, vous pouvez nous contacter vous pouvez
+contacter :
+ - Par téléphone : {0}
+ - Par email : {1}</value>
+    <comment>HV</comment>
+  </data>
+	<data name="EmergencyMessageDisconnected" xml:space="preserve">
+    <value>Attention : suite à un incident technique le service est momentanément
+interrompu. Nous vous prions de nous excuser pour la gène occasionnée. Pour
+tout complément d'information, vous pouvez contacter votre attaché commercial
+ou le service client.</value>
+    <comment>HV</comment>
+  </data>
+  <data name="valzone" xml:space="preserve">
+    <value>Le pays - qui existe déjà</value>
+    <comment>KS</comment>
+  </data>
+  <data name="cname" xml:space="preserve">
+    <value>Transporteur</value>
+    <comment>KM</comment>
+  </data>
+</root>

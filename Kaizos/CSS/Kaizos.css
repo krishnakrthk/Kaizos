@@ -1,0 +1,2444 @@
+﻿.MainTitle
+{
+	width:1000px;
+	height:44px;
+	margin-top:0px;
+	margin-left:0px;
+	background-repeat: no-repeat !important;
+	text-align: left;
+	background-image: url(../Image/Kaizos_Logo.jpg) !important;
+}
+
+.AppLogo
+{
+	width:206px;
+	height:44px;
+	background-image: url(../Image/Kaizos_Logo.jpg) !important;
+	background: url('../Images/Kaizos_Logo.jpg') no-repeat;
+	background-repeat: no-repeat !important;
+	text-align: left;
+}
+
+.MainLogoutLabel
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #0000FF;
+	height: 20px;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.Hidden
+{
+	display:none;
+}
+
+.MainLogOut
+{
+	margin-top:0px;
+	background-repeat: no-repeat !important;
+	text-align: right;
+	vertical-align:middle;
+}
+
+.ClsLogOut
+{
+	width:50px;
+	background-image: url(../Image/Log_out_msg.png) !important;
+	background: url(../Image/Log_out_msg.png) no-repeat;
+	background-repeat: no-repeat !important;
+	text-align: right;
+}
+
+.MenuBar
+{
+	margin-left:10px;
+	height: 55px;
+}
+
+.MenuControl
+{
+	width: 1000px;
+	height: 35px;
+	margin-top: 20px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(../Image/Menu.png) !important;
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	vertical-align: top;
+}
+
+.MenuStyle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(../Image/Menu_Sub.png) !important;
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	vertical-align: top;
+}
+
+.MenuHoverStyle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(../Image/Menu_Sub_hover.png) !important;
+	background-repeat: repeat-x;
+	color: #000066;
+	vertical-align: top;
+}
+
+.displayNone
+{
+	display:none;
+}
+
+.modalPopup
+{
+background-color:white;
+border-width:3px;
+border-style:solid;
+border-color:Gray;
+padding:3px;
+width:500px;
+height:600px;
+
+}
+
+.clsErrorMessage
+{
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: normal;
+font-size: 10px;
+color: #FF0000;
+height: 12px;
+}
+
+.modalBackground
+{
+-ms-filter: alpha(opacity=70);
+ -ms-opacity:0.7;
+}
+
+.DeliveryDelayEditButton
+	{
+	height: 22px !important;
+	background-image: url(../Image/left_arrow.png) !important;
+	background-repeat: no-repeat !important;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 22px;
+	background-color: #F4F4F4 !important;
+	font-size:10px;
+	}	
+
+.DIVMasterServiceType
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 400px;
+    height : 230px;
+
+}
+.tableCellRightAlignment
+{
+	text-align:right;
+}
+
+.tableCellLeftAlignment
+{
+	text-align:left;
+}
+
+.tableCellCentreAlignment
+{
+	text-align:center;
+}
+
+.DIVMasterServiceTypeLeft
+{
+	width:206px;
+	height:104px;
+	margin-top:10px;
+	margin-left:10px;
+	background-color:Teal;
+	float:left;
+	text-align:right;
+}
+
+.DIVMasterServiceTypeRight
+{
+	width:172px;
+	height:102px;
+	margin-top:10px;
+	margin-left:10px;
+	background-color:Yellow;
+	float:left;
+}
+
+.clsMasterService
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+	font-family:Arial,Verdana;
+	font-size: 10pt;
+	border: 1px solid #999;
+	width:700px;
+	height:250px;
+}
+
+
+.clsServiceDelayFieldSet
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+	font-family:Arial,Verdana;
+	font-size: 10pt;
+	border: 1px solid #999;
+	width:400px;
+	height:500px;
+
+}
+
+
+.DIVDeliveryDelay
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+	font-family:Arial,Verdana;
+	font-size: 10pt;
+	width:350px;
+	height:500px;
+}
+
+/* Form element classes */
+	
+	input[type=checkbox]
+{
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background-color: white;
+border: 1px solid #82A4D7;
+font-size: 9px;
+padding: 0px;
+margin: 0px;
+height: 10px;
+}
+
+
+	input[type=submit], input[type=button]
+	{
+	height: 22px !important;
+	background-image: url(../Image/submit.png) !important;
+	background-repeat: no-repeat !important;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 22px;
+	background-color: #F4F4F4 !important;
+	font-size:10px;
+	}	
+	
+	input[type=submit]:hover,
+	input[type=button]:hover{
+		color: #157BAA;
+	}
+
+	input[type=submit].back,
+	input[type=button].back{
+		background-image: url(img/buttons/back.png) !important;
+	}
+	
+	input[type=submit].raz,
+	input[type=button].raz{
+		background-image: url(img/buttons/reset.png) !important;
+	}
+	
+	input[type=submit].add,
+	input[type=button].add{
+		background-image: url(../Image/more.png) !important;
+	}
+
+	input[type=submit].save,
+	input[type=button].save{
+		background-image: url(img/buttons/save.png) !important;
+		width: 14px;
+		height: 14px;
+		padding: 0px;
+		margin: 0px 5px 0px 0px;
+		cursor: pointer;
+		float: left;
+		-moz-opacity:0.50
+	}
+	input[type=submit].save:hover,
+	input[type=button].save:hover{
+		-moz-opacity:1.00	}
+	input.auto, select.auto{
+		width: auto !important;
+	}
+
+	select.small, input.small{
+		width: 100px !important;
+		font-size: 10px;
+	}
+
+	input.file{
+		width: 210px !important;
+	}
+	
+	input.icone_del{
+		width: 15px !important;
+		height: 15px !important;
+		padding: 0px !important;
+		border: 0px !important;
+		background: none !important;
+		background-image: url(img/list/del.png) !important;
+		background-repeat: no-repeat;
+		border: none;
+		/*float: left;*/
+	}
+	input.icone_hide{
+		width: 15px !important;
+		height: 15px !important;
+		padding: 0px !important;
+		border: 0px !important;
+		background: none !important;
+		background-image: url(img/list/del.png) !important;
+		background-repeat: no-repeat;
+		border: none;
+		float: right;
+		-moz-opacity:0.30
+	}
+	input.icone_hide:hover{
+		-moz-opacity:1.00
+	}
+	input[type=password],
+	input[type=text],
+	input[type=file],
+	select,
+	textarea{
+		-moz-border-radius: 3px; 
+        -webkit-border-radius: 3px; 
+ 		background-color: white;
+		border: 1px solid #82A4D7;
+		font-size: 9px;
+		padding: 0px;
+		margin: 0px;
+		}
+	
+	input[type=radio]
+	{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+		}
+	
+	input[type=hidden]{
+		display: none;
+		position: fixed;
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+	}
+	select[multiple=multiple],
+	select.multi{
+		height: auto;
+	}
+	
+	select[multiple=multiple]:hover,
+	select.multi:hover{
+		width: 200px;
+	}
+	
+	
+/* Shipping process */
+
+.FieldSet
+{
+
+	position: relative;
+	font-family:Arial,Verdana;
+	font-size: 10pt;
+	border: 1px solid #999;
+	width:100%;
+	height:100%;
+}
+.OptionsFS
+{
+	position: relative;
+	font-family:Arial,Verdana;
+	font-size: 10pt;
+	border: 1px solid #999;
+	width:100%;
+	height:100%;	
+}
+
+.divSender{
+        position: absolute;
+        left: 10px;
+        top: 125px; 
+        width : 350px;
+        height : 80px;
+        } 
+        
+.divRecipient{
+        position: absolute;
+        left: 390px;
+        top: 125px; 
+        width : 350px;
+        height : 80px;
+        } 
+
+.divOptions{
+	    position: absolute;
+        left: 10px;
+        top: 220px; 
+        width : 730px;
+        height : 30px;
+	}
+	
+.divShipDetails
+{
+		position: absolute;
+        left: 10px;
+        top: 265px; 
+        width : 730px;
+        height : 280px;
+	
+	}
+	
+.divTotal
+{
+		position: absolute;
+        left: 10px;
+        top: 560px; 
+        width : 730px;
+        height : 35px;
+	}	
+
+.divButton{
+        position: absolute;
+        left: 80px;
+        top: 620px; 
+        } 
+
+/* Generic Classes */
+
+.clsLabelErrorMessage
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #FF0000;
+}
+
+.clsLabelLeft
+{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+}
+
+.clsLabelCentre
+{
+		font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+	text-align:center;
+}
+
+.clsLabelRight
+{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+	text-align: right;	
+}
+
+
+.gridHeader
+{
+background-color: #0066FF;
+color: #FFFFFF;
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: bold;
+font-size: 10px;
+text-align: center;
+}
+
+
+.gridAlternate
+{
+background-color: #F2F5FD;
+color: #000080;
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: normal;
+font-size: 10px;
+text-align: center;
+}
+
+
+.gridRow
+{
+background-color: #E6EBFB;
+color: #000080;
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: normal;
+font-size: 10px;
+text-align: center;
+}
+
+
+.divDeliveryDelayImportHeader
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 600px;
+    height : 230px;
+}
+
+
+
+.divTariffImportation
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 500px;
+    height : 450px;
+}
+
+
+
+/* Fuel Surcharge */
+.divFuelHeader
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 900px;
+    height : 80px;
+}
+
+
+.divFuelDetail
+{
+	position: absolute;
+    left: 10px;
+    top: 275px; 
+    width : 900px;
+    height : 80px;
+}
+
+
+.divZoneHeader
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 500px;
+    height : 230px;
+}
+
+.divZoneErrorDisplay
+{
+	position:absolute;
+	left:515px;
+	top:132px;
+	width:200px;
+}
+
+.divServiceTypeCreationErrorDisplay
+{
+	position:absolute;
+	left:415px;
+	top:132px;
+	width:200px;
+}
+
+.divTariffImportation
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 500px;
+    height : 450px;
+}
+
+/* Calendar Control */
+
+.clsCalendar .ajax__calendar_container
+{
+background-color: #e2e2e2; border:solid 1px #cccccc;
+
+}
+
+.clsCalendar .ajax__calendar_header
+{
+background-color: #ffffff; margin-bottom: 4px;
+
+}
+
+.clsCalendar .ajax__calendar_title,
+.clsCalendar .ajax__calendar_next,
+.clsCalendar .ajax__calendar_prev
+{
+color: #004080; padding-top: 3px;
+}
+
+.clsCalendar .ajax__calendar_body
+{
+background-color: #e9e9e9; border: solid 1px #cccccc;
+}
+
+.clsCalendar .ajax__calendar_dayname
+{
+text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;
+}
+
+.clsCalendar .ajax__calendar_day
+{
+text-align:center;
+}
+
+.clsCalendar .ajax__calendar_hover .ajax__calendar_day,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_month,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_year,
+.clsCalendar .ajax__calendar_active
+{
+color: #004080; font-weight:bold; background-color: #ffffff;
+}
+
+.clsCalendar .ajax__calendar_today
+{
+font-weight:bold;
+}
+
+.clsCalendar .ajax__calendar_other,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_today,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_title
+{
+color: #bbbbbb;
+}
+
+/* From 21st */
+
+.divOptionSurchargeGrid
+{
+	position: absolute;
+    left: 10px;
+    top: 195px; 
+    width : 900px;
+    height : 80px;
+}
+
+.divOptionSurchargeFieldSet
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 500px;
+    height : 75px;
+}
+
+.divOptionSurchargeErrorDisplay
+{
+	position:absolute;
+	left:515px;
+	top:20px;
+	width:200px;
+}
+
+
+
+.divPublicTariffHeader
+{
+	position:absolute;
+	left: 10px;
+    top: 120px; 
+    width : 500px;
+    height : 100px;
+    text-align:center;
+}
+
+.divPublicTariffGrid
+{
+	position: absolute;
+	left: 10px;
+    top: 170px; 
+    width : 500px;
+    height : 450px;
+}
+
+.divPublicTariffErrorDisplay
+{
+	position:absolute;
+	left:530px;
+	top:135Px;
+	width:200px;
+}
+
+.gridPublicTariffAlternate
+{
+background-color: #F2F5FD;
+color: #000080;
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: normal;
+font-size: 10px;
+text-align: center;
+}
+
+
+.gridPublicTariffRow
+{
+background-color: #F2F5FD;
+color: #000080;
+font-family: Arial, Verdana, Sans-Serif;
+font-weight: normal;
+font-size: 10px;
+text-align: center;
+}
+
+
+/*Confirm Password*/
+.clsLabels
+{
+    height: 4cm; width: 8cm; top: 1cm; left:2cm; position: relative;
+}
+
+/*Customer*/
+.clsCustomerMain
+{
+    height: 9cm; width: 14cm; position: relative;text-align:center;
+}
+
+.clsCustomerAccount
+{
+    height: 5cm; width: 7cm; position: relative;
+}
+
+.clsCustomerInvoiceAddress
+{
+  width: 7cm;  
+}
+
+.clsCustomerButton
+{
+    height: .6cm; width: 16cm; top:.5cm; position: relative; text-align:center;    
+}
+.clsCustomerMandatory
+{
+    height: .6cm; width: 15cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+
+}
+
+/*Customer Service*/
+.clsCustomerServiceMain
+{
+    height: 4cm; width: 6cm; position: relative; text-align:center;
+}
+.clsCustomerServiceButton
+{
+    height: .6cm; width: 7cm; top:0.3cm;position: relative; text-align:center;    
+}
+.clsCustomerServiceMandatory
+{
+    height: .6cm; width: 7cm; top:0.3cm;position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+.divSummaryCustomerService
+{
+    position: absolute;
+    left: 300px;
+    top: 150px; 
+    width : 435px;
+}
+/*Customer Service Update*/
+.clsCustomerServiceUpdateMain
+{
+    height: 3cm; width: 12cm; position: relative;
+}
+.clsCustomerServiceUpdateButton
+{
+    height: .6cm; width: 12cm; top:0.5cm; position: relative; text-align:center;
+}
+.clsCustomerServiceUpdateMandatory
+{
+    height: .6cm; width: 12cm; top:0.5cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+.divSummaryCustomerServiceUpdate
+{
+    position: absolute;
+    left: 500px;
+    top: 140px; 
+    width : 435px;
+}
+
+/*Customer Service update by Admin*/
+.clsCustomerServiceUpdateAdminMain
+{
+    height: 5cm; width: 7cm; position: relative;
+}
+.clsCustomerServiceUpdateAdminButton
+{
+    height: .6cm; width: 7cm; top:.3cm; position: relative; text-align:center;
+}
+.clsCustomerServiceUpdateAdminMandatory
+{
+    height: .6cm; width: 7cm; top:.3cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+.divSummaryCustomerServiceUpdateByAdmin
+{
+    position: absolute;
+    left: 300px;
+    top: 120px; 
+    width : 435px;
+}
+
+/*Franchise Update*/
+.clsFranchiseUpdateMain
+{
+    height: 9cm; width: 14cm; top:0.5cm; position: relative;
+}
+.clsFranchiseUpdateButton
+{
+    height: .6cm; width: 14cm; top : 0.6cm;
+    position: relative; text-align:center;
+    left: 1px;
+}
+.clsFranchiseUpdateMadatory
+{
+    height: .6cm; width: 14cm; top : 1.5cm;position: relative; text-align:right;
+}
+.divSummaryFranchiseUpdate
+{
+    position: absolute;
+    left: 550px;
+    top: 120px; 
+    width : 435px;
+}
+
+/*Franchise*/
+
+.clsFranchiseMain
+{
+    height: 9cm; width: 15cm; position: relative;
+}
+.clsFranchiseButton
+{
+    height: .6cm; width: 15cm; top:1.5cm; position: relative; text-align:center;
+}
+.clsFranchiseMadatory
+{
+    height: .6cm; width: 15cm; top:1.5cm; position: relative; text-align:right;
+}
+
+.divSummaryFranchise
+{
+    position: absolute;
+    left: 600px;
+    top: 120px; 
+    width : 435px;
+}
+
+/*Login Page*/
+.clsLoginMain
+{
+    height: 3cm; width: 7cm; position: absolute; text-align : center; top:35%;left:35%;
+    
+}
+
+.clsLoginForgot
+{
+    height: .5cm; width: 7cm; top:.1cm; position: relative; text-align:center;    
+}
+
+.clsLoginButton
+{
+    height: 0.6cm; width: 7cm; top:0.2cm; position: relative; text-align:center;
+}
+
+.clsLoginMandatory
+{
+    height: .6cm; width: 7cm; top:.2cm; position: relative; text-align:right;
+}
+
+.divSummaryLogin
+{
+    position: absolute;
+    left: 800px;
+    top: 250px; 
+    width : 435px;
+}
+
+/*Password Recovery*/
+.clsPasswordRecoveryMain
+{
+    height: 3cm; width: 5cm; position: relative;    
+}
+
+.clsPasswordRecoveryButton
+{
+    height: .6cm; width: 5cm; top:1cm; position: relative; text-align:center;
+}
+
+.clsPasswordRecoveryMandatory
+{
+    height: .6cm; width: 5cm; top:1.2cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+
+/*Profile*/
+.clsProfileMain
+{
+    height: 3cm; width: 6cm; position: relative;
+}   
+
+.clsProfileButton
+{
+    height: .6cm; width: 5cm; top:.8cm; position: relative; text-align:center;
+}
+
+.clsProfileMandatory
+{
+    height: .6cm; width: 5cm; top:.8cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+
+/*End Customer */
+
+.clsEndCustomerCompany
+{
+      height: 6cm; width: 16cm; position: relative;
+}
+
+.clsEndCustomerInvoiceAddress
+{
+      height: 7.5cm; width: 7.5cm;  position: relative;
+}
+
+.clsEndCustomerShipping
+{
+      height: 3cm; width: 8cm; left:8.3cm; top:-7.5cm; position: relative;
+}
+
+.clsEndCustomerPayment
+{
+      height: 4cm; width: 8cm; left:8.3cm; top:-8.1cm; position: relative;
+}
+
+.clsEndCustomerTos
+{
+      height: .6cm; width: 16cm; top:-7cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerButton
+{
+      height: .6cm; width: 16cm; top:-6.8cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerMandatory
+{
+     height: .6cm; width: 16cm; top:-6.8cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+
+/*End Customer Update*/
+.clsEndCustomerUpdateUser
+{
+    height: 2cm; width: 18.7cm; position: relative;
+}
+
+.clsEndCustomerUpdateInvoiceAddress
+{   
+    height: 8cm; width: 18.7cm;  position: relative;
+}
+
+/* Main Screen */
+
+.clsMain
+{
+    height: 3cm; width: 30cm; position: relative; text-align : right; left:75%;    
+}
+
+.clsMainBody
+{
+    background-color:#F0F9F4;
+}
+
+.clsMainH
+{
+    color: #FF00FF;
+}
+
+.clsSiteMain
+{
+	background-color: #9999FF;
+}
+
+/*Address Book*/
+
+.clsAddressBookMain
+{
+    height: 7cm; width: 19cm; position: relative; text-align : left;    
+}
+
+.divSummaryAddressBook{
+        position: absolute;
+        left: 750px;
+        top: 150px; 
+        width : 435px;
+	}
+
+.clsAddressBookButton
+{
+    height: .6cm; width: 19cm; top:0.5cm; position: relative; text-align:center;
+}
+
+.clsAddressBookMantatory
+{
+    height: .6cm; width: 19cm; top:0.5cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+/*Tos*/
+.clsLoginTos
+{
+    height: 3cm; width: 13cm; position: absolute; text-align : left;   
+}
+.divSummaryTos
+{
+    position: absolute;
+    left: 500px;
+    top: 100px; 
+    width : 435px;
+}
+
+.clsTosButton
+{
+    height: 0.6cm; width: 13cm; top:2.5cm; position: relative; text-align:center;
+}
+
+.clsTosMandatory
+{
+    height: 0.6cm; width: 13cm; top:2.5cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+/*Fanchise Update by Admin*/
+
+.divSummaryFranchiseUpdateByAdmin
+{
+        position: absolute;
+        left: 850px;
+        top: 150px; 
+        width : 435px;
+}
+.clsFranchiseUpdateByAdminCompany
+{
+    height:6cm; width: 15cm; top: .5cm;  position: relative;
+}
+
+.clsFranchiseUpdateByAdminMonthlyFee
+{
+    height: 6cm; width: 6cm; top: -5.52cm; left:15.5cm; position: relative;
+}
+
+.clsFranchiseUpdateByAdminUser
+{
+    height: 2cm; width: 21.5cm; position: relative;
+}
+
+.clsFranchiseUpdateByAdminButton
+{
+    height:0.6cm; width: 21.5cm; top : -5cm; position: relative; text-align:center;
+}
+
+.clsFranchiseUpdateByAdminMandatory
+{
+    height:0.6cm; width:21.5cm; top : -5cm; position: relative; text-align:right;
+}
+/* Form element classes */
+	span
+	{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;		
+	height: 16px;
+	}
+	
+	input[type=submit], input[type=button]
+	{
+	height: 22px !important;
+	background-image: url(../Image/submit.png) !important;
+	background-repeat: no-repeat !important;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 22px;
+	background-color: #F4F4F4 !important;
+	font-size:10px;
+	}	
+	
+	input[type=submit].AddAddress, 
+	input[type=button].AddAddress
+	{
+	height: 22px !important;
+	background-image: url(../Image/AddAddress.png) !important;
+	}	
+
+	input[type=submit].Assigned, 
+	input[type=button].Assigned
+	{
+	height: 22px !important;
+	background-image: url(../Image/Assigned.png) !important;
+	}	
+	
+	input[type=submit].Export, 
+	input[type=button].Export
+	{
+	height: 22px !important;
+	background-image: url(../Image/Export.png) !important;
+	}
+	
+	input[type=submit].PickAddress, 
+	input[type=button].PickAddress
+	{
+	height: 22px !important;
+	background-image: url(../Image/PickAddress.png) !important;
+	}	
+	
+	input[type=submit].Shiping, 
+	input[type=button].Shiping
+	{
+	height: 22px !important;
+	background-image: url(../Image/Shipment.png) !important;
+	width: 75px;
+	}
+	
+	input[type=submit].Cancel, 
+	input[type=button].Cancel
+	{
+	height: 22px !important;
+	background-image: url(../Image/Delete_Summary.png) !important;
+	}
+	
+	input[type=submit].Reset, 
+	input[type=button].Reset
+	{
+	height: 22px !important;
+	background-image: url(../Image/Reset.png) !important;
+	width: 75px;
+	}
+	
+	input[type=submit].Back, 
+	input[type=button].Back
+	{
+	height: 22px !important;
+	background-image: url(../Image/Back.png) !important;
+	width: 75px;
+	}
+	
+	input[type=submit]:hover,
+	input[type=button]:hover{
+		color: #157BAA;
+	}
+
+	input[type=submit].back,
+	input[type=button].back{
+		background-image: url(img/buttons/back.png) !important;
+		
+	}
+	
+	
+	input[type=submit].raz,
+	input[type=button].raz{
+		background-image: url(img/buttons/reset.png) !important;
+	}
+	
+	input[type=submit].add,
+	input[type=button].add{
+		background-image: url(../Image/more.png) !important;
+	}
+
+	input[type=submit].save,
+	input[type=button].save{
+		background-image: url(img/buttons/save.png) !important;
+		width: 14px;
+		height: 14px;
+		padding: 0px;
+		margin: 0px 5px 0px 0px;
+		cursor: pointer;
+		float: left;
+		-moz-opacity:0.50
+	}
+	
+	input[type=submit].save:hover,
+	input[type=button].save:hover{
+		-moz-opacity:1.00	}
+	input.auto, select.auto{
+		width: auto !important;
+	}
+
+	select.small, input.small{
+		width: 100px !important;
+		font-size: 10px;
+	}
+
+	input.file{
+		width: 210px !important;
+	}
+	
+	input.icone_del{
+		width: 15px !important;
+		height: 15px !important;
+		padding: 0px !important;
+		border: 0px !important;
+		background: none !important;
+		background-image: url(img/list/del.png) !important;
+		background-repeat: no-repeat;
+		border: none;
+		/*float: left;*/
+	}
+	input.icone_hide{
+		width: 15px !important;
+		height: 15px !important;
+		padding: 0px !important;
+		border: 0px !important;
+		background: none !important;
+		background-image: url(img/list/del.png) !important;
+		background-repeat: no-repeat;
+		border: none;
+		float: right;
+		-moz-opacity:0.30
+	}
+	input.icone_hide:hover{
+		-moz-opacity:1.00
+	}
+	input[type=password].disable, input[type=text].disable, input[type=file].disable, select.disable, textarea.disable
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: white;
+	border: 1px solid #808080;
+	width: 120px;
+	font-size: 9px;
+	padding: 0px;
+	margin: 0px;
+	height: 16px;
+}
+	
+	input[type=password],
+	input[type=text],
+	input[type=file],
+	select,
+	textarea{
+		-moz-border-radius: 3px; 
+        -webkit-border-radius: 3px; 
+ 		background-color: white;
+		border: 1px solid #82A4D7;
+		width: 120px;
+		font-size: 9px;
+		padding: 0px;
+		margin: 0px;
+		height: 16px;
+	}
+	
+	input[type=checkbox]
+	{
+		-moz-border-radius: 3px; 
+        -webkit-border-radius: 3px; 
+ 		background-color: white;
+		border: 1px solid #82A4D7;
+		font-size: 9px;
+		padding: 0px;
+		margin: 0px;
+		height: 10px;
+	}
+	
+	input[type=radio]
+	{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	
+	color: #000000;	
+		}
+	
+	input[type=hidden]{
+		display: none;
+		position: fixed;
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+	}
+	select[multiple=multiple],
+	select.multi{
+		height: auto;
+	}
+	
+	select[multiple=multiple]:hover,
+	select.multi:hover{
+		width: 200px;
+	}
+	
+	body 
+	{
+		background-image:url('../Image/body.png');
+	      }
+	
+/* Shipping process */
+
+
+.divSender{
+        position: absolute;
+        left: 10px;
+        top: 125px; 
+        width : 350px;
+        height : 80px;
+        } 
+        
+.divRecipient{
+        position: absolute;
+        left: 390px;
+        top: 125px; 
+        width : 350px;
+        height : 80px;
+        } 
+
+.divOptions{
+	    position: absolute;
+        left: 10px;
+        top: 220px; 
+        width : 730px;
+        height : 30px;
+	}
+
+.divManualShipSummary
+{    position: absolute;
+        left: 950px;
+        top: 125px; 
+	}
+	
+.divDelayInterrogationSummary
+{    position: absolute;
+        left: 780px;
+        top: 125px; 
+  }
+
+
+.divShipDetails
+{
+		position: absolute;
+        left: 10px;
+        top: 265px; 
+        width : 730px;
+        height : 280px;
+	
+	}
+	
+.divTotal
+{
+		position: absolute;
+        left: 10px;
+        top: 560px; 
+        width : 730px;
+        height : 35px;
+	}	
+
+.divButton{
+        position: absolute;
+        left: 80px;
+        top: 620px; 
+        }
+        
+        
+.divShipmentGrid
+{
+	border: 1px solid #808080;
+	width: 100%;
+	height: 170px;
+	overflow: auto;
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	color: Black;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.divManualShipHeader
+{
+		position: absolute;
+        left: 10px;
+        top: 125px; 
+        width : 900px;
+        height : 100px;
+	
+	}
+
+.divManualSender{
+        position: absolute;
+        left: 10px;
+        top: 240px; 
+        width : 435px;
+        height : 340px;
+        } 
+        
+.divManualReturn{
+        position: absolute;
+        left: 475px;
+        top: 240px; 
+        width : 435px;
+        height : 340px;
+        } 
+        
+.divManualRecipient{
+        position: absolute;
+        left: 10px;
+        top: 595px; 
+        width : 435px;
+        height : 290px;
+        }    
+        
+.divManualIncoterm{
+        position: absolute;
+        left: 475px;
+        top: 595px; 
+        width : 435px;
+        height : 100px;
+        }   
+        
+.divManualAdditional{
+        position: absolute;
+        left: 475px;
+        top: 710px; 
+        width : 435px;
+        height : 120px;
+        }   
+
+.divManualSubmitButton{
+        position: absolute;
+        left: 475px;
+        top: 850px; 
+        width : 435px;
+        }  
+
+
+.divExpressCarrierList{
+		position: absolute;
+        left: 10px;
+        top: 140px; 
+        width : 900px;
+	}
+
+.divEconomyCarrierList{
+		position: absolute;
+        left: 10px;
+        top: 245px; 
+        width : 900px;
+	}
+	
+.divCarrierSelection{
+		position: absolute;
+        left: 10px;
+        top: 245px; 
+        width : 900px;
+	}
+	
+.divConfirmedShipments
+{
+		position: absolute;
+        left: 10px;
+        top: 125px; 
+        width : 750px;
+        height: 500px;
+        overflow: auto;
+	}
+	
+.divSummarySubmitButton{
+        position: absolute;
+        left: 10px;
+        top: 630px; 
+        width : 435px;
+	}
+	
+	.divCancelShipment{
+        position: absolute;
+        left: 10px;
+        top: 125px; 
+        width : 350px;
+        height : 80px;
+        } 
+
+.divCancelShipmentSummary{
+    position: absolute;
+    left: 360px;
+    top: 125px; 
+} 
+
+/* Generic Classes */
+.clsLabelLeft
+{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+	height: 16px;
+	text-align: left;	
+}
+
+.clsLabelRight
+{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+	text-align: right;	
+	height: 16px;
+}
+
+.clsLabelCenter
+{
+	text-align: center;	
+}
+
+.clsSummaryLabelLeft
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-size: 10px;
+	color: #0000FF;
+	height: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.clsSummaryLabelRight
+{
+	font-family: Arial, Verdana, Sans-Serif ;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;	
+	text-align: right;	
+	height: 12px;
+}
+
+.clsSummaryHeader
+{
+	background-color: #2C3D5B;
+	color: #FFFFFF;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: left;
+}
+
+
+.gridSummaryHeader
+{
+	background-color: #293955;
+	color: #FFFFFF;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridSummaryRow
+{
+	background-color: #F4F4F4;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridSummaryAlternate
+{
+	background-color: #DEE1E7;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+}
+
+
+.gridHeader
+{
+	background-color: #0066FF;
+	color: #FFFFFF;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridFooter
+{
+	background-color: #5B6D3A;
+	color: #000000;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+.gridRow
+{
+	background-color: #E6EBFB;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridAlternate
+{
+	background-color: #F2F5FD;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+}
+
+.clsTable
+{
+	border: 1px solid #000099;
+	background-color: #edf1f0;
+	vertical-align: top;
+	color: #5e4669;
+	line-height: normal;
+	font-family: Arial, Verdana, Sans-Serif;
+	letter-spacing: normal;
+	font-weight: bold;
+	border-collapse: collapse;
+}
+	
+.clsTRPrirotyHeader
+{
+	border:1px solid #000099;
+	background-color: #FFFFFF;
+	vertical-align: top;
+	color: #FF00FF;
+	line-height: normal;
+	font-family: Arial, Verdana, Sans-Serif;
+	letter-spacing: normal;
+	font-weight: bold;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #000000;
+	height: 16px;
+}
+
+.clsTDHeader
+{
+	border: 1px solid #000099;
+	background-color: #DDCCFF;
+	vertical-align: top;
+	line-height: normal;
+	font-family: Arial, Verdana, Sans-Serif;
+	letter-spacing: normal;
+	font-weight: bold;
+	border-collapse: collapse;
+	text-align: center;
+}
+	
+.clsTD
+{
+	border: 1px solid #000099;
+	background-color: #F2F5FD;
+	vertical-align: top;
+	color: #0000FF;
+	line-height: normal;
+	font-family: Arial, Verdana, Sans-Serif;
+	letter-spacing: normal;
+	font-weight: bold;
+	border-collapse: collapse;
+}
+.clsProposedTD
+{
+	border: 1px solid #000099;
+	background-color: #E6EBFB;
+	vertical-align: top;
+	color: #0000FF;
+	line-height: normal;
+	font-family: Arial, Verdana, Sans-Serif;
+	letter-spacing: normal;
+	font-weight: bold;
+	border-collapse: collapse;
+}
+
+.clsProposedLabelHeader
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	height: 16px;
+	color: #000066;
+}
+
+
+.clsPriorityLabelHeader
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 12px;
+	height: 16px;
+	color: #000066;
+}
+
+.clsErrorMessage
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #FF0000;
+	height: 12px;
+}
+
+/* Calendar Control */
+
+.clsCalendar .ajax__calendar_container
+{
+background-color: #e2e2e2; border:solid 1px #cccccc;
+
+}
+
+.clsCalendar .ajax__calendar_header
+{
+background-color: #ffffff; margin-bottom: 4px;
+
+} 
+
+.clsCalendar .ajax__calendar_title,
+.clsCalendar .ajax__calendar_next,
+.clsCalendar .ajax__calendar_prev
+{
+color: #004080; padding-top: 3px;
+}
+
+.clsCalendar .ajax__calendar_body
+{
+background-color: #e9e9e9; border: solid 1px #cccccc;
+}
+
+.clsCalendar .ajax__calendar_dayname
+{
+text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;
+} 
+
+.clsCalendar .ajax__calendar_day
+{
+text-align:center;
+}
+
+.clsCalendar .ajax__calendar_hover .ajax__calendar_day,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_month,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_year,
+.clsCalendar .ajax__calendar_active
+{
+color: #004080; font-weight:bold; background-color: #ffffff;
+}
+
+.clsCalendar .ajax__calendar_today
+{
+font-weight:bold;
+}
+
+.clsCalendar .ajax__calendar_other,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_today,
+.clsCalendar .ajax__calendar_hover .ajax__calendar_title
+{
+color: #bbbbbb;
+}
+
+
+/* Auto Fill */
+.AutoExtender
+{
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    padding: 10px;
+    background-color: White;
+    margin-left:10px;
+}
+.AutoExtenderList
+{
+	border-bottom: dotted 1px #006699;
+    cursor: pointer;
+    color: Maroon;
+}
+.AutoExtenderHighlight
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+}
+#divwidth
+{
+	width: 150px !important;    
+}
+#divwidth div
+{
+	width: 150px !important;   
+}
+
+.AutoExtender1
+{
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    padding: 10px;
+    background-color: White;
+    margin-left:10px;
+}
+.AutoExtenderList1
+{
+	border-bottom: dotted 1px #006699;
+    cursor: pointer;
+    color: Maroon;
+}
+.AutoExtenderHighlight1
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+}
+#divwidth1
+{
+	width: 150px !important;    
+}
+#divwidth1 div
+{
+	width: 150px !important;   
+}
+
+
+/* 10jan2012 rm */
+.divTariffImportValidation
+{
+	position:absolute;
+	top:5px;
+	vertical-align:top;
+	width:200px;
+}
+
+
+.divTariffImportationRule
+{
+	position: absolute;
+	left: 10px;
+    top: 225px; 
+    width : 500px;
+    height : 500px;
+}
+
+
+/****** 18JAN12 HN*********/
+/*Determination Tools*/
+.divToolHeader
+{
+	position: absolute;
+        left: 10px;
+        width : 700px;
+        height : 65px;
+}
+
+.divToolButton
+{
+	position: absolute;
+        left: 720px;
+        width : 250px;
+        height : 65px;
+        top: -1px;
+}
+
+.divToolWeight
+{
+	position: absolute;
+        left: 10px;
+        top: 50px; 
+        width : 200px;
+}
+
+.divToolCarrier
+{
+	position: absolute;
+        left: 210px;
+        top: 50px; 
+        width : 425px;
+        height:250px;
+        overflow: auto;
+}
+
+.divCustomerDiscount
+{
+	position: absolute;
+        left: 635px;
+        top: 50px; 
+        width : 350px;
+        height:150px;
+        overflow: auto;
+}
+
+
+.divHeaderOuter
+{
+	position: absolute;
+        left: 10px;
+        top: 125px; 
+        width :95%;
+        height:600px;
+        overflow: auto;
+}
+
+.divToolSimulationID
+{
+	position: absolute;
+        left: 10px;
+        top: 320px; 
+        width : 500px;
+}
+
+
+.divToolCalculationBlock
+{
+	position: absolute;
+        left: 10px;
+        top: 350px; 
+        
+}
+
+.divToolListBlock
+{ 
+	position: absolute;
+        left: 10px;
+        top: 520px; 
+        width :90%;
+        height:200px;
+        overflow: auto;
+}
+
+.divToolListBlockHeader
+{
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #0000FF;
+	height: 20px;
+	text-decoration: none;
+	
+}
+
+.gridHeaderCell1
+{
+	background-color: #FEFBC5;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridHeaderCell2
+{
+	background-color: #C9FFAE;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridHeaderCell3
+{
+	background-color: #FFFF66;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridHeaderCell4
+{
+	background-color: #9AE8FE;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.gridHeaderCell5
+{
+	background-color: #FFCC99;
+	color: #000080;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+
+.divSimulationHeaderSummary
+{    position: absolute;
+        left: 1000px;
+        top: 115px; 
+ }
+  
+.divSimulationRefreshSummary
+{    
+	 position: absolute;
+     left: 1000px;
+     top: 175px; 
+     width:inherit;
+}
+  
+
+	input[type=submit].Refresh, 
+	input[type=button].Refresh
+	{
+	height: 22px !important;
+	background-image: url(../Image/Refresh.png) !important;
+	}
+	
+	input[type=submit].Assign, 
+	input[type=button].Assign
+	{
+	height: 22px !important;
+	background-image: url(../Image/Assign.png) !important;
+	}
+	
+	input[type=submit].AddBlock, 
+	input[type=button].AddBlock
+	{
+	height: 22px !important;
+	background-image: url(../Image/AddBlock.png) !important;
+	}
+	
+	/*SM Second release*/
+/*AddressBookList */
+.divAddressBookList
+{
+	position: absolute;
+    left: 10px;
+    top: 125px; 
+}
+
+.divAddressBookImportation
+{
+	position: absolute;
+	left: 10px;
+    top: 125px; 
+    width : 500px;
+    height : 450px;
+}
+
+.clsgrey
+{
+	font-size: 8pt; 
+	color: black;
+}
+.clsMessgeButton
+{
+    height: .6cm; width: 1.5cm; position: relative; text-align:center;    
+}
+
+.customerDivModalWindow
+{
+	overflow: auto;
+    width: 400px;
+    height: 80px;
+}
+
+.customerModelWindow
+{
+       border-style: inset;
+       border-width: thin medium medium thin;
+       border-color: #C0C0C0;
+       background: #F4F4F4;
+       position: absolute;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       color: #000080;
+       font-weight: bold;
+       width: 400px;
+       height: 130px;
+}
+
+.clsEndCustomerLevelCompany
+{
+      height: 1cm; width: 16.3cm; position: relative;
+}
+.divSummaryEndCustomerLevel
+{
+        position: absolute;
+        left: 660px;
+        top: 250px; 
+        width : 435px;
+	}
+.clsEndCustomerLevel1InvoiceAddress
+{
+      height: 8cm; width: 7.5cm;  position: relative;
+}
+.divSummaryAuthorized
+{
+    position: absolute;
+    left: 430px;
+    top: 160px; 
+    width : 435px;
+}
+
+.divEndCutomerUpdateMain
+{
+    height : 500px; width : 800px; overflow : auto;
+}
+.divSummaryEndCustomerUpdate
+{
+    position: absolute;
+    left: 810px;
+    top: 150px; 
+    width : 435px;
+}
+
+.divSummaryAZU
+{
+    position: absolute;
+    left: 350px;
+    top: 120px; 
+    width : 435px;
+}
+
+.AZUMain
+{
+        height: 4cm; width: 8cm; position: relative;    
+}
+
+.AZUButton
+{
+    height: 0.6cm; width: 8cm; top:2.5cm; position: relative; text-align:center;
+}
+
+.AZUMandatory
+{
+    height: 0.6cm; width: 8cm; top:2.5cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+
+.AZMain
+{
+    height: 5.5cm; width: 8cm; position: relative;text-align:center;
+}
+
+.TitlebarLeft
+{
+       background-position: right;
+       height: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       color: #000000;
+       background-color: #FFFFFF;
+       background-image: url('../Image/header.PNG');
+       background-repeat: repeat-y;
+}
+
+.ModalPopupAddressSaveConfirmation { 
+	background-color:white;
+	padding:3px;
+	width:300px;
+	height:100px;
+	box-shadow:1px 1px 5px 5px #808080;	
+   }  
+   
+.ModalPopupProhibitedList { 
+	background-color:white;
+	padding:3px;
+	width:350px;
+	height:330px;
+	box-shadow:1px 1px 5px 5px #808080;	
+   }  
+   
+   .divSummaryPWDRecovery
+   {
+    position: absolute;
+    left: 250px;
+    top: 50px; 
+    width : 435px;
+       }
+       
+.clsConfirmPassword
+{
+    height: 3cm; width: 7cm; position: relative;text-align:center;
+}
+.clsButton
+{
+    height: .6cm; width: 7cm; top:1cm; left:.5cm; position: relative; text-align:center;    
+}
+.clsMandatory
+{
+    height: .6cm; width: 7cm; top:1cm; left:.5cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+.divSummaryConfirmPassword
+{
+    position: absolute;
+    left: 300px;
+    top: 75px; 
+    width : 435px;
+}
+
+.divSummaryActivatePassword
+{
+    position: absolute;
+    left: 400px;
+    top: 75px; 
+    width : 435px;
+}
+
+
+
+/*15FEB12RM */
+ .hiddencol
+ {
+    display:none;
+ }
+ .viscol
+ {
+   display:block;
+ }
+ 
+ /*Carrier Module 17-FEB-2012*/
+.clsCarrierMain
+{
+    height: 7cm;
+    width: 19cm; 
+    position: relative; 
+    text-align : left;
+    top: 0px;
+    left: 0px;
+}
+.divSummaryCarrier
+{
+        position: absolute;
+        left: 750px;
+        top: 150px; 
+        width : 435px;
+}
+
+
+ .clsEndCustomerUpdateTos /*17FEB12SM*/
+{
+      height: .6cm; width: 20cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerUpdateButton /*17FEB12SM*/
+{
+      height: .6cm; width: 20cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerUpdateMandatory /*17FEB12SM*/
+{
+     height: .6cm; width: 20cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+
+.clsEndCustomerKeyAccount /*17FEB12SM*/
+{
+     height: 2.5cm; width: 9cm; top:-5.1cm; position: relative; text-align:left;
+}
+
+ .clsEndCustomerUpdateExtraInfor /*17FEB12SM*/
+{
+      height: 2.5cm; width: 9cm; left:9.7cm; top:-7.6cm; position: relative;
+}
+
+.clsEndCustomerUpdatePayment /*17FEB12SM*/
+{
+      height: 4.5cm; width: 9cm; left:9.7cm; top:-5.1cm; position: relative;
+}
+
+.clsEndCustomerUpdateShipping /*17FEB12SM*/
+{
+      height: 4.5cm; width: 9cm; top:0.5cm; position: relative;
+}
+
+.clsEndCustomerUpdateParcel /*17FEB12SM*/
+{
+    height: 7cm; width: 18.7cm; top :-7cm; position: relative;    
+}
+.clsEndCustomerUpdatePallet /*17FEB12SM*/
+{
+    height: 7cm; width: 18.7cm; top :-6.5cm; position: relative;       
+}
+
+.ModalPopupPickAddress /*21FEB12HN*/
+{ 
+	background-color:white;
+	padding:3px;
+	width:750px;
+	height:365px;
+	box-shadow:1px 1px 5px 5px #808080;	
+   }  
+
+
+.ModalPopupPickAddressinner /*21FEB12HN*/
+{ 
+	width:740px;
+	height:290px;
+	overflow :scroll;
+   }     
+   
+.ModalPopupProhibitedListinner /*21FEB12HN*/
+{ 
+	width:350px;
+	height:300px;
+	overflow :scroll;
+}  
+  /* 21 -Feb -2012 HV */
+.clsCustomerCreationInvoiceAddress
+{
+     width: 7cm; 
+}
+.clsCustomerCreationAccount
+{
+    height: 8cm; width: 7cm; position: relative;
+} 
+
+/*End Customer */
+
+.clsEndCustomerCompany1
+{
+      height: 6cm; width: 56%; position: relative;
+}
+
+.clsEndCustomerInvoiceAddress1
+{
+      height: 7.5cm; width: 80%;  
+}
+
+.clsEndCustomerShipping1
+{
+      height: 6cm; width: 100%;  position: relative;
+}
+
+.clsEndCustomerPayment1
+{
+      height: 4cm; width: 100%; position: relative;
+}
+
+.clsEndCustomerTos1
+{
+      height: .6cm; width: 16cm; top:-6.6cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerButton1
+{
+      height: .6cm; width: 16cm; top:-6.8cm; position: relative; text-align:center;
+}
+
+.clsEndCustomerMandatory1
+{
+     height: .6cm; width: 16cm; top:-0.8cm; position: relative; text-align:right;
+    font-family: Arial, Verdana, Sans-Serif ;
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;        
+}
+.MainTitle1
+{
+	width:56%;
+	height:44px;
+	margin-top:0px;
+	margin-left:0px;
+	background-repeat: no-repeat !important;
+	text-align: left;
+	background-image: url(../Image/Kaizos_Logo.jpg) !important;
+}
+
+/*
+.clsCustomerInvoiceAddress
+{
+     width: 7cm; 
+}
+.clsCustomerCreationInvoiceAddress
+{
+   width: 7cm; 
+}*/
+
+.ModalPopupPickFranchiseAccountRef /*14MAR12SM*/
+{ 
+	width:200px;
+	height:250px;
+	overflow :scroll;
+   }     
+
+.ModalPopupPickFranchiseAccountRef1 /*14MAR12SM*/
+{ 
+	background-color:white;
+	padding:3px;
+	width:210px;
+	height:280px;
+	box-shadow:1px 1px 5px 5px #808080;	
+   }
+   
+   input[type=submit].noimage,
+       input[type=button].noimage{
+               background-image: url() !important;
+       }

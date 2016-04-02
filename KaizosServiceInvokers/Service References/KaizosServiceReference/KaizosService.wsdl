@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KaizosService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary.Model" />
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Globalization" />
+      <xsd:import schemaLocation="http://localhost:3403/KaizosService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/KaizosServiceLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IKaizosServiceContract_UpdateBrokerEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrokerEmailId" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateBrokerEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrokerEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ShipmentDetailUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipmentDetailUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ShipmentDetailUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipmentDetailUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationAssign_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationAssign" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationAssign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationAssignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CheckForDuplicateCarrierName_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForDuplicateCarrierName" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CheckForDuplicateCarrierName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForDuplicateCarrierNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateCarrier_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCarrier" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateCarrier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCarrierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrier_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrier" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarriers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarriers" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarriers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarriersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrier_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrier" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CarrierProcessing_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarrierProcessing" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CarrierProcessing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarrierProcessingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFeasability_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeasability" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFeasability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeasabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierOutput_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierOutput" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierOutput_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierOutputResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllCarrierOutput_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCarrierOutput" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllCarrierOutput_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCarrierOutputResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuote" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ConfirmShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmShipment" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ConfirmShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetShipmentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetShipmentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetOrderInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderInformation" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetOrderInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeferredPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeferredPayment" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeferredPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeferredPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShipment" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CancelShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelShipment" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CancelShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CarrierProcess_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarrierProcess" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CarrierProcess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarrierProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetNextCounter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextCounter" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetNextCounter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextCounterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPaymentMethodAndInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethodAndInfo" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPaymentMethodAndInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentMethodAndInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllCarrierNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCarrierNames" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllCarrierNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCarrierNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationHeaderInsert_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationHeaderInsert" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationHeaderInsert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationHeaderInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationSurchargeDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationSurchargeDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationSurchargeDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationSurchargeDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationTariffBased_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationTariffBased" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationTariffBased_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationTariffBasedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationSubTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationSubTotal" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SimulationSubTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SimulationSubTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAssignedUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignedUsers" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAssignedUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignedUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationID" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationHeader" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSurchargeDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSurchargeDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSurchargeDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSurchargeDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationTariffBased_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationTariffBased" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationTariffBased_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationTariffBasedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSubTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSubTotal" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSubTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSubTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSurcharge_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSurcharge" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationSurcharge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationSurchargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelSurcharge_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelSurcharge" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelSurcharge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelSurchargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteSimulationID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSimulationID" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteSimulationID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSimulationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationGrossTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationGrossTotal" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSimulationGrossTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationGrossTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_getBrokerEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBrokerEmailId" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_getBrokerEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBrokerEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateMasterTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMasterTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateMasterTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMasterTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetOpenImportTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenImportTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetOpenImportTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenImportTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffReference" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateTariffReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTariffReference" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateTariffReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTariffReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateZone" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneSearchDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneSearchDetails" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneSearchDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneSearchDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneDetails" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffZoneName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffZoneName" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffZoneName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffZoneNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneCoverageList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneCoverageList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetZoneCoverageList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneCoverageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSurchargeMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurchargeMaster" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSurchargeMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurchargeMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSurchargeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurchargeDetails" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetSurchargeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurchargeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateSurchargeMater_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSurchargeMater" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateSurchargeMater_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSurchargeMaterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateSurchargeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSurchargeDetails" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateSurchargeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSurchargeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPublicTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPublicTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdatePublicTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdatePublicTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isAlreadyExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:isAlreadyExist" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isAlreadyExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isAlreadyExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateMasterTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMasterTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateMasterTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMasterTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCarrierService_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarrierService" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCarrierService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarrierServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierServiceForMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierServiceForMaster" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierServiceForMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierServiceForMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetUserDetailForAssignTariff_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailForAssignTariff" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetUserDetailForAssignTariff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailForAssignTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_Getvalidatezone_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getvalidatezone" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_Getvalidatezone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetvalidatezoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateSingleShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSingleShipment" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateSingleShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSingleShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPublicTariffNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTariffNames" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPublicTariffNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTariffNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierTariffNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierTariffNames" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierTariffNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierTariffNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffAssignedCarrierNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffAssignedCarrierNames" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetTariffAssignedCarrierNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffAssignedCarrierNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetQuoteForTool_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuoteForTool" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetQuoteForTool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuoteForToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguage" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguageList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguageList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_FillCountryCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillCountryCombo" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_FillCountryCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillCountryComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePassword" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePassword" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CityZipcodeAutoFill_InputMessage">
+    <wsdl:part name="parameters" element="tns:CityZipcodeAutoFill" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CityZipcodeAutoFill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CityZipcodeAutoFillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTime" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportAddressBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportAddressBook" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportAddressBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportAddressBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunction" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isNumericValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:isNumericValidation" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isNumericValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isNumericValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isAlphaNumericValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:isAlphaNumericValidation" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_isAlphaNumericValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isAlphaNumericValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetValueFromParameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueFromParameter" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetValueFromParameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueFromParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendConfirmPassord_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendConfirmPassord" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendConfirmPassord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendConfirmPassordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_IsValidZidcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidZidcode" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_IsValidZidcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidZidcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllRefCarrierList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefCarrierList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAllRefCarrierList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefCarrierListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidatePostalcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePostalcode" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidatePostalcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePostalcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendMail" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_sendMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateMasterService_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMasterService" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CreateMasterService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMasterServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelCharge_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelCharge" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelCharge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelChargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelChargeParameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelChargeParameter" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFuelChargeParameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelChargeParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFuelChargeParameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFuelChargeParameter" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFuelChargeParameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFuelChargeParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFuelChargeStartDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFuelChargeStartDate" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFuelChargeStartDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFuelChargeStartDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierService_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierService" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrierService_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrierService" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrierService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrierServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierServiceDeliveryDelay_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierServiceDeliveryDelay" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCarrierServiceDeliveryDelay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarrierServiceDeliveryDelayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrierServiceDelay_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrierServiceDelay" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCarrierServiceDelay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCarrierServiceDelayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportDeliveryDelay_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDeliveryDelay" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ImportDeliveryDelay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDeliveryDelayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomerServiceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerServiceList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomerServiceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerServiceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CustomerServiceUpdateAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerServiceUpdateAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CustomerServiceUpdateAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerServiceUpdateAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetIndustry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndustry" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetIndustry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndustryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertEndCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEndCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertEndCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEndCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateHQZipcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateHQZipcode" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateHQZipcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateHQZipcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateEndCustomerByAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEndCustomerByAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateEndCustomerByAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEndCustomerByAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomerCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerCredit" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomerCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCustomerCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerCredit" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateCustomerCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAuthorizedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAuthorizedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAuthorize_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAuthorize" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAuthorize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAuthorizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAuthorized_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuthorized" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAuthorized_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuthorizedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAuthorizedSelf_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAuthorizedSelf" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAuthorizedSelf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAuthorizedSelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAuthorized_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorized" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAuthorized_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthorizedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetEndCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetEndCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateEndCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEndCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateEndCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEndCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAdv_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdv" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAdv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetEndCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetEndCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFranchiseAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFranchiseAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFranchiseAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFranchiseAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteAuthorized_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAuthorized" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteAuthorized_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAuthorizedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCarrierAccountRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarrierAccountRef" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertCarrierAccountRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarrierAccountRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPostalCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetPostalCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_FillCombo_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillCombo" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_FillCombo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_EncryptString_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptString" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_EncryptString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DecryptString_InputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptString" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DecryptString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFieldValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldValue" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFieldValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateZipCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateZipCode" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateZipCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateZipCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DummyFaualContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:DummyFaualContract" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DummyFaualContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DummyFaualContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertToS_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertToS" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertToS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertToSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SpInsertTos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SpInsertTos" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_SpInsertTos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SpInsertTosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetActiveToS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveToS" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetActiveToS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveToSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAddressBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAddressBook" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertAddressBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAddressBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddress" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddressBookSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressBookSearch" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddressBookSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressBookSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAddress" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAddress" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddressnew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressnew" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetAddressnew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressnewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogin" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFranchise_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFranchise" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFranchise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFranchiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateLastLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLastLogin" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateLastLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLastLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunctionality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionality" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunctionality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionalityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunctionalProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionalProfile" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFunctionalProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFunctionalProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertFunctionalProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFunctionalProfile" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertFunctionalProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFunctionalProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteFunctionalProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFunctionalProfile" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_DeleteFunctionalProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFunctionalProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateEmail" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ValidateEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertFranchise_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFranchise" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertFranchise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFranchiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFranchise_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFranchise" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_UpdateFranchise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFranchiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertMonthlyFee_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMonthlyFee" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_InsertMonthlyFee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMonthlyFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFranchiseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFranchiseList" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetFranchiseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFranchiseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetMonthlyFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthlyFees" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetMonthlyFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthlyFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ConfirmPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmPassword" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_ConfirmPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguageResource_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageResource" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_GetLanguageResource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageResourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CustomerServiceUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerServiceUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IKaizosServiceContract_CustomerServiceUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerServiceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IKaizosServiceContract">
+    <wsdl:operation name="UpdateBrokerEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateBrokerEmailId" message="tns:IKaizosServiceContract_UpdateBrokerEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateBrokerEmailIdResponse" message="tns:IKaizosServiceContract_UpdateBrokerEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipmentDetailUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ShipmentDetailUpdate" message="tns:IKaizosServiceContract_ShipmentDetailUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ShipmentDetailUpdateResponse" message="tns:IKaizosServiceContract_ShipmentDetailUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationAssign">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationAssign" message="tns:IKaizosServiceContract_SimulationAssign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationAssignResponse" message="tns:IKaizosServiceContract_SimulationAssign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckForDuplicateCarrierName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CheckForDuplicateCarrierName" message="tns:IKaizosServiceContract_CheckForDuplicateCarrierName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CheckForDuplicateCarrierNameResponse" message="tns:IKaizosServiceContract_CheckForDuplicateCarrierName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCarrier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateCarrier" message="tns:IKaizosServiceContract_CreateCarrier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateCarrierResponse" message="tns:IKaizosServiceContract_CreateCarrier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrier" message="tns:IKaizosServiceContract_UpdateCarrier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrierResponse" message="tns:IKaizosServiceContract_UpdateCarrier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarriers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarriers" message="tns:IKaizosServiceContract_GetCarriers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarriersResponse" message="tns:IKaizosServiceContract_GetCarriers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrier" message="tns:IKaizosServiceContract_GetCarrier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierResponse" message="tns:IKaizosServiceContract_GetCarrier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarrierProcessing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CarrierProcessing" message="tns:IKaizosServiceContract_CarrierProcessing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CarrierProcessingResponse" message="tns:IKaizosServiceContract_CarrierProcessing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeasability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFeasability" message="tns:IKaizosServiceContract_GetFeasability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFeasabilityResponse" message="tns:IKaizosServiceContract_GetFeasability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierOutput">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierOutput" message="tns:IKaizosServiceContract_GetCarrierOutput_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierOutputResponse" message="tns:IKaizosServiceContract_GetCarrierOutput_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCarrierOutput">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllCarrierOutput" message="tns:IKaizosServiceContract_GetAllCarrierOutput_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllCarrierOutputResponse" message="tns:IKaizosServiceContract_GetAllCarrierOutput_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetQuote" message="tns:IKaizosServiceContract_GetQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetQuoteResponse" message="tns:IKaizosServiceContract_GetQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmShipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ConfirmShipment" message="tns:IKaizosServiceContract_ConfirmShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ConfirmShipmentResponse" message="tns:IKaizosServiceContract_ConfirmShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetShipmentDetails" message="tns:IKaizosServiceContract_GetShipmentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetShipmentDetailsResponse" message="tns:IKaizosServiceContract_GetShipmentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetOrderInformation" message="tns:IKaizosServiceContract_GetOrderInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetOrderInformationResponse" message="tns:IKaizosServiceContract_GetOrderInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeferredPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeferredPayment" message="tns:IKaizosServiceContract_DeferredPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeferredPaymentResponse" message="tns:IKaizosServiceContract_DeferredPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteShipment" message="tns:IKaizosServiceContract_DeleteShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteShipmentResponse" message="tns:IKaizosServiceContract_DeleteShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelShipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CancelShipment" message="tns:IKaizosServiceContract_CancelShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CancelShipmentResponse" message="tns:IKaizosServiceContract_CancelShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarrierProcess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CarrierProcess" message="tns:IKaizosServiceContract_CarrierProcess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CarrierProcessResponse" message="tns:IKaizosServiceContract_CarrierProcess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextCounter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetNextCounter" message="tns:IKaizosServiceContract_GetNextCounter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetNextCounterResponse" message="tns:IKaizosServiceContract_GetNextCounter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentMethodAndInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPaymentMethodAndInfo" message="tns:IKaizosServiceContract_GetPaymentMethodAndInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPaymentMethodAndInfoResponse" message="tns:IKaizosServiceContract_GetPaymentMethodAndInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCarrierNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllCarrierNames" message="tns:IKaizosServiceContract_GetAllCarrierNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllCarrierNamesResponse" message="tns:IKaizosServiceContract_GetAllCarrierNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationHeaderInsert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationHeaderInsert" message="tns:IKaizosServiceContract_SimulationHeaderInsert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationHeaderInsertResponse" message="tns:IKaizosServiceContract_SimulationHeaderInsert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationSurchargeDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationSurchargeDiscount" message="tns:IKaizosServiceContract_SimulationSurchargeDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationSurchargeDiscountResponse" message="tns:IKaizosServiceContract_SimulationSurchargeDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationTariff" message="tns:IKaizosServiceContract_SimulationTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationTariffResponse" message="tns:IKaizosServiceContract_SimulationTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationTariffBased">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationTariffBased" message="tns:IKaizosServiceContract_SimulationTariffBased_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationTariffBasedResponse" message="tns:IKaizosServiceContract_SimulationTariffBased_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SimulationSubTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationSubTotal" message="tns:IKaizosServiceContract_SimulationSubTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SimulationSubTotalResponse" message="tns:IKaizosServiceContract_SimulationSubTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignedUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAssignedUsers" message="tns:IKaizosServiceContract_GetAssignedUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAssignedUsersResponse" message="tns:IKaizosServiceContract_GetAssignedUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationID" message="tns:IKaizosServiceContract_GetSimulationID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationIDResponse" message="tns:IKaizosServiceContract_GetSimulationID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationTariff" message="tns:IKaizosServiceContract_GetSimulationTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationTariffResponse" message="tns:IKaizosServiceContract_GetSimulationTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationHeader" message="tns:IKaizosServiceContract_GetSimulationHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationHeaderResponse" message="tns:IKaizosServiceContract_GetSimulationHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSurchargeDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSurchargeDiscount" message="tns:IKaizosServiceContract_GetSimulationSurchargeDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSurchargeDiscountResponse" message="tns:IKaizosServiceContract_GetSimulationSurchargeDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationTariffBased">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationTariffBased" message="tns:IKaizosServiceContract_GetSimulationTariffBased_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationTariffBasedResponse" message="tns:IKaizosServiceContract_GetSimulationTariffBased_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSubTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSubTotal" message="tns:IKaizosServiceContract_GetSimulationSubTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSubTotalResponse" message="tns:IKaizosServiceContract_GetSimulationSubTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSurcharge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSurcharge" message="tns:IKaizosServiceContract_GetSimulationSurcharge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationSurchargeResponse" message="tns:IKaizosServiceContract_GetSimulationSurcharge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelSurcharge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelSurcharge" message="tns:IKaizosServiceContract_GetFuelSurcharge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelSurchargeResponse" message="tns:IKaizosServiceContract_GetFuelSurcharge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimulationID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteSimulationID" message="tns:IKaizosServiceContract_DeleteSimulationID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteSimulationIDResponse" message="tns:IKaizosServiceContract_DeleteSimulationID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationGrossTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationGrossTotal" message="tns:IKaizosServiceContract_GetSimulationGrossTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSimulationGrossTotalResponse" message="tns:IKaizosServiceContract_GetSimulationGrossTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBrokerEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/getBrokerEmailId" message="tns:IKaizosServiceContract_getBrokerEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/getBrokerEmailIdResponse" message="tns:IKaizosServiceContract_getBrokerEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMasterTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateMasterTariff" message="tns:IKaizosServiceContract_CreateMasterTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateMasterTariffResponse" message="tns:IKaizosServiceContract_CreateMasterTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenImportTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetOpenImportTariff" message="tns:IKaizosServiceContract_GetOpenImportTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetOpenImportTariffResponse" message="tns:IKaizosServiceContract_GetOpenImportTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportTariff" message="tns:IKaizosServiceContract_ImportTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportTariffResponse" message="tns:IKaizosServiceContract_ImportTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffReference" message="tns:IKaizosServiceContract_GetTariffReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffReferenceResponse" message="tns:IKaizosServiceContract_GetTariffReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTariffReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateTariffReference" message="tns:IKaizosServiceContract_UpdateTariffReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateTariffReferenceResponse" message="tns:IKaizosServiceContract_UpdateTariffReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateZone" message="tns:IKaizosServiceContract_CreateZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateZoneResponse" message="tns:IKaizosServiceContract_CreateZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneSearchDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneSearchDetails" message="tns:IKaizosServiceContract_GetZoneSearchDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneSearchDetailsResponse" message="tns:IKaizosServiceContract_GetZoneSearchDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneDetails" message="tns:IKaizosServiceContract_GetZoneDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneDetailsResponse" message="tns:IKaizosServiceContract_GetZoneDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffZoneName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffZoneName" message="tns:IKaizosServiceContract_GetTariffZoneName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffZoneNameResponse" message="tns:IKaizosServiceContract_GetTariffZoneName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneCoverageList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneCoverageList" message="tns:IKaizosServiceContract_GetZoneCoverageList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetZoneCoverageListResponse" message="tns:IKaizosServiceContract_GetZoneCoverageList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurchargeMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSurchargeMaster" message="tns:IKaizosServiceContract_GetSurchargeMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSurchargeMasterResponse" message="tns:IKaizosServiceContract_GetSurchargeMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurchargeDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSurchargeDetails" message="tns:IKaizosServiceContract_GetSurchargeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetSurchargeDetailsResponse" message="tns:IKaizosServiceContract_GetSurchargeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSurchargeMater">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeMater" message="tns:IKaizosServiceContract_UpdateSurchargeMater_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeMaterResponse" message="tns:IKaizosServiceContract_UpdateSurchargeMater_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSurchargeDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeDetails" message="tns:IKaizosServiceContract_UpdateSurchargeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeDetailsResponse" message="tns:IKaizosServiceContract_UpdateSurchargeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPublicTariff" message="tns:IKaizosServiceContract_GetPublicTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPublicTariffResponse" message="tns:IKaizosServiceContract_GetPublicTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdatePublicTariff" message="tns:IKaizosServiceContract_UpdatePublicTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdatePublicTariffResponse" message="tns:IKaizosServiceContract_UpdatePublicTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isAlreadyExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/isAlreadyExist" message="tns:IKaizosServiceContract_isAlreadyExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/isAlreadyExistResponse" message="tns:IKaizosServiceContract_isAlreadyExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMasterTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateMasterTariff" message="tns:IKaizosServiceContract_UpdateMasterTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateMasterTariffResponse" message="tns:IKaizosServiceContract_UpdateMasterTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarrierService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCarrierService" message="tns:IKaizosServiceContract_InsertCarrierService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCarrierServiceResponse" message="tns:IKaizosServiceContract_InsertCarrierService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierServiceForMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceForMaster" message="tns:IKaizosServiceContract_GetCarrierServiceForMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceForMasterResponse" message="tns:IKaizosServiceContract_GetCarrierServiceForMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailForAssignTariff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetUserDetailForAssignTariff" message="tns:IKaizosServiceContract_GetUserDetailForAssignTariff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetUserDetailForAssignTariffResponse" message="tns:IKaizosServiceContract_GetUserDetailForAssignTariff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Getvalidatezone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/Getvalidatezone" message="tns:IKaizosServiceContract_Getvalidatezone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetvalidatezoneResponse" message="tns:IKaizosServiceContract_Getvalidatezone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSingleShipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateSingleShipment" message="tns:IKaizosServiceContract_CreateSingleShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateSingleShipmentResponse" message="tns:IKaizosServiceContract_CreateSingleShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicTariffNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPublicTariffNames" message="tns:IKaizosServiceContract_GetPublicTariffNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPublicTariffNamesResponse" message="tns:IKaizosServiceContract_GetPublicTariffNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierTariffNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierTariffNames" message="tns:IKaizosServiceContract_GetCarrierTariffNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierTariffNamesResponse" message="tns:IKaizosServiceContract_GetCarrierTariffNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffAssignedCarrierNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffAssignedCarrierNames" message="tns:IKaizosServiceContract_GetTariffAssignedCarrierNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetTariffAssignedCarrierNamesResponse" message="tns:IKaizosServiceContract_GetTariffAssignedCarrierNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteForTool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetQuoteForTool" message="tns:IKaizosServiceContract_GetQuoteForTool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetQuoteForToolResponse" message="tns:IKaizosServiceContract_GetQuoteForTool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetDiscount" message="tns:IKaizosServiceContract_GetDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetDiscountResponse" message="tns:IKaizosServiceContract_GetDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguage" message="tns:IKaizosServiceContract_GetLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguageResponse" message="tns:IKaizosServiceContract_GetLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguageList" message="tns:IKaizosServiceContract_GetLanguageList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguageListResponse" message="tns:IKaizosServiceContract_GetLanguageList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillCountryCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/FillCountryCombo" message="tns:IKaizosServiceContract_FillCountryCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/FillCountryComboResponse" message="tns:IKaizosServiceContract_FillCountryCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidatePassword" message="tns:IKaizosServiceContract_ValidatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidatePasswordResponse" message="tns:IKaizosServiceContract_ValidatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreatePassword" message="tns:IKaizosServiceContract_CreatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreatePasswordResponse" message="tns:IKaizosServiceContract_CreatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendMessage" message="tns:IKaizosServiceContract_sendMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendMessageResponse" message="tns:IKaizosServiceContract_sendMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CityZipcodeAutoFill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CityZipcodeAutoFill" message="tns:IKaizosServiceContract_CityZipcodeAutoFill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CityZipcodeAutoFillResponse" message="tns:IKaizosServiceContract_CityZipcodeAutoFill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateTime" message="tns:IKaizosServiceContract_ValidateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateTimeResponse" message="tns:IKaizosServiceContract_ValidateTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportAddressBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportAddressBook" message="tns:IKaizosServiceContract_ImportAddressBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportAddressBookResponse" message="tns:IKaizosServiceContract_ImportAddressBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunction" message="tns:IKaizosServiceContract_GetFunction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunctionResponse" message="tns:IKaizosServiceContract_GetFunction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isNumericValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/isNumericValidation" message="tns:IKaizosServiceContract_isNumericValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/isNumericValidationResponse" message="tns:IKaizosServiceContract_isNumericValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isAlphaNumericValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/isAlphaNumericValidation" message="tns:IKaizosServiceContract_isAlphaNumericValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/isAlphaNumericValidationResponse" message="tns:IKaizosServiceContract_isAlphaNumericValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValueFromParameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetValueFromParameter" message="tns:IKaizosServiceContract_GetValueFromParameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetValueFromParameterResponse" message="tns:IKaizosServiceContract_GetValueFromParameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmPassord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendConfirmPassord" message="tns:IKaizosServiceContract_sendConfirmPassord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendConfirmPassordResponse" message="tns:IKaizosServiceContract_sendConfirmPassord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidZidcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/IsValidZidcode" message="tns:IKaizosServiceContract_IsValidZidcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/IsValidZidcodeResponse" message="tns:IKaizosServiceContract_IsValidZidcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefCarrierList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllRefCarrierList" message="tns:IKaizosServiceContract_GetAllRefCarrierList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAllRefCarrierListResponse" message="tns:IKaizosServiceContract_GetAllRefCarrierList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePostalcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidatePostalcode" message="tns:IKaizosServiceContract_ValidatePostalcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidatePostalcodeResponse" message="tns:IKaizosServiceContract_ValidatePostalcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendMail" message="tns:IKaizosServiceContract_sendMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/sendMailResponse" message="tns:IKaizosServiceContract_sendMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMasterService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateMasterService" message="tns:IKaizosServiceContract_CreateMasterService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CreateMasterServiceResponse" message="tns:IKaizosServiceContract_CreateMasterService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelCharge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelCharge" message="tns:IKaizosServiceContract_GetFuelCharge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelChargeResponse" message="tns:IKaizosServiceContract_GetFuelCharge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelChargeParameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelChargeParameter" message="tns:IKaizosServiceContract_GetFuelChargeParameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFuelChargeParameterResponse" message="tns:IKaizosServiceContract_GetFuelChargeParameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuelChargeParameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeParameter" message="tns:IKaizosServiceContract_UpdateFuelChargeParameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeParameterResponse" message="tns:IKaizosServiceContract_UpdateFuelChargeParameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuelChargeStartDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeStartDate" message="tns:IKaizosServiceContract_UpdateFuelChargeStartDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeStartDateResponse" message="tns:IKaizosServiceContract_UpdateFuelChargeStartDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierService" message="tns:IKaizosServiceContract_GetCarrierService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceResponse" message="tns:IKaizosServiceContract_GetCarrierService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrierService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrierService" message="tns:IKaizosServiceContract_UpdateCarrierService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrierServiceResponse" message="tns:IKaizosServiceContract_UpdateCarrierService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierServiceDeliveryDelay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceDeliveryDelay" message="tns:IKaizosServiceContract_GetCarrierServiceDeliveryDelay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceDeliveryDelayResponse" message="tns:IKaizosServiceContract_GetCarrierServiceDeliveryDelay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrierServiceDelay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrierServiceDelay" message="tns:IKaizosServiceContract_UpdateCarrierServiceDelay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCarrierServiceDelayResponse" message="tns:IKaizosServiceContract_UpdateCarrierServiceDelay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDeliveryDelay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportDeliveryDelay" message="tns:IKaizosServiceContract_ImportDeliveryDelay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ImportDeliveryDelayResponse" message="tns:IKaizosServiceContract_ImportDeliveryDelay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerServiceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomerServiceList" message="tns:IKaizosServiceContract_GetCustomerServiceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomerServiceListResponse" message="tns:IKaizosServiceContract_GetCustomerServiceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerServiceUpdateAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdateAdmin" message="tns:IKaizosServiceContract_CustomerServiceUpdateAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdateAdminResponse" message="tns:IKaizosServiceContract_CustomerServiceUpdateAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndustry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetIndustry" message="tns:IKaizosServiceContract_GetIndustry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetIndustryResponse" message="tns:IKaizosServiceContract_GetIndustry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCustomer" message="tns:IKaizosServiceContract_InsertCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCustomerResponse" message="tns:IKaizosServiceContract_InsertCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEndCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertEndCustomer" message="tns:IKaizosServiceContract_InsertEndCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertEndCustomerResponse" message="tns:IKaizosServiceContract_InsertEndCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateHQZipcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateHQZipcode" message="tns:IKaizosServiceContract_ValidateHQZipcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateHQZipcodeResponse" message="tns:IKaizosServiceContract_ValidateHQZipcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEndCustomerByAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomerByAdmin" message="tns:IKaizosServiceContract_UpdateEndCustomerByAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomerByAdminResponse" message="tns:IKaizosServiceContract_UpdateEndCustomerByAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomerCredit" message="tns:IKaizosServiceContract_GetCustomerCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomerCreditResponse" message="tns:IKaizosServiceContract_GetCustomerCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCustomerCredit" message="tns:IKaizosServiceContract_UpdateCustomerCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateCustomerCreditResponse" message="tns:IKaizosServiceContract_UpdateCustomerCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAuthorizedList" message="tns:IKaizosServiceContract_GetAuthorizedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAuthorizedListResponse" message="tns:IKaizosServiceContract_GetAuthorizedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuthorize">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAuthorize" message="tns:IKaizosServiceContract_UpdateAuthorize_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAuthorizeResponse" message="tns:IKaizosServiceContract_UpdateAuthorize_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuthorized">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAuthorized" message="tns:IKaizosServiceContract_InsertAuthorized_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAuthorizedResponse" message="tns:IKaizosServiceContract_InsertAuthorized_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuthorizedSelf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAuthorizedSelf" message="tns:IKaizosServiceContract_UpdateAuthorizedSelf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAuthorizedSelfResponse" message="tns:IKaizosServiceContract_UpdateAuthorizedSelf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorized">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAuthorized" message="tns:IKaizosServiceContract_GetAuthorized_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAuthorizedResponse" message="tns:IKaizosServiceContract_GetAuthorized_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEndCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetEndCustomerList" message="tns:IKaizosServiceContract_GetEndCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetEndCustomerListResponse" message="tns:IKaizosServiceContract_GetEndCustomerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetUser" message="tns:IKaizosServiceContract_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetUserResponse" message="tns:IKaizosServiceContract_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEndCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomer" message="tns:IKaizosServiceContract_UpdateEndCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomerResponse" message="tns:IKaizosServiceContract_UpdateEndCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAdv" message="tns:IKaizosServiceContract_InsertAdv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAdvResponse" message="tns:IKaizosServiceContract_InsertAdv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEndCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetEndCustomer" message="tns:IKaizosServiceContract_GetEndCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetEndCustomerResponse" message="tns:IKaizosServiceContract_GetEndCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchiseAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFranchiseAdmin" message="tns:IKaizosServiceContract_UpdateFranchiseAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFranchiseAdminResponse" message="tns:IKaizosServiceContract_UpdateFranchiseAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAuthorized">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteAuthorized" message="tns:IKaizosServiceContract_DeleteAuthorized_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteAuthorizedResponse" message="tns:IKaizosServiceContract_DeleteAuthorized_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarrierAccountRef">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCarrierAccountRef" message="tns:IKaizosServiceContract_InsertCarrierAccountRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertCarrierAccountRefResponse" message="tns:IKaizosServiceContract_InsertCarrierAccountRef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostalCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPostalCode" message="tns:IKaizosServiceContract_GetPostalCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetPostalCodeResponse" message="tns:IKaizosServiceContract_GetPostalCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillCombo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/FillCombo" message="tns:IKaizosServiceContract_FillCombo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/FillComboResponse" message="tns:IKaizosServiceContract_FillCombo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/EncryptString" message="tns:IKaizosServiceContract_EncryptString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/EncryptStringResponse" message="tns:IKaizosServiceContract_EncryptString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DecryptString" message="tns:IKaizosServiceContract_DecryptString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DecryptStringResponse" message="tns:IKaizosServiceContract_DecryptString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFieldValue" message="tns:IKaizosServiceContract_GetFieldValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFieldValueResponse" message="tns:IKaizosServiceContract_GetFieldValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateZipCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateZipCode" message="tns:IKaizosServiceContract_ValidateZipCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateZipCodeResponse" message="tns:IKaizosServiceContract_ValidateZipCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DummyFaualContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DummyFaualContract" message="tns:IKaizosServiceContract_DummyFaualContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DummyFaualContractResponse" message="tns:IKaizosServiceContract_DummyFaualContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertToS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertToS" message="tns:IKaizosServiceContract_InsertToS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertToSResponse" message="tns:IKaizosServiceContract_InsertToS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SpInsertTos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/SpInsertTos" message="tns:IKaizosServiceContract_SpInsertTos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/SpInsertTosResponse" message="tns:IKaizosServiceContract_SpInsertTos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveToS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetActiveToS" message="tns:IKaizosServiceContract_GetActiveToS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetActiveToSResponse" message="tns:IKaizosServiceContract_GetActiveToS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddressBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAddressBook" message="tns:IKaizosServiceContract_InsertAddressBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertAddressBookResponse" message="tns:IKaizosServiceContract_InsertAddressBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddress" message="tns:IKaizosServiceContract_GetAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddressResponse" message="tns:IKaizosServiceContract_GetAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressBookSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddressBookSearch" message="tns:IKaizosServiceContract_GetAddressBookSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddressBookSearchResponse" message="tns:IKaizosServiceContract_GetAddressBookSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAddress" message="tns:IKaizosServiceContract_UpdateAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateAddressResponse" message="tns:IKaizosServiceContract_UpdateAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteAddress" message="tns:IKaizosServiceContract_DeleteAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteAddressResponse" message="tns:IKaizosServiceContract_DeleteAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressnew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddressnew" message="tns:IKaizosServiceContract_GetAddressnew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetAddressnewResponse" message="tns:IKaizosServiceContract_GetAddressnew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateUser" message="tns:IKaizosServiceContract_ValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateUserResponse" message="tns:IKaizosServiceContract_ValidateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLogin" message="tns:IKaizosServiceContract_GetLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLoginResponse" message="tns:IKaizosServiceContract_GetLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFranchise">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFranchise" message="tns:IKaizosServiceContract_GetFranchise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFranchiseResponse" message="tns:IKaizosServiceContract_GetFranchise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomer" message="tns:IKaizosServiceContract_GetCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetCustomerResponse" message="tns:IKaizosServiceContract_GetCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLastLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateLastLogin" message="tns:IKaizosServiceContract_UpdateLastLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateLastLoginResponse" message="tns:IKaizosServiceContract_UpdateLastLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunctionality" message="tns:IKaizosServiceContract_GetFunctionality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunctionalityResponse" message="tns:IKaizosServiceContract_GetFunctionality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionalProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunctionalProfile" message="tns:IKaizosServiceContract_GetFunctionalProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFunctionalProfileResponse" message="tns:IKaizosServiceContract_GetFunctionalProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFunctionalProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertFunctionalProfile" message="tns:IKaizosServiceContract_InsertFunctionalProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertFunctionalProfileResponse" message="tns:IKaizosServiceContract_InsertFunctionalProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFunctionalProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteFunctionalProfile" message="tns:IKaizosServiceContract_DeleteFunctionalProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/DeleteFunctionalProfileResponse" message="tns:IKaizosServiceContract_DeleteFunctionalProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateEmail" message="tns:IKaizosServiceContract_ValidateEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ValidateEmailResponse" message="tns:IKaizosServiceContract_ValidateEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFranchise">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertFranchise" message="tns:IKaizosServiceContract_InsertFranchise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertFranchiseResponse" message="tns:IKaizosServiceContract_InsertFranchise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchise">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFranchise" message="tns:IKaizosServiceContract_UpdateFranchise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/UpdateFranchiseResponse" message="tns:IKaizosServiceContract_UpdateFranchise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMonthlyFee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertMonthlyFee" message="tns:IKaizosServiceContract_InsertMonthlyFee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/InsertMonthlyFeeResponse" message="tns:IKaizosServiceContract_InsertMonthlyFee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFranchiseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFranchiseList" message="tns:IKaizosServiceContract_GetFranchiseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetFranchiseListResponse" message="tns:IKaizosServiceContract_GetFranchiseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthlyFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetMonthlyFees" message="tns:IKaizosServiceContract_GetMonthlyFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetMonthlyFeesResponse" message="tns:IKaizosServiceContract_GetMonthlyFees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/ConfirmPassword" message="tns:IKaizosServiceContract_ConfirmPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/ConfirmPasswordResponse" message="tns:IKaizosServiceContract_ConfirmPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageResource">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguageResource" message="tns:IKaizosServiceContract_GetLanguageResource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/GetLanguageResourceResponse" message="tns:IKaizosServiceContract_GetLanguageResource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerServiceUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdate" message="tns:IKaizosServiceContract_CustomerServiceUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdateResponse" message="tns:IKaizosServiceContract_CustomerServiceUpdate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IKaizosServiceContract" type="tns:IKaizosServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateBrokerEmailId">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateBrokerEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShipmentDetailUpdate">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ShipmentDetailUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationAssign">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationAssign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckForDuplicateCarrierName">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CheckForDuplicateCarrierName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCarrier">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreateCarrier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrier">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateCarrier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarriers">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarriers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrier">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarrierProcessing">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CarrierProcessing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeasability">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFeasability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierOutput">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrierOutput" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCarrierOutput">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAllCarrierOutput" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuote">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmShipment">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ConfirmShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentDetails">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetShipmentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInformation">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetOrderInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeferredPayment">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeferredPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShipment">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeleteShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelShipment">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CancelShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarrierProcess">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CarrierProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextCounter">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetNextCounter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentMethodAndInfo">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetPaymentMethodAndInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCarrierNames">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAllCarrierNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationHeaderInsert">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationHeaderInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationSurchargeDiscount">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationSurchargeDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationTariffBased">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationTariffBased" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimulationSubTotal">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SimulationSubTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignedUsers">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAssignedUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationID">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationHeader">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSurchargeDiscount">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationSurchargeDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationTariffBased">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationTariffBased" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSubTotal">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationSubTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationSurcharge">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationSurcharge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelSurcharge">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFuelSurcharge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSimulationID">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeleteSimulationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationGrossTotal">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSimulationGrossTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBrokerEmailId">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/getBrokerEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateMasterTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreateMasterTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenImportTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetOpenImportTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ImportTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffReference">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetTariffReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTariffReference">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateTariffReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateZone">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreateZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneSearchDetails">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetZoneSearchDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneDetails">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetZoneDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffZoneName">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetTariffZoneName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneCoverageList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetZoneCoverageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurchargeMaster">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSurchargeMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurchargeDetails">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetSurchargeDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSurchargeMater">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeMater" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSurchargeDetails">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateSurchargeDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetPublicTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdatePublicTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isAlreadyExist">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/isAlreadyExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMasterTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateMasterTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarrierService">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertCarrierService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierServiceForMaster">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceForMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailForAssignTariff">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetUserDetailForAssignTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getvalidatezone">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/Getvalidatezone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSingleShipment">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreateSingleShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicTariffNames">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetPublicTariffNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierTariffNames">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrierTariffNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffAssignedCarrierNames">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetTariffAssignedCarrierNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteForTool">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetQuoteForTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscount">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguage">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetLanguageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillCountryCombo">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/FillCountryCombo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePassword">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessage">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/sendMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CityZipcodeAutoFill">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CityZipcodeAutoFill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTime">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportAddressBook">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ImportAddressBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunction">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isNumericValidation">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/isNumericValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isAlphaNumericValidation">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/isAlphaNumericValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValueFromParameter">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetValueFromParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmPassord">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/sendConfirmPassord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidZidcode">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/IsValidZidcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefCarrierList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAllRefCarrierList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePostalcode">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidatePostalcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMail">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/sendMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateMasterService">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CreateMasterService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelCharge">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFuelCharge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelChargeParameter">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFuelChargeParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuelChargeParameter">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuelChargeStartDate">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateFuelChargeStartDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierService">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrierService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrierService">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateCarrierService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierServiceDeliveryDelay">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCarrierServiceDeliveryDelay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCarrierServiceDelay">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateCarrierServiceDelay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDeliveryDelay">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ImportDeliveryDelay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerServiceList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCustomerServiceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerServiceUpdateAdmin">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdateAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndustry">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetIndustry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEndCustomer">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertEndCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateHQZipcode">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidateHQZipcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEndCustomerByAdmin">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomerByAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerCredit">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCustomerCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerCredit">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateCustomerCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizedList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAuthorizedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuthorize">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateAuthorize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuthorized">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertAuthorized" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuthorizedSelf">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateAuthorizedSelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorized">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAuthorized" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEndCustomerList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetEndCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEndCustomer">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateEndCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdv">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertAdv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEndCustomer">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetEndCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchiseAdmin">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateFranchiseAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAuthorized">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeleteAuthorized" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarrierAccountRef">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertCarrierAccountRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostalCode">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetPostalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillCombo">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/FillCombo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptString">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/EncryptString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptString">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DecryptString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldValue">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFieldValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateZipCode">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidateZipCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DummyFaualContract">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DummyFaualContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertToS">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertToS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpInsertTos">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/SpInsertTos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveToS">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetActiveToS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddressBook">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertAddressBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressBookSearch">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAddressBookSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeleteAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressnew">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetAddressnew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogin">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFranchise">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFranchise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLastLogin">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateLastLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionality">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFunctionality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionalProfile">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFunctionalProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFunctionalProfile">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertFunctionalProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFunctionalProfile">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/DeleteFunctionalProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmail">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ValidateEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFranchise">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertFranchise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchise">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/UpdateFranchise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMonthlyFee">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/InsertMonthlyFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFranchiseList">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetFranchiseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthlyFees">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetMonthlyFees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmPassword">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/ConfirmPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageResource">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/GetLanguageResource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerServiceUpdate">
+      <soap:operation soapAction="http://tempuri.org/IKaizosServiceContract/CustomerServiceUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="KaizosService">
+    <wsdl:port name="BasicHttpBinding_IKaizosServiceContract" binding="tns:BasicHttpBinding_IKaizosServiceContract">
+      <soap:address location="http://localhost:3403/KaizosService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

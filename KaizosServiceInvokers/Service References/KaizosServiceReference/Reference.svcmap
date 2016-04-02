@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d89e832c-d154-49bc-a75a-d59762e7e17a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3403/KaizosService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KaizosService.xsd" MetadataType="Schema" ID="a9415184-74a3-4c3f-8dae-92037ffcddc2" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd1" />
+    <MetadataFile FileName="KaizosService4.xsd" MetadataType="Schema" ID="5dbc578e-a800-4d4c-abd3-738a283fadf3" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd5" />
+    <MetadataFile FileName="KaizosService1.xsd" MetadataType="Schema" ID="751088dc-87fe-40c8-b00d-41aaabbc7ef1" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd3" />
+    <MetadataFile FileName="KaizosService2.xsd" MetadataType="Schema" ID="4958a7eb-eb54-4e0b-91f8-4d62638862e9" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd2" />
+    <MetadataFile FileName="KaizosService.disco" MetadataType="Disco" ID="4c863422-5dd0-4ff6-a84d-c6c81a6aebdf" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?disco" />
+    <MetadataFile FileName="KaizosService3.xsd" MetadataType="Schema" ID="64a6dab0-b761-459b-859f-4ffea1638f13" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd0" />
+    <MetadataFile FileName="KaizosService.wsdl" MetadataType="Wsdl" ID="92b8caa8-4977-4e1f-aa25-d558abd7d81a" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?wsdl" />
+    <MetadataFile FileName="KaizosService41.xsd" MetadataType="Schema" ID="f46e20ff-9afa-4fc4-ae66-aa56af1fb399" SourceId="1" SourceUrl="http://localhost:3403/KaizosService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

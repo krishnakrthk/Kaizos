@@ -1,0 +1,20 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll.config
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\nunit.framework.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\nunit.framework.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.pdb
+F:\WDIR\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll.config
+F:\WDIR\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll
+F:\WDIR\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.pdb
+F:\WDIR\Kaizos\GlobalLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.dll
+F:\WDIR\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll.config
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\bin\Debug\GlobalLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\GlobalLibrary\obj\Debug\GlobalLibrary.pdb

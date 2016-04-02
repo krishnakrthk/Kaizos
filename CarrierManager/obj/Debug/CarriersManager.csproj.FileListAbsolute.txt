@@ -1,0 +1,17 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\CarrierManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\CarrierManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\CarrierManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\CarrierManager.pdb
+F:\WDIR\Kaizos\CarrierManager\bin\Debug\CarrierManager.dll
+F:\WDIR\Kaizos\CarrierManager\bin\Debug\CarrierManager.pdb
+F:\WDIR\Kaizos\CarrierManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\CarrierManager\obj\Debug\CarrierManager.dll
+F:\WDIR\Kaizos\CarrierManager\obj\Debug\CarrierManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\CarrierManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\CarrierManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\CarrierManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\CarrierManager\obj\Debug\CarrierManager.pdb

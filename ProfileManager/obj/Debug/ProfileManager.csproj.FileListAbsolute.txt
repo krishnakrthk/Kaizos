@@ -1,0 +1,15 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Debug\ProfileManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Debug\ProfileManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ProfileManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ProfileManager.pdb
+F:\WDIR\Kaizos\ProfileManager\bin\Debug\ProfileManager.dll
+F:\WDIR\Kaizos\ProfileManager\bin\Debug\ProfileManager.pdb
+F:\WDIR\Kaizos\ProfileManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\ProfileManager\obj\Debug\ProfileManager.dll
+F:\WDIR\Kaizos\ProfileManager\obj\Debug\ProfileManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Debug\ProfileManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Debug\ProfileManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ProfileManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Debug\ProfileManager.pdb

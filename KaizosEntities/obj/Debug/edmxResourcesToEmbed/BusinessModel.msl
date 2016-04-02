@@ -1,0 +1,1121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KaizosEntitiesStoreContainer" CdmEntityContainer="KaizosEntities">
+    <EntitySetMapping Name="DTOS">
+      <EntityTypeMapping TypeName="Kaizos.Entities.DToS">
+        <MappingFragment StoreEntitySet="TOS">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="TERMS_OF_SERVICE" ColumnName="TERMS_OF_SERVICE" />
+          <ScalarProperty Name="TOS_ID" ColumnName="TOS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uSP_LOGIN_INSERT" FunctionName="Kaizos.Entities.Store.uSP_LOGIN_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_COMBO_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_COMBO_LIST" />
+    <FunctionImportMapping FunctionImportName="uSP_DELETE_RECORDS" FunctionName="Kaizos.Entities.Store.uSP_DELETE_RECORDS" />
+    <FunctionImportMapping FunctionImportName="uSP_DELIVERY_DELAY_IMPORT" FunctionName="Kaizos.Entities.Store.uSP_DELIVERY_DELAY_IMPORT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_SERVICE" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_SERVICE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.CARRIER_SERVICE">
+          <ScalarProperty Name="SERVICE_ID" ColumnName="SERVICE_ID" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="SERVICE_CODE" ColumnName="SERVICE_CODE" />
+          <ScalarProperty Name="DELIVERY_DELAY" ColumnName="DELIVERY_DELAY" />
+          <ScalarProperty Name="DELIVERY_DEADLINE" ColumnName="DELIVERY_DEADLINE" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="KEY_CUSTOMER_SERVICE" ColumnName="KEY_CUSTOMER_SERVICE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_SERVICE_DELIVERY_DELAY" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_SERVICE_DELIVERY_DELAY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.CARRIER_DELAY">
+          <ScalarProperty Name="ORIGIN" ColumnName="ORIGIN" />
+          <ScalarProperty Name="DESTINATION" ColumnName="DESTINATION" />
+          <ScalarProperty Name="DELAY" ColumnName="DELAY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_DELIVERY_DELAY_TABLE_NAME" FunctionName="Kaizos.Entities.Store.uSP_GET_DELIVERY_DELAY_TABLE_NAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.DELIVER_DELAY_TABLE_NAME">
+          <ScalarProperty Name="DELIVERY_DELAY" ColumnName="DELIVERY_DELAY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_CREATE_MASTER_SERVICE_TYPE" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_CREATE_MASTER_SERVICE_TYPE" />
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_GET_FUEL_SURCHARGE" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_GET_FUEL_SURCHARGE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.FUEL_SURCHARGE">
+          <ScalarProperty Name="SERVICE_ID" ColumnName="SERVICE_ID" />
+          <ScalarProperty Name="TARIFF_TYPE" ColumnName="TARIFF_TYPE" />
+          <ScalarProperty Name="KEY_ACCOUNT_REF" ColumnName="KEY_ACCOUNT_REF" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="REFERENCE" ColumnName="REFERENCE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_GET_FUEL_SURCHARGE_PARAM" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_GET_FUEL_SURCHARGE_PARAM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.FUEL_PARAM">
+          <ScalarProperty Name="PARAM_ID" ColumnName="PARAM_ID" />
+          <ScalarProperty Name="PARAM_VALUE" ColumnName="PARAM_VALUE" />
+          <ScalarProperty Name="SERVICE_ID" ColumnName="SERVICE_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_UPDATE_FUEL_SURCHARGE" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_UPDATE_FUEL_SURCHARGE" />
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_UPDATE_FUEL_SURCHARGE_PARAM" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_UPDATE_FUEL_SURCHARGE_PARAM" />
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_CARRIER_DELIVERY_DELAY" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_CARRIER_DELIVERY_DELAY" />
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_CARRIER_SERVICE" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_CARRIER_SERVICE" />
+    <FunctionImportMapping FunctionImportName="uSP_LOGIN_VALIDATE" FunctionName="Kaizos.Entities.Store.uSP_LOGIN_VALIDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_LAST_LOGIN" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_LAST_LOGIN" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_PROFILE_FUNCTIONALITY_MAPPING" FunctionName="Kaizos.Entities.Store.uSP_GET_PROFILE_FUNCTIONALITY_MAPPING">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_PROFILE_FUNCTIONALITY_MAPPING_Result">
+          <ScalarProperty Name="PROFILE_CODE" ColumnName="PROFILE_CODE" />
+          <ScalarProperty Name="FUNCTIONAL_CODE" ColumnName="FUNCTIONAL_CODE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_DELETE_PROFILE_FUNCTIONALITY_MAPPING" FunctionName="Kaizos.Entities.Store.uSP_DELETE_PROFILE_FUNCTIONALITY_MAPPING" />
+    <FunctionImportMapping FunctionImportName="uSP_INSERT_PROFILE_FUNCTIONALITY_MAPPING" FunctionName="Kaizos.Entities.Store.uSP_INSERT_PROFILE_FUNCTIONALITY_MAPPING" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_SERVICE_CODE" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_SERVICE_CODE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_TARIFF_ZONE_NAME" FunctionName="Kaizos.Entities.Store.uSP_GET_TARIFF_ZONE_NAME" />
+    <FunctionImportMapping FunctionImportName="uSP_CREATE_TARIFF_TABLE" FunctionName="Kaizos.Entities.Store.uSP_CREATE_TARIFF_TABLE" />
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_IMPORT" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_IMPORT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_TARIFF_REFERENCE" FunctionName="Kaizos.Entities.Store.uSP_GET_TARIFF_REFERENCE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.TARIFF_REFERENCE_LIST">
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_TARIFF_REFERENCE" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_TARIFF_REFERENCE" />
+    <FunctionImportMapping FunctionImportName="uSP_ZONE_CREATION" FunctionName="Kaizos.Entities.Store.uSP_ZONE_CREATION" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ZONE_SEARCH_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_GET_ZONE_SEARCH_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.ZONE_SEARCH_DETAILS">
+          <ScalarProperty Name="ZONE_ID" ColumnName="ZONE_ID" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="ZONE_NAME" ColumnName="ZONE_NAME" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_ZONE_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_GET_ZONE_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.ZONE_DETAILS">
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="ZONE_NAME" ColumnName="ZONE_NAME" />
+          <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="GEOGRAPHICAL_COVERAGE" ColumnName="GEOGRAPHICAL_COVERAGE" />
+          <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+          <ScalarProperty Name="COVERAGE_LIST" ColumnName="COVERAGE_LIST" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_ZONE_COVERAGELIST" FunctionName="Kaizos.Entities.Store.uSP_GET_ZONE_COVERAGELIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.ZONE_COVERAGELIST">
+          <ScalarProperty Name="ZONE_ID" ColumnName="ZONE_ID" />
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="ZONE_NAME" ColumnName="ZONE_NAME" />
+          <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="GEOGRAPHICAL_COVERAGE" ColumnName="GEOGRAPHICAL_COVERAGE" />
+          <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+          <ScalarProperty Name="COVERAGE_LIST" ColumnName="COVERAGE_LIST" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_TARIFF_CREATION" FunctionName="Kaizos.Entities.Store.uSP_TARIFF_CREATION" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_OPEN_IMPORT_TARIFF" FunctionName="Kaizos.Entities.Store.uSP_GET_OPEN_IMPORT_TARIFF" />
+    <FunctionImportMapping FunctionImportName="uSP_DEFERRED_PAYMENT" FunctionName="Kaizos.Entities.Store.uSP_DEFERRED_PAYMENT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ASSIGNED_TARIFF" FunctionName="Kaizos.Entities.Store.uSP_GET_ASSIGNED_TARIFF" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_COUNTRY_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_GET_COUNTRY_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.TblCountry">
+          <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+          <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+          <ScalarProperty Name="CODE_NAME" ColumnName="CODE_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_NEXT_COUNTER" FunctionName="Kaizos.Entities.Store.uSP_GET_NEXT_COUNTER" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_PAYMENT_INFO" FunctionName="Kaizos.Entities.Store.uSP_GET_PAYMENT_INFO" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_PRIORITY" FunctionName="Kaizos.Entities.Store.uSP_GET_PRIORITY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.TblPriority">
+          <ScalarProperty Name="MASTER_PRIORITY" ColumnName="MASTER_PRIORITY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_CANCEL" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_CANCEL" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_DELETE" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_DELETE" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_DETAIL_INSERT" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_DETAIL_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_INSERT" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_TEMP_INSERT" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_TEMP_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_ORDER_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_ORDER_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_LANGUAGE_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_LANGUAGE_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_LANGUAGE_LIST_Result">
+          <ScalarProperty Name="LANGUAGES" ColumnName="LANGUAGES" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_FUNCTIONALITIES" FunctionName="Kaizos.Entities.Store.uSP_GET_FUNCTIONALITIES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_FUNCTIONALITIES_Result">
+          <ScalarProperty Name="FUNCTIONAL_CODE" ColumnName="FUNCTIONAL_CODE" />
+          <ScalarProperty Name="FUNCTIONAL_NAME" ColumnName="FUNCTIONAL_NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_FRANCHISE_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_FRANCHISE_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_FRANCHISE_LIST_Result">
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_FRANCHISE" FunctionName="Kaizos.Entities.Store.uSP_GET_FRANCHISE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_FRANCHISE_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SALE_TARIFF_ASSIGNED" ColumnName="SALE_TARIFF_ASSIGNED" />
+          <ScalarProperty Name="TOS_ACCEPTED" ColumnName="TOS_ACCEPTED" />
+          <ScalarProperty Name="TOS_ACCEPTED_DATE" ColumnName="TOS_ACCEPTED_DATE" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+          <ScalarProperty Name="CHANGE_PASSWORD_REQ" ColumnName="CHANGE_PASSWORD_REQ" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_USER_TYPE" ColumnName="CREATED_USER_TYPE" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="LEGAL_FORM" ColumnName="LEGAL_FORM" />
+          <ScalarProperty Name="COMMERCIAL_NAME" ColumnName="COMMERCIAL_NAME" />
+          <ScalarProperty Name="MAN_POWER" ColumnName="MAN_POWER" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="FAX_NO" ColumnName="FAX_NO" />
+          <ScalarProperty Name="REGISTRATION_NO" ColumnName="REGISTRATION_NO" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="ASSIGNED_ZONE" ColumnName="ASSIGNED_ZONE" />
+          <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="CUSTOMER_TYPE" ColumnName="CUSTOMER_TYPE" />
+          <ScalarProperty Name="CUSTOMER_TYPE_CHANGED" ColumnName="CUSTOMER_TYPE_CHANGED" />
+          <ScalarProperty Name="SCANNED_DOCUMENT" ColumnName="SCANNED_DOCUMENT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_LANGUAGE" FunctionName="Kaizos.Entities.Store.uSP_GET_LANGUAGE" />
+    <FunctionImportMapping FunctionImportName="uSP_MONTHLY_FEES_INSERT" FunctionName="Kaizos.Entities.Store.uSP_MONTHLY_FEES_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_MONTHLY_FEES" FunctionName="Kaizos.Entities.Store.uSP_GET_MONTHLY_FEES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_MONTHLY_FEES_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="FEE_RATE" ColumnName="FEE_RATE" />
+          <ScalarProperty Name="SHIPMENT_TYPE" ColumnName="SHIPMENT_TYPE" />
+          <ScalarProperty Name="ADMIN_ACCOUNT_NO" ColumnName="ADMIN_ACCOUNT_NO" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SURCHARGE_MAST" FunctionName="Kaizos.Entities.Store.uSP_GET_SURCHARGE_MAST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SURCHARGE_MAST">
+          <ScalarProperty Name="SURCHARGE_CODE" ColumnName="SURCHARGE_CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SURCHARGE_DET" FunctionName="Kaizos.Entities.Store.uSP_GET_SURCHARGE_DET">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.SURCHARGE_DET">
+          <ScalarProperty Name="SERVICE_ID" ColumnName="SERVICE_ID" />
+          <ScalarProperty Name="SURCHARGE_CODE" ColumnName="SURCHARGE_CODE" />
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="PARAM_ID" ColumnName="PARAM_ID" />
+          <ScalarProperty Name="PARAM_VALUE" ColumnName="PARAM_VALUE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_SURCHARGE_MASTER" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_SURCHARGE_MASTER" />
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_SURCHARGE_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_SURCHARGE_DETAILS" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_SERVICE_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_SERVICE_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.TblServiceDetail">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="SERVICE_CODE" ColumnName="SERVICE_CODE" />
+          <ScalarProperty Name="DELIVERY_DELAY" ColumnName="DELIVERY_DELAY" />
+          <ScalarProperty Name="DELIVERY_DEADLINE" ColumnName="DELIVERY_DEADLINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_PUBLIC_TARIFF_NAMES" FunctionName="Kaizos.Entities.Store.uSP_GET_PUBLIC_TARIFF_NAMES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_PUBLIC_TARIFF_NAMES_Result">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_TARIFF_NAMES" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_TARIFF_NAMES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_TARIFF_NAMES_Result">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE_Result">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_FRANCHIS_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_FRANCHIS_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_UPDATE_PASSWORD" FunctionName="Kaizos.Entities.Store.uSP_UPDATE_PASSWORD" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_MAIL_DETAIL" FunctionName="Kaizos.Entities.Store.uSP_GET_MAIL_DETAIL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_MAIL_DETAIL_Result">
+          <ScalarProperty Name="HOSTADDRESS" ColumnName="HOSTADDRESS" />
+          <ScalarProperty Name="HOSTUSERID" ColumnName="HOSTUSERID" />
+          <ScalarProperty Name="HOSTPWD" ColumnName="HOSTPWD" />
+          <ScalarProperty Name="PORT" ColumnName="PORT" />
+          <ScalarProperty Name="SSLENABLED" ColumnName="SSLENABLED" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_LOGIN" FunctionName="Kaizos.Entities.Store.uSP_GET_LOGIN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_LOGIN_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SALE_TARIFF_ASSIGNED" ColumnName="SALE_TARIFF_ASSIGNED" />
+          <ScalarProperty Name="TOS_ACCEPTED" ColumnName="TOS_ACCEPTED" />
+          <ScalarProperty Name="TOS_ACCEPTED_DATE" ColumnName="TOS_ACCEPTED_DATE" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+          <ScalarProperty Name="CHANGE_PASSWORD_REQ" ColumnName="CHANGE_PASSWORD_REQ" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_USER_TYPE" ColumnName="CREATED_USER_TYPE" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="LEGAL_FORM" ColumnName="LEGAL_FORM" />
+          <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="CUSTOMER_TYPE" ColumnName="CUSTOMER_TYPE" />
+          <ScalarProperty Name="CUSTOMER_TYPE_CHANGED" ColumnName="CUSTOMER_TYPE_CHANGED" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_LANGUAGE_CODE" FunctionName="Kaizos.Entities.Store.uSP_GET_LANGUAGE_CODE" />
+    <FunctionImportMapping FunctionImportName="uSP_ADDRESS_BOOK_INSERT" FunctionName="Kaizos.Entities.Store.uSP_ADDRESS_BOOK_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ADDRESS_BOOK_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_ADDRESS_BOOK_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ADDRESS_BOOK_LIST_Result">
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="ADDRESS_TYPE" ColumnName="ADDRESS_TYPE" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="FAX_NO" ColumnName="FAX_NO" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LAST_PICKUP_MON_THU" ColumnName="LAST_PICKUP_MON_THU" />
+          <ScalarProperty Name="LAST_PICKUP_FRI" ColumnName="LAST_PICKUP_FRI" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="SHIP_PREFERENCE" ColumnName="SHIP_PREFERENCE" />
+          <ScalarProperty Name="ADDR_USED_FOR" ColumnName="ADDR_USED_FOR" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_ADDRESS_BOOK_IMPORT" FunctionName="Kaizos.Entities.Store.uSP_ADDRESS_BOOK_IMPORT" />
+    <FunctionImportMapping FunctionImportName="uSP_CUSTOMER_SERVICE_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_CUSTOMER_SERVICE_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CUSTOMER_SERVICE_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_CUSTOMER_SERVICE_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CUSTOMER_SERVICE_LIST_Result">
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_CUSTOMER_SERVICE_UPDATE_ADMIN" FunctionName="Kaizos.Entities.Store.uSP_CUSTOMER_SERVICE_UPDATE_ADMIN" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_INDUSTRY" FunctionName="Kaizos.Entities.Store.uSP_GET_INDUSTRY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_INDUSTRY_Result">
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="ACTIVITY" ColumnName="ACTIVITY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_VALIDATE_HQZIPCODE" FunctionName="Kaizos.Entities.Store.uSP_VALIDATE_HQZIPCODE" />
+    <FunctionImportMapping FunctionImportName="uSP_END_CUSTOMER_INSERT" FunctionName="Kaizos.Entities.Store.uSP_END_CUSTOMER_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_END_CUSTOMER_UPDATE_BY_ADMIN" FunctionName="Kaizos.Entities.Store.uSP_END_CUSTOMER_UPDATE_BY_ADMIN" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CREDIT_REQUEST_ACCEPT_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_GET_CREDIT_REQUEST_ACCEPT_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_AUTHORIZED_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_AUTHORIZED_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_AUTHORIZED_SELF_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_AUTHORIZED_SELF_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_AUTHORIZED" FunctionName="Kaizos.Entities.Store.uSP_GET_AUTHORIZED">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_AUTHORIZED_Result">
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="REFERENT_ACCOUNT_NO" ColumnName="REFERENT_ACCOUNT_NO" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CREDIT_REQUEST_ACCEPT" FunctionName="Kaizos.Entities.Store.uSP_GET_CREDIT_REQUEST_ACCEPT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CREDIT_REQUEST_ACCEPT_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="WISHED_BUDGET_AMT" ColumnName="WISHED_BUDGET_AMT" />
+          <ScalarProperty Name="TRANS_BUDGET_AMT" ColumnName="TRANS_BUDGET_AMT" />
+          <ScalarProperty Name="INSURED_CREDIT_AMT" ColumnName="INSURED_CREDIT_AMT" />
+          <ScalarProperty Name="PAYMENT_DELAY_DAYS" ColumnName="PAYMENT_DELAY_DAYS" />
+          <ScalarProperty Name="GROSS_MARGIN" ColumnName="GROSS_MARGIN" />
+          <ScalarProperty Name="PAYMENT_DELAY_MONTH" ColumnName="PAYMENT_DELAY_MONTH" />
+          <ScalarProperty Name="COMPENSATION_RATE" ColumnName="COMPENSATION_RATE" />
+          <ScalarProperty Name="DEPOSIT_AMT" ColumnName="DEPOSIT_AMT" />
+          <ScalarProperty Name="AUTHORIZED_CREDIT_LIMIT" ColumnName="AUTHORIZED_CREDIT_LIMIT" />
+          <ScalarProperty Name="AUTHORIZED_CREDIT_AMT" ColumnName="AUTHORIZED_CREDIT_AMT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_AUTHORIZED_USER_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_AUTHORIZED_USER_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_AUTHORIZED_USER_LIST_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="REFERENT_USER_ID" ColumnName="REFERENT_USER_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_AUTHORIZED_INSERT" FunctionName="Kaizos.Entities.Store.uSP_AUTHORIZED_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_TOS_INSERT" FunctionName="Kaizos.Entities.Store.uSP_TOS_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_FUNCTION" FunctionName="Kaizos.Entities.Store.uSP_GET_FUNCTION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_FUNCTION_Result">
+          <ScalarProperty Name="FUNCTION_NAME" ColumnName="FUNCTION_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_TARIFF_AND_DELIVERY_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_GET_TARIFF_AND_DELIVERY_DETAILS" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ALL_CARRIER_NAMES" FunctionName="Kaizos.Entities.Store.uSP_GET_ALL_CARRIER_NAMES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ALL_CARRIER_NAMES_Result">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_SURCHARGE_DISCOUNT" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_SURCHARGE_DISCOUNT" />
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_TARIFF" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_TARIFF" />
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_TARIFF_BASED" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_TARIFF_BASED" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_TARIFF_DETAILS" FunctionName="Kaizos.Entities.Store.uSP_GET_TARIFF_DETAILS" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ASSGINED_USERS" FunctionName="Kaizos.Entities.Store.uSP_GET_ASSGINED_USERS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ASSGINED_USERS_Result">
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_ID" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_ID_Result">
+          <ScalarProperty Name="TEXT_FIELD" ColumnName="TEXT_FIELD" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_SUB_TOTAL" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_SUB_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_SUB_TOTAL_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="TOTAL_WEIGHT" ColumnName="TOTAL_WEIGHT" />
+          <ScalarProperty Name="TOTAL_ADV" ColumnName="TOTAL_ADV" />
+          <ScalarProperty Name="TOTAL_FREIGHT" ColumnName="TOTAL_FREIGHT" />
+          <ScalarProperty Name="TOTAL_PURCHASE" ColumnName="TOTAL_PURCHASE" />
+          <ScalarProperty Name="TOTAL_CURRENT_DISCOUNT" ColumnName="TOTAL_CURRENT_DISCOUNT" />
+          <ScalarProperty Name="TOTAL_PUBLIC" ColumnName="TOTAL_PUBLIC" />
+          <ScalarProperty Name="TOTAL_CURRENT_SALE" ColumnName="TOTAL_CURRENT_SALE" />
+          <ScalarProperty Name="TOTAL_TURNOVER" ColumnName="TOTAL_TURNOVER" />
+          <ScalarProperty Name="TOTAL_GROSS_MARGIN" ColumnName="TOTAL_GROSS_MARGIN" />
+          <ScalarProperty Name="TOTAL_SALES_FRET_TARIFF" ColumnName="TOTAL_SALES_FRET_TARIFF" />
+          <ScalarProperty Name="TOTAL_PROPOSED_SALES_TARIFF" ColumnName="TOTAL_PROPOSED_SALES_TARIFF" />
+          <ScalarProperty Name="TOTAL_SALES_TURNOVER" ColumnName="TOTAL_SALES_TURNOVER" />
+          <ScalarProperty Name="TOTAL_SALES_GROSS_MARGIN" ColumnName="TOTAL_SALES_GROSS_MARGIN" />
+          <ScalarProperty Name="TOTAL_COMPARE_SALES" ColumnName="TOTAL_COMPARE_SALES" />
+          <ScalarProperty Name="TOTAL_COMPARE_MARGIN" ColumnName="TOTAL_COMPARE_MARGIN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_SURCHARGE_DISCOUNT" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_SURCHARGE_DISCOUNT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_SURCHARGE_DISCOUNT_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="SAFETY_DISCOUNT" ColumnName="SAFETY_DISCOUNT" />
+          <ScalarProperty Name="FUEL_DISCOUNT" ColumnName="FUEL_DISCOUNT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_TARIFF" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_TARIFF">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_TARIFF_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="WEIGHT_RANGE" ColumnName="WEIGHT_RANGE" />
+          <ScalarProperty Name="SHIP_COUNTRY" ColumnName="SHIP_COUNTRY" />
+          <ScalarProperty Name="DELIVERY_COUNTRY" ColumnName="DELIVERY_COUNTRY" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="AVERAGE_WEIGHT" ColumnName="AVERAGE_WEIGHT" />
+          <ScalarProperty Name="ADV" ColumnName="ADV" />
+          <ScalarProperty Name="PURCHASE_FREIGHT" ColumnName="PURCHASE_FREIGHT" />
+          <ScalarProperty Name="PURCHASE_TARIFF" ColumnName="PURCHASE_TARIFF" />
+          <ScalarProperty Name="PURCHASE_CARRIER" ColumnName="PURCHASE_CARRIER" />
+          <ScalarProperty Name="PUBLIC_DISCOUNT" ColumnName="PUBLIC_DISCOUNT" />
+          <ScalarProperty Name="PUBLIC_CARRIER" ColumnName="PUBLIC_CARRIER" />
+          <ScalarProperty Name="PUBLIC_FREIGHT" ColumnName="PUBLIC_FREIGHT" />
+          <ScalarProperty Name="PUBLIC_TARIFF" ColumnName="PUBLIC_TARIFF" />
+          <ScalarProperty Name="PUBLIC_TURNOVER" ColumnName="PUBLIC_TURNOVER" />
+          <ScalarProperty Name="SALE_MARGIN" ColumnName="SALE_MARGIN" />
+          <ScalarProperty Name="SALE__FREIGHT" ColumnName="SALE__FREIGHT" />
+          <ScalarProperty Name="SALE_TARIFF" ColumnName="SALE_TARIFF" />
+          <ScalarProperty Name="SALE_TURNOVER" ColumnName="SALE_TURNOVER" />
+          <ScalarProperty Name="SALE_GROSS_MARGIN" ColumnName="SALE_GROSS_MARGIN" />
+          <ScalarProperty Name="COMPARISON_SALE_TARIFF" ColumnName="COMPARISON_SALE_TARIFF" />
+          <ScalarProperty Name="COMPARISON_MARGIN" ColumnName="COMPARISON_MARGIN" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="PUBLIC_SURCHARGE" ColumnName="PUBLIC_SURCHARGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_TARIFF_BASED" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_TARIFF_BASED">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_TARIFF_BASED_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="TARIFF_REFERENCE" ColumnName="TARIFF_REFERENCE" />
+          <ScalarProperty Name="ASSIGNED" ColumnName="ASSIGNED" />
+          <ScalarProperty Name="TARIFF_TYPE" ColumnName="TARIFF_TYPE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_SUB_TOTAL" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_SUB_TOTAL" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CONFIRMED_SHIPING_ORDERS" FunctionName="Kaizos.Entities.Store.uSP_GET_CONFIRMED_SHIPING_ORDERS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CONFIRMED_SHIPING_ORDERS_Result">
+          <ScalarProperty Name="SHIP_REFERENCE" ColumnName="SHIP_REFERENCE" />
+          <ScalarProperty Name="RECIPIENT_TYPE" ColumnName="RECIPIENT_TYPE" />
+          <ScalarProperty Name="OPTIONS" ColumnName="OPTIONS" />
+          <ScalarProperty Name="WISHED_SHIP_DATE" ColumnName="WISHED_SHIP_DATE" />
+          <ScalarProperty Name="UOD_COUNT" ColumnName="UOD_COUNT" />
+          <ScalarProperty Name="TOTAL_WEIGHT" ColumnName="TOTAL_WEIGHT" />
+          <ScalarProperty Name="INSURED" ColumnName="INSURED" />
+          <ScalarProperty Name="DECLARED_VALUE" ColumnName="DECLARED_VALUE" />
+          <ScalarProperty Name="CURRENCY_TYPE" ColumnName="CURRENCY_TYPE" />
+          <ScalarProperty Name="PACKAGE_TYPE" ColumnName="PACKAGE_TYPE" />
+          <ScalarProperty Name="PACKAGE_MATERIAL" ColumnName="PACKAGE_MATERIAL" />
+          <ScalarProperty Name="CLOSING_MATERIAL" ColumnName="CLOSING_MATERIAL" />
+          <ScalarProperty Name="SENDER_COMPANY" ColumnName="SENDER_COMPANY" />
+          <ScalarProperty Name="SENDER_NAME" ColumnName="SENDER_NAME" />
+          <ScalarProperty Name="SENDER_PHONE" ColumnName="SENDER_PHONE" />
+          <ScalarProperty Name="SENDER_EMAIL" ColumnName="SENDER_EMAIL" />
+          <ScalarProperty Name="SENDER_ADDRESS1" ColumnName="SENDER_ADDRESS1" />
+          <ScalarProperty Name="SENDER_ADDRESS2" ColumnName="SENDER_ADDRESS2" />
+          <ScalarProperty Name="SENDER_ADDRESS3" ColumnName="SENDER_ADDRESS3" />
+          <ScalarProperty Name="SENDER_CITY" ColumnName="SENDER_CITY" />
+          <ScalarProperty Name="SENDER_ZIP" ColumnName="SENDER_ZIP" />
+          <ScalarProperty Name="SENDER_STATE" ColumnName="SENDER_STATE" />
+          <ScalarProperty Name="SENDER_COUNTRY" ColumnName="SENDER_COUNTRY" />
+          <ScalarProperty Name="SENDER_COLLECT_DEADLINE" ColumnName="SENDER_COLLECT_DEADLINE" />
+          <ScalarProperty Name="SENDER_COMMENTS" ColumnName="SENDER_COMMENTS" />
+          <ScalarProperty Name="SAME_RETURN_ADDRESS" ColumnName="SAME_RETURN_ADDRESS" />
+          <ScalarProperty Name="RETURN_COMPANY" ColumnName="RETURN_COMPANY" />
+          <ScalarProperty Name="RETURN_NAME" ColumnName="RETURN_NAME" />
+          <ScalarProperty Name="RETURN_PHONE" ColumnName="RETURN_PHONE" />
+          <ScalarProperty Name="RETURN_ADDRESS1" ColumnName="RETURN_ADDRESS1" />
+          <ScalarProperty Name="RETURN_ADDRESS2" ColumnName="RETURN_ADDRESS2" />
+          <ScalarProperty Name="RETURN_ADDRESS3" ColumnName="RETURN_ADDRESS3" />
+          <ScalarProperty Name="RETURN_CITY" ColumnName="RETURN_CITY" />
+          <ScalarProperty Name="RETURN_ZIP" ColumnName="RETURN_ZIP" />
+          <ScalarProperty Name="RETURN_STATE" ColumnName="RETURN_STATE" />
+          <ScalarProperty Name="RETURN_COUNTRY" ColumnName="RETURN_COUNTRY" />
+          <ScalarProperty Name="RECIPIENT_COMPANY" ColumnName="RECIPIENT_COMPANY" />
+          <ScalarProperty Name="RECIPIENT_NAME" ColumnName="RECIPIENT_NAME" />
+          <ScalarProperty Name="RECIPIENT_PHONE" ColumnName="RECIPIENT_PHONE" />
+          <ScalarProperty Name="RECIPIENT_EMAIL" ColumnName="RECIPIENT_EMAIL" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS1" ColumnName="RECIPIENT_ADDRESS1" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS2" ColumnName="RECIPIENT_ADDRESS2" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS3" ColumnName="RECIPIENT_ADDRESS3" />
+          <ScalarProperty Name="RECIPIENT_CITY" ColumnName="RECIPIENT_CITY" />
+          <ScalarProperty Name="RECIPIENT_ZIP" ColumnName="RECIPIENT_ZIP" />
+          <ScalarProperty Name="RECIPIENT_STATE" ColumnName="RECIPIENT_STATE" />
+          <ScalarProperty Name="RECIPIENT_COUNTRY" ColumnName="RECIPIENT_COUNTRY" />
+          <ScalarProperty Name="RECIPIENT_DEL_DEADLINE" ColumnName="RECIPIENT_DEL_DEADLINE" />
+          <ScalarProperty Name="RECIPIENT_COMMENTS" ColumnName="RECIPIENT_COMMENTS" />
+          <ScalarProperty Name="CUST_INTERNAL_REFERENCE" ColumnName="CUST_INTERNAL_REFERENCE" />
+          <ScalarProperty Name="CUSTOMS_VALUE" ColumnName="CUSTOMS_VALUE" />
+          <ScalarProperty Name="SENDER_NOTIFICATION" ColumnName="SENDER_NOTIFICATION" />
+          <ScalarProperty Name="RECIPIENT_NOTIFICATION" ColumnName="RECIPIENT_NOTIFICATION" />
+          <ScalarProperty Name="CARRIER" ColumnName="CARRIER" />
+          <ScalarProperty Name="ORDER_CREATION_TIME" ColumnName="ORDER_CREATION_TIME" />
+          <ScalarProperty Name="SHIPPING_TIME" ColumnName="SHIPPING_TIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CALCULATED_SHIP_DATE" ColumnName="CALCULATED_SHIP_DATE" />
+          <ScalarProperty Name="CALCULATED_DELIVERY_TIME" ColumnName="CALCULATED_DELIVERY_TIME" />
+          <ScalarProperty Name="TAXABLE_WEIGHT" ColumnName="TAXABLE_WEIGHT" />
+          <ScalarProperty Name="FREIGHT_AMOUNT" ColumnName="FREIGHT_AMOUNT" />
+          <ScalarProperty Name="FUEL_CHARGE" ColumnName="FUEL_CHARGE" />
+          <ScalarProperty Name="CHOSEN_PREFERENCE" ColumnName="CHOSEN_PREFERENCE" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="OPTIONS_CHARGES" ColumnName="OPTIONS_CHARGES" />
+          <ScalarProperty Name="TOTAL_AMOUNT" ColumnName="TOTAL_AMOUNT" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="PAYMENT_TYPE" ColumnName="PAYMENT_TYPE" />
+          <ScalarProperty Name="PAYMENT_REFERENCE" ColumnName="PAYMENT_REFERENCE" />
+          <ScalarProperty Name="CANCEL_RESPONSIBLE" ColumnName="CANCEL_RESPONSIBLE" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="SURCHARGE" ColumnName="SURCHARGE" />
+          <ScalarProperty Name="SURCHARGE_DESCRIPTION" ColumnName="SURCHARGE_DESCRIPTION" />
+          <ScalarProperty Name="PARCEL_NO" ColumnName="PARCEL_NO" />
+          <ScalarProperty Name="CONTENT_TYPE" ColumnName="CONTENT_TYPE" />
+          <ScalarProperty Name="CONTAINER" ColumnName="CONTAINER" />
+          <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+          <ScalarProperty Name="WEIGHT_UNIT" ColumnName="WEIGHT_UNIT" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+          <ScalarProperty Name="DIMENSION_UNIT" ColumnName="DIMENSION_UNIT" />
+          <ScalarProperty Name="UOD_TAXABLE_WEIGHT" ColumnName="UOD_TAXABLE_WEIGHT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SHIPMENT_INFO" FunctionName="Kaizos.Entities.Store.uSP_GET_SHIPMENT_INFO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SHIPMENT_INFO_Result">
+          <ScalarProperty Name="SHIP_REFERENCE" ColumnName="SHIP_REFERENCE" />
+          <ScalarProperty Name="RECIPIENT_TYPE" ColumnName="RECIPIENT_TYPE" />
+          <ScalarProperty Name="OPTIONS" ColumnName="OPTIONS" />
+          <ScalarProperty Name="WISHED_SHIP_DATE" ColumnName="WISHED_SHIP_DATE" />
+          <ScalarProperty Name="UOD_COUNT" ColumnName="UOD_COUNT" />
+          <ScalarProperty Name="TOTAL_WEIGHT" ColumnName="TOTAL_WEIGHT" />
+          <ScalarProperty Name="INSURED" ColumnName="INSURED" />
+          <ScalarProperty Name="DECLARED_VALUE" ColumnName="DECLARED_VALUE" />
+          <ScalarProperty Name="CURRENCY_TYPE" ColumnName="CURRENCY_TYPE" />
+          <ScalarProperty Name="PACKAGE_TYPE" ColumnName="PACKAGE_TYPE" />
+          <ScalarProperty Name="PACKAGE_MATERIAL" ColumnName="PACKAGE_MATERIAL" />
+          <ScalarProperty Name="CLOSING_MATERIAL" ColumnName="CLOSING_MATERIAL" />
+          <ScalarProperty Name="SENDER_COMPANY" ColumnName="SENDER_COMPANY" />
+          <ScalarProperty Name="SENDER_NAME" ColumnName="SENDER_NAME" />
+          <ScalarProperty Name="SENDER_PHONE" ColumnName="SENDER_PHONE" />
+          <ScalarProperty Name="SENDER_EMAIL" ColumnName="SENDER_EMAIL" />
+          <ScalarProperty Name="SENDER_ADDRESS1" ColumnName="SENDER_ADDRESS1" />
+          <ScalarProperty Name="SENDER_ADDRESS2" ColumnName="SENDER_ADDRESS2" />
+          <ScalarProperty Name="SENDER_ADDRESS3" ColumnName="SENDER_ADDRESS3" />
+          <ScalarProperty Name="SENDER_CITY" ColumnName="SENDER_CITY" />
+          <ScalarProperty Name="SENDER_ZIP" ColumnName="SENDER_ZIP" />
+          <ScalarProperty Name="SENDER_STATE" ColumnName="SENDER_STATE" />
+          <ScalarProperty Name="SENDER_COUNTRY" ColumnName="SENDER_COUNTRY" />
+          <ScalarProperty Name="SENDER_COLLECT_DEADLINE" ColumnName="SENDER_COLLECT_DEADLINE" />
+          <ScalarProperty Name="SENDER_COMMENTS" ColumnName="SENDER_COMMENTS" />
+          <ScalarProperty Name="SAME_RETURN_ADDRESS" ColumnName="SAME_RETURN_ADDRESS" />
+          <ScalarProperty Name="RETURN_COMPANY" ColumnName="RETURN_COMPANY" />
+          <ScalarProperty Name="RETURN_NAME" ColumnName="RETURN_NAME" />
+          <ScalarProperty Name="RETURN_PHONE" ColumnName="RETURN_PHONE" />
+          <ScalarProperty Name="RETURN_ADDRESS1" ColumnName="RETURN_ADDRESS1" />
+          <ScalarProperty Name="RETURN_ADDRESS2" ColumnName="RETURN_ADDRESS2" />
+          <ScalarProperty Name="RETURN_ADDRESS3" ColumnName="RETURN_ADDRESS3" />
+          <ScalarProperty Name="RETURN_CITY" ColumnName="RETURN_CITY" />
+          <ScalarProperty Name="RETURN_ZIP" ColumnName="RETURN_ZIP" />
+          <ScalarProperty Name="RETURN_STATE" ColumnName="RETURN_STATE" />
+          <ScalarProperty Name="RETURN_COUNTRY" ColumnName="RETURN_COUNTRY" />
+          <ScalarProperty Name="RECIPIENT_COMPANY" ColumnName="RECIPIENT_COMPANY" />
+          <ScalarProperty Name="RECIPIENT_NAME" ColumnName="RECIPIENT_NAME" />
+          <ScalarProperty Name="RECIPIENT_PHONE" ColumnName="RECIPIENT_PHONE" />
+          <ScalarProperty Name="RECIPIENT_EMAIL" ColumnName="RECIPIENT_EMAIL" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS1" ColumnName="RECIPIENT_ADDRESS1" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS2" ColumnName="RECIPIENT_ADDRESS2" />
+          <ScalarProperty Name="RECIPIENT_ADDRESS3" ColumnName="RECIPIENT_ADDRESS3" />
+          <ScalarProperty Name="RECIPIENT_CITY" ColumnName="RECIPIENT_CITY" />
+          <ScalarProperty Name="RECIPIENT_ZIP" ColumnName="RECIPIENT_ZIP" />
+          <ScalarProperty Name="RECIPIENT_STATE" ColumnName="RECIPIENT_STATE" />
+          <ScalarProperty Name="RECIPIENT_COUNTRY" ColumnName="RECIPIENT_COUNTRY" />
+          <ScalarProperty Name="RECIPIENT_DEL_DEADLINE" ColumnName="RECIPIENT_DEL_DEADLINE" />
+          <ScalarProperty Name="RECIPIENT_COMMENTS" ColumnName="RECIPIENT_COMMENTS" />
+          <ScalarProperty Name="CUST_INTERNAL_REFERENCE" ColumnName="CUST_INTERNAL_REFERENCE" />
+          <ScalarProperty Name="CUSTOMS_VALUE" ColumnName="CUSTOMS_VALUE" />
+          <ScalarProperty Name="SENDER_NOTIFICATION" ColumnName="SENDER_NOTIFICATION" />
+          <ScalarProperty Name="RECIPIENT_NOTIFICATION" ColumnName="RECIPIENT_NOTIFICATION" />
+          <ScalarProperty Name="CARRIER" ColumnName="CARRIER" />
+          <ScalarProperty Name="ORDER_CREATION_TIME" ColumnName="ORDER_CREATION_TIME" />
+          <ScalarProperty Name="SHIPPING_TIME" ColumnName="SHIPPING_TIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CALCULATED_SHIP_DATE" ColumnName="CALCULATED_SHIP_DATE" />
+          <ScalarProperty Name="CALCULATED_DELIVERY_TIME" ColumnName="CALCULATED_DELIVERY_TIME" />
+          <ScalarProperty Name="TAXABLE_WEIGHT" ColumnName="TAXABLE_WEIGHT" />
+          <ScalarProperty Name="FREIGHT_AMOUNT" ColumnName="FREIGHT_AMOUNT" />
+          <ScalarProperty Name="FUEL_CHARGE" ColumnName="FUEL_CHARGE" />
+          <ScalarProperty Name="CHOSEN_PREFERENCE" ColumnName="CHOSEN_PREFERENCE" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="OPTIONS_CHARGES" ColumnName="OPTIONS_CHARGES" />
+          <ScalarProperty Name="TOTAL_AMOUNT" ColumnName="TOTAL_AMOUNT" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="PAYMENT_TYPE" ColumnName="PAYMENT_TYPE" />
+          <ScalarProperty Name="PAYMENT_REFERENCE" ColumnName="PAYMENT_REFERENCE" />
+          <ScalarProperty Name="CANCEL_RESPONSIBLE" ColumnName="CANCEL_RESPONSIBLE" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="SURCHARGE" ColumnName="SURCHARGE" />
+          <ScalarProperty Name="SURCHARGE_DESCRIPTION" ColumnName="SURCHARGE_DESCRIPTION" />
+          <ScalarProperty Name="PARCEL_NO" ColumnName="PARCEL_NO" />
+          <ScalarProperty Name="CONTENT_TYPE" ColumnName="CONTENT_TYPE" />
+          <ScalarProperty Name="CONTAINER" ColumnName="CONTAINER" />
+          <ScalarProperty Name="WEIGHT" ColumnName="WEIGHT" />
+          <ScalarProperty Name="WEIGHT_UNIT" ColumnName="WEIGHT_UNIT" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+          <ScalarProperty Name="DIMENSION_UNIT" ColumnName="DIMENSION_UNIT" />
+          <ScalarProperty Name="UOD_TAXABLE_WEIGHT" ColumnName="UOD_TAXABLE_WEIGHT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CUSTOMER" FunctionName="Kaizos.Entities.Store.uSP_GET_CUSTOMER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CUSTOMER_Result">
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SALE_TARIFF_ASSIGNED" ColumnName="SALE_TARIFF_ASSIGNED" />
+          <ScalarProperty Name="TOS_ACCEPTED" ColumnName="TOS_ACCEPTED" />
+          <ScalarProperty Name="TOS_ACCEPTED_DATE" ColumnName="TOS_ACCEPTED_DATE" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+          <ScalarProperty Name="CHANGE_PASSWORD_REQ" ColumnName="CHANGE_PASSWORD_REQ" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="CREATED_USER_TYPE" ColumnName="CREATED_USER_TYPE" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+          <ScalarProperty Name="DESIGNATION" ColumnName="DESIGNATION" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="HQ_ZIP_CODE" ColumnName="HQ_ZIP_CODE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="KEY_ACCOUNT" ColumnName="KEY_ACCOUNT" />
+          <ScalarProperty Name="CUST_CATEGORY" ColumnName="CUST_CATEGORY" />
+          <ScalarProperty Name="CHIEF_CONTACT" ColumnName="CHIEF_CONTACT" />
+          <ScalarProperty Name="INDUSTRY_TYPE" ColumnName="INDUSTRY_TYPE" />
+          <ScalarProperty Name="LEGAL_FORM" ColumnName="LEGAL_FORM" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="INV_PHONE_NO" ColumnName="INV_PHONE_NO" />
+          <ScalarProperty Name="INV_FAX_NO" ColumnName="INV_FAX_NO" />
+          <ScalarProperty Name="INV_ADDRESS1" ColumnName="INV_ADDRESS1" />
+          <ScalarProperty Name="INV_ADDRESS2" ColumnName="INV_ADDRESS2" />
+          <ScalarProperty Name="INV_ADDRESS3" ColumnName="INV_ADDRESS3" />
+          <ScalarProperty Name="INV_ZIP_CODE" ColumnName="INV_ZIP_CODE" />
+          <ScalarProperty Name="INV_CITY" ColumnName="INV_CITY" />
+          <ScalarProperty Name="INV_COUNTRY" ColumnName="INV_COUNTRY" />
+          <ScalarProperty Name="USE_FOR_SHIPPING" ColumnName="USE_FOR_SHIPPING" />
+          <ScalarProperty Name="USE_FOR_RETURN" ColumnName="USE_FOR_RETURN" />
+          <ScalarProperty Name="SHIP_PREFERENCE" ColumnName="SHIP_PREFERENCE" />
+          <ScalarProperty Name="PAYMENT_METHOD" ColumnName="PAYMENT_METHOD" />
+          <ScalarProperty Name="DEFERRED_PAY_REQ" ColumnName="DEFERRED_PAY_REQ" />
+          <ScalarProperty Name="TRANS_BUDGET_AMT" ColumnName="TRANS_BUDGET_AMT" />
+          <ScalarProperty Name="DEFERRED_PAY_AGREED" ColumnName="DEFERRED_PAY_AGREED" />
+          <ScalarProperty Name="WISHED_BUDGET_AMT" ColumnName="WISHED_BUDGET_AMT" />
+          <ScalarProperty Name="ADMIN_USER_ID" ColumnName="ADMIN_USER_ID" />
+          <ScalarProperty Name="CUSTOMER_TYPE" ColumnName="CUSTOMER_TYPE" />
+          <ScalarProperty Name="CUSTOMER_TYPE_CHANGED" ColumnName="CUSTOMER_TYPE_CHANGED" />
+          <ScalarProperty Name="INSURED_CREDIT_AMT" ColumnName="INSURED_CREDIT_AMT" />
+          <ScalarProperty Name="PAYMENT_DELAY_DAYS" ColumnName="PAYMENT_DELAY_DAYS" />
+          <ScalarProperty Name="PAYMENT_DELAY_MONTH" ColumnName="PAYMENT_DELAY_MONTH" />
+          <ScalarProperty Name="COMPENSATION_RATE" ColumnName="COMPENSATION_RATE" />
+          <ScalarProperty Name="COMPENSATION_AMT" ColumnName="COMPENSATION_AMT" />
+          <ScalarProperty Name="DEPOSIT_AMT" ColumnName="DEPOSIT_AMT" />
+          <ScalarProperty Name="AUTHORIZED_CREDIT_LIMIT" ColumnName="AUTHORIZED_CREDIT_LIMIT" />
+          <ScalarProperty Name="AUTHORIZED_CREDIT_AMT" ColumnName="AUTHORIZED_CREDIT_AMT" />
+          <ScalarProperty Name="CARRIER_ACCOUNT_REF" ColumnName="CARRIER_ACCOUNT_REF" />
+          <ScalarProperty Name="AVAILABLE_CREDIT" ColumnName="AVAILABLE_CREDIT" />
+          <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_ADDRESS_BOOK_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_ADDRESS_BOOK_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_ADDRESS_BOOK_DELETE" FunctionName="Kaizos.Entities.Store.uSP_ADDRESS_BOOK_DELETE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ADDRESS_BOOK_SEARCH" FunctionName="Kaizos.Entities.Store.uSP_GET_ADDRESS_BOOK_SEARCH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ADDRESS_BOOK_SEARCH_Result">
+          <ScalarProperty Name="ADDRESS_BOOK_ID" ColumnName="ADDRESS_BOOK_ID" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="ADDRESS_TYPE" ColumnName="ADDRESS_TYPE" />
+          <ScalarProperty Name="TEL_NO" ColumnName="TEL_NO" />
+          <ScalarProperty Name="FAX_NO" ColumnName="FAX_NO" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LAST_PICKUP_MON_THU" ColumnName="LAST_PICKUP_MON_THU" />
+          <ScalarProperty Name="LAST_PICKUP_FRI" ColumnName="LAST_PICKUP_FRI" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="SHIP_PREFERENCE" ColumnName="SHIP_PREFERENCE" />
+          <ScalarProperty Name="ADDR_USED_FOR" ColumnName="ADDR_USED_FOR" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="COUNTRY">
+      <EntityTypeMapping TypeName="Kaizos.Entities.COUNTRY">
+        <MappingFragment StoreEntitySet="COUNTRY">
+          <ScalarProperty Name="DIAL_CODE" ColumnName="DIAL_CODE" />
+          <ScalarProperty Name="SHIPMENT_TYPE" ColumnName="SHIPMENT_TYPE" />
+          <ScalarProperty Name="POSTAL_CODE_FORMAT" ColumnName="POSTAL_CODE_FORMAT" />
+          <ScalarProperty Name="LANGUAGES" ColumnName="LANGUAGES" />
+          <ScalarProperty Name="COUNTRY_CODE_LONG" ColumnName="COUNTRY_CODE_LONG" />
+          <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+          <ScalarProperty Name="THREE_DIGIT_CODE" ColumnName="THREE_DIGIT_CODE" />
+          <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_DELETE" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_DELETE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_TARIFF_DETAILS_FOR_TOOL" FunctionName="Kaizos.Entities.Store.uSP_GET_TARIFF_DETAILS_FOR_TOOL" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_FUEL_SURCHARGE" FunctionName="Kaizos.Entities.Store.uSP_GET_FUEL_SURCHARGE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_SURCHARGE" FunctionName="Kaizos.Entities.Store.uSP_GET_SURCHARGE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_DETAIL_FOR_TARIFF_REF" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_DETAIL_FOR_TARIFF_REF" />
+    <FunctionImportMapping FunctionImportName="uSP_DELETE_TARIFF_TABLE" FunctionName="Kaizos.Entities.Store.uSP_DELETE_TARIFF_TABLE" />
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_DOCUMENTS_STORE" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_DOCUMENTS_STORE" />
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_MAST_INSERT" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_MAST_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_MAST_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_MAST_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_PARAMETER_INSERT" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_PARAMETER_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_BYTELABEL" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_BYTELABEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_BYTELABEL_Result">
+          <ScalarProperty Name="LABELBYTE" ColumnName="LABELBYTE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_COMMUNIVATIONNUMBER" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_COMMUNIVATIONNUMBER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_COMMUNIVATIONNUMBER_Result">
+          <ScalarProperty Name="COMMUNICATIONNUMBER" ColumnName="COMMUNICATIONNUMBER" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_INVOICE" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_INVOICE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_INVOICE_Result">
+          <ScalarProperty Name="INVOICE" ColumnName="INVOICE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_LABEL" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_LABEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_LABEL_Result">
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_MANIFEST" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_MANIFEST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_MANIFEST_Result">
+          <ScalarProperty Name="MANIFEST" ColumnName="MANIFEST" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_MAST" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_MAST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_MAST_Result">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="REFERENCED_CARRIER" ColumnName="REFERENCED_CARRIER" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="CLAIM_DELAY" ColumnName="CLAIM_DELAY" />
+          <ScalarProperty Name="CUSTOMER_ACCOUNT_NO_LEVEL" ColumnName="CUSTOMER_ACCOUNT_NO_LEVEL" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_PARAMETER" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_PARAMETER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_PARAMETER_Result">
+          <ScalarProperty Name="KEY_CODE" ColumnName="KEY_CODE" />
+          <ScalarProperty Name="KEY_VALUE" ColumnName="KEY_VALUE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_PARAMETERS" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_PARAMETERS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_PARAMETERS_Result">
+          <ScalarProperty Name="KEY_CODE" ColumnName="KEY_CODE" />
+          <ScalarProperty Name="KEY_VALUE" ColumnName="KEY_VALUE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIERSPECIFIC_SERVICE" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIERSPECIFIC_SERVICE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIERSPECIFIC_SERVICE_Result">
+          <ScalarProperty Name="SERVICE_ID" ColumnName="SERVICE_ID" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="SERVICE_CODE" ColumnName="SERVICE_CODE" />
+          <ScalarProperty Name="DELIVERY_DELAY" ColumnName="DELIVERY_DELAY" />
+          <ScalarProperty Name="DELIVERY_DEADLINE" ColumnName="DELIVERY_DEADLINE" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="KEY_CUSTOMER_SERVICE" ColumnName="KEY_CUSTOMER_SERVICE" />
+          <ScalarProperty Name="ACTUALCODE" ColumnName="ACTUALCODE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_ENDCUSTOMER_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_ENDCUSTOMER_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ENDCUSTOMER_LIST_Result">
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_VALUE_FROM_PARAMETER" FunctionName="Kaizos.Entities.Store.uSP_GET_VALUE_FROM_PARAMETER" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_PUBLIC_TARIFF" FunctionName="Kaizos.Entities.Store.uSP_GET_PUBLIC_TARIFF">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_PUBLIC_TARIFF_Result">
+          <ScalarProperty Name="CAPTION" ColumnName="CAPTION" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHIP_TYPE" ColumnName="SHIP_TYPE" />
+          <ScalarProperty Name="MASTER_SERVICE_NAME" ColumnName="MASTER_SERVICE_NAME" />
+          <ScalarProperty Name="MIN_WT" ColumnName="MIN_WT" />
+          <ScalarProperty Name="MAX_WT" ColumnName="MAX_WT" />
+          <ScalarProperty Name="WEIGHT_RANGE_CAPTION" ColumnName="WEIGHT_RANGE_CAPTION" />
+          <ScalarProperty Name="DOM" ColumnName="DOM" />
+          <ScalarProperty Name="EUR" ColumnName="EUR" />
+          <ScalarProperty Name="INT" ColumnName="INT" />
+          <ScalarProperty Name="DISP_ORDER" ColumnName="DISP_ORDER" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_PUBLIC_TARIFF_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_PUBLIC_TARIFF_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_USERID" FunctionName="Kaizos.Entities.Store.uSP_GET_USERID" />
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_HEADER_INSERT" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_HEADER_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_HEADER" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_HEADER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_HEADER_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_NO" ColumnName="ACCOUNT_NO" />
+          <ScalarProperty Name="ASSIGNED_TARIFF" ColumnName="ASSIGNED_TARIFF" />
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+          <ScalarProperty Name="WEIGHT_INCREMENT" ColumnName="WEIGHT_INCREMENT" />
+          <ScalarProperty Name="WEIGHT_LIMIT" ColumnName="WEIGHT_LIMIT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_SIMULATION_GROSS_TOTAL" FunctionName="Kaizos.Entities.Store.uSP_GET_SIMULATION_GROSS_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_SIMULATION_GROSS_TOTAL_Result">
+          <ScalarProperty Name="SIMULATION_ID" ColumnName="SIMULATION_ID" />
+          <ScalarProperty Name="TOTAL_WEIGHT" ColumnName="TOTAL_WEIGHT" />
+          <ScalarProperty Name="TOTAL_ADV" ColumnName="TOTAL_ADV" />
+          <ScalarProperty Name="TOTAL_FREIGHT" ColumnName="TOTAL_FREIGHT" />
+          <ScalarProperty Name="TOTAL_PURCHASE" ColumnName="TOTAL_PURCHASE" />
+          <ScalarProperty Name="TOTAL_CURRENT_DISCOUNT" ColumnName="TOTAL_CURRENT_DISCOUNT" />
+          <ScalarProperty Name="TOTAL_PUBLIC" ColumnName="TOTAL_PUBLIC" />
+          <ScalarProperty Name="TOTAL_CURRENT_SALE" ColumnName="TOTAL_CURRENT_SALE" />
+          <ScalarProperty Name="TOTAL_TURNOVER" ColumnName="TOTAL_TURNOVER" />
+          <ScalarProperty Name="TOTAL_GROSS_MARGIN" ColumnName="TOTAL_GROSS_MARGIN" />
+          <ScalarProperty Name="TOTAL_SALES_FRET_TARIFF" ColumnName="TOTAL_SALES_FRET_TARIFF" />
+          <ScalarProperty Name="TOTAL_PROPOSED_SALES_TARIFF" ColumnName="TOTAL_PROPOSED_SALES_TARIFF" />
+          <ScalarProperty Name="TOTAL_SALES_TURNOVER" ColumnName="TOTAL_SALES_TURNOVER" />
+          <ScalarProperty Name="TOTAL_SALES_GROSS_MARGIN" ColumnName="TOTAL_SALES_GROSS_MARGIN" />
+          <ScalarProperty Name="TOTAL_COMPARE_SALES" ColumnName="TOTAL_COMPARE_SALES" />
+          <ScalarProperty Name="TOTAL_COMPARE_MARGIN" ColumnName="TOTAL_COMPARE_MARGIN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_ADV_INSERT" FunctionName="Kaizos.Entities.Store.uSP_ADV_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_END_CUSTOMER_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_END_CUSTOMER_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_END_CUSTOMER" FunctionName="Kaizos.Entities.Store.uSP_GET_END_CUSTOMER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_END_CUSTOMER_Result">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="HQ_ZIP_CODE" ColumnName="HQ_ZIP_CODE" />
+          <ScalarProperty Name="COMPANY_NAME" ColumnName="COMPANY_NAME" />
+          <ScalarProperty Name="TURN_OVER" ColumnName="TURN_OVER" />
+          <ScalarProperty Name="GROSS_MARGIN" ColumnName="GROSS_MARGIN" />
+          <ScalarProperty Name="ADV" ColumnName="ADV" />
+          <ScalarProperty Name="CUST_CATEGORY" ColumnName="CUST_CATEGORY" />
+          <ScalarProperty Name="CUST_NAME" ColumnName="CUST_NAME" />
+          <ScalarProperty Name="INDUSTRY_TYPE" ColumnName="INDUSTRY_TYPE" />
+          <ScalarProperty Name="LEGAL_FORM" ColumnName="LEGAL_FORM" />
+          <ScalarProperty Name="MAN_POWER" ColumnName="MAN_POWER" />
+          <ScalarProperty Name="CHIEF_CONTACT" ColumnName="CHIEF_CONTACT" />
+          <ScalarProperty Name="INV_PHONE_NO" ColumnName="INV_PHONE_NO" />
+          <ScalarProperty Name="INV_FAX_NO" ColumnName="INV_FAX_NO" />
+          <ScalarProperty Name="VAT_NO" ColumnName="VAT_NO" />
+          <ScalarProperty Name="SIRET_NO" ColumnName="SIRET_NO" />
+          <ScalarProperty Name="INV_ADDRESS1" ColumnName="INV_ADDRESS1" />
+          <ScalarProperty Name="INV_ADDRESS2" ColumnName="INV_ADDRESS2" />
+          <ScalarProperty Name="INV_ADDRESS3" ColumnName="INV_ADDRESS3" />
+          <ScalarProperty Name="INV_ZIP_CODE" ColumnName="INV_ZIP_CODE" />
+          <ScalarProperty Name="INV_CITY" ColumnName="INV_CITY" />
+          <ScalarProperty Name="INV_COUNTRY" ColumnName="INV_COUNTRY" />
+          <ScalarProperty Name="USE_FOR_SHIPPING" ColumnName="USE_FOR_SHIPPING" />
+          <ScalarProperty Name="SHIP_PREFERENCE" ColumnName="SHIP_PREFERENCE" />
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+          <ScalarProperty Name="INSURED_METHOD" ColumnName="INSURED_METHOD" />
+          <ScalarProperty Name="PAYMENT_METHOD" ColumnName="PAYMENT_METHOD" />
+          <ScalarProperty Name="DEFERRED_PAY_REQ" ColumnName="DEFERRED_PAY_REQ" />
+          <ScalarProperty Name="DEFERED_PAYMENT_TYPE" ColumnName="DEFERED_PAYMENT_TYPE" />
+          <ScalarProperty Name="TRANS_BUDGET_AMT" ColumnName="TRANS_BUDGET_AMT" />
+          <ScalarProperty Name="DEPOSIT_AMT" ColumnName="DEPOSIT_AMT" />
+          <ScalarProperty Name="PAYMENT_DELAY_DAYS" ColumnName="PAYMENT_DELAY_DAYS" />
+          <ScalarProperty Name="KEY_ACCOUNT" ColumnName="KEY_ACCOUNT" />
+          <ScalarProperty Name="KEY_CARRIER" ColumnName="KEY_CARRIER" />
+          <ScalarProperty Name="SUBSCRIPTION_AMOUNT" ColumnName="SUBSCRIPTION_AMOUNT" />
+          <ScalarProperty Name="EXTRA_INFO" ColumnName="EXTRA_INFO" />
+          <ScalarProperty Name="FICTIVE_ACCOUNT" ColumnName="FICTIVE_ACCOUNT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_FRANCHIS_INSERT" FunctionName="Kaizos.Entities.Store.uSP_FRANCHIS_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_FRANCHIS_UPDATE_ADMIN" FunctionName="Kaizos.Entities.Store.uSP_FRANCHIS_UPDATE_ADMIN" />
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_SERVICE_CODE" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_SERVICE_CODE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ISOCOUNTRYCODE" FunctionName="Kaizos.Entities.Store.uSP_GET_ISOCOUNTRYCODE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_DIALCODE" FunctionName="Kaizos.Entities.Store.uSP_GET_DIALCODE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_INSURANCE_BROKER" FunctionName="Kaizos.Entities.Store.uSP_GET_INSURANCE_BROKER" />
+    <FunctionImportMapping FunctionImportName="uSP_INSURANCE_BROKER_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_INSURANCE_BROKER_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_CUSTOMER_INSERT" FunctionName="Kaizos.Entities.Store.uSP_CUSTOMER_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_TAXABLE_WEIGHT" FunctionName="Kaizos.Entities.Store.uSP_GET_TAXABLE_WEIGHT" />
+    <FunctionImportMapping FunctionImportName="uSP_AUTHORIZED_DELETE" FunctionName="Kaizos.Entities.Store.uSP_AUTHORIZED_DELETE" />
+    <FunctionImportMapping FunctionImportName="uSP_SHIPMENT_DETAIL_UPDATE" FunctionName="Kaizos.Entities.Store.uSP_SHIPMENT_DETAIL_UPDATE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_CARRIER_LABEL_MANIFEST" FunctionName="Kaizos.Entities.Store.uSP_GET_CARRIER_LABEL_MANIFEST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_CARRIER_LABEL_MANIFEST_Result">
+          <ScalarProperty Name="SHIPPINGREFERENCE" ColumnName="SHIPPINGREFERENCE" />
+          <ScalarProperty Name="CARRIER" ColumnName="CARRIER" />
+          <ScalarProperty Name="COMMUNICATIONNUMBER" ColumnName="COMMUNICATIONNUMBER" />
+          <ScalarProperty Name="LABELBYTE" ColumnName="LABELBYTE" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="MANIFEST" ColumnName="MANIFEST" />
+          <ScalarProperty Name="INVOICE" ColumnName="INVOICE" />
+          <ScalarProperty Name="LABELCREATEDDATE" ColumnName="LABELCREATEDDATE" />
+          <ScalarProperty Name="MANIFESTCREATEDDATE" ColumnName="MANIFESTCREATEDDATE" />
+          <ScalarProperty Name="INVOICECREATEDDATE" ColumnName="INVOICECREATEDDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_SIMULATION_ASSIGN" FunctionName="Kaizos.Entities.Store.uSP_SIMULATION_ASSIGN" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_ALL_CARRIER_LABEL_MANIFEST" FunctionName="Kaizos.Entities.Store.uSP_GET_ALL_CARRIER_LABEL_MANIFEST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_ALL_CARRIER_LABEL_MANIFEST_Result1">
+          <ScalarProperty Name="SHIPPINGREFERENCE" ColumnName="SHIPPINGREFERENCE" />
+          <ScalarProperty Name="CARRIER" ColumnName="CARRIER" />
+          <ScalarProperty Name="COMMUNICATIONNUMBER" ColumnName="COMMUNICATIONNUMBER" />
+          <ScalarProperty Name="LABELBYTE" ColumnName="LABELBYTE" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="MANIFEST" ColumnName="MANIFEST" />
+          <ScalarProperty Name="INVOICE" ColumnName="INVOICE" />
+          <ScalarProperty Name="LABELCREATEDDATE" ColumnName="LABELCREATEDDATE" />
+          <ScalarProperty Name="MANIFESTCREATEDDATE" ColumnName="MANIFESTCREATEDDATE" />
+          <ScalarProperty Name="INVOICECREATEDDATE" ColumnName="INVOICECREATEDDATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_CARRIER_ACCOUNT_REF_INSERT" FunctionName="Kaizos.Entities.Store.uSP_CARRIER_ACCOUNT_REF_INSERT" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_INSURANCE_RATE" FunctionName="Kaizos.Entities.Store.uSP_GET_INSURANCE_RATE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_INSURANCE_RATE_Result">
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="MIN_CHARGE" ColumnName="MIN_CHARGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_POSTAL_CODE_FORMAT" FunctionName="Kaizos.Entities.Store.uSP_GET_POSTAL_CODE_FORMAT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_POSTAL_CODE_FORMAT_Result">
+          <ScalarProperty Name="POSTAL_CODE_FORMAT" ColumnName="POSTAL_CODE_FORMAT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_REF_CARRIER_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_REF_CARRIER_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_REF_CARRIER_LIST_Result">
+          <ScalarProperty Name="CARRIER_NAME" ColumnName="CARRIER_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_GET_OPTIONCHARGE" FunctionName="Kaizos.Entities.Store.uSP_GET_OPTIONCHARGE" />
+    <FunctionImportMapping FunctionImportName="uSP_GET_AUTO_FILL_LIST" FunctionName="Kaizos.Entities.Store.uSP_GET_AUTO_FILL_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Kaizos.Entities.uSP_GET_AUTO_FILL_LIST_Result">
+          <ScalarProperty Name="ZIP_CODE" ColumnName="ZIP_CODE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uSP_CHECK_SIMULATION_EXIST" FunctionName="Kaizos.Entities.Store.uSP_CHECK_SIMULATION_EXIST" />
+  </EntityContainerMapping>
+</Mapping>

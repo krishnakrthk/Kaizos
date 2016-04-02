@@ -1,0 +1,5 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ShippingManager\bin\Release\ShippingManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ShippingManager\bin\Release\ShippingManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ShippingManager\obj\Release\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ShippingManager\obj\Release\ShippingManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ShippingManager\obj\Release\ShippingManager.pdb

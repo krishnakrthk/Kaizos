@@ -1,0 +1,2127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Kaizos.Entities" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="KaizosEntities">
+    <FunctionImport Name="InsertUser" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="DTOS" EntityType="Kaizos.Entities.DToS" />
+    <FunctionImport Name="uSP_LOGIN_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_PROFILE_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="PROFILE_NAME" Mode="In" Type="String" />
+      <Parameter Name="PROFILE_DESC" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_COMBO_LIST" ReturnType="Collection(String)">
+      <Parameter Name="TABLE_NAME" Mode="In" Type="String" />
+      <Parameter Name="COLUMN_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_DELETE_RECORDS" ReturnType="Collection(Int32)">
+      <Parameter Name="DELIVERY_DELAY_TABLE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_DELIVERY_DELAY_IMPORT" ReturnType="Collection(Int32)">
+      <Parameter Name="DELIVERY_DELAY_TABLE" Mode="In" Type="String" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="DELAY" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_SERVICE" ReturnType="Collection(Kaizos.Entities.CARRIER_SERVICE)" />
+    <FunctionImport Name="uSP_GET_CARRIER_SERVICE_DELIVERY_DELAY" ReturnType="Collection(Kaizos.Entities.CARRIER_DELAY)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_DELIVERY_DELAY_TABLE_NAME" ReturnType="Collection(Kaizos.Entities.DELIVER_DELAY_TABLE_NAME)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_CREATE_MASTER_SERVICE_TYPE" ReturnType="Collection(Int32)">
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="MASTER_PRIORITY" Mode="In" Type="String" />
+      <Parameter Name="BULK_SHIPPING" Mode="In" Type="String" />
+      <Parameter Name="MASTER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_GET_FUEL_SURCHARGE" ReturnType="Collection(Kaizos.Entities.FUEL_SURCHARGE)">
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+      <Parameter Name="REFERRENCE_ACCOUNT" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_GET_FUEL_SURCHARGE_PARAM" ReturnType="Collection(Kaizos.Entities.FUEL_PARAM)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_UPDATE_FUEL_SURCHARGE" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="START_DATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_UPDATE_FUEL_SURCHARGE_PARAM" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="PARAM_ID" Mode="In" Type="String" />
+      <Parameter Name="PARAM_VALUE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_CARRIER_DELIVERY_DELAY" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="DELAY" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_CARRIER_SERVICE" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="SERVICE_CODE" Mode="In" Type="String" />
+      <Parameter Name="DELIVERY_DEADLINE" Mode="In" Type="String" />
+      <Parameter Name="ACTIVE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_LOGIN_VALIDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="USERID" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_LAST_LOGIN" ReturnType="Collection(Int32)">
+      <Parameter Name="USERID" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_PROFILE_FUNCTIONALITY_MAPPING" ReturnType="Collection(Kaizos.Entities.uSP_GET_PROFILE_FUNCTIONALITY_MAPPING_Result)" />
+    <FunctionImport Name="uSP_DELETE_PROFILE_FUNCTIONALITY_MAPPING" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="uSP_INSERT_PROFILE_FUNCTIONALITY_MAPPING" ReturnType="Collection(Int32)">
+      <Parameter Name="PROFILE_CODE" Mode="In" Type="String" />
+      <Parameter Name="FUNCTIONAL_CODE" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_SERVICE_CODE" ReturnType="Collection(String)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_TARIFF_ZONE_NAME" ReturnType="Collection(String)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CREATE_TARIFF_TABLE" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_TABLE_NAME" Mode="InOut" Type="String" />
+      <Parameter Name="TARIFF_TYPE_OUT" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_IMPORT" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_TABLE" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT_FROM" Mode="In" Type="Double" />
+      <Parameter Name="WEIGHT_TO" Mode="In" Type="Double" />
+      <Parameter Name="ZONE" Mode="In" Type="String" />
+      <Parameter Name="PURCHASE" Mode="In" Type="Double" />
+      <Parameter Name="CALCULATED" Mode="In" Type="Double" />
+      <Parameter Name="SERVICE_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_TARIFF_REFERENCE" ReturnType="Collection(Kaizos.Entities.TARIFF_REFERENCE_LIST)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_TARIFF_REFERENCE" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="START_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="END_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="ARCHIVED" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_ZONE_CREATION" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ZONE_NAME" Mode="In" Type="String" />
+      <Parameter Name="DIRECTION" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="GEOGRAPHICAL_COVERAGE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY_CODE" Mode="In" Type="String" />
+      <Parameter Name="COVERAGE_LIST" Mode="In" Type="String" />
+      <Parameter Name="ZONE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="FLAG" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ZONE_SEARCH_DETAILS" ReturnType="Collection(Kaizos.Entities.ZONE_SEARCH_DETAILS)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ZONE_DETAILS" ReturnType="Collection(Kaizos.Entities.ZONE_DETAILS)">
+      <Parameter Name="ZONE_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ZONE_COVERAGELIST" ReturnType="Collection(Kaizos.Entities.ZONE_COVERAGELIST)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TARIFF_CREATION" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CONTAINER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="KEY_USER_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="START_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="END_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="INTERNAL_TARIFF_REF" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_OPEN_IMPORT_TARIFF" ReturnType="Collection(String)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_DEFERRED_PAYMENT" ReturnType="Collection(Int32)">
+      <Parameter Name="CLOSED_REF" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="TOTAL_AMOUNT" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ASSIGNED_TARIFF" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_TARIFF" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_COUNTRY_DETAILS" ReturnType="Collection(Kaizos.Entities.TblCountry)" />
+    <FunctionImport Name="uSP_GET_NEXT_COUNTER" ReturnType="Collection(Int32)">
+      <Parameter Name="COUNTER_CODE" Mode="In" Type="String" />
+      <Parameter Name="COUNTER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="REQUIRED_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="NEW_COUNTER" Mode="InOut" Type="Int32" />
+      <Parameter Name="ERROR" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_PAYMENT_INFO" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="ADMIN_MAIL" Mode="InOut" Type="String" />
+      <Parameter Name="ADMIN_PHONE" Mode="InOut" Type="String" />
+      <Parameter Name="AVAILABLE_CREDIT" Mode="InOut" Type="Decimal" />
+      <Parameter Name="PAYMENT_METHOD" Mode="InOut" Type="String" />
+      <Parameter Name="USER_MAIL" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_PRIORITY" ReturnType="Collection(Kaizos.Entities.TblPriority)" />
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_CANCEL" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_DELETE" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_DETAIL_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="PARCEL_NO" Mode="In" Type="Int32" />
+      <Parameter Name="CONTENT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CONTAINER" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WEIGHT_UNIT" Mode="In" Type="String" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="DIMENSION_UNIT" Mode="In" Type="String" />
+      <Parameter Name="TAXABLE_WEIGHT" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="SENDER_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="SENDER_ZIP" Mode="In" Type="String" />
+      <Parameter Name="SENDER_CITY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_ZIP" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_CITY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="OPTIONS" Mode="In" Type="String" />
+      <Parameter Name="OPTIONS_CHARGES" Mode="In" Type="String" />
+      <Parameter Name="WISHED_SHIP_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="UOD_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="TOTAL_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="CARRIER" Mode="In" Type="String" />
+      <Parameter Name="ORDER_CREATION_TIME" Mode="In" Type="DateTime" />
+      <Parameter Name="CALCULATED_SHIP_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CALCULATED_DELIVERY_TIME" Mode="In" Type="String" />
+      <Parameter Name="TAXABLE_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="FREIGHT_AMOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="FUEL_CHARGE" Mode="In" Type="Decimal" />
+      <Parameter Name="CHOSEN_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="TOTAL_AMOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="ORDER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="GROUP_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_TEMP_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="SESSION_ID" Mode="In" Type="String" />
+      <Parameter Name="GROUP_ID" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_ORDER_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="INSURED" Mode="In" Type="String" />
+      <Parameter Name="DECLARED_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="CURRENCY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="PACKAGE_TYPE" Mode="In" Type="String" />
+      <Parameter Name="PACKAGE_MATERIAL" Mode="In" Type="String" />
+      <Parameter Name="CLOSING_MATERIAL" Mode="In" Type="String" />
+      <Parameter Name="SENDER_COMPANY" Mode="In" Type="String" />
+      <Parameter Name="SENDER_NAME" Mode="In" Type="String" />
+      <Parameter Name="SENDER_PHONE" Mode="In" Type="String" />
+      <Parameter Name="SENDER_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="SENDER_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="SENDER_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="SENDER_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="SENDER_STATE" Mode="In" Type="String" />
+      <Parameter Name="SENDER_COLLECT_DEADLINE" Mode="In" Type="String" />
+      <Parameter Name="SENDER_COMMENTS" Mode="In" Type="String" />
+      <Parameter Name="SAME_RETURN_ADDRESS" Mode="In" Type="String" />
+      <Parameter Name="RETURN_COMPANY" Mode="In" Type="String" />
+      <Parameter Name="RETURN_NAME" Mode="In" Type="String" />
+      <Parameter Name="RETURN_PHONE" Mode="In" Type="String" />
+      <Parameter Name="RETURN_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="RETURN_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="RETURN_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="RETURN_CITY" Mode="In" Type="String" />
+      <Parameter Name="RETURN_ZIP" Mode="In" Type="String" />
+      <Parameter Name="RETURN_STATE" Mode="In" Type="String" />
+      <Parameter Name="RETURN_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_COMPANY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_NAME" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_PHONE" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_STATE" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_DEL_DEADLINE" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_COMMENTS" Mode="In" Type="String" />
+      <Parameter Name="CUST_INTERNAL_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMS_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="SENDER_NOTIFICATION" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_NOTIFICATION" Mode="In" Type="String" />
+      <Parameter Name="SHIPPING_TIME" Mode="In" Type="DateTime" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SENDER_CITY" Mode="In" Type="String" />
+      <Parameter Name="SENDER_ZIP" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_CITY" Mode="In" Type="String" />
+      <Parameter Name="RECIPIENT_ZIP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_LANGUAGE_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_LANGUAGE_LIST_Result)" />
+    <FunctionImport Name="uSP_GET_FUNCTIONALITIES" ReturnType="Collection(Kaizos.Entities.uSP_GET_FUNCTIONALITIES_Result)" />
+    <FunctionImport Name="uSP_GET_FRANCHISE_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_FRANCHISE_LIST_Result)" />
+    <FunctionImport Name="uSP_GET_FRANCHISE" ReturnType="Collection(Kaizos.Entities.uSP_GET_FRANCHISE_Result)">
+      <Parameter Name="LOGIN_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_LANGUAGE" ReturnType="Collection(String)">
+      <Parameter Name="COUNTRY_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_MONTHLY_FEES_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="FEE_RATE" Mode="In" Type="Decimal" />
+      <Parameter Name="SHIPMENT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="ADMIN_ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_MONTHLY_FEES" ReturnType="Collection(Kaizos.Entities.uSP_GET_MONTHLY_FEES_Result)">
+      <Parameter Name="USER_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SURCHARGE_MAST" ReturnType="Collection(Kaizos.Entities.uSP_GET_SURCHARGE_MAST)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SURCHARGE_DET" ReturnType="Collection(Kaizos.Entities.SURCHARGE_DET)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="SURCHARGE_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_SURCHARGE_MASTER" ReturnType="Collection(Int32)">
+      <Parameter Name="SURCHARGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="ACTIVE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_SURCHARGE_DETAILS" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="SURCHARGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="PARAM_ID" Mode="In" Type="String" />
+      <Parameter Name="PARAM_VALUE" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_SERVICE_LIST" ReturnType="Collection(Kaizos.Entities.TblServiceDetail)">
+      <Parameter Name="PRIORITY" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_PUBLIC_TARIFF_NAMES" ReturnType="Collection(Kaizos.Entities.uSP_GET_PUBLIC_TARIFF_NAMES_Result)" />
+    <FunctionImport Name="uSP_GET_CARRIER_TARIFF_NAMES" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_TARIFF_NAMES_Result)">
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE_Result)">
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_FRANCHIS_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="LEGAL_FORM" Mode="In" Type="String" />
+      <Parameter Name="COMMERCIAL_NAME" Mode="In" Type="String" />
+      <Parameter Name="MAN_POWER" Mode="In" Type="Int32" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="REGISTRATION_NO" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_ZONE" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE_CHANGED" Mode="In" Type="String" />
+      <Parameter Name="SCANNED_DOCUMENT" Mode="In" Type="String" />
+      <Parameter Name="LANGUAGE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_UPDATE_PASSWORD" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_MAIL_DETAIL" ReturnType="Collection(Kaizos.Entities.uSP_GET_MAIL_DETAIL_Result)" />
+    <FunctionImport Name="uSP_GET_LOGIN" ReturnType="Collection(Kaizos.Entities.uSP_GET_LOGIN_Result)">
+      <Parameter Name="LOGIN_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_LANGUAGE_CODE" ReturnType="Collection(Int32)">
+      <Parameter Name="COUNTRY_CODE" Mode="In" Type="String" />
+      <Parameter Name="LANGUAGE" Mode="In" Type="String" />
+      <Parameter Name="RESOURCE_FILE_NAME" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_ADDRESS_BOOK_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ADDRESS_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="STATE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_MON_THU" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_FRI" Mode="In" Type="String" />
+      <Parameter Name="COMMENTS" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ADDR_USED_FOR" Mode="In" Type="String" />
+      <Parameter Name="CREATED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LAST_UPDATED" Mode="In" Type="DateTime" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ADDRESS_BOOK_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_ADDRESS_BOOK_LIST_Result)" />
+    <FunctionImport Name="uSP_ADDRESS_BOOK_IMPORT" ReturnType="Collection(Int32)">
+      <Parameter Name="ADDRESS_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="STATE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_MON_THU" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_FRI" Mode="In" Type="String" />
+      <Parameter Name="COMMENTS" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ADDR_USED_FOR" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CUSTOMER_SERVICE_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="LANGUAGE" Mode="In" Type="String" />
+      <Parameter Name="LASTUPDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CUSTOMER_SERVICE_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_CUSTOMER_SERVICE_LIST_Result)" />
+    <FunctionImport Name="uSP_CUSTOMER_SERVICE_UPDATE_ADMIN" ReturnType="Collection(Int32)">
+      <Parameter Name="USER_ID" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_INDUSTRY" ReturnType="Collection(Kaizos.Entities.uSP_GET_INDUSTRY_Result)" />
+    <FunctionImport Name="uSP_VALIDATE_HQZIPCODE" ReturnType="Collection(String)">
+      <Parameter Name="HQZIPCODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_END_CUSTOMER_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CUST_NAME" Mode="In" Type="String" />
+      <Parameter Name="DESIGNATION" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="HQ_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="KEY_ACCOUNT" Mode="In" Type="String" />
+      <Parameter Name="CUST_CATEGORY" Mode="In" Type="String" />
+      <Parameter Name="CHIEF_CONTACT" Mode="In" Type="String" />
+      <Parameter Name="INDUSTRY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="LEGAL_FORM" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="INV_PHONE_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="INV_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="INV_CITY" Mode="In" Type="String" />
+      <Parameter Name="INV_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="USE_FOR_SHIPPING" Mode="In" Type="String" />
+      <Parameter Name="USE_FOR_RETURN" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="PAYMENT_METHOD" Mode="In" Type="String" />
+      <Parameter Name="DEFERRED_PAY_REQ" Mode="In" Type="String" />
+      <Parameter Name="TRANS_BUDGET_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="DEFERRED_PAY_AGREED" Mode="In" Type="String" />
+      <Parameter Name="WISHED_BUDGET_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="ADMIN_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE_CHANGED" Mode="In" Type="String" />
+      <Parameter Name="INSURED_CREDIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="PAYMENT_DELAY_DAYS" Mode="In" Type="Int32" />
+      <Parameter Name="PAYMENT_DELAY_MONTH" Mode="In" Type="Int32" />
+      <Parameter Name="COMPENSATION_RATE" Mode="In" Type="Decimal" />
+      <Parameter Name="COMPENSATION_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="DEPOSIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="AUTHORIZED_CREDIT_LIMIT" Mode="In" Type="Decimal" />
+      <Parameter Name="AUTHORIZED_CREDIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="CARRIER_ACCOUNT_REF" Mode="In" Type="String" />
+      <Parameter Name="AVAILABLE_CREDIT" Mode="In" Type="Decimal" />
+      <Parameter Name="CREATED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="VAT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIRET_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_END_CUSTOMER_UPDATE_BY_ADMIN" ReturnType="Collection(Int32)">
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="INV_PHONE_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="INV_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="INV_CITY" Mode="In" Type="String" />
+      <Parameter Name="INV_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="USE_FOR_SHIPPING" Mode="In" Type="String" />
+      <Parameter Name="USE_FOR_RETURN" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="PAYMENT_METHOD" Mode="In" Type="String" />
+      <Parameter Name="DEFERRED_PAY_REQ" Mode="In" Type="String" />
+      <Parameter Name="TRANS_BUDGET_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="DEFERRED_PAY_AGREED" Mode="In" Type="String" />
+      <Parameter Name="ADMIN_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE_CHANGED" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="VAT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIRET_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CREDIT_REQUEST_ACCEPT_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="WISHED_BUDGET_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="INSURED_CREDIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="PAYMENT_DELAY_DAYS" Mode="In" Type="Int32" />
+      <Parameter Name="GROSS_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="PAYMENT_DELAY_MONTH" Mode="In" Type="Int32" />
+      <Parameter Name="COMPENSATION_RATE" Mode="In" Type="Decimal" />
+      <Parameter Name="AUTHORIZED_CREDIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="DEFERRED_PAY_AGREED" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_AUTHORIZED_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="REFERENT_ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_AUTHORIZED_SELF_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="TELEPHONE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_AUTHORIZED" ReturnType="Collection(Kaizos.Entities.uSP_GET_AUTHORIZED_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CREDIT_REQUEST_ACCEPT" ReturnType="Collection(Kaizos.Entities.uSP_GET_CREDIT_REQUEST_ACCEPT_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_AUTHORIZED_USER_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_AUTHORIZED_USER_LIST_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_AUTHORIZED_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="REFERENT_USER_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_TOS_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="TERMS_OF_SERVICE" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="ACTIVE" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_FUNCTION" ReturnType="Collection(Kaizos.Entities.uSP_GET_FUNCTION_Result)" />
+    <FunctionImport Name="uSP_GET_TARIFF_AND_DELIVERY_DETAILS" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_TARIFF" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="SHIP_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="TARIFF_TABLE" Mode="In" Type="String" />
+      <Parameter Name="DELIVERY_DELAY_TABLE" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="UOD_TYPE" Mode="In" Type="String" />
+      <Parameter Name="UOD_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="DELIVERY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="CALCULATED_TARIFF" Mode="InOut" Type="Decimal" />
+      <Parameter Name="DELIVERY_DELAY" Mode="InOut" Type="Int32" />
+      <Parameter Name="MARGIN" Mode="InOut" Type="Decimal" />
+      <Parameter Name="FUEL_SURCHARGE" Mode="InOut" Type="Decimal" />
+      <Parameter Name="OPTION_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="OPTION_DESCRIPTION" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_DESCRIPTION" Mode="InOut" Type="String" />
+      <Parameter Name="DELIVERY_DATE" Mode="InOut" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ALL_CARRIER_NAMES" ReturnType="Collection(Kaizos.Entities.uSP_GET_ALL_CARRIER_NAMES_Result)" />
+    <FunctionImport Name="uSP_SIMULATION_SURCHARGE_DISCOUNT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="SAFETY_DISCOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="FUEL_DISCOUNT" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SIMULATION_TARIFF" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT_RANGE" Mode="In" Type="String" />
+      <Parameter Name="SHIP_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="DELIVERY_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="AVERAGE_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="ADV" Mode="In" Type="Decimal" />
+      <Parameter Name="PURCHASE_FREIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="PURCHASE_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="PURCHASE_CARRIER" Mode="In" Type="String" />
+      <Parameter Name="PUBLIC_DISCOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="PUBLIC_CARRIER" Mode="In" Type="String" />
+      <Parameter Name="PUBLIC_FREIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="PUBLIC_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="PUBLIC_TURNOVER" Mode="In" Type="Decimal" />
+      <Parameter Name="SALE_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="SALE__FREIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="SALE_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="SALE_TURNOVER" Mode="In" Type="Decimal" />
+      <Parameter Name="SALE_GROSS_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="COMPARISON_SALE_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="COMPARISON_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="PUBLIC_SURCHARGE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SIMULATION_TARIFF_BASED" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_TARIFF_DETAILS" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="CONTAINER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="InOut" Type="String" />
+      <Parameter Name="TARIFF_TABLE" Mode="InOut" Type="String" />
+      <Parameter Name="TARIFF_TYPE" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ASSGINED_USERS" ReturnType="Collection(Kaizos.Entities.uSP_GET_ASSGINED_USERS_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_ID" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_ID_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_SUB_TOTAL" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_SUB_TOTAL_Result)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_SURCHARGE_DISCOUNT" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_SURCHARGE_DISCOUNT_Result)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_TARIFF" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_TARIFF_Result)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_TARIFF_BASED" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_TARIFF_BASED_Result)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SIMULATION_SUB_TOTAL" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="TOTAL_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_ADV" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_FREIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_PURCHASE" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_CURRENT_DISCOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_PUBLIC" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_CURRENT_SALE" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_TURNOVER" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_GROSS_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_SALES_FRET_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_PROPOSED_SALES_TARIFF" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_SALES_TURNOVER" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_SALES_GROSS_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_COMPARE_SALES" Mode="In" Type="Decimal" />
+      <Parameter Name="TOTAL_COMPARE_MARGIN" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CONFIRMED_SHIPING_ORDERS" ReturnType="Collection(Kaizos.Entities.uSP_GET_CONFIRMED_SHIPING_ORDERS_Result)">
+      <Parameter Name="SHIP_GROUP_ID" Mode="In" Type="Int32" />
+      <Parameter Name="SESSION_ID" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SHIPMENT_INFO" ReturnType="Collection(Kaizos.Entities.uSP_GET_SHIPMENT_INFO_Result)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CUSTOMER" ReturnType="Collection(Kaizos.Entities.uSP_GET_CUSTOMER_Result)">
+      <Parameter Name="LOGIN_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_ADDRESS_BOOK_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="ADDRESS_BOOK_ID" Mode="In" Type="Int32" />
+      <Parameter Name="ADDRESS_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="STATE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_MON_THU" Mode="In" Type="String" />
+      <Parameter Name="LAST_PICKUP_FRI" Mode="In" Type="String" />
+      <Parameter Name="COMMENTS" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATED" Mode="In" Type="DateTime" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_ADDRESS_BOOK_DELETE" ReturnType="Collection(Int32)">
+      <Parameter Name="ADDRESS_BOOK_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ADDRESS_BOOK_SEARCH" ReturnType="Collection(Kaizos.Entities.uSP_GET_ADDRESS_BOOK_SEARCH_Result)">
+      <Parameter Name="SEARCH_STRING" Mode="In" Type="String" />
+      <Parameter Name="ADDR_USED_FOR" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="COUNTRY" EntityType="Kaizos.Entities.COUNTRY" />
+    <FunctionImport Name="uSP_SIMULATION_DELETE" ReturnType="Collection(Int32)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_TARIFF_DETAILS_FOR_TOOL" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_TARIFF" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="UOD_TYPE" Mode="In" Type="String" />
+      <Parameter Name="UOD_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="CALCULATED_TARIFF" Mode="InOut" Type="Decimal" />
+      <Parameter Name="MARGIN" Mode="InOut" Type="Decimal" />
+      <Parameter Name="FUEL_SURCHARGE" Mode="InOut" Type="Decimal" />
+      <Parameter Name="OPTION_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="OPTION_DESCRIPTION" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_DESCRIPTION" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_FUEL_SURCHARGE" ReturnType="Collection(Int32)">
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="KEY_ACCOUNT_REF" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_AMOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="RESULT" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SURCHARGE" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="SERVICE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="UOD_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="DELIVERY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="SURCHARGE_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_DESCRIPTION" Mode="InOut" Type="String" />
+      <Parameter Name="SURCHARGE_TOTAL" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_DETAIL_FOR_TARIFF_REF" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_REF" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="SERVICE_ID" Mode="InOut" Type="Int32" />
+      <Parameter Name="SERVICE_NAME" Mode="InOut" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_DELETE_TARIFF_TABLE" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_TABLE_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_DOCUMENTS_STORE" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="CARRIER" Mode="In" Type="String" />
+      <Parameter Name="COMMUNICATIONNUMBER" Mode="In" Type="String" />
+      <Parameter Name="LABELBYTE" Mode="In" Type="Binary" />
+      <Parameter Name="LABEL" Mode="In" Type="String" />
+      <Parameter Name="MANIFEST" Mode="In" Type="String" />
+      <Parameter Name="INVOICE" Mode="In" Type="String" />
+      <Parameter Name="LABELCREATEDDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="MANIFESTCREATEDDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="INVOICECREATEDDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_MAST_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="REFERENCED_CARRIER" Mode="In" Type="String" />
+      <Parameter Name="ACTIVE" Mode="In" Type="String" />
+      <Parameter Name="CLAIM_DELAY" Mode="In" Type="Int32" />
+      <Parameter Name="CUSTOMER_ACCOUNT_NO_LEVEL" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_MAST_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="REFERENCED_CARRIER" Mode="In" Type="String" />
+      <Parameter Name="ACTIVE" Mode="In" Type="String" />
+      <Parameter Name="CLAIM_DELAY" Mode="In" Type="Int32" />
+      <Parameter Name="CUSTOMER_ACCOUNT_NO_LEVEL" Mode="In" Type="String" />
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_PARAMETER_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_INFO" Mode="In" Type="String" />
+      <Parameter Name="KEY_CODE" Mode="In" Type="String" />
+      <Parameter Name="KEY_VALUE" Mode="In" Type="String" />
+      <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_BYTELABEL" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_BYTELABEL_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_COMMUNIVATIONNUMBER" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_COMMUNIVATIONNUMBER_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_INVOICE" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_INVOICE_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_LABEL" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_LABEL_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_MANIFEST" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_MANIFEST_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_MAST" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_MAST_Result)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_PARAMETER" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_PARAMETER_Result)">
+      <Parameter Name="CARRIER_INFO" Mode="In" Type="String" />
+      <Parameter Name="KEY_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_PARAMETERS" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_PARAMETERS_Result)">
+      <Parameter Name="CARRIER_INFO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIERSPECIFIC_SERVICE" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIERSPECIFIC_SERVICE_Result)">
+      <Parameter Name="SERVICE_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ENDCUSTOMER_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_ENDCUSTOMER_LIST_Result)" />
+    <FunctionImport Name="uSP_GET_VALUE_FROM_PARAMETER" ReturnType="Collection(Int32)">
+      <Parameter Name="KEY_CODE" Mode="In" Type="String" />
+      <Parameter Name="KEY_VALUE" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_PUBLIC_TARIFF" ReturnType="Collection(Kaizos.Entities.uSP_GET_PUBLIC_TARIFF_Result)">
+      <Parameter Name="NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_PUBLIC_TARIFF_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="CAPTION" Mode="In" Type="String" />
+      <Parameter Name="NAME" Mode="In" Type="String" />
+      <Parameter Name="SHIP_TYPE" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="MINWT" Mode="In" Type="Int32" />
+      <Parameter Name="MAXWT" Mode="In" Type="Int32" />
+      <Parameter Name="DOM" Mode="In" Type="Double" />
+      <Parameter Name="EUR" Mode="In" Type="Double" />
+      <Parameter Name="INT" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_USERID" ReturnType="Collection(String)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SIMULATION_HEADER_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_TARIFF" Mode="In" Type="String" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="VALID" Mode="In" Type="DateTime" />
+      <Parameter Name="WEIGHT_INCREMENT" Mode="In" Type="Decimal" />
+      <Parameter Name="WEIGHT_LIMIT" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_HEADER" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_HEADER_Result)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_SIMULATION_GROSS_TOTAL" ReturnType="Collection(Kaizos.Entities.uSP_GET_SIMULATION_GROSS_TOTAL_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_ADV_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="PRIORITY" Mode="In" Type="String" />
+      <Parameter Name="AVERAGE_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="AVERAGE_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="PACKAGE_TYPE" Mode="In" Type="String" />
+      <Parameter Name="SHIPMENT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="DISCOUNT" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_END_CUSTOMER_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="HQ_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="TURN_OVER" Mode="In" Type="Decimal" />
+      <Parameter Name="GROSS_MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="ADV" Mode="In" Type="Decimal" />
+      <Parameter Name="CUST_CATEGORY" Mode="In" Type="String" />
+      <Parameter Name="CUST_NAME" Mode="In" Type="String" />
+      <Parameter Name="INDUSTRY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="LEGAL_FORM" Mode="In" Type="String" />
+      <Parameter Name="MAN_POWER" Mode="In" Type="Int32" />
+      <Parameter Name="CHIEF_CONTACT" Mode="In" Type="String" />
+      <Parameter Name="INV_PHONE_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="VAT_NO" Mode="In" Type="String" />
+      <Parameter Name="SIRET_NO" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="INV_ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="INV_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="INV_CITY" Mode="In" Type="String" />
+      <Parameter Name="INV_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="USE_FOR_SHIPPING" Mode="In" Type="String" />
+      <Parameter Name="SHIP_PREFERENCE" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="INSURED_METHOD" Mode="In" Type="String" />
+      <Parameter Name="PAYMENT_METHOD" Mode="In" Type="String" />
+      <Parameter Name="DEFERRED_PAY_REQ" Mode="In" Type="String" />
+      <Parameter Name="DEFERED_PAYMENT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="TRANS_BUDGET_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="DEPOSIT_AMT" Mode="In" Type="Decimal" />
+      <Parameter Name="PAYMENT_DELAY_DAYS" Mode="In" Type="Int32" />
+      <Parameter Name="KEY_ACCOUNT" Mode="In" Type="String" />
+      <Parameter Name="KEY_CARRIER" Mode="In" Type="String" />
+      <Parameter Name="SUBSCRIPTION_AMOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="EXTRA_INFO" Mode="In" Type="String" />
+      <Parameter Name="FICTIVE_ACCOUNT" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE_CHANGED" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_END_CUSTOMER" ReturnType="Collection(Kaizos.Entities.uSP_GET_END_CUSTOMER_Result)">
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_FRANCHIS_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CONTACT_NAME" Mode="In" Type="String" />
+      <Parameter Name="LEGAL_FORM" Mode="In" Type="String" />
+      <Parameter Name="COMMERCIAL_NAME" Mode="In" Type="String" />
+      <Parameter Name="MAN_POWER" Mode="In" Type="Int32" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="FAX_NO" Mode="In" Type="String" />
+      <Parameter Name="REGISTRATION_NO" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS1" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS2" Mode="In" Type="String" />
+      <Parameter Name="ADDRESS3" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_ZONE" Mode="In" Type="String" />
+      <Parameter Name="CREATED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CUSTOMER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="CUSTOMER_TYPE_CHANGED" Mode="In" Type="String" />
+      <Parameter Name="SCANNED_DOCUMENT" Mode="In" Type="String" />
+      <Parameter Name="SIRET_NO" Mode="In" Type="String" />
+      <Parameter Name="VAT_NO" Mode="In" Type="String" />
+      <Parameter Name="PAYMENT_DELAY" Mode="In" Type="Int32" />
+      <Parameter Name="FIRM_CREATION_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="CARRIER_ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_FRANCHIS_UPDATE_ADMIN" ReturnType="Collection(Int32)">
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="ASSIGNED_ZONE" Mode="In" Type="String" />
+      <Parameter Name="SCANNED_DOCUMENT" Mode="In" Type="String" />
+      <Parameter Name="LANGUAGE" Mode="In" Type="String" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_SERVICE_CODE" ReturnType="Collection(String)">
+      <Parameter Name="SERVICE_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ISOCOUNTRYCODE" ReturnType="Collection(String)">
+      <Parameter Name="CCODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_DIALCODE" ReturnType="Collection(String)">
+      <Parameter Name="CCODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_INSURANCE_BROKER" ReturnType="Collection(String)" />
+    <FunctionImport Name="uSP_INSURANCE_BROKER_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="BROKER_EMAIL_ADDRESS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CUSTOMER_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="STATUS" Mode="In" Type="String" />
+      <Parameter Name="SALE_TARIF_ASSIGNED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED" Mode="In" Type="String" />
+      <Parameter Name="TOS_ACCEPTED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LANGUAGE_CODE" Mode="In" Type="String" />
+      <Parameter Name="LAST_LOGIN" Mode="In" Type="DateTime" />
+      <Parameter Name="CHANGE_PASSWORD_REQ" Mode="In" Type="String" />
+      <Parameter Name="CREATED_BY" Mode="In" Type="String" />
+      <Parameter Name="CREATED_USER_TYPE" Mode="In" Type="String" />
+      <Parameter Name="COMPANY_NAME" Mode="In" Type="String" />
+      <Parameter Name="CUST_NAME" Mode="In" Type="String" />
+      <Parameter Name="TEL_NO" Mode="In" Type="String" />
+      <Parameter Name="HQ_ZIP_CODE" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="KEY_ACCOUNT" Mode="In" Type="String" />
+      <Parameter Name="CUST_CATEGORY" Mode="In" Type="String" />
+      <Parameter Name="CHIEF_CONTACT" Mode="In" Type="String" />
+      <Parameter Name="INDUSTRY_TYPE" Mode="In" Type="String" />
+      <Parameter Name="LEGAL_FORM" Mode="In" Type="String" />
+      <Parameter Name="ADMIN_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="CREATED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="LAST_UPDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="MAN_POWER" Mode="In" Type="Int32" />
+      <Parameter Name="FIRMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="KEY_CARRIER" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_TAXABLE_WEIGHT" ReturnType="Collection(Int32)">
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="ZIPCODE" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="TAXABLE_WEIGHT" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_AUTHORIZED_DELETE" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SHIPMENT_DETAIL_UPDATE" ReturnType="Collection(Int32)">
+      <Parameter Name="SHIP_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="TRACKING_NO" Mode="In" Type="String" />
+      <Parameter Name="PARAM_VALUES" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_CARRIER_LABEL_MANIFEST" ReturnType="Collection(Kaizos.Entities.uSP_GET_CARRIER_LABEL_MANIFEST_Result)">
+      <Parameter Name="SHIPPINGREFERENCE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_SIMULATION_ASSIGN" ReturnType="Collection(Int32)">
+      <Parameter Name="SIMULATION_ID" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="WEIGHT_FROM" Mode="In" Type="Decimal" />
+      <Parameter Name="WEIGHT_TO" Mode="In" Type="Decimal" />
+      <Parameter Name="AVG_WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="SHIP_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="DELIVERY_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="MAST_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="MARGIN" Mode="In" Type="Decimal" />
+      <Parameter Name="CARRIER" Mode="In" Type="String" />
+      <Parameter Name="DISCOUNT" Mode="In" Type="Decimal" />
+      <Parameter Name="CONTAINER_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_ALL_CARRIER_LABEL_MANIFEST" ReturnType="Collection(Kaizos.Entities.uSP_GET_ALL_CARRIER_LABEL_MANIFEST_Result1)">
+      <Parameter Name="EMAILID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CARRIER_ACCOUNT_REF_INSERT" ReturnType="Collection(Int32)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_ACC_REF" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_INSURANCE_RATE" ReturnType="Collection(Kaizos.Entities.uSP_GET_INSURANCE_RATE_Result)">
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="CARRIER_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_POSTAL_CODE_FORMAT" ReturnType="Collection(Kaizos.Entities.uSP_GET_POSTAL_CODE_FORMAT_Result)">
+      <Parameter Name="COUNTRY_CODE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_REF_CARRIER_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_REF_CARRIER_LIST_Result)" />
+    <FunctionImport Name="uSP_GET_OPTIONCHARGE" ReturnType="Collection(Int32)">
+      <Parameter Name="TARIFF_REFERENCE" Mode="In" Type="String" />
+      <Parameter Name="UOD_COUNT" Mode="In" Type="Int32" />
+      <Parameter Name="WEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="HEIGHT" Mode="In" Type="Decimal" />
+      <Parameter Name="WIDTH" Mode="In" Type="Decimal" />
+      <Parameter Name="LENGTH" Mode="In" Type="Decimal" />
+      <Parameter Name="OPTION" Mode="In" Type="String" />
+      <Parameter Name="OPTION_VALUES" Mode="InOut" Type="String" />
+      <Parameter Name="OPTION_DESCRIPTION" Mode="InOut" Type="String" />
+      <Parameter Name="OPTION_TOTAL" Mode="InOut" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_GET_AUTO_FILL_LIST" ReturnType="Collection(Kaizos.Entities.uSP_GET_AUTO_FILL_LIST_Result)">
+      <Parameter Name="SEARCH_STRING" Mode="In" Type="String" />
+      <Parameter Name="COUNTRY_CODE" Mode="In" Type="String" />
+      <Parameter Name="COUNT" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uSP_CHECK_SIMULATION_EXIST" ReturnType="Collection(Int32)">
+      <Parameter Name="ORIGIN" Mode="In" Type="String" />
+      <Parameter Name="DESTINATION" Mode="In" Type="String" />
+      <Parameter Name="MASTER_SERVICE_NAME" Mode="In" Type="String" />
+      <Parameter Name="ACCOUNT_NO" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="DToS">
+    <Key>
+      <PropertyRef Name="TOS_ID" />
+    </Key>
+    <Property Type="Int32" Name="TOS_ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="TERMS_OF_SERVICE" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Type="DateTime" Name="LAST_UPDATE_DATE" Nullable="false" />
+    <Property Type="String" Name="ACTIVE" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="TAuthorizedUserList">
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" />
+    <Property Type="String" Name="EMAIL_ID" Nullable="false" />
+    <Property Type="String" Name="TEL_NO" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CARRIER_SERVICE">
+    <Property Type="Int32" Name="SERVICE_ID" Nullable="false" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" />
+    <Property Type="String" Name="PRIORITY" Nullable="false" />
+    <Property Type="String" Name="SERVICE_NAME" Nullable="false" />
+    <Property Type="String" Name="SERVICE_CODE" Nullable="false" />
+    <Property Type="String" Name="DELIVERY_DELAY" Nullable="false" />
+    <Property Type="String" Name="DELIVERY_DEADLINE" Nullable="false" />
+    <Property Type="String" Name="ACTIVE" Nullable="false" />
+    <Property Type="String" Name="KEY_CUSTOMER_SERVICE" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DELIVER_DELAY_TABLE_NAME">
+    <Property Type="String" Name="DELIVERY_DELAY" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="FUEL_PARAM">
+    <Property Type="String" Name="PARAM_ID" Nullable="false" />
+    <Property Type="String" Name="PARAM_VALUE" Nullable="false" />
+    <Property Type="Int32" Name="SERVICE_ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="FUEL_SURCHARGE">
+    <Property Type="Int32" Name="SERVICE_ID" Nullable="false" />
+    <Property Type="String" Name="TARIFF_TYPE" Nullable="false" />
+    <Property Type="String" Name="KEY_ACCOUNT_REF" Nullable="false" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" />
+    <Property Type="DateTime" Name="START_DATE" Nullable="false" />
+    <Property Type="DateTime" Name="LAST_UPDATE" Nullable="false" />
+    <Property Type="String" Name="SERVICE_NAME" Nullable="false" />
+    <Property Type="String" Name="REFERENCE" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CARRIER_DELAY">
+    <Property Type="String" Name="ORIGIN" Nullable="false" />
+    <Property Type="String" Name="DESTINATION" Nullable="false" />
+    <Property Type="Int32" Name="DELAY" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_PROFILE_FUNCTIONALITY_MAPPING_Result">
+    <Property Type="String" Name="PROFILE_CODE" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="FUNCTIONAL_CODE" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TARIFF_REFERENCE_LIST">
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="START_DATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="END_DATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="ZONE_SEARCH_DETAILS">
+    <Property Type="Int32" Name="ZONE_ID" Nullable="false" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ZONE_NAME" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="START_DATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="END_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DIRECTION" Nullable="false" MaxLength="60" />
+  </ComplexType>
+  <ComplexType Name="ZONE_DETAILS">
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ZONE_NAME" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="DIRECTION" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GEOGRAPHICAL_COVERAGE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="COUNTRY_CODE" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="COVERAGE_LIST" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="ZONE_COVERAGELIST">
+    <Property Type="Int32" Name="ZONE_ID" Nullable="false" />
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ZONE_NAME" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="DIRECTION" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GEOGRAPHICAL_COVERAGE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="COUNTRY_CODE" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="COVERAGE_LIST" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="CONFIRMED_SHIPING_ORDERS">
+    <Property Type="String" Name="SHIP_REFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="RECIPIENT_TYPE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="OPTIONS" Nullable="false" MaxLength="300" />
+    <Property Type="DateTime" Name="WISHED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UOD_COUNT" Nullable="false" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="INSURED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="DECLARED_VALUE" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="CURRENCY_TYPE" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="PACKAGE_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PACKAGE_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CLOSING_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SENDER_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SENDER_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="SENDER_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="SENDER_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="SENDER_COLLECT_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="SENDER_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SAME_RETURN_ADDRESS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RETURN_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RETURN_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RETURN_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RETURN_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RETURN_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RECIPIENT_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RECIPIENT_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RECIPIENT_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_DEL_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="RECIPIENT_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="CUST_INTERNAL_REFERENCE" Nullable="false" MaxLength="60" />
+    <Property Type="Decimal" Name="CUSTOMS_VALUE" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="SENDER_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RECIPIENT_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ORDER_CREATION_TIME" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SHIPPING_TIME" Nullable="true" Precision="23" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="CALCULATED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CALCULATED_DELIVERY_TIME" Nullable="false" MaxLength="5" />
+    <Property Type="Decimal" Name="TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="FREIGHT_AMOUNT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="FUEL_CHARGE" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="CHOSEN_PREFERENCE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="OPTIONS_CHARGES" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="TOTAL_AMOUNT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="ORDER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PAYMENT_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="PAYMENT_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CANCEL_RESPONSIBLE" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="false" />
+    <Property Type="String" Name="SURCHARGE" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="SURCHARGE_DESCRIPTION" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="PARCEL_NO" Nullable="false" />
+    <Property Type="String" Name="CONTENT_TYPE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CONTAINER" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="WEIGHT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="WEIGHT_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="LENGTH" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WIDTH" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="HEIGHT" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="DIMENSION_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="UOD_TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="TblComboTable">
+    <Property Type="String" Name="DIMENSION_TYPE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="TblCountry">
+    <Property Type="String" Name="COUNTRY_CODE" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="COUNTRY_NAME" Nullable="true" MaxLength="35" />
+    <Property Type="String" Name="CODE_NAME" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TblPriority">
+    <Property Type="String" Name="MASTER_PRIORITY" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_FUNCTIONALITIES_Result">
+    <Property Type="Int32" Name="FUNCTIONAL_CODE" Nullable="false" />
+    <Property Type="String" Name="FUNCTIONAL_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DESCRIPTION" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_FRANCHISE_LIST_Result">
+    <Property Type="String" Name="COMPANY_NAME" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_FRANCHISE_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="PWD" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SALE_TARIFF_ASSIGNED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TOS_ACCEPTED" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="TOS_ACCEPTED_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="LAST_LOGIN" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CHANGE_PASSWORD_REQ" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CREATED_USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LEGAL_FORM" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="COMMERCIAL_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="Int32" Name="MAN_POWER" Nullable="false" />
+    <Property Type="String" Name="TEL_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="FAX_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="REGISTRATION_NO" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ZIPCODE" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="COUNTRY" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="ASSIGNED_ZONE" Nullable="false" MaxLength="Max" />
+    <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="LAST_UPDATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CUSTOMER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CUSTOMER_TYPE_CHANGED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SCANNED_DOCUMENT" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_LANGUAGE_LIST_Result">
+    <Property Type="String" Name="LANGUAGES" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_MONTHLY_FEES_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="Decimal" Name="FEE_RATE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="SHIPMENT_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ADMIN_ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="LAST_UPDATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SURCHARGE_MAST">
+    <Property Type="String" Name="SURCHARGE_CODE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="DESCRIPTION" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ACTIVE" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SURCHARGE_DET">
+    <Property Type="Int32" Name="SERVICE_ID" Nullable="false" />
+    <Property Type="String" Name="SURCHARGE_CODE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SERVICE_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="PARAM_ID" Nullable="false" MaxLength="300" />
+    <Property Type="Decimal" Name="PARAM_VALUE" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="PUBLIC_TARIFF">
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ORIGIN" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DESTINATION" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SHIP_TYPE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="WEIGHT" Nullable="true" MaxLength="128" />
+    <Property Type="Decimal" Name="WEIGHT_VALUE" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="TblServiceDetail">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" />
+    <Property Type="String" Name="SERVICE_NAME" Nullable="false" />
+    <Property Type="String" Name="SERVICE_CODE" Nullable="false" />
+    <Property Type="String" Name="DELIVERY_DELAY" Nullable="false" />
+    <Property Type="String" Name="DELIVERY_DEADLINE" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_PUBLIC_TARIFF_NAMES_Result">
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_TARIFF_NAMES_Result">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="START_DATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_NAMES_FOR_TARIFF_TYPE_Result">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_MAIL_DETAIL_Result">
+    <Property Type="String" Name="HOSTADDRESS" Nullable="true" />
+    <Property Type="String" Name="HOSTUSERID" Nullable="true" />
+    <Property Type="String" Name="HOSTPWD" Nullable="true" />
+    <Property Type="String" Name="PORT" Nullable="true" />
+    <Property Type="String" Name="SSLENABLED" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_LOGIN_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="PWD" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SALE_TARIFF_ASSIGNED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TOS_ACCEPTED" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="TOS_ACCEPTED_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="LAST_LOGIN" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CHANGE_PASSWORD_REQ" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CREATED_USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TEL_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="COUNTRY" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="LEGAL_FORM" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="CREATED_DATE" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="LAST_UPDATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CUSTOMER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CUSTOMER_TYPE_CHANGED" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ADDRESS_BOOK_LIST_Result">
+    <Property Type="String" Name="COMPANY_NAME" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ADDRESS_TYPE" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="TEL_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="FAX_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="ADDRESS1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS3" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ZIPCODE" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="CITY" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="STATE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="COUNTRY" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="LAST_PICKUP_MON_THU" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="LAST_PICKUP_FRI" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="COMMENTS" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="SHIP_PREFERENCE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADDR_USED_FOR" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CUSTOMER_SERVICE_LIST_Result">
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_INDUSTRY_Result">
+    <Property Type="String" Name="DEPARTMENT" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="ACTIVITY" Nullable="false" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_AUTHORIZED_Result">
+    <Property Type="String" Name="CONTACT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TEL_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="REFERENT_ACCOUNT_NO" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CREDIT_REQUEST_ACCEPT_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="Decimal" Name="WISHED_BUDGET_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TRANS_BUDGET_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="INSURED_CREDIT_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="PAYMENT_DELAY_DAYS" Nullable="false" />
+    <Property Type="Decimal" Name="GROSS_MARGIN" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="PAYMENT_DELAY_MONTH" Nullable="false" />
+    <Property Type="Decimal" Name="COMPENSATION_RATE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DEPOSIT_AMT" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AUTHORIZED_CREDIT_LIMIT" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AUTHORIZED_CREDIT_AMT" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_AUTHORIZED_USER_LIST_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="TEL_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="REFERENT_USER_ID" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_FUNCTION_Result">
+    <Property Type="String" Name="FUNCTION_NAME" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ASSGINED_USERS_Result">
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_ID_Result">
+    <Property Type="String" Name="TEXT_FIELD" Nullable="false" MaxLength="156" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_SURCHARGE_DISCOUNT_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="SAFETY_DISCOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FUEL_DISCOUNT" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_TARIFF_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="WEIGHT_RANGE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SHIP_COUNTRY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="DELIVERY_COUNTRY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="AVERAGE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ADV" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PURCHASE_FREIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PURCHASE_TARIFF" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="PURCHASE_CARRIER" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="PUBLIC_DISCOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="PUBLIC_CARRIER" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="PUBLIC_FREIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PUBLIC_TARIFF" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PUBLIC_TURNOVER" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SALE_MARGIN" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="SALE__FREIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SALE_TARIFF" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SALE_TURNOVER" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SALE_GROSS_MARGIN" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="COMPARISON_SALE_TARIFF" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="COMPARISON_MARGIN" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PUBLIC_SURCHARGE" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_TARIFF_BASED_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TARIFF_REFERENCE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ASSIGNED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TARIFF_TYPE" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ALL_CARRIER_NAMES_Result">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_SUB_TOTAL_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_ADV" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_FREIGHT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PURCHASE" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_CURRENT_DISCOUNT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PUBLIC" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_CURRENT_SALE" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_TURNOVER" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_GROSS_MARGIN" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_FRET_TARIFF" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PROPOSED_SALES_TARIFF" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_TURNOVER" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_GROSS_MARGIN" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_COMPARE_SALES" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_COMPARE_MARGIN" Nullable="false" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CONFIRMED_SHIPING_ORDERS_Result">
+    <Property Type="String" Name="SHIP_REFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="RECIPIENT_TYPE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="OPTIONS" Nullable="false" MaxLength="300" />
+    <Property Type="DateTime" Name="WISHED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UOD_COUNT" Nullable="false" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="INSURED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="DECLARED_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CURRENCY_TYPE" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="PACKAGE_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PACKAGE_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CLOSING_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SENDER_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SENDER_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="SENDER_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="SENDER_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="SENDER_COLLECT_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="SENDER_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SAME_RETURN_ADDRESS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RETURN_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RETURN_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RETURN_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RETURN_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RETURN_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RECIPIENT_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RECIPIENT_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RECIPIENT_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_DEL_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="RECIPIENT_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="CUST_INTERNAL_REFERENCE" Nullable="false" MaxLength="60" />
+    <Property Type="Decimal" Name="CUSTOMS_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="SENDER_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RECIPIENT_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ORDER_CREATION_TIME" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SHIPPING_TIME" Nullable="true" Precision="23" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="CALCULATED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CALCULATED_DELIVERY_TIME" Nullable="false" MaxLength="5" />
+    <Property Type="Decimal" Name="TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FREIGHT_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FUEL_CHARGE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CHOSEN_PREFERENCE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="OPTIONS_CHARGES" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="TOTAL_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="ORDER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PAYMENT_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="PAYMENT_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CANCEL_RESPONSIBLE" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="false" />
+    <Property Type="String" Name="SURCHARGE" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SURCHARGE_DESCRIPTION" Nullable="false" MaxLength="300" />
+    <Property Type="Int32" Name="PARCEL_NO" Nullable="false" />
+    <Property Type="String" Name="CONTENT_TYPE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CONTAINER" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="WEIGHT_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="LENGTH" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="WIDTH" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="HEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="DIMENSION_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="UOD_TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SHIPMENT_INFO_Result">
+    <Property Type="String" Name="SHIP_REFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="RECIPIENT_TYPE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="OPTIONS" Nullable="false" MaxLength="300" />
+    <Property Type="DateTime" Name="WISHED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UOD_COUNT" Nullable="false" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="INSURED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="DECLARED_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CURRENCY_TYPE" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="PACKAGE_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PACKAGE_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CLOSING_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SENDER_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SENDER_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="SENDER_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="SENDER_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="SENDER_COLLECT_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="SENDER_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SAME_RETURN_ADDRESS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RETURN_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RETURN_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RETURN_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RETURN_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RETURN_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RECIPIENT_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RECIPIENT_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RECIPIENT_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_DEL_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="RECIPIENT_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="CUST_INTERNAL_REFERENCE" Nullable="false" MaxLength="60" />
+    <Property Type="Decimal" Name="CUSTOMS_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="SENDER_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RECIPIENT_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ORDER_CREATION_TIME" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SHIPPING_TIME" Nullable="true" Precision="23" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="CALCULATED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CALCULATED_DELIVERY_TIME" Nullable="false" MaxLength="5" />
+    <Property Type="Decimal" Name="TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FREIGHT_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FUEL_CHARGE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CHOSEN_PREFERENCE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="OPTIONS_CHARGES" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="TOTAL_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="ORDER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PAYMENT_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="PAYMENT_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CANCEL_RESPONSIBLE" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="false" />
+    <Property Type="String" Name="SURCHARGE" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SURCHARGE_DESCRIPTION" Nullable="false" MaxLength="300" />
+    <Property Type="Int32" Name="PARCEL_NO" Nullable="false" />
+    <Property Type="String" Name="CONTENT_TYPE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CONTAINER" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="WEIGHT_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="LENGTH" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="WIDTH" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="HEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="DIMENSION_UNIT" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="UOD_TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CUSTOMER_Result">
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="PWD" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SALE_TARIFF_ASSIGNED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TOS_ACCEPTED" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="TOS_ACCEPTED_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="LAST_LOGIN" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CHANGE_PASSWORD_REQ" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CREATED_USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CUST_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DESIGNATION" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="TEL_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="HQ_ZIP_CODE" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="COUNTRY" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="KEY_ACCOUNT" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CUST_CATEGORY" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CHIEF_CONTACT" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="INDUSTRY_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="LEGAL_FORM" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="INV_PHONE_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="INV_FAX_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="INV_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="INV_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="INV_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="INV_ZIP_CODE" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="INV_CITY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="INV_COUNTRY" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="USE_FOR_SHIPPING" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="USE_FOR_RETURN" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SHIP_PREFERENCE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PAYMENT_METHOD" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="DEFERRED_PAY_REQ" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="TRANS_BUDGET_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="DEFERRED_PAY_AGREED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="WISHED_BUDGET_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="ADMIN_USER_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CUSTOMER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CUSTOMER_TYPE_CHANGED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="INSURED_CREDIT_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="PAYMENT_DELAY_DAYS" Nullable="false" />
+    <Property Type="Int32" Name="PAYMENT_DELAY_MONTH" Nullable="false" />
+    <Property Type="Decimal" Name="COMPENSATION_RATE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="COMPENSATION_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DEPOSIT_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AUTHORIZED_CREDIT_LIMIT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AUTHORIZED_CREDIT_AMT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CARRIER_ACCOUNT_REF" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="AVAILABLE_CREDIT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="CREATED_DATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="LAST_UPDATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ADDRESS_BOOK_SEARCH_Result">
+    <Property Type="String" Name="ADDRESS_BOOK_ID" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ADDRESS_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TEL_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="FAX_NO" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ZIPCODE" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="COUNTRY" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="LAST_PICKUP_MON_THU" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="LAST_PICKUP_FRI" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SHIP_PREFERENCE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ADDR_USED_FOR" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <EntityType Name="COUNTRY">
+    <Key>
+      <PropertyRef Name="COUNTRY_CODE" />
+      <PropertyRef Name="THREE_DIGIT_CODE" />
+      <PropertyRef Name="COUNTRY_NAME" />
+      <PropertyRef Name="COUNTRY_CODE_LONG" />
+      <PropertyRef Name="LANGUAGES" />
+      <PropertyRef Name="POSTAL_CODE_FORMAT" />
+      <PropertyRef Name="SHIPMENT_TYPE" />
+      <PropertyRef Name="DIAL_CODE" />
+    </Key>
+    <Property Type="String" Name="COUNTRY_CODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="THREE_DIGIT_CODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="COUNTRY_NAME" Nullable="false" MaxLength="35" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="COUNTRY_CODE_LONG" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="LANGUAGES" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="POSTAL_CODE_FORMAT" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SHIPMENT_TYPE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DIAL_CODE" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="uSP_GET_CARRIER_BYTELABEL_Result">
+    <Property Type="Binary" Name="LABELBYTE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_COMMUNIVATIONNUMBER_Result">
+    <Property Type="String" Name="COMMUNICATIONNUMBER" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_INVOICE_Result">
+    <Property Type="String" Name="INVOICE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_LABEL_Result">
+    <Property Type="String" Name="LABEL" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_MANIFEST_Result">
+    <Property Type="String" Name="MANIFEST" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_MAST_Result">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="REFERENCED_CARRIER" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACTIVE" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="CLAIM_DELAY" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_ACCOUNT_NO_LEVEL" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_PARAMETER_Result">
+    <Property Type="String" Name="KEY_CODE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="KEY_VALUE" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_PARAMETERS_Result">
+    <Property Type="String" Name="KEY_CODE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="KEY_VALUE" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIERSPECIFIC_SERVICE_Result">
+    <Property Type="Int32" Name="SERVICE_ID" Nullable="false" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PRIORITY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="SERVICE_NAME" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SERVICE_CODE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DELIVERY_DELAY" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DELIVERY_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="ACTIVE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="KEY_CUSTOMER_SERVICE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACTUALCODE" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ENDCUSTOMER_LIST_Result">
+    <Property Type="String" Name="COMPANY_NAME" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="CONTACT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_PUBLIC_TARIFF_Result">
+    <Property Type="String" Name="CAPTION" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SHIP_TYPE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MASTER_SERVICE_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="MIN_WT" Nullable="false" />
+    <Property Type="Int32" Name="MAX_WT" Nullable="false" />
+    <Property Type="String" Name="WEIGHT_RANGE_CAPTION" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="DOM" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="EUR" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="INT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="DISP_ORDER" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_HEADER_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="ASSIGNED_TARIFF" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="VALID" Nullable="true" />
+    <Property Type="Decimal" Name="WEIGHT_INCREMENT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="WEIGHT_LIMIT" Nullable="false" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_SIMULATION_GROSS_TOTAL_Result">
+    <Property Type="String" Name="SIMULATION_ID" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_ADV" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_FREIGHT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PURCHASE" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_CURRENT_DISCOUNT" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PUBLIC" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_CURRENT_SALE" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_TURNOVER" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_GROSS_MARGIN" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_FRET_TARIFF" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_PROPOSED_SALES_TARIFF" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_TURNOVER" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_SALES_GROSS_MARGIN" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_COMPARE_SALES" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Decimal" Name="TOTAL_COMPARE_MARGIN" Nullable="false" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_END_CUSTOMER_Result">
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="HQ_ZIP_CODE" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="COMPANY_NAME" Nullable="true" MaxLength="60" />
+    <Property Type="Decimal" Name="TURN_OVER" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="GROSS_MARGIN" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ADV" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CUST_CATEGORY" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="CUST_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="INDUSTRY_TYPE" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="LEGAL_FORM" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="MAN_POWER" Nullable="true" />
+    <Property Type="String" Name="CHIEF_CONTACT" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="INV_PHONE_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="INV_FAX_NO" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="VAT_NO" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="SIRET_NO" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="INV_ADDRESS1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="INV_ADDRESS2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="INV_ADDRESS3" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="INV_ZIP_CODE" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="INV_CITY" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="INV_COUNTRY" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="USE_FOR_SHIPPING" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="SHIP_PREFERENCE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CARRIER_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="INSURED_METHOD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PAYMENT_METHOD" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="DEFERRED_PAY_REQ" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="DEFERED_PAYMENT_TYPE" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="TRANS_BUDGET_AMT" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="DEPOSIT_AMT" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="PAYMENT_DELAY_DAYS" Nullable="true" />
+    <Property Type="String" Name="KEY_ACCOUNT" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="KEY_CARRIER" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="SUBSCRIPTION_AMOUNT" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="EXTRA_INFO" Nullable="true" />
+    <Property Type="String" Name="FICTIVE_ACCOUNT" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_CARRIER_LABEL_MANIFEST_Result">
+    <Property Type="String" Name="SHIPPINGREFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="COMMUNICATIONNUMBER" Nullable="false" MaxLength="50" />
+    <Property Type="Binary" Name="LABELBYTE" Nullable="false" />
+    <Property Type="String" Name="LABEL" Nullable="false" />
+    <Property Type="String" Name="MANIFEST" Nullable="false" />
+    <Property Type="String" Name="INVOICE" Nullable="false" />
+    <Property Type="DateTime" Name="LABELCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="MANIFESTCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="INVOICECREATEDDATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ALL_CARRIER_LABEL_MANIFEST_Result">
+    <Property Type="String" Name="SHIPPINGREFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="COMMUNICATIONNUMBER" Nullable="false" MaxLength="50" />
+    <Property Type="Binary" Name="LABELBYTE" Nullable="false" />
+    <Property Type="String" Name="LABEL" Nullable="false" />
+    <Property Type="String" Name="MANIFEST" Nullable="false" />
+    <Property Type="String" Name="INVOICE" Nullable="false" />
+    <Property Type="DateTime" Name="LABELCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="MANIFESTCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="INVOICECREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="SHIP_REFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="RECIPIENT_TYPE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="OPTIONS" Nullable="false" MaxLength="300" />
+    <Property Type="DateTime" Name="WISHED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UOD_COUNT" Nullable="false" />
+    <Property Type="Decimal" Name="TOTAL_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="INSURED" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="DECLARED_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CURRENCY_TYPE" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="PACKAGE_TYPE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PACKAGE_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CLOSING_MATERIAL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SENDER_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SENDER_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="SENDER_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="SENDER_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="SENDER_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SENDER_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="SENDER_COLLECT_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="SENDER_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SAME_RETURN_ADDRESS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RETURN_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RETURN_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RETURN_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RETURN_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RETURN_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RETURN_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_COMPANY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RECIPIENT_PHONE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="RECIPIENT_EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ADDRESS3" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_CITY" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_ZIP" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="RECIPIENT_STATE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RECIPIENT_COUNTRY" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="RECIPIENT_DEL_DEADLINE" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="RECIPIENT_COMMENTS" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="CUST_INTERNAL_REFERENCE" Nullable="false" MaxLength="60" />
+    <Property Type="Decimal" Name="CUSTOMS_VALUE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="SENDER_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RECIPIENT_NOTIFICATION" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CARRIER1" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ORDER_CREATION_TIME" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SHIPPING_TIME" Nullable="true" Precision="23" />
+    <Property Type="String" Name="STATUS" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="CALCULATED_SHIP_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CALCULATED_DELIVERY_TIME" Nullable="false" MaxLength="5" />
+    <Property Type="Decimal" Name="TAXABLE_WEIGHT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FREIGHT_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="FUEL_CHARGE" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="CHOSEN_PREFERENCE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACCOUNT_NO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="OPTIONS_CHARGES" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="TOTAL_AMOUNT" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="ORDER_TYPE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PAYMENT_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="PAYMENT_REFERENCE" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CANCEL_RESPONSIBLE" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="false" />
+    <Property Type="String" Name="SURCHARGE" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="SURCHARGE_DESCRIPTION" Nullable="false" MaxLength="300" />
+    <Property Type="DateTime" Name="CANCELED_TIME" Nullable="true" />
+    <Property Type="String" Name="ACCOUNT_NO1" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="PWD" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="USER_TYPE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="STATUS1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SALE_TARIFF_ASSIGNED" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TOS_ACCEPTED" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="TOS_ACCEPTED_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="LAST_LOGIN" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CHANGE_PASSWORD_REQ" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CREATED_BY" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="CREATED_USER_TYPE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_ALL_CARRIER_LABEL_MANIFEST_Result1">
+    <Property Type="String" Name="SHIPPINGREFERENCE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CARRIER" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="COMMUNICATIONNUMBER" Nullable="false" MaxLength="50" />
+    <Property Type="Binary" Name="LABELBYTE" Nullable="false" />
+    <Property Type="String" Name="LABEL" Nullable="false" />
+    <Property Type="String" Name="MANIFEST" Nullable="false" />
+    <Property Type="String" Name="INVOICE" Nullable="false" />
+    <Property Type="DateTime" Name="LABELCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="MANIFESTCREATEDDATE" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="INVOICECREATEDDATE" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_INSURANCE_RATE_Result">
+    <Property Type="Decimal" Name="RATE" Nullable="false" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="MIN_CHARGE" Nullable="false" Precision="18" Scale="4" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_POSTAL_CODE_FORMAT_Result">
+    <Property Type="String" Name="POSTAL_CODE_FORMAT" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_REF_CARRIER_LIST_Result">
+    <Property Type="String" Name="CARRIER_NAME" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="uSP_GET_AUTO_FILL_LIST_Result">
+    <Property Type="String" Name="ZIP_CODE" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CITY" Nullable="false" MaxLength="60" />
+  </ComplexType>
+</Schema>

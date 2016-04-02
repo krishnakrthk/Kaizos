@@ -1,0 +1,15 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\LanguageManager\bin\Debug\LanguageManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\LanguageManager\bin\Debug\LanguageManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\LanguageManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\LanguageManager.pdb
+F:\WDIR\Kaizos\LanguageManager\bin\Debug\LanguageManager.dll
+F:\WDIR\Kaizos\LanguageManager\bin\Debug\LanguageManager.pdb
+F:\WDIR\Kaizos\LanguageManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\LanguageManager\obj\Debug\LanguageManager.dll
+F:\WDIR\Kaizos\LanguageManager\obj\Debug\LanguageManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\LanguageManager\bin\Debug\LanguageManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\LanguageManager\bin\Debug\LanguageManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\LanguageManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\LanguageManager\obj\Debug\LanguageManager.pdb

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{652567A7-9397-4CD7-AD72-B4BFF7602E03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KaizosServiceInvokers</RootNamespace>
+    <AssemblyName>KaizosServiceInvokers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/KaizosServiceInvokers/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Log4Net\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.0.9122, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KaizosServiceAgent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\KaizosServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAgentUnitTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Service References\KaizosServiceReference\KaizosService.wsdl" />
+    <None Include="Service References\KaizosServiceReference\KaizosService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\KaizosServiceLibrary.Model.ProfileFunctions.datasource" />
+    <None Include="Properties\DataSources\KaizosServiceLibrary.Model.ToS.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalLibrary\GlobalLibrary.csproj">
+      <Project>{68B7F3F8-32A5-43B2-A8D6-355238A5EF38}</Project>
+      <Name>GlobalLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\KaizosServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KaizosServiceReference\KaizosService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KaizosServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KaizosServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KaizosServiceReference\KaizosService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SAddressBook.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SAuthorized.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCarrier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCarrierOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCarrierProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCarrierService.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SComboText.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCountryTable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SCustomer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SDeliveryDelay.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFileImportStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFranchise.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFranchiseContact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFuelSurcharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFuelSurchargeParameter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFunctionality.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SFunctionalProfile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SIndustry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SKeyValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SMonthlyFee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SNextcounter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SPaymentInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SPublicTariffSearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SShipmentOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SShipmentQuotation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationHeader.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationSubTotal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationSurchargeDiscount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationTariff.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSimulationTariffBased.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSurchargeDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SSurchargeMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.STariffCreationAcknowledgement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.STariffMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.STariffReferenceList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SToS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SUserID.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SZone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\KaizosServiceInvokers.KaizosServiceReference.SZoneSearchDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KaizosServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

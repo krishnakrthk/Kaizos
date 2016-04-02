@@ -1,0 +1,56 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosService.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosService.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosServiceLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\ToSManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosEntities.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosServiceLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\ToSManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosEntities.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\KaizosService.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\KaizosService.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\log4net.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\nunit.framework.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\UserManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\log4net.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\GlobalLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\nunit.framework.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosService\bin\UserManager.pdb
+F:\WDIR\Kaizos\KaizosService\bin\KaizosService.dll
+F:\WDIR\Kaizos\KaizosService\bin\KaizosService.pdb
+F:\WDIR\Kaizos\KaizosService\bin\KaizosServiceLibrary.dll
+F:\WDIR\Kaizos\KaizosService\bin\KaizosEntities.dll
+F:\WDIR\Kaizos\KaizosService\bin\log4net.dll
+F:\WDIR\Kaizos\KaizosService\bin\ToSManager.dll
+F:\WDIR\Kaizos\KaizosService\bin\UserManager.dll
+F:\WDIR\Kaizos\KaizosService\bin\GlobalLibrary.dll
+F:\WDIR\Kaizos\KaizosService\bin\nunit.framework.dll
+F:\WDIR\Kaizos\KaizosService\bin\KaizosServiceLibrary.pdb
+F:\WDIR\Kaizos\KaizosService\bin\KaizosEntities.pdb
+F:\WDIR\Kaizos\KaizosService\bin\ToSManager.pdb
+F:\WDIR\Kaizos\KaizosService\bin\UserManager.pdb
+F:\WDIR\Kaizos\KaizosService\bin\GlobalLibrary.pdb
+F:\WDIR\Kaizos\KaizosService\bin\nunit.framework.xml
+F:\WDIR\Kaizos\KaizosService\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\KaizosService\obj\Debug\KaizosService.dll
+F:\WDIR\Kaizos\KaizosService\obj\Debug\KaizosService.pdb
+F:\WDIR\Kaizos\KaizosService\bin\BusinessEntities.dll
+F:\WDIR\Kaizos\KaizosService\bin\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosService.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosService.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\KaizosService.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\obj\Debug\KaizosService.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosServiceLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\log4net.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\ToSManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\GlobalLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\nunit.framework.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosServiceLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\ToSManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\GlobalLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosService\bin\KaizosEntities.pdb

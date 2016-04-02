@@ -1,0 +1,33 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\Kaizos.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\Kaizos.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\KaizosServiceInvokers.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\KaizosServiceInvokers.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\Kaizos.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\Kaizos.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\log4net.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\nunit.framework.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\log4net.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\GlobalLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\Kaizos\bin\nunit.framework.xml
+F:\WDIR\Kaizos\Kaizos\bin\Kaizos.dll
+F:\WDIR\Kaizos\Kaizos\bin\Kaizos.pdb
+F:\WDIR\Kaizos\Kaizos\bin\KaizosServiceInvokers.dll
+F:\WDIR\Kaizos\Kaizos\bin\GlobalLibrary.dll
+F:\WDIR\Kaizos\Kaizos\bin\nunit.framework.dll
+F:\WDIR\Kaizos\Kaizos\bin\KaizosServiceInvokers.pdb
+F:\WDIR\Kaizos\Kaizos\bin\GlobalLibrary.pdb
+F:\WDIR\Kaizos\Kaizos\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\Kaizos\obj\Debug\Kaizos.dll
+F:\WDIR\Kaizos\Kaizos\obj\Debug\Kaizos.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\Kaizos.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\Kaizos.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\KaizosServiceInvokers.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\nunit.framework.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\KaizosServiceInvokers.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\Kaizos.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\obj\Debug\Kaizos.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\Kaizos\bin\BusinessEntities.pdb

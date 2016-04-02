@@ -1,0 +1,9 @@
+.form1 input[type=text],
+.form1 input[type=file],
+.form1 select,
+.form2 input[type=text],
+.form2 input[type=file],
+.form2 select
+{
+	border: 1px solid #bbb;
+}

@@ -1,0 +1,9 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" configfile="Kaizos.Components.UnitTest.App.config" binpathtype="Auto">
+    <assembly path="bin\Debug\UserManager.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="bin\Release\UserManager.dll" />
+  </Config>
+</NUnitProject>

@@ -1,0 +1,10 @@
+2011-10-05 20:56:10,447 [8] DEBUG KaizosServiceInvokers.KaizosServiceAgent  [(null)] - Fault Exception=> Problem inserting profile
+2011-10-05 20:56:12,228 [8] DEBUG KaizosServiceInvokers.KaizosServiceAgent  [(null)] - Error occured for [RAJA][Wednesday, October 05, 2011]:Problem inserting profile
+2011-11-24 16:49:17,585 [4] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Could not find default endpoint element that references contract 'KaizosServiceReference.IKaizosServiceContract' in the ServiceModel client configuration section. This might be because no configuration file was found for your application, or because no endpoint element matching this contract could be found in the client element.
+2011-11-24 16:52:18,821 [4] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:An endpoint configuration section for contract 'KaizosServiceReference.IKaizosServiceContract' could not be loaded because more than one endpoint configuration for that contract was found. Please indicate the preferred endpoint configuration section by name.
+2011-11-24 18:02:34,105 [4] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:The request channel timed out while waiting for a reply after 00:01:00. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout.
+2011-11-24 18:04:27,091 [12] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Problem inserting profile
+2011-11-24 18:05:11,264 [10] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Problem inserting profile
+2011-11-24 18:06:05,686 [13] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Problem inserting profile
+2011-11-24 18:06:38,343 [4] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Problem inserting profile
+2011-11-24 18:07:36,281 [8] DEBUG Kaizos.frmTos  [(null)] - Error occured for [][Thursday, November 24, 2011]:Problem inserting profile

@@ -1,0 +1,23 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\ToSManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\ToSManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\KaizosEntities.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\KaizosEntities.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ToSManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ToSManager.pdb
+F:\WDIR\Kaizos\ToSManager\bin\Debug\ToSManager.dll
+F:\WDIR\Kaizos\ToSManager\bin\Debug\ToSManager.pdb
+F:\WDIR\Kaizos\ToSManager\bin\Debug\KaizosEntities.dll
+F:\WDIR\Kaizos\ToSManager\bin\Debug\KaizosEntities.pdb
+F:\WDIR\Kaizos\ToSManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\ToSManager\obj\Debug\ToSManager.dll
+F:\WDIR\Kaizos\ToSManager\obj\Debug\ToSManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\ToSManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\ToSManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\KaizosEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\bin\Debug\KaizosEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ToSManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\ToSManager\obj\Debug\ToSManager.pdb

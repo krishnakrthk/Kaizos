@@ -1,0 +1,40 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\KaizosEntities.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\log4net.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\nunit.framework.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\KaizosEntities.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\log4net.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\GlobalLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\nunit.framework.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\UserManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\UserManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll.config
+F:\WDIR\Kaizos\UserManager\bin\Debug\UserManager.dll.config
+F:\WDIR\Kaizos\UserManager\bin\Debug\UserManager.dll
+F:\WDIR\Kaizos\UserManager\bin\Debug\UserManager.pdb
+F:\WDIR\Kaizos\UserManager\bin\Debug\GlobalLibrary.dll
+F:\WDIR\Kaizos\UserManager\bin\Debug\KaizosEntities.dll
+F:\WDIR\Kaizos\UserManager\bin\Debug\nunit.framework.dll
+F:\WDIR\Kaizos\UserManager\bin\Debug\GlobalLibrary.pdb
+F:\WDIR\Kaizos\UserManager\bin\Debug\KaizosEntities.pdb
+F:\WDIR\Kaizos\UserManager\bin\Debug\nunit.framework.xml
+F:\WDIR\Kaizos\UserManager\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\UserManager\obj\Debug\UserManager.dll
+F:\WDIR\Kaizos\UserManager\obj\Debug\UserManager.pdb
+F:\WDIR\Kaizos\UserManager\bin\Debug\BusinessEntities.dll
+F:\WDIR\Kaizos\UserManager\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll.config
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\GlobalLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\KaizosEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\GlobalLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\KaizosEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\UserManager.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\UserManager\obj\Debug\UserManager.pdb

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EE8C632-B644-45A6-B6C2-CD7D7D1D12A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KaizosServiceLibrary</RootNamespace>
+    <AssemblyName>KaizosServiceLibrary</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Log4Net\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\AddressBookAdapter.cs" />
+    <Compile Include="Adapter\CarrierAdapter.cs" />
+    <Compile Include="Adapter\CommonAdapter.cs" />
+    <Compile Include="Adapter\FunctionalAdapter.cs" />
+    <Compile Include="Adapter\ProfileAdapter.cs" />
+    <Compile Include="Adapter\ProfileFunctionsAdapter.cs" />
+    <Compile Include="Adapter\ShippingAdapter.cs" />
+    <Compile Include="Adapter\TariffAdapter.cs" />
+    <Compile Include="Adapter\ToSAdapter.cs" />
+    <Compile Include="Adapter\UserAdapter.cs" />
+    <Compile Include="KaizosServiceContract.cs" />
+    <Compile Include="KaizosShippingServiceImplementation.cs" />
+    <Compile Include="Model\AddressBookModel.cs" />
+    <Compile Include="Model\CarrierModel.cs" />
+    <Compile Include="Model\CommonModel.cs" />
+    <Compile Include="Model\FaultModel.cs" />
+    <Compile Include="Model\FunctionalModel.cs" />
+    <Compile Include="Model\ProfileFunctionsModel.cs" />
+    <Compile Include="Model\ProfileModel.cs" />
+    <Compile Include="Model\ShippingModel.cs" />
+    <Compile Include="Model\TariffModel.cs" />
+    <Compile Include="Model\ToSModel.cs" />
+    <Compile Include="Model\UserDataTypeModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\UserModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KaizosServiceImplementation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddressBookManager\AddressBookManager.csproj">
+      <Project>{4175CC34-701E-46C8-A942-83ADE7993995}</Project>
+      <Name>AddressBookManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntity.csproj">
+      <Project>{8627CDA8-BEA9-4DBF-A4B3-02B3743416D7}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarrierManager\CarriersManager.csproj">
+      <Project>{2AB0567A-33FC-4D17-BD9F-B97FA564BFDE}</Project>
+      <Name>CarriersManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalLibrary\GlobalLibrary.csproj">
+      <Project>{68B7F3F8-32A5-43B2-A8D6-355238A5EF38}</Project>
+      <Name>GlobalLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KaizosEntities\KaizosEntities.csproj">
+      <Project>{DF94CE54-906D-4497-845A-0130F58A40D5}</Project>
+      <Name>KaizosEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShippingManager\ShippingManager.csproj">
+      <Project>{A450345D-4124-4E4A-AF76-81CD66579724}</Project>
+      <Name>ShippingManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TariffManager\TariffManager.csproj">
+      <Project>{42008B78-BA05-4851-85EA-0B336CE8B0F3}</Project>
+      <Name>TariffManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToSManager\ToSManager.csproj">
+      <Project>{7E0FBAAD-2C82-4610-897C-8E4720636E4B}</Project>
+      <Name>ToSManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserManager\UserManager.csproj">
+      <Project>{7FFAAFAA-2258-4150-A4BA-2D3737E72C05}</Project>
+      <Name>UserManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>True</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

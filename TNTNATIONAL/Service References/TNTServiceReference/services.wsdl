@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.ws.app.tnt.fr/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" name="services" targetNamespace="http://cxf.ws.app.tnt.fr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="uri:tracking" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="dropOffPoint">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="address" type="xs:string" />
+          <xs:element minOccurs="0" name="city" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+          <xs:element minOccurs="0" name="xETTCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://cxf.ws.app.tnt.fr/" targetNamespace="uri:pickuprequest" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://cxf.ws.app.tnt.fr/" />
+      <xs:complexType name="receiver">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address1" type="xs:string" />
+              <xs:element minOccurs="0" name="address2" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="sender">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address1" type="xs:string" />
+              <xs:element minOccurs="0" name="address2" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="closingTime" type="xs:string" />
+              <xs:element minOccurs="0" name="firstName" type="xs:string" />
+              <xs:element minOccurs="0" name="instructions" type="xs:string" />
+              <xs:element minOccurs="0" name="lastName" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="service" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://cxf.ws.app.tnt.fr/" targetNamespace="uri:feasibility" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://cxf.ws.app.tnt.fr/" />
+      <xs:complexType name="receiver">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="type" type="ns1:adresseType" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="sender">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:tns="uri:expedition" xmlns:ns1="http://cxf.ws.app.tnt.fr/" targetNamespace="uri:expedition" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://cxf.ws.app.tnt.fr/" />
+      <xs:complexType name="sender">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address1" type="xs:string" />
+              <xs:element minOccurs="0" name="address2" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="contactFirstName" type="xs:string" />
+              <xs:element minOccurs="0" name="contactLastName" type="xs:string" />
+              <xs:element minOccurs="0" name="emailAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="faxNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="type" type="ns1:adresseType" />
+              <xs:element minOccurs="0" name="typeId" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="receiver">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="accessCode" type="xs:string" />
+              <xs:element minOccurs="0" name="address1" type="xs:string" />
+              <xs:element minOccurs="0" name="address2" type="xs:string" />
+              <xs:element minOccurs="0" name="buldingId" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="contactFirstName" type="xs:string" />
+              <xs:element minOccurs="0" name="contactLastName" type="xs:string" />
+              <xs:element minOccurs="0" name="emailAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="floorNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="instructions" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="sendNotification" type="xs:string" />
+              <xs:element minOccurs="0" name="type" type="ns1:adresseType" />
+              <xs:element minOccurs="0" name="typeId" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="parcelsRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="parcelRequest" nillable="true" type="tns:parcelRequest" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="parcelRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="comment" type="xs:string" />
+              <xs:element minOccurs="0" name="customerReference" type="xs:string" />
+              <xs:element minOccurs="0" name="insuranceAmount" type="xs:string" />
+              <xs:element minOccurs="0" name="priorityGuarantee" type="ns1:option" />
+              <xs:element minOccurs="0" name="sequenceNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="weight" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns1="http://cxf.ws.app.tnt.fr/" targetNamespace="uri:dropoffpoint" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://cxf.ws.app.tnt.fr/" />
+      <xs:complexType name="dropOffPoint">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ns1:fullAddressPlusInfo">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="xETTCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns2="uri:feasibility" xmlns:ns4="uri:expedition" xmlns:ns0="uri:dropoffpoint" xmlns:ns1="uri:tracking" xmlns:ns3="uri:pickuprequest" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://cxf.ws.app.tnt.fr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="uri:tracking" />
+      <xs:import namespace="uri:feasibility" />
+      <xs:import namespace="uri:pickuprequest" />
+      <xs:import namespace="uri:expedition" />
+      <xs:import namespace="uri:dropoffpoint" />
+      <xs:complexType name="parcel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accountNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="consignmentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="dropOffPoint" type="ns1:dropOffPoint" />
+          <xs:element minOccurs="0" name="events" type="tns:event" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="longStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="primaryPODUrl" type="xs:anyURI" />
+          <xs:element minOccurs="0" name="receiver" type="tns:fullAddress" />
+          <xs:element minOccurs="0" name="reference" type="xs:string" />
+          <xs:element minOccurs="0" name="secondaryPODUrl" type="xs:anyURI" />
+          <xs:element minOccurs="0" name="sender" type="tns:fullAddress" />
+          <xs:element minOccurs="0" name="service" type="xs:string" />
+          <xs:element minOccurs="0" name="shortStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="statusCode" type="xs:string" />
+          <xs:element minOccurs="0" name="weight" type="xs:float" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arrivalCenter" type="xs:string" />
+          <xs:element minOccurs="0" name="arrivalCenterPEX" type="xs:string" />
+          <xs:element minOccurs="0" name="arrivalDate" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryDate" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryDepartureCenter" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryDepartureCenterPEX" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryDepartureDate" type="xs:string" />
+          <xs:element minOccurs="0" name="processCenter" type="xs:string" />
+          <xs:element minOccurs="0" name="processCenterPEX" type="xs:string" />
+          <xs:element minOccurs="0" name="processDate" type="xs:string" />
+          <xs:element minOccurs="0" name="requestDate" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="fullAddress">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:address">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="country" type="xs:string" />
+              <xs:element minOccurs="0" name="department" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="address">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="address1" type="xs:string" />
+          <xs:element minOccurs="0" name="address2" type="xs:string" />
+          <xs:element minOccurs="0" name="city" type="xs:string" />
+          <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancellation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="returnCode" type="xs:string" />
+          <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="city">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="autoValidatedInput" abstract="true">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="feasibilityParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="accountNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="receiver" type="ns2:receiver" />
+              <xs:element minOccurs="0" name="sender" type="ns2:sender" />
+              <xs:element minOccurs="0" name="shippingDate" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="service">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dueDate" type="xs:string" />
+          <xs:element minOccurs="0" name="insurance" type="xs:string" />
+          <xs:element minOccurs="0" name="priorityGuarantee" type="xs:string" />
+          <xs:element minOccurs="0" name="saturdayDelivery" type="xs:string" />
+          <xs:element minOccurs="0" name="serviceCode" type="xs:string" />
+          <xs:element minOccurs="0" name="serviceLabel" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="fullAddressPlusInfo">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:fullAddress">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="geolocalisationUrl" type="xs:string" />
+              <xs:element minOccurs="0" name="message" type="xs:string" />
+              <xs:element minOccurs="0" name="openingHours" type="tns:openingHours" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="openingHours">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="friday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="monday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="saturday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="sunday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="thursday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="tuesday" type="tns:dailyOpeningHours" />
+          <xs:element minOccurs="0" name="wednesday" type="tns:dailyOpeningHours" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dailyOpeningHours">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="am" type="xs:string" />
+          <xs:element minOccurs="0" name="pm" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="pickupRequestCreationParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="accountNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="customerReference" type="xs:string" />
+              <xs:element minOccurs="0" name="labelsProvided" type="xs:string" />
+              <xs:element minOccurs="0" name="notification" type="tns:notification" />
+              <xs:element minOccurs="0" name="quantity" type="xs:string" />
+              <xs:element minOccurs="0" name="receiver" type="ns3:receiver" />
+              <xs:element minOccurs="0" name="saturdayDelivery" type="xs:string" />
+              <xs:element minOccurs="0" name="sender" type="ns3:sender" />
+              <xs:element minOccurs="0" name="serviceCode" type="xs:string" />
+              <xs:element minOccurs="0" name="shippingDate" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="notification">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="emailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="faxNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="media" type="tns:mediaType" />
+              <xs:element minOccurs="0" name="notifySuccess" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="expeditionCreationParameter">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="pickUpRequest" type="tns:pickUpRequest" />
+              <xs:element minOccurs="0" name="shippingDate" type="xs:string" />
+              <xs:element minOccurs="0" name="accountNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="sender" type="ns4:sender" />
+              <xs:element minOccurs="0" name="receiver" type="ns4:receiver" />
+              <xs:element minOccurs="0" name="serviceCode" type="xs:string" />
+              <xs:element minOccurs="0" name="quantity" type="xs:string" />
+              <xs:element minOccurs="0" name="parcelsRequest" type="ns4:parcelsRequest" />
+              <xs:element minOccurs="0" name="saturdayDelivery" type="xs:string" />
+              <xs:element minOccurs="0" name="paybackInfo" type="tns:paybackInfo" />
+              <xs:element minOccurs="0" name="labelFormat" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="pickUpRequest">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="closingTime" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="emailAddress" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="faxNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="firstName" type="xs:string" />
+              <xs:element minOccurs="0" name="instructions" type="xs:string" />
+              <xs:element minOccurs="0" name="lastName" type="xs:string" />
+              <xs:element minOccurs="0" name="media" type="tns:mediaType" />
+              <xs:element minOccurs="0" name="notifySuccess" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="service" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="paybackInfo">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:autoValidatedInput">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="address1" type="xs:string" />
+              <xs:element minOccurs="0" name="address2" type="xs:string" />
+              <xs:element minOccurs="0" name="city" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="paybackAmount" type="xs:string" />
+              <xs:element minOccurs="0" name="useSenderAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="expeditionResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PDFLabels" type="xs:base64Binary" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="parcelResponses" nillable="true" type="tns:parcelResponse" />
+          <xs:element minOccurs="0" name="pickUpNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="parcelResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parcelNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="sequenceNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="stickerNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="trackingURL" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="depotInfo">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:fullAddressPlusInfo">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="pexCode" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:simpleType name="adresseType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ENTERPRISE" />
+          <xs:enumeration value="DEPOT" />
+          <xs:enumeration value="DROPOFFPOINT" />
+          <xs:enumeration value="INDIVIDUAL" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="mediaType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="EMAIL" />
+          <xs:enumeration value="FAX" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="option">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="PTY" />
+          <xs:enumeration value="GUE" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="ServiceException" type="tns:ServiceException" />
+      <xs:complexType name="ServiceException">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="trackingByReference" type="tns:trackingByReference" />
+      <xs:complexType name="trackingByReference">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accountNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="reference" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="trackingByReferenceResponse" type="tns:trackingByReferenceResponse" />
+      <xs:complexType name="trackingByReferenceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Parcel" type="tns:parcel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="pickUpRequestCancellation" type="tns:pickUpRequestCancellation" />
+      <xs:complexType name="pickUpRequestCancellation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pickUpNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="pickUpRequestCancellationResponse" type="tns:pickUpRequestCancellationResponse" />
+      <xs:complexType name="pickUpRequestCancellationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:cancellation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="trackingByConsignment" type="tns:trackingByConsignment" />
+      <xs:complexType name="trackingByConsignment">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parcelNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="trackingByConsignmentResponse" type="tns:trackingByConsignmentResponse" />
+      <xs:complexType name="trackingByConsignmentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Parcel" type="tns:parcel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="citiesGuide" type="tns:citiesGuide" />
+      <xs:complexType name="citiesGuide">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="citiesGuideResponse" type="tns:citiesGuideResponse" />
+      <xs:complexType name="citiesGuideResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="City" type="tns:city" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="feasibility" type="tns:feasibility" />
+      <xs:complexType name="feasibility">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parameters" type="tns:feasibilityParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="feasibilityResponse" type="tns:feasibilityResponse" />
+      <xs:complexType name="feasibilityResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Service" type="tns:service" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="dropOffPoints" type="tns:dropOffPoints" />
+      <xs:complexType name="dropOffPoints">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="zipCode" type="xs:string" />
+          <xs:element minOccurs="0" name="city" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="dropOffPointsResponse" type="tns:dropOffPointsResponse" />
+      <xs:complexType name="dropOffPointsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DropOffPoint" type="ns0:dropOffPoint" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="pickUpRequestCreation" type="tns:pickUpRequestCreation" />
+      <xs:complexType name="pickUpRequestCreation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parameters" type="tns:pickupRequestCreationParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="pickUpRequestCreationResponse" type="tns:pickUpRequestCreationResponse" />
+      <xs:complexType name="pickUpRequestCreationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pickUpNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="expeditionCreation" type="tns:expeditionCreation" />
+      <xs:complexType name="expeditionCreation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parameters" type="tns:expeditionCreationParameter" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="expeditionCreationResponse" type="tns:expeditionCreationResponse" />
+      <xs:complexType name="expeditionCreationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Expedition" type="tns:expeditionResponse" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="tntDepots" type="tns:tntDepots" />
+      <xs:complexType name="tntDepots">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="department" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="tntDepotsResponse" type="tns:tntDepotsResponse" />
+      <xs:complexType name="tntDepotsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DepotInfo" type="tns:depotInfo" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="pickUpRequestCancellationResponse">
+    <wsdl:part name="parameters" element="tns:pickUpRequestCancellationResponse" />
+  </wsdl:message>
+  <wsdl:message name="citiesGuide">
+    <wsdl:part name="parameters" element="tns:citiesGuide" />
+  </wsdl:message>
+  <wsdl:message name="citiesGuideResponse">
+    <wsdl:part name="parameters" element="tns:citiesGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="feasibility">
+    <wsdl:part name="parameters" element="tns:feasibility" />
+  </wsdl:message>
+  <wsdl:message name="dropOffPoints">
+    <wsdl:part name="parameters" element="tns:dropOffPoints" />
+  </wsdl:message>
+  <wsdl:message name="trackingByReference">
+    <wsdl:part name="parameters" element="tns:trackingByReference" />
+  </wsdl:message>
+  <wsdl:message name="pickUpRequestCancellation">
+    <wsdl:part name="parameters" element="tns:pickUpRequestCancellation" />
+  </wsdl:message>
+  <wsdl:message name="dropOffPointsResponse">
+    <wsdl:part name="parameters" element="tns:dropOffPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="trackingByReferenceResponse">
+    <wsdl:part name="parameters" element="tns:trackingByReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="trackingByConsignmentResponse">
+    <wsdl:part name="parameters" element="tns:trackingByConsignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="tntDepots">
+    <wsdl:part name="parameters" element="tns:tntDepots" />
+  </wsdl:message>
+  <wsdl:message name="expeditionCreationResponse">
+    <wsdl:part name="parameters" element="tns:expeditionCreationResponse" />
+  </wsdl:message>
+  <wsdl:message name="expeditionCreation">
+    <wsdl:part name="parameters" element="tns:expeditionCreation" />
+  </wsdl:message>
+  <wsdl:message name="pickUpRequestCreation">
+    <wsdl:part name="parameters" element="tns:pickUpRequestCreation" />
+  </wsdl:message>
+  <wsdl:message name="feasibilityResponse">
+    <wsdl:part name="parameters" element="tns:feasibilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceException">
+    <wsdl:part name="ServiceException" element="tns:ServiceException" />
+  </wsdl:message>
+  <wsdl:message name="trackingByConsignment">
+    <wsdl:part name="parameters" element="tns:trackingByConsignment" />
+  </wsdl:message>
+  <wsdl:message name="tntDepotsResponse">
+    <wsdl:part name="parameters" element="tns:tntDepotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="pickUpRequestCreationResponse">
+    <wsdl:part name="parameters" element="tns:pickUpRequestCreationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Services">
+    <wsdl:operation name="trackingByReference">
+      <wsdl:input name="trackingByReference" message="tns:trackingByReference" />
+      <wsdl:output name="trackingByReferenceResponse" message="tns:trackingByReferenceResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="pickUpRequestCancellation">
+      <wsdl:input name="pickUpRequestCancellation" message="tns:pickUpRequestCancellation" />
+      <wsdl:output name="pickUpRequestCancellationResponse" message="tns:pickUpRequestCancellationResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="trackingByConsignment">
+      <wsdl:input name="trackingByConsignment" message="tns:trackingByConsignment" />
+      <wsdl:output name="trackingByConsignmentResponse" message="tns:trackingByConsignmentResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="citiesGuide">
+      <wsdl:input name="citiesGuide" message="tns:citiesGuide" />
+      <wsdl:output name="citiesGuideResponse" message="tns:citiesGuideResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="feasibility">
+      <wsdl:input name="feasibility" message="tns:feasibility" />
+      <wsdl:output name="feasibilityResponse" message="tns:feasibilityResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="dropOffPoints">
+      <wsdl:input name="dropOffPoints" message="tns:dropOffPoints" />
+      <wsdl:output name="dropOffPointsResponse" message="tns:dropOffPointsResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="pickUpRequestCreation">
+      <wsdl:input name="pickUpRequestCreation" message="tns:pickUpRequestCreation" />
+      <wsdl:output name="pickUpRequestCreationResponse" message="tns:pickUpRequestCreationResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="expeditionCreation">
+      <wsdl:input name="expeditionCreation" message="tns:expeditionCreation" />
+      <wsdl:output name="expeditionCreationResponse" message="tns:expeditionCreationResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="tntDepots">
+      <wsdl:input name="tntDepots" message="tns:tntDepots" />
+      <wsdl:output name="tntDepotsResponse" message="tns:tntDepotsResponse" />
+      <wsdl:fault name="ServiceException" message="tns:ServiceException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="servicesSoapBinding" type="tns:Services">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="trackingByReference">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="trackingByReference">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="trackingByReferenceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="pickUpRequestCancellation">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="pickUpRequestCancellation">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="pickUpRequestCancellationResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="citiesGuide">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="citiesGuide">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="citiesGuideResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="trackingByConsignment">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="trackingByConsignment">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="trackingByConsignmentResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="feasibility">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="feasibility">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="feasibilityResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dropOffPoints">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="dropOffPoints">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dropOffPointsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="expeditionCreation">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="expeditionCreation">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="expeditionCreationResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="pickUpRequestCreation">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="pickUpRequestCreation">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="pickUpRequestCreationResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="tntDepots">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="tntDepots">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="tntDepotsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="services">
+    <wsdl:port name="ServicesImplPort" binding="tns:servicesSoapBinding">
+      <soap:address location="http://www.tnt.fr/service/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

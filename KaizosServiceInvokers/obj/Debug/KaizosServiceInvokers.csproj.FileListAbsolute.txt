@@ -1,0 +1,86 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\log4net.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\nunit.framework.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\log4net.xml
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\nunit.framework.xml
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+F:\WDIR\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+F:\WDIR\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+F:\WDIR\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+F:\WDIR\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+F:\VSS\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+D:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+D:\HariWkdirr\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb
+D:\HariWkdirr\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+D:\HariWkdirr\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+D:\HariWkdirr\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll.config
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.pdb
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\EntityFramework.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\GlobalLibrary.pdb
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\EntityFramework.xml
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\ResolveAssemblyReference.cache
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.dll
+C:\WDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\obj\Debug\KaizosServiceInvokers.pdb
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.dll
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.dll
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\BusinessEntities.pdb
+C:\WKDIR\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosEntities.pdb

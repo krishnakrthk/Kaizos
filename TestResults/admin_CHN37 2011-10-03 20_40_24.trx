@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5d16b230-f5ef-4c01-a662-bfa038140a20" name="admin@CHN37 2011-10-03 20:40:24" runUser="CHN37\admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="d53221a7-5a28-4b13-814e-ef354653190e">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\TestResults\admin_CHN37 2011-10-03 20_40_24">
+      <DeploymentItem filename="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\bin\Debug\KaizosServiceInvokers.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="10" executed="10" error="0" failed="10" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2011-10-03T20:40:24.2805326+05:30" queuing="2011-10-03T20:40:26.6242976+05:30" start="2011-10-03T20:40:26.9055494+05:30" finish="2011-10-03T20:40:28.5618100+05:30" />
+  <TestDefinitions>
+    <UnitTest name="DeleteProfileTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="83a093dd-6e6f-fab3-eaf0-afafa4fdcfa4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="3a789659-0320-406e-83cb-efbe89750549" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="DeleteProfileTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProfileTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="16df078a-2222-b332-93ba-5290c3d572d3">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d86d7cc4-b794-47ac-b00e-d7e0e0d66cfb" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="UpdateProfileTest" />
+    </UnitTest>
+    <UnitTest name="GetAllProfileFunctionsTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="43f622b2-4987-4f30-7dae-894b1d31ceda">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5ef98a27-d2e8-4fcb-8812-59a40833b57b" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="GetAllProfileFunctionsTest" />
+    </UnitTest>
+    <UnitTest name="UpdateFunctionalityTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="62d9547e-4991-c36c-7ceb-cfb528413e30">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="c956a921-824f-4029-933d-eb8c3b446766" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="UpdateFunctionalityTest" />
+    </UnitTest>
+    <UnitTest name="InserProfileTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="338bf082-dab1-a038-b2a3-95fd173b54ba">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="71165fff-3d67-430b-a0c8-3b6997121090" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="InserProfileTest" />
+    </UnitTest>
+    <UnitTest name="GetToSTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="634a875f-e2a5-3357-6cf2-ba5d27bbfab4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="eaa628da-84a7-4078-84e7-41d8909bfa68" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="GetToSTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProfileFunctionsTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="7fba4c11-cf5f-a038-8f66-a7ca8b4b376d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8674393c-9e74-4ea8-8696-b128333c0f4d" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="UpdateProfileFunctionsTest" />
+    </UnitTest>
+    <UnitTest name="DeleteFunctionalityTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="141c03a0-0fb9-62f8-5b8b-6db39e67b30a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="68ef0526-1ba1-44ab-bc35-d759b42f945d" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="DeleteFunctionalityTest" />
+    </UnitTest>
+    <UnitTest name="InsertToSTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="2eac8da1-c0e3-a52e-48cf-8283b37ba0c5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="1c9dca2a-45b5-472a-ac39-352dfb7ddbea" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="InsertToSTest" />
+    </UnitTest>
+    <UnitTest name="InsertFunctionaltyTest" storage="e:\actions\vss_src\app source\dot net products\kaizos\kaizosunittest\bin\debug\kaizosunittest.dll" id="d75c7396-5ada-f5d0-0ea1-865b0dbfe1e0">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="edd9479a-52ad-46c1-ad13-a8e9496492a2" />
+      <TestMethod codeBase="E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\bin\Debug\KaizosUnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="KaizosUnitTest.KaizosServiceAgentTest, KaizosUnitTest" name="InsertFunctionaltyTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7fba4c11-cf5f-a038-8f66-a7ca8b4b376d" executionId="8674393c-9e74-4ea8-8696-b128333c0f4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16df078a-2222-b332-93ba-5290c3d572d3" executionId="d86d7cc4-b794-47ac-b00e-d7e0e0d66cfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62d9547e-4991-c36c-7ceb-cfb528413e30" executionId="c956a921-824f-4029-933d-eb8c3b446766" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2eac8da1-c0e3-a52e-48cf-8283b37ba0c5" executionId="1c9dca2a-45b5-472a-ac39-352dfb7ddbea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d75c7396-5ada-f5d0-0ea1-865b0dbfe1e0" executionId="edd9479a-52ad-46c1-ad13-a8e9496492a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="338bf082-dab1-a038-b2a3-95fd173b54ba" executionId="71165fff-3d67-430b-a0c8-3b6997121090" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="634a875f-e2a5-3357-6cf2-ba5d27bbfab4" executionId="eaa628da-84a7-4078-84e7-41d8909bfa68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43f622b2-4987-4f30-7dae-894b1d31ceda" executionId="5ef98a27-d2e8-4fcb-8812-59a40833b57b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="83a093dd-6e6f-fab3-eaf0-afafa4fdcfa4" executionId="3a789659-0320-406e-83cb-efbe89750549" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="141c03a0-0fb9-62f8-5b8b-6db39e67b30a" executionId="68ef0526-1ba1-44ab-bc35-d759b42f945d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8674393c-9e74-4ea8-8696-b128333c0f4d" testId="7fba4c11-cf5f-a038-8f66-a7ca8b4b376d" testName="UpdateProfileFunctionsTest" computerName="CHN37" duration="00:00:00.1630006" startTime="2011-10-03T20:40:27.0618004+05:30" endTime="2011-10-03T20:40:28.1086821+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.UpdateProfileFunctionsTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.UpdateProfileFunctions(ProfileFunctions[] profileFunctions) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 262
+   at KaizosUnitTest.KaizosServiceAgentTest.UpdateProfileFunctionsTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d86d7cc4-b794-47ac-b00e-d7e0e0d66cfb" testId="16df078a-2222-b332-93ba-5290c3d572d3" testName="UpdateProfileTest" computerName="CHN37" duration="00:00:00.0237245" startTime="2011-10-03T20:40:28.1243072+05:30" endTime="2011-10-03T20:40:28.1555574+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.UpdateProfileTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.UpdateProfile(Profile profile) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 113
+   at KaizosUnitTest.KaizosServiceAgentTest.UpdateProfileTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c956a921-824f-4029-933d-eb8c3b446766" testId="62d9547e-4991-c36c-7ceb-cfb528413e30" testName="UpdateFunctionalityTest" computerName="CHN37" duration="00:00:00.0231118" startTime="2011-10-03T20:40:28.1555574+05:30" endTime="2011-10-03T20:40:28.1868076+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.UpdateFunctionalityTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.UpdateFunctionality(Functionality functionality) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 202
+   at KaizosUnitTest.KaizosServiceAgentTest.UpdateFunctionalityTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1c9dca2a-45b5-472a-ac39-352dfb7ddbea" testId="2eac8da1-c0e3-a52e-48cf-8283b37ba0c5" testName="InsertToSTest" computerName="CHN37" duration="00:00:00.0226363" startTime="2011-10-03T20:40:28.2024327+05:30" endTime="2011-10-03T20:40:28.2336829+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.InsertToSTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.InsertToS(ToS tos) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 32
+   at KaizosUnitTest.KaizosServiceAgentTest.InsertToSTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 126
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="edd9479a-52ad-46c1-ad13-a8e9496492a2" testId="d75c7396-5ada-f5d0-0ea1-865b0dbfe1e0" testName="InsertFunctionaltyTest" computerName="CHN37" duration="00:00:00.0216242" startTime="2011-10-03T20:40:28.2336829+05:30" endTime="2011-10-03T20:40:28.2649331+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.InsertFunctionaltyTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.InsertFunctionalty(Functionality functionality) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 173
+   at KaizosUnitTest.KaizosServiceAgentTest.InsertFunctionaltyTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="71165fff-3d67-430b-a0c8-3b6997121090" testId="338bf082-dab1-a038-b2a3-95fd173b54ba" testName="InserProfileTest" computerName="CHN37" duration="00:00:00.0214887" startTime="2011-10-03T20:40:28.2805582+05:30" endTime="2011-10-03T20:40:28.2961833+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.InserProfileTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.InserProfile(Profile profile) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 85
+   at KaizosUnitTest.KaizosServiceAgentTest.InserProfileTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 156
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eaa628da-84a7-4078-84e7-41d8909bfa68" testId="634a875f-e2a5-3357-6cf2-ba5d27bbfab4" testName="GetToSTest" computerName="CHN37" duration="00:00:00.0209129" startTime="2011-10-03T20:40:28.3118084+05:30" endTime="2011-10-03T20:40:28.3430586+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.GetToSTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.GetToS() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 55
+   at KaizosUnitTest.KaizosServiceAgentTest.GetToSTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ef98a27-d2e8-4fcb-8812-59a40833b57b" testId="43f622b2-4987-4f30-7dae-894b1d31ceda" testName="GetAllProfileFunctionsTest" computerName="CHN37" duration="00:00:00.0221109" startTime="2011-10-03T20:40:28.3430586+05:30" endTime="2011-10-03T20:40:28.3743088+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.GetAllProfileFunctionsTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.GetAllProfileFunctions() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 291
+   at KaizosUnitTest.KaizosServiceAgentTest.GetAllProfileFunctionsTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 184
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3a789659-0320-406e-83cb-efbe89750549" testId="83a093dd-6e6f-fab3-eaf0-afafa4fdcfa4" testName="DeleteProfileTest" computerName="CHN37" duration="00:00:00.0237323" startTime="2011-10-03T20:40:28.3899339+05:30" endTime="2011-10-03T20:40:28.4211841+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.DeleteProfileTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.DeleteProfile(Int32 profileCode) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 141
+   at KaizosUnitTest.KaizosServiceAgentTest.DeleteProfileTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 199
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="68ef0526-1ba1-44ab-bc35-d759b42f945d" testId="141c03a0-0fb9-62f8-5b8b-6db39e67b30a" testName="DeleteFunctionalityTest" computerName="CHN37" duration="00:00:00.0207934" startTime="2011-10-03T20:40:28.4211841+05:30" endTime="2011-10-03T20:40:28.4524343+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method KaizosUnitTest.KaizosServiceAgentTest.DeleteFunctionalityTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at KaizosServiceInvokers.KaizosServiceAgent.DeleteFunctionality(Int32 functionalCode) in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosServiceInvokers\KaizosServiceAgent.cs:line 230
+   at KaizosUnitTest.KaizosServiceAgentTest.DeleteFunctionalityTest() in E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosUnitTest\KaizosServiceAgentTest.cs:line 214
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

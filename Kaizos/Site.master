@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="CSS/Kaizos.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class = "clsSiteMain">
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="MainHeader">
+
+         <div class="MainTitle">
+            <table width="100%">
+            <tr>
+                <td class="AppLogo" valign="middle"></td>
+                <td  class="MainLogOut" valign="bottom">
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/frmLogout.aspx" CssClass="MainLogoutLabel" >
+                    <asp:Label ID="lblLogout" runat="server" Text="<%$ Resources:LocalString, MenuLogout %>"  CssClass="MainLogoutLabel"></asp:Label>
+                </asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/frmLogout.aspx" >
+                    <asp:Image ID="ImgLogout" runat="server" ImageUrl="../Image/Logout.png" />
+                </asp:HyperLink>
+                </td>
+            </tr>
+            
+            </table>
+        </div>
+
+          <div class="MenuControl">
+          
+          <div class ="MenuBar" >
+          
+                 <asp:Menu ID="MainMenu" runat="server" 
+                        EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                        MaximumDynamicDisplayLevels="4" 
+                        DynamicHorizontalOffset="3" 
+                        StaticSubMenuIndent="10px">
+                
+                <DynamicMenuItemStyle HorizontalPadding="2px" VerticalPadding="2px"  CssClass="MenuStyle" Width="120px"/>
+                <DynamicMenuStyle CssClass="MenuStyle"  Width="120px"/>
+                <DynamicSelectedStyle CssClass="MenuStyle"  Width="120px"/>
+                <DynamicHoverStyle CssClass="MenuHoverStyle" Width="120px"/>
+               
+                <LevelMenuItemStyles > 
+                    <asp:MenuItemStyle CssClass="MenuStyle" Width="120px"/>
+                </LevelMenuItemStyles>
+                <LevelSelectedStyles   >
+                    <asp:MenuItemStyle CssClass="MenuStyle" Width="120px"/>
+                </LevelSelectedStyles>
+                <LevelSubMenuStyles >
+                    <asp:SubMenuStyle CssClass="MenuStyle" Width="120px"/>
+                </LevelSubMenuStyles>
+                
+
+                <staticmenuitemstyle ItemSpacing="5" CssClass="MenuStyle" Width="120px"/>
+                <statichoverstyle CssClass="MenuHoverStyle" Width="120px"/>
+                <StaticSelectedStyle  CssClass="MenuStyle" Width="120px"/> 
+                <StaticHoverStyle CssClass="MenuStyle" Width="120px"/>
+                <StaticMenuStyle CssClass="MenuStyle" Width="120px"/>
+                
+                    <Items>
+                        <asp:MenuItem Text="Administration" Value="Administration">
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuTariff%>" Value="Tariff">
+                                <asp:MenuItem Text="Creation" Value="Creation" Enabled="false" NavigateUrl="frmTariffCreation.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuZoning%>" Value="Zoning">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuZoningCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmZoneCreationUpdate.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuZoningSearch%>" Value="Search" Enabled="false" NavigateUrl="frmZoneSearch.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuImportation%>" Value="Importation" Enabled="false" NavigateUrl="frmTariffImportation.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuServiceTypes%>" Value="Service Types">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuServiceTypesCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmMasterServiceTypeCreation.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuServiceTypesUpdate%>" Value="Update" Enabled="false" NavigateUrl="frmMasterServiceTypeUpdate.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuServiceTypesValidity%>" Value="Validity Update-Disable" Enabled="false" NavigateUrl="frmTariffValidity.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuFuelSurcharge%>" Value="Fuel Surcharge" Enabled="false" NavigateUrl="frmFuelSurchargeManagement.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuOptionSurcharges%>" Value="Options Surcharges" Enabled="false" NavigateUrl="frmTariffOptionsAndSurcharge.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuPublicLevels%>" Value="Public levels">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuPublicLevelsPublicTariffManagement%>" Value="Public Tariff Management" Enabled="false" NavigateUrl="frmPublicTariff.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuPublicLevelsGrossMarginSimulation%>" Value="Gross Margin Simulation" Enabled="false" NavigateUrl="frmGrossMarginCalculation.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccounts%>" Value="Accounts">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccountsCustomers%>" Value="Customers">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersList%>" Value="List" Enabled="false" NavigateUrl="frmEndCustomerList.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccountsCustomersUpdate%>" Value="Update">
+                                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccountsCustomersGeneral%>" Value="General" Enabled="false" NavigateUrl="frmEndCustomer.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccountsCustomersSalesGrossMarginTable%>" Value="Sales gross margin table" Enabled="false" NavigateUrl="frmGrossMarginCalculation.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuAccountsCustomersCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmCustomer.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuProfile%>" Value="Profile" Enabled="false" NavigateUrl="frmProfileFunctionalityMapping.aspx"></asp:MenuItem>
+
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartners%>" Value="Franchise partners">
+                                                                               
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersList%>" Value="List" Enabled="false" NavigateUrl="frmFranchiseList.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersUpdate%>" Value="Update" Enabled="false" NavigateUrl="frmFranchiseUpdate.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmFranshise.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+
+                                
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuCustomerService%>" Value="Customer Service">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersList%>" Value="List" Enabled="false" NavigateUrl="frmCustomerServiceList.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuCustomerServiceUpdate%>" Value="Update" Enabled="false" NavigateUrl="frmCustomerServiceUpdate.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuCustomerServiceCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmCustomerService.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuAlert%>" Value="Alerts">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuAlertCustomerCreditRequests%>" Value="Customer Credit Requests" Enabled="false" NavigateUrl="frmCreditRequestAccept.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuAlertDisplayAlerts%>" Value="Display alerts" Enabled="false"></asp:MenuItem>
+                            </asp:MenuItem>
+                            
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuTos%>" Value="Terms of Service" Enabled="false" NavigateUrl="frmTos.aspx"></asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuShipping%>" Value="Shipping">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMainShippingCancel%>" Value="Cancellation" NavigateUrl="frmCancelShipment.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuInvoices%>" Value="Invoices">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuCarrierInvoices%>" Value="Carrier invoices">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuCarrierInvoicesUnknown%>" Value="Unknown" Enabled="false"></asp:MenuItem>
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuCarrierInvoicesUnmatchedShipping%>" Value="Unmatched Shipping" Enabled="false"></asp:MenuItem>
+                                </asp:MenuItem>
+                                
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuInvoicesCustomerinvoices%>" Value="Customer invoices">
+                                    <asp:MenuItem Text="<%$ Resources:LocalString, MenuInvoicesCustomerinvoicesManualCreation%>" Value="Manual Creation" Enabled="false"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuCarriers%>" Value="Carriers">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuCarriersCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmCarrier.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuFranchisePartnersList%>" Value="List" Enabled="false" NavigateUrl="frmCarrierList.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuClaim%>" Value="Claim" Enabled="false"></asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuSetup%>" Value="Setup">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuSetupInsuranceBroker%>" Value="Insurance broker" Enabled="false" NavigateUrl="frmInsuranceBroker.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuSetupAlertsSettings%>" Value="Alerts settings" Enabled="false"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuSetupAlertsInvoicing%>" Value="Invoicing" Enabled="false"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuSetupAlertsFAQ%>" Value="FAQ" Enabled="false"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+
+
+                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuMainShipping%>" Value="Shipping">
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMainShippingGetQuote%>" Value="Get a Quote and ship" NavigateUrl="frmTariffDelayInterrogation.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMainShippingBulkShipping%>" Value="Bulk Shipping" Enabled="false"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMainShippingPendingShipping%>" Value="Pending shipments" Enabled="false"></asp:MenuItem>
+                        </asp:MenuItem>
+
+                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuTracking%>" Value="Tracking"></asp:MenuItem>
+
+                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccount%>" Value="My Account">
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuPersionalInformation%>" Value="Personnal information" Enabled="false" NavigateUrl="frmCustomerServiceUpdate.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAuthorizedUser%>" Value="Authorized User">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAuthorizedUserCreation%>" Value="Creation" Enabled="false" NavigateUrl="frmAuthorized.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAuthorizedUserList%>" Value="List" Enabled="false" NavigateUrl="frmAuthorizedUserList.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAuthorizedUserUpdate%>" Value="Update" Enabled="false" NavigateUrl="frmAuthorizedUpdateSelf.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountSendAClaim%>" Value="Send a Claim" Enabled="false"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountInvoices%>" Value="Invoices" Enabled="false"></asp:MenuItem>
+                            
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAddressBook%>" Value="Address Book">
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAddressBookAddAnAddress%>" Value="Add an address" Enabled="false" NavigateUrl="frmAddressBook.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAddressBookImportAddress%>" Value="Import addresses" Enabled="false" NavigateUrl="frmAddressBookImport.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountAddressBookUpdate%>" Value="Update" Enabled="false" NavigateUrl="frmAddressBookUpdate.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuMyAccountShipmentResult%>" Value="Shipping Documents" Enabled="false" NavigateUrl="frmDisplayShipmentResult.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+
+                        <asp:MenuItem Text="<%$ Resources:LocalString, MenuDashboard%>" Value="Dashboard">
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuDashboardInvoicingVisalization%>" Value="Invoicing Visalization" Enabled="false"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuDashboardActivityProfitability%>" Value="Activity Profitability" Enabled="false"></asp:MenuItem>
+                            <asp:MenuItem Text="<%$ Resources:LocalString, MenuDashboardPerformance%>" Value="Performance" Enabled="false"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+    </div>
+          </div>
+      </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>

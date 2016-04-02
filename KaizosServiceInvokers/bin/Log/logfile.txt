@@ -1,0 +1,1 @@
+2011-10-05 20:37:33,628 [TestRunnerThread] DEBUG KaizosServiceInvokers.KaizosServiceAgent  [(null)] - Fault Exception=> Details An error occurred while updating the entries. See the InnerException for details. Issues:Problem inserting profile

@@ -1,0 +1,7 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Release\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Release\KaizosFunctionalServiceLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Release\KaizosFunctionalServiceLibrary.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Release\TariffManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\bin\Release\TariffManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Release\KaizosFunctionalServiceLibrary.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\KaizosFunctionalServiceLibrary\obj\Release\KaizosFunctionalServiceLibrary.pdb

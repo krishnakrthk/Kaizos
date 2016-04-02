@@ -1,0 +1,5 @@
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Release\ProfileManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\bin\Release\ProfileManager.pdb
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Release\ResolveAssemblyReference.cache
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Release\ProfileManager.dll
+E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\ProfileManager\obj\Release\ProfileManager.pdb

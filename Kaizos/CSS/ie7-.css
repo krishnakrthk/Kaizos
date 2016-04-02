@@ -1,0 +1,74 @@
+/**
+ * MENU
+ **/
+#menu
+{
+	top: 126px;
+}
+
+/*
+ * inline-block emulation
+ */
+#menu>li,
+#head_actions a,
+#menu2>li,
+.form1 label,
+.form2 label,
+.fieldBloc>table, 
+td>table,
+.form3 .search .fieldBloc,
+.form3 label,
+.form3 span
+{
+	zoom: 1;
+	display: inline;
+}
+
+#menu>li>ul
+{
+    margin-left: 0px;
+}
+
+#menu .sublevel
+{
+	margin-top: 0px;
+    left: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul li ul {
+	display: none;
+}
+ul li:hover>ul {
+	display: block;
+	position: absolute;
+	top: 0;
+}
+
+li {
+	position: relative;
+}
+
+.serviceTypeHeader
+{
+    width: 740px;
+    margin-top: -18px;
+    position: absolute;
+    z-index: 150000;
+    border-bottom: none;
+}
+
+input[type="submit"], input
+{
+    position: relative;
+    z-index: 999999;
+}
+
+#column1
+{
+    z-index: 999999999;
+}

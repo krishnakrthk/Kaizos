@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1002]E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll</TopNode>
+  <SelectedNode>[0-1002]E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1002]E:\Actions\VSS_SRC\App Source\Dot Net Products\Kaizos\UserManager\bin\Debug\UserManager.dll" Expanded="true" />
+    <Node UniqueName="[0-1003]Kaizos" Expanded="true" />
+    <Node UniqueName="[0-1004]Kaizos.Components" Expanded="true" />
+    <Node UniqueName="[0-1005]Kaizos.Components.UnitTest" Expanded="true" />
+    <Node UniqueName="[0-1000]Kaizos.Components.UnitTest.UserHandlerUnitTest" Expanded="true" />
+  </Nodes>
+</VisualState>

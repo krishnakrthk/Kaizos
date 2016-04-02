@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSet2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>79e0f909-9450-4d1d-9259-ffb4802587f8</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Shippingdate">
+          <DataField>Shippingdate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Weight">
+          <DataField>Weight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConsigneeName">
+          <DataField>ConsigneeName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConsigneeStreet">
+          <DataField>ConsigneeStreet</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Consigneestreet2">
+          <DataField>Consigneestreet2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConsigneeStreet3">
+          <DataField>ConsigneeStreet3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Consigneezipcode">
+          <DataField>Consigneezipcode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Consigneetown">
+          <DataField>Consigneetown</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Commentary">
+          <DataField>Commentary</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Consigneephonenumber">
+          <DataField>Consigneephonenumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Consigneereference">
+          <DataField>Consigneereference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Referencesupp1">
+          <DataField>Referencesupp1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Referencesupp2">
+          <DataField>Referencesupp2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipperName">
+          <DataField>ShipperName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Shippercountry">
+          <DataField>Shippercountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipperZipcode">
+          <DataField>ShipperZipcode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipperTown">
+          <DataField>ShipperTown</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GLSoutboundDepot">
+          <DataField>GLSoutboundDepot</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerId">
+          <DataField>CustomerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactId">
+          <DataField>ContactId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Parcelrangeindeliveryconsignment">
+          <DataField>Parcelrangeindeliveryconsignment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Amoutparcelindeliveryconsignment">
+          <DataField>Amoutparcelindeliveryconsignment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GLSOriginReference">
+          <DataField>GLSOriginReference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Constant">
+          <DataField>Constant</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UNIQUENO">
+          <DataField>UNIQUENO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Outboundsortingflag">
+          <DataField>Outboundsortingflag</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Inboundsirtubgflag">
+          <DataField>Inboundsirtubgflag</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Destinationcountry">
+          <DataField>Destinationcountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Finallocation">
+          <DataField>Finallocation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tournumber">
+          <DataField>Tournumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZIPCode">
+          <DataField>ZIPCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GLSTrackId">
+          <DataField>GLSTrackId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrimaryDatamatrixbarcode">
+          <DataField>PrimaryDatamatrixbarcode</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="SecondaryDatamatrixbarcode">
+          <DataField>SecondaryDatamatrixbarcode</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSet2</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet2</rd:DataSetName>
+        <rd:SchemaPath>E:\Krishna\Printinglable\Printinglable\DataSet2.xsd</rd:SchemaPath>
+        <rd:TableName>user</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>4.44792in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>5.24926in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <Top>0.60084in</Top>
+        <Left>0.94042in</Left>
+        <Height>5.24926in</Height>
+        <Width>4.44792in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Rectangle Name="Rectangle2">
+        <ReportItems>
+          <Line Name="Line22">
+            <Top>42.39178mm</Top>
+            <Left>1.05834mm</Left>
+            <Height>0mm</Height>
+            <Width>96.04739mm</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.25mm</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line23">
+            <Top>69.2568mm</Top>
+            <Left>1.05834mm</Left>
+            <Height>0mm</Height>
+            <Width>80.5mm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.25mm</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line24">
+            <Top>114.57429mm</Top>
+            <Left>1.05834mm</Left>
+            <Height>0mm</Height>
+            <Width>96.04739mm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.25pt</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line25">
+            <Top>98.25678mm</Top>
+            <Left>1.05834mm</Left>
+            <Height>0mm</Height>
+            <Width>80.5mm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.25mm</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line26">
+            <Top>42.39178mm</Top>
+            <Left>1.05834mm</Left>
+            <Height>0in</Height>
+            <Width>55.45354mm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line28">
+            <Top>1.66958in</Top>
+            <Left>3.20229in</Left>
+            <Height>2.82871in</Height>
+            <Width>0in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.25mm</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line29">
+            <Top>1.68208in</Top>
+            <Left>1.05834mm</Left>
+            <Height>2.82871in</Height>
+            <Width>0mm</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line30">
+            <Top>1.66958in</Top>
+            <Left>97.10572mm</Left>
+            <Height>2.82871in</Height>
+            <Width>0mm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=Fields!PrimaryDatamatrixbarcode.Value</Value>
+            <MIMEType>image/jpeg</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Top>5.32456mm</Top>
+            <Left>33.15005mm</Left>
+            <Height>32mm</Height>
+            <Width>32mm</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Image2">
+            <Source>Embedded</Source>
+            <Value>glslogo</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>4.55524in</Top>
+            <Left>2.84551in</Left>
+            <Height>0.22083in</Height>
+            <Width>0.93895in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="tx860">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Fields!ConsigneeName.Value</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>71.61692mm</Top>
+            <Left>1.42429mm</Left>
+            <Height>0.30428in</Height>
+            <Width>2.22735in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="tx863">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!ConsigneeStreet.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>84.66441mm</Top>
+            <Left>1.24166mm</Left>
+            <Height>0.2983in</Height>
+            <Width>3.08396in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="tx861">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Consigneestreet2.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>80.4744mm</Top>
+            <Left>1.7418mm</Left>
+            <Height>0.24583in</Height>
+            <Width>3.06427in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="tx864">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Destinationcountry.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>91.61693mm</Top>
+            <Left>1.7418mm</Left>
+            <Height>0.1983in</Height>
+            <Width>0.31541in</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="tx865">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Consigneezipcode.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>91.61693mm</Top>
+            <Left>9.74187mm</Left>
+            <Height>0.1983in</Height>
+            <Width>0.51368in</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="tx866">
+            <CanShrink>true</CanShrink>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Consigneetown.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>91.61693mm</Top>
+            <Left>27.74183mm</Left>
+            <Height>0.1983in</Height>
+            <Width>0.83137in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Company</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>9pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>68.42725mm</Top>
+            <Left>0.06483in</Left>
+            <Height>6.86149mm</Height>
+            <Width>0.94548in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="t8908">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>106.08516mm</Top>
+            <Left>13.17438mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ss2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Note :</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>106.08516mm</Top>
+            <Left>2.17427mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="t854">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Referencesupp1.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>103.76769mm</Top>
+            <Left>13.17438mm</Left>
+            <Height>3mm</Height>
+            <Width>2.17643in</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ss3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Note :</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>103.76769mm</Top>
+            <Left>2.17427mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="t8906">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Consigneephonenumber.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>101.70266mm</Top>
+            <Left>13.17438mm</Left>
+            <Height>3mm</Height>
+            <Width>0.93627in</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ss4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Phone :</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>101.70265mm</Top>
+            <Left>2.17427mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="t871">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Referencesupp2.Value, "DataSet1")</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>99.02015mm</Top>
+            <Left>13.17438mm</Left>
+            <Height>3mm</Height>
+            <Width>1.79428in</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ss5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Contact :</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>99.02015mm</Top>
+            <Left>2.17427mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ss6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>ID NO :</Value>
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>108.1788mm</Top>
+            <Left>2.07914mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="t8909">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Swis721 Cn BT</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>SemiBold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>108.25138mm</Top>
+            <Left>18.17961mm</Left>
+            <Height>3mm</Height>
+            <Width>0.77415in</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.60084in</Top>
+        <Left>1.15477in</Left>
+        <Height>123.9581mm</Height>
+        <Width>97.79338mm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Style>None</Style>
+          </TopBorder>
+        </Style>
+      </Rectangle>
+      <Textbox Name="txtt8914">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!ContactId.Value</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>SemiBold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>115.25467mm</Top>
+        <Left>122.96556mm</Left>
+        <Height>0.52111in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Contact ID</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox18</rd:DefaultName>
+        <Top>104.25465mm</Top>
+        <Left>122.96556mm</Left>
+        <Height>0.40625in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="tx8915">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!CustomerId.Value</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>SemiBold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>92.25465mm</Top>
+        <Left>122.96556mm</Left>
+        <Height>0.47244in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Customer ID</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox18</rd:DefaultName>
+        <Top>79.43799mm</Top>
+        <Left>122.96556mm</Left>
+        <Height>0.48958in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="txt823">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ShipperTown.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>74.25465mm</Top>
+        <Left>110.78305mm</Left>
+        <Height>1.28125in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="t822">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ShipperZipcode.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>63.75464mm</Top>
+        <Left>110.78305mm</Left>
+        <Height>0.40625in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="t821">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Shippercountry.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>58.75464mm</Top>
+        <Left>110.78305mm</Left>
+        <Height>0.40625in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="t810">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ShipperName.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>58.75464mm</Top>
+        <Left>117.92559mm</Left>
+        <Height>1.89149in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Address</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox18</rd:DefaultName>
+        <Top>58.62247mm</Top>
+        <Left>121.92711mm</Left>
+        <Height>0.48958in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+      <Textbox Name="t811">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ConsigneeStreet3.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Swis721 Cn BT</FontFamily>
+                  <FontSize>6pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>59.0457mm</Top>
+        <Left>114.30715mm</Left>
+        <Height>1.88003in</Height>
+        <Width>0.13895in</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <WritingMode>Vertical</WritingMode>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>6.79167in</Height>
+    <Style />
+  </Body>
+  <Width>6.47917in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="glslogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>b0b15860-9c5b-4dda-b83e-45dd89252c28</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

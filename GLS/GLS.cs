@@ -9,7 +9,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using System.Data.Entity;
+
 using System.Data.Objects;
 
 using Kaizos.Entities.Business;
